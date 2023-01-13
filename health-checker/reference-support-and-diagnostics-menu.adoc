@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过支持和诊断菜单、您可以生成支持包。 
+---
+= 支持和诊断菜单
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过支持和诊断菜单、您可以生成支持包。
+
+可以使用以下菜单选项：
+
+* * 生成支持包 *
++
+用于在诊断用户的主目录中创建包含完整诊断信息的7-Zip文件。此文件包含AutoSupport 消息生成的信息、Unified Manager数据库的内容、有关Unified Manager服务器内部的详细数据以及通常不包含在AutoSupport 消息中的详细级别日志。
+
+

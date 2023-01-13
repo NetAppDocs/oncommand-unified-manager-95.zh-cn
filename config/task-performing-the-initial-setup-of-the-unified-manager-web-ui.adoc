@@ -1,0 +1,52 @@
+---
+permalink: config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 要使用Unified Manager、必须先配置初始设置选项、包括NTP服务器、维护用户电子邮件地址以及SMTP服务器主机名和选项。 
+---
+= 执行 Unified Manager Web UI 的初始设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要使用Unified Manager、必须先配置初始设置选项、包括NTP服务器、维护用户电子邮件地址以及SMTP服务器主机名和选项。
+
+
+
+== 开始之前
+
+您必须已执行以下操作：
+
+* 已使用安装后提供的 URL 启动 Unified Manager Web UI
+* 使用安装期间创建的维护用户名和密码（适用于 Linux 安装的 umadmin 用户）登录
+
+
+
+
+== 关于此任务
+
+只有在首次访问OnCommand 统一管理器Web UI时、才会显示"Unified Manager初始设置"页面。以下页面来自 VMware 上的安装。
+
+image::../media/first-experience-wizard.gif[首次体验向导]
+
+如果稍后要更改其中任何选项、您可以使用管理选项、单击*即可访问这些选项image:../media/clusterpage-settings-icon.gif[""]*。
+
+
+
+== 步骤
+
+. 在* OnCommand Unified Manager初始设置*窗口中、输入维护用户电子邮件地址、服务器主机名和任何其他SMTP选项以及NTP服务器(仅限VMware安装)。然后单击 * 下一步 * 。
+. 在*同意并继续*页面中、单击*同意并继续*以启用AutoSupport AutoSupport。
++
+如果您需要指定一个代理来提供Internet访问、以便向支持部门发送AutoSupport 内容、或者要禁用AutoSupport 、请使用管理选项。
+
+. 在Red Hat和CentOS系统上、您可以选择将umadmin用户密码从默认的"`admin`"字符串更改为个性化字符串。
+
+
+
+
+== 结果
+
+此时将关闭初始设置窗口、并显示Unified Manager Web UI。此时将显示配置/集群数据源页面、以便您可以向系统添加集群。

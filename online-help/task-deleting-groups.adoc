@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-deleting-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 当不再需要某个组时，您可以从 Unified Manager 中删除该组。 
+---
+= 删除组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要某个组时，您可以从 Unified Manager 中删除该组。
+
+
+
+== 开始之前
+
+* 任何存储对象（集群， SVM 或卷）都不能与与要删除的组关联的任何组规则相关联。
+* 您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组 * 选项卡中，选择要删除的组，然后单击 * 删除 * 。
+. 在*警告*对话框中、单击*是*确认删除。
++
+删除组不会删除与组关联的组操作。但是，删除组后，这些组操作将取消映射。
+
+

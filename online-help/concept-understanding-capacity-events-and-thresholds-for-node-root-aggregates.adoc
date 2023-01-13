@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Unified Manager 监控节点根聚合。最佳做法是在根聚合中厚配置根卷，以防止节点暂停。 
+---
+= 了解节点根聚合的事件和阈值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager 监控节点根聚合。最佳做法是在根聚合中厚配置根卷，以防止节点暂停。
+
+默认情况下，不会为根聚合生成容量和性能事件。此外， Unified Manager 使用的阈值不适用于节点根聚合。只有技术支持代表才能修改要生成的这些事件的设置。技术支持代表修改这些设置后，容量阈值将应用于节点根聚合。
+
+您可以使用OnCommand 系统管理器或ONTAP 命令行界面采取适当的操作以防止节点暂停。

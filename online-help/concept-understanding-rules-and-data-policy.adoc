@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 了解有关规则和数据策略的概念有助于您高效管理无限卷。 
+---
+= 了解规则和数据策略
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解有关规则和数据策略的概念有助于您高效管理无限卷。

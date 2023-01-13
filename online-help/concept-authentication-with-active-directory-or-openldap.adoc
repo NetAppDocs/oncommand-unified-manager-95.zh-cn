@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在管理服务器上启用远程身份验证、并将管理服务器配置为与身份验证服务器进行通信、以便身份验证服务器中的用户可以访问您可以在管理服务器上启用远程身份验证、并将管理服务器配置为与身份验证服务器进行通信身份验证服务器中的用户可以访问Unified Manager。 
+---
+= 使用 Active Directory 或 OpenLDAP 进行身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在管理服务器上启用远程身份验证、并将管理服务器配置为与身份验证服务器进行通信、以便身份验证服务器中的用户可以访问您可以在管理服务器上启用远程身份验证、并将管理服务器配置为与身份验证服务器进行通信身份验证服务器中的用户可以访问Unified Manager。
+
+您可以使用以下预定义的身份验证服务之一，也可以指定自己的身份验证服务：
+
+* Microsoft Active Directory
++
+[NOTE]
+====
+您不能使用 Microsoft 轻型目录服务。
+
+====
+* OpenLDAP
+
+
+您可以选择所需的身份验证服务并添加相应的身份验证服务器，以使身份验证服务器中的远程用户能够访问 Unified Manager 。远程用户或组的凭据由身份验证服务器维护。管理服务器使用轻型目录访问协议（ Lightweight Directory Access Protocol ， LDAP ）对配置的身份验证服务器中的远程用户进行身份验证。
+
+对于在 Unified Manager 中创建的本地用户，管理服务器会维护自己的用户名和密码数据库。管理服务器执行身份验证，不使用 Active Directory 或 OpenLDAP 进行身份验证。

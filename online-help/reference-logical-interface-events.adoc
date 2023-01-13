@@ -1,0 +1,146 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LIF事件可提供有关LIF状态的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 逻辑接口(LIF)事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF事件可提供有关LIF状态的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+LIF状态为已关闭(ocumEvtLifeStatusDown)
+ a| 
+风险
+ a| 
+接口
+ a| 
+error
+
+
+
+ a| 
+无法执行LIF故障转移(ocumEvtLifeFailoverNotPossible)
+ a| 
+风险
+ a| 
+接口
+ a| 
+警告
+
+
+
+ a| 
+LIF不在主端口(ocumEvtLifeNotAtHomePort)
+ a| 
+风险
+ a| 
+接口
+ a| 
+警告
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+未配置LIF路由(不适用)
+ a| 
+事件
+ a| 
+接口
+ a| 
+信息
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反网络LIF MBps严重阈值(ocumNetworkLifeMbpsIncident)
+ a| 
+意外事件
+ a| 
+接口
+ a| 
+严重
+
+
+
+ a| 
+已违反网络LIF MBps警告阈值(ocumNetworkLifeMbpsWarning)
+ a| 
+风险
+ a| 
+接口
+ a| 
+警告
+
+
+
+ a| 
+已违反FCP LIF MBps严重阈值(ocumFcpLifeMbpsIncident)
+ a| 
+意外事件
+ a| 
+接口
+ a| 
+严重
+
+
+
+ a| 
+已违反FCP LIF MBps警告阈值(ocumFcpLifeMbpsWarning)
+ a| 
+风险
+ a| 
+接口
+ a| 
+警告
+
+
+
+ a| 
+已违反NVMf FCP LIF MBps严重阈值(ocumNvmffclifMbpsIncident)
+ a| 
+意外事件
+ a| 
+接口
+ a| 
+严重
+
+
+
+ a| 
+已违反NVMf FCP LIF MBps警告阈值(ocumNvmffclifMbpsWarning)
+ a| 
+风险
+ a| 
+接口
+ a| 
+警告
+
+|===

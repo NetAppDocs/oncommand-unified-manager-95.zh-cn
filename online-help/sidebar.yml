@@ -1,0 +1,1552 @@
+---
+section: online-help
+title: 联机帮助
+entries:
+- title: OnCommand Unified Manager简介
+  pdf-filename: OnCommand Unified Manager简介(管理存储)
+  url: "/online-help/concept-introduction-to-unified-manager.html"
+  entries:
+  - title: OnCommand Unified Manager运行状况监控简介
+    url: "/online-help/concept-introduction-to-unified-manager-health-monitoring.html"
+  - title: Unified Manager 运行状况监控功能
+    url: "/online-help/concept-unified-manager-health-monitoring-features.html"
+  - title: OnCommand Unified Manager性能监控简介
+    url: "/online-help/concept-introduction-to-unified-manager-performance-monitoring.html"
+  - title: Unified Manager 性能监控功能
+    url: "/online-help/concept-unified-manager-performance-monitoring-features.html"
+  - title: Unified Manager 服务器的功能
+    url: "/online-help/concept-what-the-unified-manager-server-does.html"
+    entries:
+    - title: 发现过程的工作原理
+      url: "/online-help/concept-how-discovery-process-works.html"
+    - title: 集群配置和性能数据收集活动
+      url: "/online-help/concept-cluster-configuration-and-performance-data-collection-activity.html"
+    - title: 什么是数据连续性收集周期
+      url: "/online-help/concept-what-a-data-continuity-collection-cycle-is.html"
+    - title: 时间戳在收集的数据和事件中的含义
+      url: "/online-help/concept-what-the-timestamp-means-in-collected-data-and-events.html"
+- title: 了解用户界面
+  url: "/online-help/concept-understanding-the-user-interface.html"
+  entries:
+  - title: 典型窗口布局
+    url: "/online-help/concept-typical-window-layouts-um-6-x.html"
+  - title: 窗口布局自定义
+    url: "/online-help/reference-window-layout-customization.html"
+  - title: 使用 Unified Manager 帮助
+    url: "/online-help/task-using-the-unified-manager-help.html"
+  - title: 为您喜爱的帮助主题添加书签
+    url: "/online-help/task-bookmarking-your-favorite-help-topics-onc.html"
+  - title: 将数据导出到CSV文件以进行报告
+    url: "/online-help/task-exporting-storage-data-as-reports.html"
+  - title: 正在搜索存储对象
+    url: "/online-help/task-searching-for-storage-objects.html"
+  - title: 筛选性能清单页面内容
+    url: "/online-help/task-filtering-inventory-page-content.html"
+  - title: 从Unified Manager界面访问OnCommand 系统管理器
+    url: "/online-help/task-accessing-system-manager-from-the-um-interface.html"
+- title: 通过信息板监控集群运行状况和性能
+  url: "/online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html"
+  entries:
+  - title: 了解运行状况概述信息板
+    url: "/online-help/concept-understanding-the-health-overview-dashboard.html"
+  - title: 了解性能信息板
+    url: "/online-help/concept-understanding-the-performance-panels-on-the-dashboard.html"
+  - title: 了解集群视图信息板
+    url: "/online-help/concept-understanding-the-cluster-view-dashboard.html"
+  - title: 信息板窗口的问题描述
+    url: "/online-help/reference-description-of-dashboard-windows.html"
+    entries:
+    - title: 信息板/概述页面
+      url: "/online-help/reference-dashboard-page.html"
+    - title: 信息板/性能页面
+      url: "/online-help/reference-dashboards-performance-page.html"
+    - title: 信息板/集群视图页面
+      url: "/online-help/reference-dashboards-cluster-view-page.html"
+- title: 使用收藏夹选项管理存储对象
+  url: "/online-help/generic-managing-storage-objects-using-the-favorite-option.html"
+  entries:
+  - title: 在收藏夹列表中添加和删除存储对象
+    url: "/online-help/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html"
+  - title: 集群收藏卡
+    url: "/online-help/reference-cluster-favorite-card.html"
+  - title: 聚合收藏卡
+    url: "/online-help/reference-aggregate-favorite-card.html"
+  - title: 卷收藏卡
+    url: "/online-help/reference-volume-favorite-card.html"
+- title: 管理事件
+  url: "/online-help/concept-managing-events.html"
+  entries:
+  - title: 什么是运行状况事件
+    url: "/online-help/concept-what-health-events-are.html"
+  - title: 什么是性能事件
+    url: "/online-help/concept-what-performance-events-are.html"
+  - title: 收到事件时会发生什么情况
+    url: "/online-help/concept-what-happens-when-an-event-is-received.html"
+  - title: Unified Manager 检测到配置更改
+    url: "/online-help/concept-cluster-configuration-changes-detected-by-unified-manager.html"
+  - title: 配置事件保留设置
+    url: "/online-help/task-configuring-event-retention-settings.html"
+  - title: 配置事件通知设置
+    url: "/online-help/task-configuring-event-notification-settings.html"
+  - title: 什么是事件管理系统事件
+    url: "/online-help/concept-what-event-management-system-events-are.html"
+  - title: 自动添加到 Unified Manager 的 EMS 事件
+    url: "/online-help/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: 订阅 ONTAP EMS 事件
+    url: "/online-help/task-subscribing-to-ontap-ems-events.html"
+  - title: 查看事件详细信息
+    url: "/online-help/task-viewing-event-details.html"
+  - title: 查看未分配的事件
+    url: "/online-help/task-viewing-unassigned-events.html"
+  - title: 确认并解决事件
+    url: "/online-help/task-acknowledging-and-resolving-events.html"
+  - title: 将事件分配给特定用户
+    url: "/online-help/task-assigning-events-to-specific-users.html"
+  - title: 添加和查看有关事件的注释
+    url: "/online-help/task-adding-and-reviewing-notes-about-an-event.html"
+  - title: 禁用或启用事件
+    url: "/online-help/task-disabling-unwanted-events.html"
+  - title: 什么是 Unified Manager 维护窗口
+    url: "/online-help/concept-what-a-um-maintenance-window-is.html"
+    entries:
+    - title: 计划维护窗口以禁用集群事件通知
+      url: "/online-help/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html"
+    - title: 更改或取消计划的维护窗口
+      url: "/online-help/task-changing-or-canceling-a-scheduled-maintenance-window.html"
+    - title: 查看维护窗口期间发生的事件
+      url: "/online-help/task-viewing-events-that-occurred-during-a-maintenance-window.html"
+  - title: 管理主机系统资源事件
+    url: "/online-help/task-managing-host-system-resource-events.html"
+  - title: 了解有关事件的更多信息
+    url: "/online-help/concept-understanding-more-about-events.html"
+    entries:
+    - title: 事件状态定义
+      url: "/online-help/concept-event-state-definitions.html"
+    - title: 事件严重性类型的问题描述
+      url: "/online-help/reference-description-of-event-severity-types.html"
+    - title: 事件影响级别的问题描述
+      url: "/online-help/reference-description-of-event-impact-levels.html"
+    - title: 事件影响区域的问题描述
+      url: "/online-help/reference-description-of-event-impact-areas.html"
+    - title: 如何计算对象状态
+      url: "/online-help/concept-how-object-status-is-computed.html"
+    - title: 性能事件的来源
+      url: "/online-help/concept-sources-of-performance-events.html"
+    - title: 动态性能事件图表详细信息
+      url: "/online-help/reference-dynamic-performance-event-chart-details.html"
+    - title: 系统定义的性能阈值策略的类型
+      url: "/online-help/reference-types-of-system-defined-performance-threshold-policies.html"
+    - title: 事件和严重性类型的列表
+      url: "/online-help/reference-list-of-events-and-severity-types.html"
+      entries:
+      - title: 聚合事件
+        url: "/online-help/reference-aggregate-events.html"
+      - title: 集群事件
+        url: "/online-help/reference-cluster-events.html"
+      - title: 磁盘事件
+        url: "/online-help/reference-disk-events.html"
+      - title: 机箱事件
+        url: "/online-help/reference-enclosures-events.html"
+      - title: 风扇事件
+        url: "/online-help/reference-fans-events.html"
+      - title: 闪存卡事件
+        url: "/online-help/reference-flash-card-events.html"
+      - title: 索引节点事件
+        url: "/online-help/reference-inodes-events.html"
+      - title: 逻辑接口(LIF)事件
+        url: "/online-help/reference-logical-interface-events.html"
+      - title: LUN 事件
+        url: "/online-help/reference-lun-events.html"
+      - title: 管理工作站事件
+        url: "/online-help/reference-management-station-events.html"
+      - title: MetroCluster 网桥事件
+        url: "/online-help/reference-metrocluster-bridge-events.html"
+      - title: MetroCluster 连接事件
+        url: "/online-help/reference-metrocluster-connectivity-events.html"
+      - title: MetroCluster 交换机事件
+        url: "/online-help/reference-metrocluster-switch-events.html"
+      - title: NVMe 命名空间事件
+        url: "/online-help/reference-nvme-namespace-events.html"
+      - title: 节点事件
+        url: "/online-help/reference-node-events.html"
+      - title: NVRAM 电池事件
+        url: "/online-help/reference-nvram-battery-events.html"
+      - title: 端口事件
+        url: "/online-help/reference-port-events.html"
+      - title: 电源事件
+        url: "/online-help/reference-power-supplies-events.html"
+      - title: 保护事件
+        url: "/online-help/reference-protection-events.html"
+      - title: qtree 事件
+        url: "/online-help/reference-qtree-events.html"
+      - title: 服务处理器事件
+        url: "/online-help/reference-service-processor-events.html"
+      - title: SnapMirror 关系事件
+        url: "/online-help/reference-snapmirror-relationship-events.html"
+      - title: Snapshot 事件
+        url: "/online-help/reference-snapshot-events.html"
+      - title: SnapVault 关系事件
+        url: "/online-help/reference-snapvault-relationship-events.html"
+      - title: 存储故障转移设置事件
+        url: "/online-help/reference-storage-failover-settings-events.html"
+      - title: 存储服务事件
+        url: "/online-help/reference-storage-services-events.html"
+      - title: 存储架事件
+        url: "/online-help/reference-storage-shelf-events.html"
+      - title: SVM事件
+        url: "/online-help/reference-storage-vm-events.html"
+      - title: SVM存储类事件
+        url: "/online-help/reference-svm-storage-class-events.html"
+      - title: 用户和组配额事件
+        url: "/online-help/reference-user-and-group-quota-events.html"
+      - title: 卷事件
+        url: "/online-help/reference-volume-events.html"
+      - title: 卷移动状态事件
+        url: "/online-help/reference-volume-move-status-events.html"
+  - title: 事件窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-event-windows-and-dialog-boxes.html"
+    entries:
+    - title: 事件保留设置对话框
+      url: "/online-help/reference-event-retention-settings-dialog-box.html"
+    - title: 设置/通知页面
+      url: "/online-help/reference-notifications-page.html"
+    - title: 事件清单页面
+      url: "/online-help/reference-event-management-inventory-page.html"
+    - title: 事件详细信息页面
+      url: "/online-help/reference-event-details-page.html"
+      entries:
+      - title: Event Information 部分显示的内容
+        url: "/online-help/reference-what-the-event-information-section-displays.html"
+      - title: 系统诊断部分显示的内容
+        url: "/online-help/reference-what-the-system-diagnosis-section-displays.html"
+      - title: 建议的操作部分显示的内容
+        url: "/online-help/reference-what-the-suggested-actions-section-displays.html"
+    - title: 配置/管理事件页面
+      url: "/online-help/reference-event-setup-page.html"
+    - title: 禁用事件对话框
+      url: "/online-help/reference-disable-events-dialog-box.html"
+- title: 管理警报
+  url: "/online-help/concept-managing-alerts.html"
+  entries:
+  - title: 什么是警报
+    url: "/online-help/concept-what-alerts-are.html"
+  - title: 警报电子邮件中包含哪些信息
+    url: "/online-help/concept-what-information-is-contained-in-an-alert-email.html"
+  - title: 正在添加警报
+    url: "/online-help/task-adding-alerts.html"
+    entries:
+    - title: 添加警报的准则
+      url: "/online-help/concept-guidelines-for-adding-alerts.html"
+  - title: 为性能事件添加警报
+    url: "/online-help/task-adding-alerts-for-performance-events.html"
+  - title: 从生成警报中排除灾难恢复目标卷
+    url: "/online-help/task-excluding-disaster-recovery-destination-volumes-from-generating-alerts.html"
+  - title: 测试警报
+    url: "/online-help/task-testing-alerts.html"
+  - title: 查看警报
+    url: "/online-help/task-viewing-alerts.html"
+  - title: 编辑警报
+    url: "/online-help/task-editing-alerts.html"
+  - title: 删除警报
+    url: "/online-help/task-deleting-alerts.html"
+  - title: 警报窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-health-alert-windows-and-dialog-boxes.html"
+    entries:
+    - title: 配置/警报页面
+      url: "/online-help/reference-alert-setup-page.html"
+    - title: 添加警报对话框
+      url: "/online-help/reference-add-alert-dialog-box.html"
+    - title: 编辑警报对话框
+      url: "/online-help/reference-edit-alert-dialog-box.html"
+- title: 管理脚本
+  url: "/online-help/concept-managing-scripts.html"
+  entries:
+  - title: 脚本如何处理警报
+    url: "/online-help/concept-how-scripts-work-with-alerts.html"
+  - title: 正在添加脚本
+    url: "/online-help/task-adding-scripts.html"
+  - title: 正在删除脚本
+    url: "/online-help/task-deleting-scripts.html"
+  - title: 测试脚本执行
+    url: "/online-help/task-testing-script-execution.html"
+  - title: 脚本窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-script-windows-and-dialog-boxes.html"
+    entries:
+    - title: 管理/脚本页面
+      url: "/online-help/reference-management-scripts-page.html"
+    - title: 添加脚本对话框
+      url: "/online-help/reference-add-script-dialog-box.html"
+    - title: 支持的 Unified Manager 命令行界面命令
+      url: "/online-help/reference-supported-unified-manager-cli-commands.html"
+- title: 管理运行状况阈值
+  url: "/online-help/concept-managing-health-thresholds.html"
+  entries:
+  - title: 什么是存储容量运行状况阈值
+    url: "/online-help/concept-what-storage-capacity-health-thresholds-are.html"
+  - title: 配置全局运行状况阈值设置
+    url: "/online-help/task-configuring-global-health-threshold-settings.html"
+    entries:
+    - title: 配置全局聚合运行状况阈值
+      url: "/online-help/task-configuring-global-aggregate-health-threshold-values.html"
+    - title: 配置全局卷运行状况阈值
+      url: "/online-help/task-configuring-global-volume-health-threshold-values.html"
+    - title: 配置全局 qtree 运行状况阈值
+      url: "/online-help/task-configuring-global-qtree-health-threshold-values.html"
+    - title: 编辑非受管保护关系的滞后运行状况阈值设置
+      url: "/online-help/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html"
+  - title: 编辑单个聚合运行状况阈值设置
+    url: "/online-help/task-editing-individual-aggregate-health-threshold-settings.html"
+  - title: 编辑单个卷运行状况阈值设置
+    url: "/online-help/task-editing-individual-volume-health-threshold-settings.html"
+  - title: 编辑单个 qtree 运行状况阈值设置
+    url: "/online-help/task-editing-individual-qtree-health-threshold-settings.html"
+  - title: 运行状况阈值页面的问题描述
+    url: "/online-help/reference-description-of-health-thresholds-pages.html"
+    entries:
+    - title: 聚合的配置/运行状况阈值页面
+      url: "/online-help/reference-aggregate-thresholds-page.html"
+    - title: 卷的配置/运行状况阈值页面
+      url: "/online-help/reference-volume-thresholds-page.html"
+    - title: 非受管关系的滞后阈值页面
+      url: "/online-help/reference-lag-thresholds-for-unmanaged-relationships-page.html"
+    - title: qtree的配置/运行状况阈值页面
+      url: "/online-help/reference-qtree-thresholds-page.html"
+    - title: 编辑聚合阈值对话框
+      url: "/online-help/reference-edit-aggregate-thresholds-dialog-box.html"
+    - title: 编辑卷阈值对话框
+      url: "/online-help/reference-edit-volume-thresholds-dialog-box.html"
+    - title: 编辑qtree阈值对话框
+      url: "/online-help/reference-edit-qtree-thresholds-dialog-box.html"
+- title: 管理用户定义的性能阈值
+  url: "/online-help/concept-managing-performance-thresholds.html"
+  entries:
+  - title: 用户定义的性能阈值策略的工作原理
+    url: "/online-help/concept-how-user-defined-performance-threshold-policies-work-opm.html"
+  - title: 违反性能阈值策略时会发生什么情况
+    url: "/online-help/concept-what-happens-when-a-performance-threshold-policy-is-breached-opm.html"
+  - title: 可以使用阈值跟踪哪些性能计数器
+    url: "/online-help/reference-what-performance-metrics-can-be-monitored-using-thresholds.html"
+  - title: 在组合阈值策略中可以使用哪些对象和计数器
+    url: "/online-help/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html"
+  - title: 创建用户定义的性能阈值策略
+    url: "/online-help/task-creating-user-defined-performance-threshold-policies.html"
+  - title: 为存储对象分配性能阈值策略
+    url: "/online-help/task-assigning-performance-threshold-policies-to-storage-objects.html"
+  - title: 查看性能阈值策略
+    url: "/online-help/task-viewing-performance-threshold-policies.html"
+  - title: 编辑用户定义的性能阈值策略
+    url: "/online-help/task-editing-user-defined-performance-threshold-policies.html"
+  - title: 从存储对象中删除性能阈值策略
+    url: "/online-help/task-removing-performance-threshold-policies-from-storage-objects.html"
+  - title: 更改性能阈值策略时会发生什么情况
+    url: "/online-help/concept-what-happens-when-a-performance-threshold-policy-is-changed-opm.html"
+  - title: 移动对象时性能阈值策略会发生什么情况
+    url: "/online-help/concept-what-happens-to-performance-threshold-policies-when-an-object-is-moved-opm.html"
+  - title: 性能阈值策略页面的说明
+    url: "/online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html"
+    entries:
+    - title: 配置/性能阈值页面
+      url: "/online-help/reference-user-defined-threshold-policies-page-opm.html"
+    - title: 创建或克隆性能阈值策略页面
+      url: "/online-help/reference-create-or-clone-performance-threshold-policy-page-opm.html"
+    - title: 编辑性能阈值策略页面
+      url: "/online-help/reference-edit-performance-threshold-policy-page-opm.html"
+    - title: 分配性能阈值策略页面
+      url: "/online-help/reference-assign-performance-threshold-policy-page-opm.html"
+    - title: 清除性能阈值策略页面
+      url: "/online-help/reference-clear-performance-threshold-policy-page-opm.html"
+- title: 分析性能事件
+  url: "/online-help/concept-analyzing-performance-events.html"
+  entries:
+  - title: 显示有关性能事件的信息
+    url: "/online-help/task-displaying-information-about-a-performance-event.html"
+  - title: 根据用户定义的性能阈值分析事件
+    url: "/online-help/concept-analyzing-events-from-user-defined-performance-thresholds.html"
+    entries:
+    - title: 响应用户定义的性能阈值事件
+      url: "/online-help/task-responding-to-user-defined-performance-threshold-events.html"
+  - title: 根据系统定义的性能阈值分析事件
+    url: "/online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html"
+    entries:
+    - title: 响应系统定义的性能阈值事件
+      url: "/online-help/task-responding-to-system-defined-performance-threshold-events.html"
+    - title: 响应 QoS 策略组性能事件
+      url: "/online-help/task-responding-to-a-system-defined-qos-policy-group-performance-event.html"
+    - title: 了解已定义块大小的自适应 QoS 策略中的事件
+      url: "/online-help/concept-understanding-events-from-adaptive-qos-policies-that-have-a-defined-block-size.html"
+    - title: 响应节点资源过度利用的性能事件
+      url: "/online-help/task-responding-to-a-system-defined-node-resources-overutilized-performance-event.html"
+  - title: 分析动态性能阈值中的事件
+    url: "/online-help/concept-analyzing-events-from-dynamic-performance-thresholds.html"
+    entries:
+    - title: 确定动态性能事件中涉及的受影响工作负载
+      url: "/online-help/task-identifying-victim-workloads-involved-in-a-performance-event.html"
+    - title: 确定动态性能事件中涉及的抢占资源的工作负载
+      url: "/online-help/task-identifying-bully-workloads-involved-in-a-performance-event.html"
+    - title: 确定动态性能事件中涉及的鲨鱼工作负载
+      url: "/online-help/task-identifying-shark-workloads-involved-in-a-performance-event.html"
+    - title: MetroCluster 配置的性能事件分析
+      url: "/online-help/concept-performance-incident-analysis-for-a-metrocluster-configuration.html"
+      entries:
+      - title: 分析 MetroCluster 配置中集群上的动态性能事件
+        url: "/online-help/task-analyzing-a-performance-incident-on-a-cluster-in-a-metrocluster-configuration.html"
+      - title: 分析 MetroCluster 配置中远程集群的动态性能事件
+        url: "/online-help/task-analyzing-a-performance-incident-on-a-remote-cluster-in-a-metrocluster-configuration.html"
+    - title: 响应因 QoS 策略组限制而导致的动态性能事件
+      url: "/online-help/task-responding-to-a-dynamic-performance-event-caused-by-qos-policy-group-throttling.html"
+    - title: 响应因磁盘故障而导致的动态性能事件
+      url: "/online-help/task-responding-to-a-performance-incident-caused-by-a-disk-failure.html"
+    - title: 响应因 HA 接管而导致的动态性能事件
+      url: "/online-help/task-responding-to-a-performance-incident-caused-by-ha-takeover.html"
+- title: 解决性能事件
+  url: "/online-help/reference-resolving-performance-events.html"
+  entries:
+  - title: 确认延迟在预期范围内
+    url: "/online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html"
+  - title: 查看配置更改对工作负载性能的影响
+    url: "/online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html"
+  - title: 用于从客户端提高工作负载性能的选项
+    url: "/online-help/concept-options-for-improving-workload-performance-from-the-client-side.html"
+  - title: 检查客户端或网络问题
+    url: "/online-help/concept-check-for-client-or-network-issues.html"
+  - title: 验证 QoS 策略组中的其他卷是否具有异常高的活动
+    url: "/online-help/concept-verify-whether-other-volumes-in-the-qos-policy-group-have-unusually-high-activity.html"
+  - title: 移动逻辑接口（ LIF ）
+    url: "/online-help/concept-move-logical-interfaces.html"
+    entries:
+    - title: 手动移动LIF
+      url: "/online-help/task-moving-lifs-manually.html"
+    - title: 什么是 LIF
+      url: "/online-help/concept-what-lifs-are.html"
+    - title: 使用命令行界面显示SVM中的所有LIF
+      url: "/online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html"
+    - title: 使用命令行界面确定连接数最多的LIF
+      url: "/online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html"
+    - title: 使用命令行界面确定繁忙LIF的最佳节点
+      url: "/online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html"
+    - title: 使用OnCommand 系统管理器确定繁忙LIF的最佳节点
+      url: "/online-help/task-identifying-the-best-node-for-a-busy-lif-using-oncommand-system-manager.html"
+    - title: 使用OnCommand 系统管理器更改LIF的主端口和节点
+      url: "/online-help/task-changing-home-port-and-nodes-for-a-lif-using-oncommand-system-manager.html"
+    - title: 使用OnCommand 系统管理器将LIF还原到其主端口
+      url: "/online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html"
+  - title: 存储 QoS 如何控制工作负载吞吐量
+    url: "/online-help/concept-how-storage-qos-can-control-workload-throughput.html"
+  - title: 在不太繁忙的时间运行存储效率操作
+    url: "/online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html"
+    entries:
+    - title: 什么是存储效率
+      url: "/online-help/concept-what-storage-efficiency-is.html"
+  - title: 添加磁盘并重新分配数据
+    url: "/online-help/concept-add-disks-and-reallocate-data.html"
+  - title: 在节点上启用 Flash Cache 如何提高工作负载性能
+    url: "/online-help/reference-how-enabling-flash-cache-on-a-node-can-improve-workload-performance.html"
+  - title: 在存储聚合上启用 Flash Pool 如何提高工作负载性能
+    url: "/online-help/concept-how-enabling-flash-pool-on-a-storage-aggregate-can-improve-workload-performance.html"
+  - title: MetroCluster 配置运行状况检查
+    url: "/online-help/concept-metrocluster-configuration-health-check.html"
+  - title: MetroCluster 配置验证
+    url: "/online-help/concept-metrocluster-configuration-verification.html"
+  - title: 将工作负载移动到其他聚合
+    url: "/online-help/task-moving-workloads-to-a-different-aggregate.html"
+  - title: 将工作负载移动到其他节点
+    url: "/online-help/task-moving-workloads-to-a-different-node.html"
+  - title: 将工作负载移动到其他节点上的聚合
+    url: "/online-help/task-moving-workloads-to-an-aggregate-on-a-different-node.html"
+  - title: 将工作负载移动到其他 HA 对中的节点
+    url: "/online-help/task-moving-workloads-to-a-node-in-a-different-ha-pair.html"
+  - title: 将工作负载移动到其他 HA 对中的另一个节点
+    url: "/online-help/task-moving-workloads-to-another-node-in-a-different-ha-pair.html"
+  - title: 使用 QoS 策略设置为此节点确定工作的优先级
+    url: "/online-help/concept-use-qos-policy-settings-to-prioritize-the-work-on-this-node.html"
+  - title: 删除非活动卷和 LUN
+    url: "/online-help/concept-remove-inactive-volumes-and-luns.html"
+  - title: 添加磁盘并执行聚合布局重建
+    url: "/online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html"
+- title: 管理配额
+  url: "/online-help/concept-managing-quotas.html"
+  entries:
+  - title: 什么是配额限制
+    url: "/online-help/concept-what-quota-limits-are.html"
+  - title: 查看用户和用户组配额
+    url: "/online-help/task-viewing-user-and-user-group-quotas.html"
+  - title: 创建规则以生成电子邮件地址
+    url: "/online-help/task-creating-rules-to-generate-email-addresses.html"
+  - title: 为用户和用户组配额创建电子邮件通知格式
+    url: "/online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html"
+  - title: 编辑用户和组配额电子邮件地址
+    url: "/online-help/task-editing-user-and-group-quota-email-addresses.html"
+  - title: 了解有关配额的更多信息
+    url: "/online-help/concept-understanding-more-about-quotas.html"
+    entries:
+    - title: 配额过程概述
+      url: "/online-help/concept-overview-of-the-quota-process-um-6-1.html"
+    - title: 关于配额
+      url: "/online-help/concept-about-quotas.html"
+    - title: 为什么要使用配额
+      url: "/online-help/concept-why-you-use-quotas.html"
+  - title: 配额的问题描述对话框
+    url: "/online-help/reference-description-of-quotas-dialog-boxes.html"
+    entries:
+    - title: 电子邮件通知格式页面
+      url: "/online-help/reference-email-notification-format-page.html"
+    - title: 生成用户和组配额电子邮件地址的规则页面
+      url: "/online-help/reference-rules-to-generate-user-and-group-quota-email-address-dialog-box.html"
+- title: 管理和监控集群和集群对象运行状况
+  url: "/online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html"
+  entries:
+  - title: 了解集群监控
+    url: "/online-help/concept-understanding-cluster-monitoring.html"
+    entries:
+    - title: 了解节点根卷
+      url: "/online-help/concept-understanding-node-root-volumes.html"
+    - title: 了解节点根聚合的事件和阈值
+      url: "/online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html"
+    - title: 了解仲裁和 epsilon
+      url: "/online-help/concept-understanding-quorum-and-epsilon.html"
+  - title: 查看集群列表和详细信息
+    url: "/online-help/task-viewing-the-cluster-list-and-details.html"
+  - title: 检查 MetroCluster 配置中集群的运行状况
+    url: "/online-help/task-checking-the-health-of-clusters-in-a-metrocluster-configuration.html"
+  - title: 查看节点列表和详细信息
+    url: "/online-help/task-viewing-the-node-list-and-details.html"
+  - title: 查看SVM列表和详细信息
+    url: "/online-help/task-viewing-the-svm-list-and-details.html"
+  - title: 查看聚合列表和详细信息
+    url: "/online-help/task-viewing-the-aggregate-list-and-details.html"
+  - title: 查看存储池详细信息
+    url: "/online-help/task-viewing-storage-pool-details.html"
+  - title: 查看卷列表和详细信息
+    url: "/online-help/task-viewing-the-volume-list-and-details.html"
+  - title: 查看CIFS共享
+    url: "/online-help/task-viewing-details-about-cifs-shares.html"
+  - title: 查看 FabricPool 容量信息
+    url: "/online-help/task-viewing-fabricpool-capacity-information.html"
+  - title: 查看 Snapshot 副本列表
+    url: "/online-help/task-viewing-the-list-of-snapshot-copies.html"
+  - title: 正在删除 Snapshot 副本
+    url: "/online-help/task-deleting-snapshot-copies.html"
+  - title: 计算 Snapshot 副本的可回收空间
+    url: "/online-help/task-calculating-reclaimable-space-for-snapshot-copies.html"
+  - title: 集群对象窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html"
+    entries:
+    - title: 运行状况 / 集群清单页面
+      url: "/online-help/reference-health-all-clusters-view.html"
+    - title: 运行状况/集群存储摘要页面
+      url: "/online-help/reference-capacity-all-clusters-view.html"
+    - title: 运行状况/集群详细信息页面
+      url: "/online-help/reference-health-cluster-details-page.html"
+    - title: 运行状况/节点清单页面
+      url: "/online-help/reference-health-all-nodes-view.html"
+    - title: 运行状况/聚合清单页面
+      url: "/online-help/reference-health-all-aggregates-view.html"
+    - title: 运行状况/聚合容量和利用率页面
+      url: "/online-help/reference-capacity-all-aggregates-view.html"
+    - title: 运行状况/聚合详细信息页面
+      url: "/online-help/reference-health-aggregate-details-page.html"
+    - title: 运行状况/Storage Virtual Machine清单页面
+      url: "/online-help/reference-health-all-svms-view.html"
+    - title: 运行状况/Storage Virtual Machine详细信息页面
+      url: "/online-help/reference-health-svm-details-page.html"
+    - title: 存储池对话框
+      url: "/online-help/reference-storage-pool-dialog-box.html"
+    - title: 运行状况/卷清单页面
+      url: "/online-help/reference-health-all-volumes-view.html"
+    - title: 运行状况/卷容量和利用率页面
+      url: "/online-help/reference-capacity-all-volumes-view.html"
+    - title: 运行状况/卷详细信息页面
+      url: "/online-help/reference-health-volume-details-page.html"
+    - title: 导出策略规则对话框
+      url: "/online-help/reference-export-policy-rules-dialog-box.html"
+    - title: Snapshot Copies on a Volume对话框
+      url: "/online-help/reference-snapshot-copies-on-a-volume-dialog-box.html"
+- title: 管理和监控 MetroCluster 配置
+  url: "/online-help/concept-managing-and-monitoring-metrocluster-configurations.html"
+  entries:
+  - title: 光纤 MetroCluster 配置的组成部分
+    url: "/online-help/concept-parts-of-a-fabric-metrocluster-configuration.html"
+    entries:
+    - title: 双节点 SAS 连接延伸型 MetroCluster 配置的组成部分
+      url: "/online-help/concept-parts-of-a-two-node-sas-attached-stretch-metrocluster-configuration.html"
+    - title: 双节点桥接延伸型 MetroCluster 配置的组成部分
+      url: "/online-help/concept-parts-of-a-two-node-metrocluster-configuration-using-fc-to-sas-bridges.html"
+  - title: 集群连接状态定义
+    url: "/online-help/reference-cluster-connectivity-status-definitions.html"
+  - title: 数据镜像状态定义
+    url: "/online-help/reference-data-mirroring-status-definitions.html"
+  - title: 监控 MetroCluster 配置
+    url: "/online-help/task-monitoring-metrocluster-configurations.html"
+  - title: 监控 MetroCluster 复制
+    url: "/online-help/task-monitoring-metrocluster-replication.html"
+- title: 管理存储对象的标注
+  url: "/online-help/concept-managing-annotations-for-storage-objects.html"
+  entries:
+  - title: 什么是标注
+    url: "/online-help/concept-what-annotations-are.html"
+  - title: 标注规则在 Unified Manager 中的工作原理
+    url: "/online-help/concept-how-annotation-rules-work-in-unified-manager.html"
+  - title: 预定义标注值的问题描述
+    url: "/online-help/reference-description-of-predefined-annotation-values.html"
+  - title: 查看标注列表和详细信息
+    url: "/online-help/task-viewing-the-annotation-list-and-details.html"
+  - title: 动态添加标注
+    url: "/online-help/task-adding-annotations-dynamically.html"
+  - title: 手动向单个存储对象添加标注
+    url: "/online-help/task-adding-annotations-manually-to-individual-storage-objects.html"
+  - title: 将值添加到标注
+    url: "/online-help/task-adding-values-to-annotations.html"
+  - title: 正在创建标注规则
+    url: "/online-help/task-creating-annotation-rules.html"
+  - title: 配置标注规则的条件
+    url: "/online-help/task-configuring-conditions-for-annotation-rules.html"
+  - title: 编辑标注规则
+    url: "/online-help/task-editing-annotation-rules.html"
+  - title: 重新排列标注规则
+    url: "/online-help/task-reordering-annotation-rules.html"
+  - title: 删除标注
+    url: "/online-help/task-deleting-annotations.html"
+  - title: 从标注中删除值
+    url: "/online-help/task-deleting-values-from-annotations.html"
+  - title: 正在删除标注规则
+    url: "/online-help/task-deleting-annotation-rules.html"
+  - title: 标注窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-annotations-windows-and-dialog-boxes.html"
+    entries:
+    - title: 管理/标注页面
+      url: "/online-help/reference-management-annotations-page.html"
+    - title: 添加标注对话框
+      url: "/online-help/reference-add-annotation-dialog-box.html"
+    - title: 编辑标注对话框
+      url: "/online-help/reference-edit-annotation-dialog-box.html"
+    - title: 添加标注规则对话框
+      url: "/online-help/reference-add-annotation-rule-dialog-box.html"
+    - title: 编辑标注规则对话框
+      url: "/online-help/reference-edit-annotation-rule-dialog-box.html"
+    - title: 重新排列标注规则对话框
+      url: "/online-help/reference-reorder-annotation-rule-dialog-box.html"
+    - title: 标注集群对话框
+      url: "/online-help/reference-annotate-cluster-dialog-box.html"
+    - title: 标注SVM对话框
+      url: "/online-help/reference-annotate-svm-dialog-box.html"
+    - title: 标注卷对话框
+      url: "/online-help/reference-annotate-volume-dialog-box.html"
+- title: 管理和监控组
+  url: "/online-help/concept-managing-and-monitoring-groups.html"
+  entries:
+  - title: 了解组
+    url: "/online-help/concept-understanding-groups.html"
+    entries:
+    - title: 什么是组
+      url: "/online-help/concept-what-a-group-is.html"
+    - title: 组规则如何用于组
+      url: "/online-help/concept-how-group-rules-work-for-groups.html"
+    - title: 组操作如何对存储对象执行
+      url: "/online-help/concept-how-group-actions-work-on-storage-objects.html"
+  - title: 管理存储对象组
+    url: "/online-help/concept-managing-groups-of-storage-objects.html"
+    entries:
+    - title: 添加组
+      url: "/online-help/task-adding-groups.html"
+    - title: 删除组
+      url: "/online-help/task-deleting-groups.html"
+    - title: 编辑组
+      url: "/online-help/task-editing-the-group-settings.html"
+    - title: 正在添加组规则
+      url: "/online-help/task-adding-group-rules.html"
+    - title: 编辑组规则
+      url: "/online-help/task-editing-group-rules.html"
+    - title: 正在删除组规则
+      url: "/online-help/task-deleting-group-rules.html"
+    - title: 配置组规则的条件
+      url: "/online-help/task-configuring-conditions-for-group-rules.html"
+    - title: 正在添加组操作
+      url: "/online-help/task-adding-group-actions.html"
+    - title: 编辑组操作
+      url: "/online-help/task-editing-group-actions.html"
+    - title: 为组配置卷运行状况阈值
+      url: "/online-help/task-configuring-volume-health-thresholds-for-groups.html"
+    - title: 正在删除组操作
+      url: "/online-help/task-deleting-group-actions.html"
+    - title: 重新排列组操作
+      url: "/online-help/task-reordering-group-actions.html"
+  - title: 组的问题描述 窗口和对话框
+    url: "/online-help/reference-description-of-groups-windows-and-dialog-boxes.html"
+    entries:
+    - title: 管理/组页面
+      url: "/online-help/reference-management-groups-page.html"
+    - title: 添加组对话框
+      url: "/online-help/reference-add-group-dialog-box.html"
+    - title: 编辑组对话框
+      url: "/online-help/reference-edit-group-dialog-box.html"
+    - title: 组详细信息页面
+      url: "/online-help/reference-groups-detail-page.html"
+    - title: 添加组规则对话框
+      url: "/online-help/reference-add-group-rule-dialog-box.html"
+    - title: 编辑组规则对话框
+      url: "/online-help/reference-edit-group-rule-dialog-box.html"
+    - title: 添加组操作对话框
+      url: "/online-help/reference-add-action-dialog-box.html"
+    - title: Group action-volume thresholds部分
+      url: "/online-help/reference-group-action-volume-thresholds-section.html"
+    - title: 编辑组操作对话框
+      url: "/online-help/reference-edit-group-action-dialog-box.html"
+    - title: 重新排列组操作对话框
+      url: "/online-help/reference-reorder-group-action-dialog-box.html"
+- title: 管理和监控保护关系
+  url: "/online-help/concept-managing-and-monitoring-protection-relationships.html"
+  entries:
+  - title: 什么是资源池
+    url: "/online-help/concept-what-resource-pools-are.html"
+  - title: SnapMirror 保护的类型
+    url: "/online-help/concept-types-of-snapmirror-protection.html"
+  - title: 查看卷保护关系
+    url: "/online-help/task-viewing-volume-protection-relationships.html"
+  - title: 从运行状况/卷清单页面创建SnapVault 保护关系
+    url: "/online-help/task-creating-a-snapvault-protection-relationship-from-the-health-volumes-page.html"
+  - title: 通过运行状况/卷详细信息页面创建SnapVault 保护关系
+    url: "/online-help/task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.html"
+  - title: 从运行状况/卷清单页面创建SnapMirror保护关系
+    url: "/online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volumes-page.html"
+  - title: 通过运行状况/卷详细信息页面创建SnapMirror保护关系
+    url: "/online-help/task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.html"
+  - title: 使用版本灵活的复制创建 SnapMirror 关系
+    url: "/online-help/task-creating-a-snapmirror-relationship-with-version-flexible-replication.html"
+  - title: 使用版本灵活复制和备份选项创建 SnapMirror 关系
+    url: "/online-help/task-creating-snapmirror-relationships-with-version-flexible-replication-with-backup-option.html"
+  - title: 配置目标效率设置
+    url: "/online-help/task-configuring-protection-destination-settings.html"
+  - title: 创建 SnapMirror 和 SnapVault 计划
+    url: "/online-help/task-creating-snapmirror-and-snapvault-schedules.html"
+  - title: 创建级联或扇出关系以从现有保护关系扩展保护
+    url: "/online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html"
+  - title: 从保护/卷关系页面编辑保护关系
+    url: "/online-help/task-editing-protection-relationships-from-the-protection-volume-relationships-page.html"
+  - title: 通过运行状况/卷详细信息页面编辑保护关系
+    url: "/online-help/task-editing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: 创建 SnapMirror 策略以最大程度地提高传输效率
+    url: "/online-help/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html"
+  - title: 创建 SnapVault 策略以最大程度地提高传输效率
+    url: "/online-help/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html"
+  - title: 从保护/卷关系页面中止活动的数据保护传输
+    url: "/online-help/task-aborting-an-active-data-protection-transfer.html"
+  - title: 从运行状况/卷详细信息页面中止活动的数据保护传输
+    url: "/online-help/task-aborting-an-active-data-protection-transfer-from-the-health-volume-details-page.html"
+  - title: 从保护/卷关系页面暂停保护关系
+    url: "/online-help/task-quiescing-a-protection-relationship-from-the-volume-relationships-page.html"
+  - title: 通过运行状况/卷详细信息页面暂停保护关系
+    url: "/online-help/task-quiescing-a-protection-relationship-from-the-health-volume-details-page.html"
+  - title: 通过保护/卷关系页面中断SnapMirror关系
+    url: "/online-help/task-breaking-a-snapmirror-relationship.html"
+  - title: 通过运行状况/卷详细信息页面中断SnapMirror关系
+    url: "/online-help/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html"
+  - title: 从保护/卷关系页面中删除保护关系
+    url: "/online-help/task-removing-a-protection-relationship.html"
+  - title: 从运行状况/卷详细信息页面删除保护关系
+    url: "/online-help/task-removing-a-protection-relationship-from-the-health-volume-details-page.html"
+  - title: 从保护/卷关系页面恢复已暂停关系上的计划传输
+    url: "/online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship.html"
+  - title: 通过运行状况/卷详细信息页面恢复已暂停关系上的计划传输
+    url: "/online-help/task-resuming-scheduled-transfers-on-a-quiesced-relationship-from-the-health-volume-details-page.html"
+  - title: 通过保护/卷关系页面初始化或更新保护关系
+    url: "/online-help/task-initializing-or-updating-protection-relationships.html"
+  - title: 通过运行状况/卷详细信息页面初始化或更新保护关系
+    url: "/online-help/task-initializing-or-updating-protection-relationships-from-the-health-volume-details-page.html"
+  - title: 从保护/卷关系页面重新同步保护关系
+    url: "/online-help/task-resynchronizing-protection-relationships.html"
+  - title: 通过运行状况/卷详细信息页面重新同步保护关系
+    url: "/online-help/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: 通过保护/卷关系页面反转保护关系
+    url: "/online-help/task-reversing-protection-relationships.html"
+  - title: 通过运行状况/卷详细信息页面反转保护关系
+    url: "/online-help/task-reversing-protection-relationships-from-the-health-volume-details-page.html"
+  - title: 使用运行状况/卷清单页面还原数据
+    url: "/online-help/task-restoring-data-using-the-health-volumes-page.html"
+  - title: 使用运行状况/卷详细信息页面还原数据
+    url: "/online-help/task-restoring-data-using-the-health-volume-details-page.html"
+  - title: 正在创建资源池
+    url: "/online-help/task-creating-resource-pools.html"
+  - title: 编辑资源池
+    url: "/online-help/task-editing-resource-pools.html"
+  - title: 查看资源池清单
+    url: "/online-help/task-viewing-resource-pool-inventory.html"
+  - title: 正在添加资源池成员
+    url: "/online-help/task-adding-resource-pool-members.html"
+  - title: 从资源池中删除聚合
+    url: "/online-help/task-removing-aggregates-from-resource-pools.html"
+  - title: 正在删除资源池
+    url: "/online-help/task-deleting-resource-pools.html"
+  - title: 了解SVM关联
+    url: "/online-help/concept-understanding-svm-associations.html"
+  - title: 支持存储服务的 SVM 和资源池要求
+    url: "/online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html"
+  - title: 创建SVM关联
+    url: "/online-help/task-creating-storage-virtual-machine-svm-associations.html"
+  - title: 查看SVM关联
+    url: "/online-help/task-viewing-svm-associations.html"
+  - title: 删除SVM关联
+    url: "/online-help/task-deleting-svm-associations.html"
+  - title: 什么是作业
+    url: "/online-help/concept-what-jobs-are.html"
+  - title: 监控作业
+    url: "/online-help/task-monitoring-jobs.html"
+  - title: 查看作业详细信息
+    url: "/online-help/task-viewing-job-details.html"
+  - title: 中止作业
+    url: "/online-help/task-aborting-jobs.html"
+  - title: 重试失败的保护作业
+    url: "/online-help/task-retrying-a-failed-protection-job.html"
+  - title: 保护关系的问题描述窗口和对话框
+    url: "/online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html"
+    entries:
+    - title: 保护/资源池页面
+      url: "/online-help/reference-resource-pools-page.html"
+    - title: 创建资源池对话框
+      url: "/online-help/reference-create-resource-pool-dialog-box.html"
+    - title: 编辑资源池对话框
+      url: "/online-help/reference-edit-resource-pool-dialog-box.html"
+    - title: 聚合对话框
+      url: "/online-help/reference-aggregates-dialog-box.html"
+    - title: 保护/Storage Virtual Machine关联页面
+      url: "/online-help/reference-protection-storage-virtual-machine-associations-page.html"
+    - title: 创建Storage Virtual Machine关联向导
+      url: "/online-help/reference-create-storage-virtual-machine-associations-wizard.html"
+    - title: 保护/作业页面
+      url: "/online-help/reference-protection-jobs-page.html"
+    - title: 保护/作业详细信息页面
+      url: "/online-help/reference-job-details-page.html"
+    - title: 高级二级设置对话框
+      url: "/online-help/reference-advanced-secondary-setting-dialog-box.html"
+    - title: 高级目标设置对话框
+      url: "/online-help/reference-advanced-destination-settings-dialog-box.html"
+    - title: 还原对话框
+      url: "/online-help/reference-restore-dialog-box.html"
+    - title: 浏览目录对话框
+      url: "/online-help/reference-browse-directories-dialog-box.html"
+    - title: 配置保护对话框
+      url: "/online-help/reference-configure-protection-dialog-box.html"
+    - title: 创建计划对话框
+      url: "/online-help/reference-create-schedule-dialog-box.html"
+    - title: 创建 SnapMirror 策略对话框
+      url: "/online-help/reference-create-snapmirror-policy-dialog-box.html"
+    - title: 创建 SnapVault 策略对话框
+      url: "/online-help/reference-create-snapvault-policy-dialog-box.html"
+    - title: 编辑关系对话框
+      url: "/online-help/reference-edit-relationship-dialog-box.html"
+    - title: 初始化 / 更新对话框
+      url: "/online-help/reference-initialize-update-relationship-dialog-box.html"
+    - title: 重新同步对话框
+      url: "/online-help/reference-resynchronize-dialog-box.html"
+    - title: 选择源 Snapshot 副本对话框
+      url: "/online-help/reference-select-source-snapshot-copy-dialog-box.html"
+    - title: 反向重新同步对话框
+      url: "/online-help/reference-reverse-resync-dialog-box.html"
+    - title: 保护/卷关系页面
+      url: "/online-help/reference-relationship-all-relationships-view.html"
+    - title: 保护/卷传输状态(历史)页面
+      url: "/online-help/reference-relationship-last-1-month-transfer-status-view.html"
+    - title: 保护/卷传输速率(历史)页面
+      url: "/online-help/reference-relationship-last-1-month-transfer-rate-view.html"
+- title: 使用OnCommand Workflow Automation 执行保护工作流
+  url: "/online-help/concept-executing-protection-workflows-using-wfa.html"
+  entries:
+  - title: 在 Workflow Automation 和 Unified Manager 之间配置连接
+    url: "/online-help/task-configuring-a-connection-between-workflow-automation-and-unified-manager.html"
+  - title: 从 Unified Manager 中删除 OnCommand Workflow Automation 设置
+    url: "/online-help/task-removing-workflow-automation.html"
+  - title: 重新安装或升级 OnCommand Workflow Automation 时会发生什么情况
+    url: "/online-help/concept-what-happens-when-wfa-is-reinstalled-or-upgraded.html"
+  - title: OnCommand Workflow Automation 设置窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html"
+    entries:
+    - title: 设置/工作流自动化页面
+      url: "/online-help/reference-setup-workflow-automation-page.html"
+- title: 使用性能容量和可用 IOPS 信息管理性能
+  url: "/online-help/concept-managing-performance-using-perf-capacity-and-available-iops-information.html"
+  entries:
+  - title: 已用性能容量是多少
+    url: "/online-help/concept-what-performance-capacity-used-is.html"
+  - title: 已用性能容量值的含义
+    url: "/online-help/concept-what-the-used-headroom-value-means.html"
+  - title: 什么是可用 IOPS
+    url: "/online-help/concept-what-available-iops-is.html"
+  - title: 查看节点和聚合已用性能容量值
+    url: "/online-help/concept-viewing-node-and-aggregate-performance-capacity-used-values.html"
+  - title: 查看节点和聚合的可用 IOPS 值
+    url: "/online-help/concept-viewing-node-and-aggregate-available-iops-values.html"
+  - title: 查看性能容量计数器图表以确定问题
+    url: "/online-help/task-viewing-performance-capacity-counter-charts-to-identify-issues.html"
+  - title: 已用性能容量性能阈值条件
+    url: "/online-help/concept-performance-capacity-used-threshold-conditions.html"
+  - title: 使用已用性能容量计数器管理性能
+    url: "/online-help/concept-using-the-performance-capacity-used-counter-to-manage-performance.html"
+- title: 从性能集群登录页面监控集群性能
+  url: "/online-help/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html"
+  entries:
+  - title: 了解性能集群登录页面
+    url: "/online-help/concept-understanding-the-performance-cluster-landing-page.html"
+  - title: 性能集群登录页面
+    url: "/online-help/reference-performance-cluster-landing-page.html"
+    entries:
+    - title: 性能集群摘要页面
+      url: "/online-help/reference-cluster-summary-page-opm.html"
+      entries:
+      - title: 集群性能事件窗格
+        url: "/online-help/reference-cluster-performance-events-pane.html"
+      - title: 受管对象窗格
+        url: "/online-help/reference-managed-objects-pane.html"
+    - title: 性能最佳的对象页面
+      url: "/online-help/reference-top-performers-page.html"
+- title: 使用性能清单页面监控性能
+  url: "/online-help/concept-monitoring-performance-using-the-object-performance-inventory-pages.html"
+  entries:
+  - title: 使用性能对象清单页面监控对象
+    url: "/online-help/concept-object-monitoring-using-the-object-inventory-performance-pages.html"
+  - title: 细化性能清单页面内容
+    url: "/online-help/concept-refining-object-inventory-performance-page-content.html"
+    entries:
+    - title: 在对象清单性能页面上搜索
+      url: "/online-help/task-searching-on-object-inventory-performance-pages.html"
+    - title: 对对象清单性能页面进行排序
+      url: "/online-help/task-sorting-on-the-object-inventory-performance-pages.html"
+    - title: 筛选对象清单性能页面中的数据
+      url: "/online-help/task-filtering-on-the-object-inventory-performance-pages.html"
+  - title: 了解 Unified Manager 有关将数据分层到云的建议
+    url: "/online-help/concept-understanding-the-um-recommendations-to-tier-data-to-the-cloud.html"
+  - title: 性能清单页面的说明
+    url: "/online-help/reference-descriptions-of-the-object-inventory-performance-pages.html"
+    entries:
+    - title: 性能/集群清单页面
+      url: "/online-help/reference-performance-all-clusters-view.html"
+    - title: 性能/节点清单页面
+      url: "/online-help/reference-performance-all-nodes-view.html"
+    - title: 性能/聚合清单页面
+      url: "/online-help/reference-performance-all-aggregates-view.html"
+    - title: 性能/卷清单页面
+      url: "/online-help/concept-performance-all-volumes-view.html"
+    - title: 性能/端口清单页面
+      url: "/online-help/reference-performance-all-ports-view.html"
+    - title: 性能/SVM清单页面
+      url: "/online-help/reference-performance-all-svms-view.html"
+    - title: 性能/LUN清单页面
+      url: "/online-help/reference-performance-all-luns-view.html"
+    - title: 命名空间清单页面
+      url: "/online-help/reference-performance-all-nvme-namespaces-view.html"
+    - title: 性能/LIF清单页面
+      url: "/online-help/reference-performance-all-lifs-view.html"
+- title: 使用性能资源管理器页面监控性能
+  url: "/online-help/concept-monitoring-performance-using-the-performance-explorer-pages.html"
+  entries:
+  - title: 了解根对象
+    url: "/online-help/concept-understanding-the-root-object.html"
+  - title: 应用筛选以减少网格中相关对象的列表
+    url: "/online-help/concept-applying-filtering-to-correlated-objects.html"
+  - title: 指定相关对象的时间范围
+    url: "/online-help/task-specifying-a-correlated-objects-time-range.html"
+    entries:
+    - title: 选择预定义的时间范围
+      url: "/online-help/task-selecting-a-predefined-time-range.html"
+    - title: 指定自定义时间范围
+      url: "/online-help/task-specifying-a-custom-time-range.html"
+  - title: 定义用于比较图形的相关对象列表
+    url: "/online-help/task-defining-the-list-of-correlated-objects-for-comparison-graphing.html"
+  - title: 了解计数器图表
+    url: "/online-help/concept-understanding-counter-charts.html"
+  - title: 性能计数器图表的类型
+    url: "/online-help/reference-types-of-performance-counter-charts.html"
+  - title: 选择要显示的性能图表
+    url: "/online-help/task-selecting-performance-charts-to-display.html"
+  - title: 展开计数器图表窗格
+    url: "/online-help/task-expanding-the-counter-charts-pane.html"
+  - title: 将计数器图表的焦点更改为较短的时间段
+    url: "/online-help/task-changing-the-counter-charts-focus-to-a-smaller-period-of-time.html"
+  - title: 在事件时间线中查看事件详细信息
+    url: "/online-help/task-viewing-event-details-in-the-performance-explorer-events-timeline.html"
+  - title: 计数器图表缩放视图
+    url: "/online-help/concept-counter-charts-zoom-view.html"
+    entries:
+    - title: 显示计数器图表缩放视图
+      url: "/online-help/task-displaying-the-counter-charts-zoom-view.html"
+    - title: 在缩放视图中指定时间范围
+      url: "/online-help/task-specifying-the-time-range-in-zoom-view.html"
+    - title: 在计数器图表缩放视图中选择性能阈值
+      url: "/online-help/task-selecting-performance-thresholds-in-zoom-view.html"
+  - title: 查看工作负载QoS最小值和最大值设置
+    url: "/online-help/task-viewing-workload-qos-minimum-and-maximum-settings.html"
+  - title: 如何在Unified Manager中显示不同类型的QoS策略
+    url: "/online-help/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html"
+  - title: 按集群组件查看卷延迟
+    url: "/online-help/task-viewing-volume-latency-by-cluster-component.html"
+  - title: 按协议查看 SVM IOPS 流量
+    url: "/online-help/task-viewing-svm-iops-traffic-by-protocol.html"
+  - title: 查看卷和 LUN 延迟图表以验证性能保证
+    url: "/online-help/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html"
+  - title: 对象登录页面的组件
+    url: "/online-help/concept-components-of-the-object-landing-pages-opm.html"
+    entries:
+    - title: 摘要页面
+      url: "/online-help/reference-summary-page-opm.html"
+    - title: 性能资源管理器页面的组件
+      url: "/online-help/concept-components-of-the-performance-explorer-page.html"
+  - title: 性能资源管理器页面的说明
+    url: "/online-help/reference-page-descriptions-for-object-landing-pages.html"
+    entries:
+    - title: 性能/集群资源管理器页面
+      url: "/online-help/concept-cluster-performance-explorer-page.html"
+    - title: 性能/节点资源管理器页面
+      url: "/online-help/concept-node-performance-explorer-page.html"
+    - title: 性能/聚合资源管理器页面
+      url: "/online-help/concept-aggregate-performance-explorer-page.html"
+    - title: 性能/卷或性能/FlexGroup资源管理器页面
+      url: "/online-help/concept-volume-performance-explorer-page.html"
+    - title: 性能/成分卷资源管理器页面
+      url: "/online-help/concept-constituent-volume-performance-explorer-page.html"
+    - title: 性能/端口资源管理器页面
+      url: "/online-help/concept-port-performance-explorer-page.html"
+    - title: 性能/SVM资源管理器页面
+      url: "/online-help/concept-storage-vm-performance-explorer-page.html"
+    - title: 性能/LUN资源管理器页面
+      url: "/online-help/concept-lun-performance-explorer-page.html"
+    - title: 命名空间资源管理器页面
+      url: "/online-help/concept-nvme-namespace-performance-explorer-page.html"
+    - title: 性能/LIF资源管理器页面
+      url: "/online-help/concept-network-interface-performance-explorer-page.html"
+  - title: 计数器图表的说明
+    url: "/online-help/reference-descriptions-of-the-counter-charts.html"
+    entries:
+    - title: 延迟性能计数器图表
+      url: "/online-help/reference-latency-performance-counter-charts.html"
+    - title: IOPS性能计数器图表
+      url: "/online-help/reference-iops-performance-counter-charts.html"
+    - title: MBps性能计数器图表
+      url: "/online-help/reference-mbps-performance-counter-charts.html"
+    - title: 利用率性能计数器图表
+      url: "/online-help/reference-utilization-performance-counter-chart.html"
+    - title: 已用性能容量性能计数器图表
+      url: "/online-help/reference-performance-capacity-used-performance-counter-charts.html"
+    - title: 可用IOPS性能计数器图表
+      url: "/online-help/reference-available-iops-performance-counter-chart.html"
+    - title: 缓存未命中率性能计数器图表
+      url: "/online-help/reference-cache-miss-ratio-performance-counter-chart.html"
+- title: 查看对象配置信息
+  url: "/online-help/concept-viewing-object-configuration-information.html"
+  entries:
+  - title: 性能/集群信息页面
+    url: "/online-help/reference-cluster-performance-information-page.html"
+  - title: 性能/节点信息页面
+    url: "/online-help/reference-node-performance-information-page.html"
+  - title: 性能/聚合信息页面
+    url: "/online-help/reference-aggregate-performance-information-page.html"
+  - title: 性能/卷或性能/FlexGroup信息页面
+    url: "/online-help/reference-volume-performance-information-page.html"
+  - title: 性能/成分卷信息页面
+    url: "/online-help/reference-constituent-volume-performance-information-page.html"
+  - title: 性能/端口信息页面
+    url: "/online-help/reference-port-performance-information-page.html"
+  - title: 性能/SVM信息页面
+    url: "/online-help/reference-storage-vm-performance-information-page.html"
+  - title: 性能/LUN信息页面
+    url: "/online-help/reference-lun-performance-information-page.html"
+  - title: 命名空间信息页面
+    url: "/online-help/reference-nvme-namespace-performance-information-page.html"
+  - title: 性能/LIF信息页面
+    url: "/online-help/reference-network-interface-performance-information-page.html"
+- title: 了解和使用 Node Failover Planning 页面
+  url: "/online-help/reference-understanding-and-using-the-node-failover-planning-page.html"
+  entries:
+  - title: 使用 Node Failover Planning 页面确定更正操作
+    url: "/online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html"
+  - title: 节点故障转移规划页面的组件
+    url: "/online-help/reference-components-of-the-node-failover-planning-page.html"
+  - title: 将阈值策略与节点故障转移规划页面结合使用
+    url: "/online-help/concept-using-a-threshold-policy-with-the-node-failover-planning-page.html"
+  - title: 使用已用性能容量细分图表进行故障转移规划
+    url: "/online-help/task-using-the-perf-capacity-used-breakdown-chart-for-failover-planning.html"
+- title: 收集数据并监控工作负载性能
+  url: "/online-help/concept-collecting-data-and-monitoring-workload-performance.html"
+  entries:
+  - title: Unified Manager 监控的工作负载类型
+    url: "/online-help/concept-types-of-workloads-monitored-by-unified-manager.html"
+  - title: 工作负载性能测量值
+    url: "/online-help/reference-workload-performance-measurement-values.html"
+  - title: 什么是预期性能范围
+    url: "/online-help/concept-what-the-expected-range-of-performance-is.html"
+  - title: 如何在性能分析中使用预期范围
+    url: "/online-help/reference-how-the-expected-range-is-used-in-performance-analysis.html"
+  - title: Unified Manager 如何使用工作负载延迟来确定性能问题
+    url: "/online-help/concept-how-unified-manager-uses-workload-response-time-to-identify-performance-issues.html"
+  - title: 集群操作如何影响工作负载延迟
+    url: "/online-help/concept-how-cluster-operations-can-affect-workload-latency.html"
+  - title: 监控 MetroCluster 配置的性能
+    url: "/online-help/concept-performance-monitoring-of-metrocluster-configurations.html"
+    entries:
+    - title: 切换和切回期间的卷行为
+      url: "/online-help/concept-volume-behavior-during-switchover-and-switchback.html"
+  - title: 性能事件分析和通知
+    url: "/online-help/reference-performance-event-analysis-and-notification.html"
+  - title: Unified Manager 如何确定事件的性能影响
+    url: "/online-help/concept-how-unified-manager-determines-the-performance-impact-for-an-incident.html"
+  - title: 集群组件及其可能发生争用的原因
+    url: "/online-help/concept-cluster-components-and-why-they-can-be-in-contention.html"
+  - title: 性能事件中涉及的工作负载的角色
+    url: "/online-help/concept-roles-of-workloads-involved-in-a-performance-incident.html"
+- title: 分析工作负载性能
+  url: "/online-help/concept-analyzing-workload-performance.html"
+  entries:
+  - title: 确定工作负载是否具有性能问题描述
+    url: "/online-help/task-determining-whether-a-workload-has-a-performance-issue.html"
+  - title: 调查工作负载的响应时间是否明显较慢
+    url: "/online-help/task-investigating-perceived-slow-response-time-for-a-workload.html"
+  - title: 确定集群组件上的I/O响应时间趋势
+    url: "/online-help/task-identifying-trends-of-i-o-response-time-on-cluster-components.html"
+  - title: 分析通过移动卷实现的性能提升
+    url: "/online-help/task-analyzing-the-performance-improvments-achieved-from-moving-a-volume.html"
+    entries:
+    - title: 移动 FlexVol 卷的工作原理
+      url: "/online-help/concept-how-moving-a-volume-works.html"
+  - title: 性能/卷详细信息页面
+    url: "/online-help/reference-performance-volume-details-page.html"
+    entries:
+    - title: 数据细分图表中显示的性能统计信息
+      url: "/online-help/reference-performance-statistics-displayed-in-the-data-breakdown-charts.html"
+    - title: 性能数据图形的工作原理
+      url: "/online-help/concept-how-graphs-of-performance-data-work.html"
+- title: 管理报告
+  url: "/online-help/concept-managing-reports.html"
+  entries:
+  - title: 计划报告
+    url: "/online-help/task-scheduling-reports.html"
+  - title: 共享报告
+    url: "/online-help/task-sharing-reports.html"
+  - title: 管理报告计划
+    url: "/online-help/task-managing-report-schedules.html"
+  - title: 自定义报告
+    url: "/online-help/task-customizing-a-report.html"
+  - title: 编辑自定义报告
+    url: "/online-help/task-editing-a-customized-report.html"
+  - title: 导入报告
+    url: "/online-help/task-importing-reports.html"
+  - title: 了解有关报告的更多信息
+    url: "/online-help/reference-understanding-more-about-reports.html"
+    entries:
+    - title: 报告的作用
+      url: "/online-help/concept-what-reports-do.html"
+    - title: Unified Manager 数据库可供自定义报告访问
+      url: "/online-help/concept-unified-manager-databases-accessible-for-reporting.html"
+    - title: 什么是报告计划
+      url: "/online-help/concept-what-report-scheduling-is.html"
+    - title: 什么是报告共享
+      url: "/online-help/concept-what-report-sharing-is.html"
+    - title: 什么是报告导入
+      url: "/online-help/concept-what-report-importing-is.html"
+  - title: 报告自定义
+    url: "/online-help/reference-report-customizations.html"
+    entries:
+    - title: 存储摘要报告自定义
+      url: "/online-help/reference-storage-summary-report-customizations.html"
+      entries:
+      - title: 自定义存储摘要报告以按集群型号查看容量
+        url: "/online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html"
+      - title: 自定义存储摘要报告以根据ONTAP 版本分析集群容量
+        url: "/online-help/task-customizing-the-storage-summary-report-to-analyze-cluster-capacity-based-on-the-ontap-version.html"
+      - title: 自定义存储摘要报告以分析未分配LUN容量最多的集群
+        url: "/online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html"
+      - title: 自定义存储摘要报告以分析HA对中可用于配置新卷和LUN的容量
+        url: "/online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html"
+    - title: 聚合容量和利用率报告自定义
+      url: "/online-help/reference-aggregate-capacity-and-utilization-report-customizations.html"
+      entries:
+      - title: 自定义聚合容量和利用率报告以查看容量达到全满的聚合
+        url: "/online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html"
+      - title: 自定义聚合容量和利用率报告以显示违反接近全满阈值的聚合
+        url: "/online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-nearly-full-threshold-breached.html"
+      - title: 自定义聚合容量和利用率报告以显示违反过量提交阈值的聚合
+        url: "/online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-overcommitted-threshold-breached.html"
+      - title: 自定义聚合容量和利用率报告以显示配置不合规的聚合
+        url: "/online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html"
+    - title: 卷容量和利用率报告自定义
+      url: "/online-help/reference-volume-capacity-and-utilization-report-customizations.html"
+      entries:
+      - title: 自定义卷容量和利用率报告以显示在关闭Snapshot自动删除的情况下接近全满容量的卷
+        url: "/online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html"
+      - title: 自定义卷容量和利用率报告以显示已禁用精简配置的消耗量最小的卷
+        url: "/online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-the-least-consumed-volumes-with-thin-provisioning-disabled.html"
+      - title: 自定义卷容量和利用率报告以显示配置不合规的卷
+        url: "/online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html"
+    - title: qtree容量和利用率报告自定义
+      url: "/online-help/reference-qtree-capacity-and-utilization-report-customizations.html"
+      entries:
+      - title: 自定义qtree容量和利用率报告以显示已违反磁盘软限制的qtree
+        url: "/online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html"
+      - title: 自定义qtree容量和利用率报告以显示违反文件软限制的qtree
+        url: "/online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-file-soft-limit.html"
+    - title: 事件报告自定义设置
+      url: "/online-help/reference-events-report-customizations.html"
+      entries:
+      - title: 自定义事件报告以显示严重性类型为严重的事件
+        url: "/online-help/task-customizing-the-events-report-to-display-events-with-a-critical-severity-type.html"
+      - title: 自定义事件报告以显示任务关键型对象上的事件
+        url: "/online-help/task-customizing-the-events-report-to-display-events-on-mission-critical-objects.html"
+      - title: 自定义事件报告以显示讨论量最多的前几个事件
+        url: "/online-help/task-customizing-the-events-report-to-display-top-most-discussed-events.html"
+      - title: 自定义事件报告以显示分配给管理员的意外事件
+        url: "/online-help/task-customizing-the-events-report-to-display-incident-events-assigned-to-the-admin.html"
+      - title: 自定义事件报告以显示影响可用性的事件
+        url: "/online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html"
+      - title: 自定义事件报告以显示已确认未解决的前几个事件
+        url: "/online-help/task-customizing-the-events-report-to-display-top-most-acknowledged-unresolved-events.html"
+    - title: 集群清单报告自定义
+      url: "/online-help/reference-cluster-inventory-report-customizations.html"
+      entries:
+      - title: 自定义集群清单报告以显示达到SVM计数限制的集群
+        url: "/online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html"
+      - title: 自定义集群清单报告以显示运行旧版ONTAP 软件的节点
+        url: "/online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-running-older-versions-of-ontap.html"
+      - title: 自定义集群清单报告以显示达到最大磁盘限制的节点
+        url: "/online-help/task-customizing-the-cluster-inventory-report-to-display-nodes-reaching-maximum-disk-limit.html"
+    - title: NFS导出报告自定义
+      url: "/online-help/reference-nfs-export-report-customizations.html"
+      entries:
+      - title: 自定义NFS导出报告以显示接合路径不可访问的卷列表
+        url: "/online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-inaccessible-junction-path.html"
+      - title: 自定义NFS导出报告以显示具有默认导出策略的卷列表
+        url: "/online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html"
+    - title: SVM清单报告自定义
+      url: "/online-help/reference-svm-inventory-report-customizations.html"
+      entries:
+      - title: 自定义SVM清单报告以显示达到最大卷限制的SVM列表
+        url: "/online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-svms-reaching-maximum-volume-limit.html"
+      - title: 自定义SVM清单报告以显示已停止SVM的列表
+        url: "/online-help/task-customizing-the-svm-inventory-report-to-display-a-list-of-stopped-svms.html"
+    - title: 卷关系清单报告自定义
+      url: "/online-help/reference-volume-relationships-inventory-report-customizations.html"
+      entries:
+      - title: 自定义卷关系清单报告以查看按故障源分组的卷
+        url: "/online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html"
+      - title: 自定义卷关系清单报告以查看按问题描述 分组的卷
+        url: "/online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html"
+    - title: 卷传输状态(历史)报告自定义
+      url: "/online-help/reference-volume-transfer-status-report-customizations.html"
+      entries:
+      - title: 自定义卷传输状态(历史)报告计划
+        url: "/online-help/task-customizing-the-volume-transfer-status-report-schedules.html"
+      - title: 自定义卷传输状态(历史)报告以按特定时间间隔查看卷
+        url: "/online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-based-on-specific-time.html"
+      - title: 自定义卷传输状态(历史)报告以查看按发生时间分组的卷
+        url: "/online-help/task-customizing-the-volume-transfer-status-report-to-view-volumes-grouped-by-time-of-occurrence.html"
+      - title: 自定义卷传输状态(历史)报告以查看失败或成功的卷传输
+        url: "/online-help/task-customizing-the-volume-transfer-status-report-to-view-failed-or-successful-volume-transfers.html"
+    - title: 卷传输速率(历史)报告自定义
+      url: "/online-help/reference-volume-transfer-rate-report-customizations.html"
+      entries:
+      - title: 自定义卷传输速率(历史)报告以根据传输大小查看卷传输
+        url: "/online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html"
+      - title: 自定义卷传输速率(历史)报告以查看按日期分组的卷传输
+        url: "/online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-grouped-by-day.html"
+  - title: 报告窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-report-windows-and-dialog-boxes.html"
+    entries:
+    - title: 报告页面
+      url: "/online-help/reference-scheduled-reports-page.html"
+      entries:
+      - title: 存储摘要报告
+        url: "/online-help/reference-cluster-capacity-fields.html"
+      - title: 聚合容量和利用率报告
+        url: "/online-help/reference-aggregate-capacity-fields.html"
+      - title: 卷容量和利用率报告
+        url: "/online-help/reference-volume-capacity-fields.html"
+      - title: qtree容量和利用率报告
+        url: "/online-help/reference-qtree-capacity-fields.html"
+      - title: 事件报告
+        url: "/online-help/reference-events-report.html"
+      - title: 集群清单报告
+        url: "/online-help/reference-cluster-health-fields.html"
+      - title: NFS导出报告
+        url: "/online-help/reference-nfs-shares-health-fields.html"
+      - title: SVM清单报告
+        url: "/online-help/reference-svm-health-fields.html"
+      - title: 卷数据保护配置报告
+        url: "/online-help/reference-volume-data-protection-configuration-report.html"
+      - title: 卷关系清单报告
+        url: "/online-help/reference-volume-relationships-inventory-report.html"
+      - title: 卷传输状态(历史)报告
+        url: "/online-help/reference-volume-transfer-status-historical-report.html"
+      - title: 卷传输速率(历史)报告
+        url: "/online-help/reference-volume-transfer-rate-historical-report.html"
+    - title: 计划报告对话框
+      url: "/online-help/reference-schedule-report-dialog-box-um-6-2.html"
+    - title: 共享报告对话框
+      url: "/online-help/reference-share-report-dialog-box-um-6-2.html"
+    - title: 管理报告计划对话框
+      url: "/online-help/reference-manage-report-schedules-dialog-box-um-6-2.html"
+    - title: 将自定义报告另存为对话框
+      url: "/online-help/reference-save-customized-report-as-dialog-box.html"
+    - title: 保存自定义报告对话框
+      url: "/online-help/reference-save-custom-report-dialog-box.html"
+    - title: 导入报告对话框
+      url: "/online-help/reference-import-report-dialog-box.html"
+- title: 配置备份和还原操作
+  url: "/online-help/concept-managing-backup-and-restore-operations.html"
+  entries:
+  - title: 什么是数据库备份
+    url: "/online-help/concept-backup-and-restore-using-a-mysql-database-dump.html"
+  - title: 配置数据库备份设置
+    url: "/online-help/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+  - title: 什么是数据库还原
+    url: "/online-help/concept-what-a-database-restore-is.html"
+  - title: 虚拟设备备份和还原过程概述
+    url: "/online-help/concept-backup-and-restore-on-virtual-appliance.html"
+  - title: 在虚拟机上还原数据库备份
+    url: "/online-help/task-restoring-database-backup-on-a-virtual-machine.html"
+  - title: 在Linux系统上还原数据库备份
+    url: "/online-help/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html"
+  - title: 在Windows上还原数据库备份
+    url: "/online-help/task-restoring-a-mysql-database-backup-on-windows.html"
+  - title: 备份窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-backup-windows-and-dialog-boxes.html"
+    entries:
+    - title: 管理/数据库备份页面
+      url: "/online-help/reference-database-backup-page.html"
+    - title: 数据库备份设置对话框
+      url: "/online-help/reference-backup-settings-dialog-box.html"
+- title: 使用 Unified Manager REST API
+  url: "/online-help/concept-using-unified-manager-rest-apis-ocum.html"
+  entries:
+  - title: 使用Swagger API网页访问REST API
+    url: "/online-help/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html"
+  - title: 可用的REST API列表
+    url: "/online-help/reference-list-of-available-rest-apis-ocum.html"
+- title: 管理和监控无限卷
+  url: "/online-help/concept-managing-and-monitoring-infinite-volumes.html"
+  entries:
+  - title: 查看带有无限卷的SVM的详细信息
+    url: "/online-help/task-viewing-the-details-of-svms-with-infinite-volume.html"
+  - title: 查看无限卷的成分卷
+    url: "/online-help/task-viewing-the-constituents-of-an-infinite-volume.html"
+  - title: 编辑无限卷阈值设置
+    url: "/online-help/task-editing-the-infinite-volume-threshold-settings.html"
+  - title: 编辑存储类的阈值设置
+    url: "/online-help/task-editing-storage-class-threshold-settings.html"
+  - title: 了解无限卷
+    url: "/online-help/concept-understanding-infinite-volumes.html"
+    entries:
+    - title: 什么是无限卷
+      url: "/online-help/concept-what-an-infinite-volume-is.html"
+    - title: 无限卷可以存储的最大文件数
+      url: "/online-help/concept-maximum-number-of-files-an-infinite-volume-can-store.html"
+    - title: 什么是存储类
+      url: "/online-help/concept-what-a-storage-class-is.html"
+    - title: 什么是命名空间成分卷
+      url: "/online-help/concept-what-a-namespace-constituent-is.html"
+    - title: 什么是数据成分卷
+      url: "/online-help/concept-what-data-constituents-are.html"
+    - title: 什么是命名空间镜像成分卷
+      url: "/online-help/concept-what-a-namespace-mirror-constituent-is.html"
+  - title: 创建规则
+    url: "/online-help/task-creating-rules.html"
+    entries:
+    - title: 使用模板创建规则
+      url: "/online-help/task-creating-rules-using-templates.html"
+    - title: 创建自定义规则
+      url: "/online-help/task-creating-custom-rules.html"
+  - title: 查看规则
+    url: "/online-help/task-viewing-rules.html"
+  - title: 编辑基于模板的规则
+    url: "/online-help/task-editing-template-based-rules.html"
+  - title: 编辑自定义规则
+    url: "/online-help/task-editing-custom-rules.html"
+  - title: 正在删除规则
+    url: "/online-help/task-deleting-rules.html"
+  - title: 预览对数据策略所做的更改
+    url: "/online-help/task-previewing-changes-to-your-data-policy.html"
+  - title: 导出数据策略配置
+    url: "/online-help/task-exporting-a-data-policy-configuration.html"
+  - title: 导入数据策略配置
+    url: "/online-help/task-importing-a-data-policy-configuration.html"
+  - title: 了解规则和数据策略
+    url: "/online-help/concept-understanding-rules-and-data-policy.html"
+    entries:
+    - title: 什么是规则和数据策略
+      url: "/online-help/concept-what-rules-and-data-policies-are.html"
+    - title: 什么是默认规则
+      url: "/online-help/concept-what-the-default-rule-is.html"
+    - title: 数据策略如何筛选写入无限卷的数据
+      url: "/online-help/concept-how-a-data-policy-filters-data-written-to-an-infinite-volume.html"
+    - title: 什么是规则模板
+      url: "/online-help/concept-what-a-rule-template-is.html"
+    - title: 什么是条件和条件集
+      url: "/online-help/concept-what-conditions-and-condition-sets-are.html"
+  - title: 无限卷的问题描述 窗口和对话框
+    url: "/online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html"
+    entries:
+    - title: 创建规则对话框
+      url: "/online-help/reference-create-rule-dialog-box.html"
+    - title: 编辑规则对话框
+      url: "/online-help/reference-edit-rule-dialog-box.html"
+    - title: 编辑规则对话框(高级编辑)
+      url: "/online-help/reference-edit-rule-advanced-edit-dialog-box.html"
+    - title: 编辑带有无限卷的SVM阈值对话框
+      url: "/online-help/reference-edit-vserver-with-infinite-volume-thresholds-dialog-box-iv.html"
+    - title: 编辑存储类阈值对话框
+      url: "/online-help/reference-edit-storage-class-thresholds-dialog-box.html"
+- title: 管理集群
+  url: "/online-help/concept-managing-clusters.html"
+  entries:
+  - title: 集群发现过程的工作原理
+    url: "/online-help/concept-how-the-discovery-process-works.html"
+  - title: 查看受监控集群的列表
+    url: "/online-help/task-viewing-the-list-of-monitored-clusters.html"
+  - title: 添加集群
+    url: "/online-help/task-adding-clusters.html"
+  - title: 编辑集群
+    url: "/online-help/task-editing-clusters.html"
+  - title: 删除集群
+    url: "/online-help/task-removing-clusters.html"
+  - title: 重新发现集群
+    url: "/online-help/task-rediscovering-clusters.html"
+  - title: 数据源管理的页面说明
+    url: "/online-help/concept-page-descriptions-for-cluster-management.html"
+    entries:
+    - title: 配置 / 集群数据源页面
+      url: "/online-help/reference-cluster-setup-page.html"
+    - title: 添加集群对话框
+      url: "/online-help/reference-add-cluster-dialog-box.html"
+    - title: 编辑集群对话框
+      url: "/online-help/reference-edit-cluster-dialog-box.html"
+- title: 管理用户访问
+  url: "/online-help/concept-managing-user-access.html"
+  entries:
+  - title: 添加用户
+    url: "/online-help/task-adding-users.html"
+  - title: 编辑用户设置
+    url: "/online-help/task-editing-user-settings.html"
+  - title: 测试远程用户或远程组
+    url: "/online-help/task-testing-a-remote-user-or-group.html"
+  - title: 查看用户
+    url: "/online-help/task-viewing-users.html"
+  - title: 删除用户或组
+    url: "/online-help/task-deleting-users-or-groups.html"
+  - title: 更改本地用户密码
+    url: "/online-help/task-changing-the-local-user-password.html"
+  - title: 维护用户执行的操作
+    url: "/online-help/concept-what-the-maintenance-user-does.html"
+  - title: 什么是 RBAC
+    url: "/online-help/concept-what-rbac-is.html"
+  - title: 基于角色的访问控制的作用
+    url: "/online-help/concept-what-role-based-access-control-does.html"
+  - title: 用户类型的定义
+    url: "/online-help/reference-definitions-of-user-types.html"
+  - title: 用户角色的定义
+    url: "/online-help/reference-definitions-of-user-roles.html"
+  - title: Unified Manager 用户角色和功能
+    url: "/online-help/reference-unified-manager-roles-and-capabilities.html"
+  - title: 用户访问窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-user-access-windows-and-dialog-boxes.html"
+    entries:
+    - title: 管理/用户页面
+      url: "/online-help/reference-management-users-page-um.html"
+    - title: 添加用户对话框
+      url: "/online-help/reference-add-user-dialog-box-um.html"
+    - title: 编辑用户对话框
+      url: "/online-help/reference-edit-user-dialog-box-um.html"
+- title: 管理身份验证
+  url: "/online-help/concept-managing-authentication.html"
+  entries:
+  - title: 启用远程身份验证
+    url: "/online-help/task-enabling-remote-authentication.html"
+  - title: 禁用远程身份验证中的嵌套组
+    url: "/online-help/task-disabling-nested-groups-from-remote-authentication.html"
+  - title: 设置身份验证服务
+    url: "/online-help/task-setting-up-authentication-services.html"
+  - title: 正在添加身份验证服务器
+    url: "/online-help/task-adding-authentication-servers.html"
+  - title: 测试身份验证服务器的配置
+    url: "/online-help/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+  - title: 编辑身份验证服务器
+    url: "/online-help/task-editing-authentication-servers.html"
+  - title: 删除身份验证服务器
+    url: "/online-help/task-deleting-authentication-servers.html"
+  - title: 使用 Active Directory 或 OpenLDAP 进行身份验证
+    url: "/online-help/concept-authentication-with-active-directory-or-openldap.html"
+  - title: 启用 SAML 身份验证
+    url: "/online-help/task-enabling-saml-authentication-um.html"
+  - title: 身份提供程序要求
+    url: "/online-help/reference-identity-provider-requirements-um.html"
+  - title: 更改用于 SAML 身份验证的身份提供程序
+    url: "/online-help/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html"
+  - title: 禁用 SAML 身份验证
+    url: "/online-help/task-disabling-saml-authentication-um.html"
+  - title: 身份验证窗口和对话框的问题描述
+    url: "/online-help/reference-description-of-authentication-windows-and-dialog-boxes.html"
+    entries:
+    - title: 设置/身份验证页面
+      url: "/online-help/reference-setup-authentication-page-um-7-3.html"
+    - title: 远程身份验证页面
+      url: "/online-help/reference-remote-authentication-page.html"
+    - title: SAML 身份验证页面
+      url: "/online-help/reference-saml-authentication-page-um.html"
+- title: 管理安全证书
+  url: "/online-help/concept-managing-security-certificates-ocf.html"
+  entries:
+  - title: 查看 HTTPS 安全证书
+    url: "/online-help/task-viewing-the-https-security-certificate-ocf.html"
+  - title: 生成 HTTPS 安全证书
+    url: "/online-help/task-generating-an-https-security-certificate-ocf.html"
+    entries:
+    - title: 重新启动 Unified Manager 虚拟机
+      url: "/online-help/task-restarting-the-unified-manager-virtual-machine.html"
+  - title: 下载 HTTPS 证书签名请求
+    url: "/online-help/task-downloading-an-https-certificate-signing-request-ocf.html"
+  - title: 安装HTTPS安全证书
+    url: "/online-help/task-installing-a-ca-signed-and-returned-https-certificate.html"
+  - title: 证书管理的页面说明
+    url: "/online-help/concept-page-descriptions-for-certificate-management-ocf.html"
+    entries:
+    - title: HTTPS 证书页面
+      url: "/online-help/reference-https-dialog-box-ocf.html"
+    - title: 重新生成 HTTPS 证书对话框
+      url: "/online-help/reference-regenerate-https-certificate-dialog-box.html"
+- title: 故障排除
+  url: "/online-help/concept-troubleshooting.html"
+  entries:
+  - title: 更改 Unified Manager 主机名
+    pdf-filename: 更改Unified Manager主机名(管理存储)
+    url: "/online-help/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: 更改 Unified Manager 虚拟设备主机名
+      url: "/online-help/task-changing-the-unified-manager-host-name-on-vmware.html"
+    - title: 在 Linux 系统上更改 Unified Manager 主机名
+      url: "/online-help/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"
+  - title: 向 Unified Manager 数据库目录添加磁盘空间
+    url: "/online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html"
+    entries:
+    - title: 向 VMware 虚拟机的数据磁盘添加空间
+      url: "/online-help/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html"
+    - title: 向 Linux 主机的数据目录添加空间
+      url: "/online-help/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html"
+    - title: 向 Microsoft Windows 服务器的逻辑驱动器添加空间
+      url: "/online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html"
+  - title: 更改性能统计信息收集间隔
+    url: "/online-help/task-changing-the-performance-statistics-collection-interval.html"
+  - title: 启用定期 AutoSupport
+    url: "/online-help/task-enabling-periodic-autosupport.html"
+  - title: 发送按需 AutoSupport 消息
+    url: "/online-help/task-sending-an-on-demand-autosupport-message.html"
+  - title: 设置/AutoSupport页面
+    url: "/online-help/reference-setup-autosupport-page.html"
+  - title: 未知身份验证错误
+    url: "/online-help/reference-unknown-authentication-error.html"
+  - title: 未找到用户
+    url: "/online-help/reference-user-not-found.html"
+  - title: 问题描述与使用其他身份验证服务添加 LDAP
+    url: "/online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html"
+  - title: 对CIFS共享的访问进行故障排除
+    url: "/online-help/task-troubleshooting-non-availability-of-cifs-shares.html"
+  - title: 某些特殊字符不适用于报告搜索
+    url: "/online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html"
+- title: Copyright information
+  url: "/online-help/reference-copyright.html"
+- title: 商标
+  url: "/online-help/reference-trademark.html"
+- title: How to send comments about documentation and receive update notifications
+  url: "/online-help/concept-how-to-send-comments-about-documentation-and-receive-update-notifications-netapp-post-preface.html"

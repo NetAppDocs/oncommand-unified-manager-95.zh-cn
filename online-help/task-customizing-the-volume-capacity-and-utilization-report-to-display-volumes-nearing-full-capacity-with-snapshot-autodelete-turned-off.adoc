@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-nearing-full-capacity-with-snapshot-autodelete-turned-off.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义卷容量和利用率报告、以按卷容量利用率的增加顺序显示卷。这样、您就可以显示容量达到全满的卷。 
+---
+= 自定义卷容量和利用率报告以显示在关闭Snapshot自动删除的情况下接近全满容量的卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷容量和利用率报告、以按卷容量利用率的增加顺序显示卷。这样、您就可以显示容量达到全满的卷。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要取消按SVM、集群或卷分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要对容量接近全满的卷进行排序、请单击*全满天数*列、然后单击 image:../media/sort-asc.gif[""] 图标。
+. 要筛选已禁用Snapshot自动删除的卷、请单击*快照自动删除*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
+. 从*条件*列表中、选择*等于*。
+. 单击*选择值*并选择*已禁用*。
+. 单击 * 确定 * 。
+

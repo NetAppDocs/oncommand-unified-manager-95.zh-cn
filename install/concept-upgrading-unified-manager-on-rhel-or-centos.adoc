@@ -1,0 +1,18 @@
+---
+permalink: install/concept-upgrading-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在有新版本的软件可用时升级 Unified Manager 。 
+---
+= 在 Red Hat Enterprise Linux 或 CentOS 上升级 Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在有新版本的软件可用时升级 Unified Manager 。
+
+Unified Manager 软件的修补版本如果由 NetApp 提供，则会使用与新版本相同的操作步骤进行安装。
+
+如果 Unified Manager 与 OnCommand Workflow Automation 实例配对，并且这两种产品都有新版本的软件，则必须断开这两种产品的连接，然后在执行升级后设置新的 Workflow Automation 连接。如果您仅对其中一个产品执行升级，则应在升级后登录到 Workflow Automation ，并验证它是否仍在从 Unified Manager 获取数据。

@@ -1,0 +1,180 @@
+---
+permalink: online-help/reference-select-source-snapshot-copy-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用选择源 Snapshot 副本对话框选择特定的 Snapshot 副本以在保护关系之间传输数据，也可以选择默认行为，具体取决于您是初始化，更新还是重新同步关系，以及此关系是 SnapMirror 还是 SnapVault 。 
+---
+= 选择源 Snapshot 副本对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用选择源 Snapshot 副本对话框选择特定的 Snapshot 副本以在保护关系之间传输数据，也可以选择默认行为，具体取决于您是初始化，更新还是重新同步关系，以及此关系是 SnapMirror 还是 SnapVault 。
+
+
+
+== Default
+
+用于选择用于确定用于初始化，更新和重新同步 SnapVault 和 SnapMirror 关系传输的 Snapshot 副本的默认行为。
+
+如果要执行 SnapVault 传输，则每个操作的默认行为如下所示：
+
+|===
+| 操作 | 源为读 / 写时的默认 SnapVault 行为 | 源为数据保护（ DP ）时的默认 SnapVault 行为 
+
+
+ a| 
+初始化
+ a| 
+创建并传输新的 Snapshot 副本。
+ a| 
+传输上次导出的 Snapshot 副本。
+
+
+
+ a| 
+更新
+ a| 
+仅传输策略中指定的已标记 Snapshot 副本。
+ a| 
+传输上次导出的 Snapshot 副本。
+
+
+
+ a| 
+重新同步
+ a| 
+传输在最新通用 Snapshot 副本之后创建的所有已标记 Snapshot 副本。
+ a| 
+传输最新标记的 Snapshot 副本。
+
+|===
+如果要执行 SnapMirror 传输，则每个操作的默认行为如下所示：
+
+|===
+| 操作 | 默认 SnapMirror 行为 | 关系是 SnapMirror 到 SnapMirror 级联中的第二个跃点时的默认 SnapMirror 行为 
+
+
+ a| 
+初始化
+ a| 
+创建新的 Snapshot 副本并传输该副本以及在新 Snapshot 副本之前创建的所有 Snapshot 副本。
+ a| 
+传输源中的所有 Snapshot 副本。
+
+
+
+ a| 
+更新
+ a| 
+创建新的 Snapshot 副本并传输该副本以及在新 Snapshot 副本之前创建的所有 Snapshot 副本。
+ a| 
+传输所有 Snapshot 副本。
+
+
+
+ a| 
+重新同步
+ a| 
+创建新的 Snapshot 副本，然后传输源中的所有 Snapshot 副本。
+ a| 
+将所有 Snapshot 副本从二级卷传输到三级卷，并删除在创建最新通用 Snapshot 副本后添加的任何数据。
+
+|===
+
+
+== 现有 Snapshot 副本
+
+用于从列表中选择现有 Snapshot 副本（如果允许对该操作选择 Snapshot 副本）。
+
+* * Snapshot 副本 *
++
+显示可从中选择传输的现有 Snapshot 副本。
+
+* * 创建日期 *
++
+显示创建 Snapshot 副本的日期和时间。Snapshot 副本从最新到最新不等列出，最新的位于列表顶部。
+
+
+
+如果要执行 SnapVault 传输，并且要选择一个现有 Snapshot 副本从源传输到目标，则每个操作的行为如下所示：
+
+|===
+| 操作 | 指定 Snapshot 副本时的 SnapVault 行为 | 在级联中指定 Snapshot 副本时的 SnapVault 行为 
+
+
+ a| 
+初始化
+ a| 
+传输指定的 Snapshot 副本。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+
+
+ a| 
+更新
+ a| 
+传输指定的 Snapshot 副本。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+
+
+ a| 
+重新同步
+ a| 
+传输选定的 Snapshot 副本。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+|===
+如果要执行 SnapMirror 传输，并且要选择一个现有 Snapshot 副本从源传输到目标，则每个操作的行为如下：
+
+|===
+| 操作 | 指定 Snapshot 副本时的 SnapMirror 行为 | 在级联中指定 Snapshot 副本时的 SnapMirror 行为 
+
+
+ a| 
+初始化
+ a| 
+传输源上的所有 Snapshot 副本，直到指定的 Snapshot 副本为止。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+
+
+ a| 
+更新
+ a| 
+传输源上的所有 Snapshot 副本，直到指定的 Snapshot 副本为止。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+
+
+ a| 
+重新同步
+ a| 
+传输源中截至选定 Snapshot 副本的所有 Snapshot 副本，然后删除创建最新通用 Snapshot 副本后添加的任何数据。
+ a| 
+数据保护卷不支持选择源 Snapshot 副本。
+
+|===
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* * 提交 *
++
+提交所做的选择并关闭选择源 Snapshot 副本对话框。
+
+* * 取消 *
++
+丢弃所做的选择并关闭选择源 Snapshot 副本对话框。
+
+

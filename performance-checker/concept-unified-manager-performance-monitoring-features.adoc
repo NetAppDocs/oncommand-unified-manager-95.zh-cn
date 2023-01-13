@@ -1,0 +1,27 @@
+---
+permalink: performance-checker/concept-unified-manager-performance-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 可从运行 ONTAP 软件的系统收集和分析性能统计信息。它使用动态性能阈值和用户定义的性能阈值来监控多个集群组件上的各种性能计数器。 
+---
+= Unified Manager 性能监控功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 可从运行 ONTAP 软件的系统收集和分析性能统计信息。它使用动态性能阈值和用户定义的性能阈值来监控多个集群组件上的各种性能计数器。
+
+较长的响应时间（延迟）表示存储对象（例如卷）的运行速度比正常速度慢。此问题描述还表示使用此卷的客户端应用程序的性能已下降。Unified Manager 可确定性能问题描述所在的存储组件，并提供建议的操作列表，您可以采取这些操作来解决性能问题描述问题。
+
+Unified Manager 包括以下功能：
+
+* 监控和分析运行 ONTAP 软件的系统中的工作负载性能统计信息。
+* 跟踪集群、节点、聚合、端口、SVM的性能计数器卷、LUN、NVMe命名空间和LIF。
+* 显示绘制一段时间内工作负载活动的详细图；包括 IOPS （操作）， MBps （吞吐量），延迟（响应时间），利用率， 性能容量和缓存比率。
+* 用于创建用户定义的性能阈值策略，以便在违反阈值时触发事件并发送电子邮件警报。
+* 使用系统定义的阈值和动态性能阈值来了解您的工作负载活动，以确定性能问题并向您发出警报。
+* 明确标识处于争用状态的集群组件。
+* 确定过度使用集群组件的工作负载以及性能受活动增加影响的工作负载。
+

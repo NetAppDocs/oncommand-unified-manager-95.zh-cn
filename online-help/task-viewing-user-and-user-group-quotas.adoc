@@ -1,0 +1,28 @@
+---
+permalink: online-help/task-viewing-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 运行状况/Storage Virtual Machine清单页面显示有关在SVM上配置的用户和用户组配额的信息。您可以查看用户或用户组的名称，对磁盘和文件设置的限制，已用磁盘和文件空间以及用于通知的电子邮件地址。 
+---
+= 查看用户和用户组配额
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+运行状况/Storage Virtual Machine清单页面显示有关在SVM上配置的用户和用户组配额的信息。您可以查看用户或用户组的名称，对磁盘和文件设置的限制，已用磁盘和文件空间以及用于通知的电子邮件地址。
+
+
+
+== 开始之前
+
+要执行此任务、您必须具有以下角色之一：操作员、OnCommand 管理员或存储管理员。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/存储虚拟机*清单页面中、选择一个SVM、然后单击*用户和组配额*选项卡。
+

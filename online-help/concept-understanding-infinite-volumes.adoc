@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 无限卷是一个逻辑存储单元、可用于提供一个具有单个命名空间和单个挂载点的大型可扩展数据容器。了解无限卷的一些基本概念有助于您监控和管理带有无限卷的SVM。 
+---
+= 了解无限卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+无限卷是一个逻辑存储单元、可用于提供一个具有单个命名空间和单个挂载点的大型可扩展数据容器。了解无限卷的一些基本概念有助于您监控和管理带有无限卷的SVM。

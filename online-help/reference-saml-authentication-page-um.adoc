@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-saml-authentication-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用"SAML身份验证"页面将Unified Manager配置为在远程用户登录到Unified Manager Web UI之前使用SAML通过安全身份提供程序\(IdP)对其进行身份验证。' 
+---
+= SAML 身份验证页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用"SAML身份验证"页面配置Unified Manager、以便在远程用户登录到Unified Manager Web UI之前使用SAML通过安全身份提供程序(IdP)对其进行身份验证。
+
+* 要创建或修改OnCommand 配置、您必须具有SAML管理员角色。
+* 您必须已配置远程身份验证。
+* 您必须已至少配置一个远程用户或远程组。
+
+
+配置远程身份验证和远程用户后，您可以选中启用 SAML 身份验证复选框以使用安全身份提供程序启用身份验证。
+
+* * IdP URI*
++
+从 Unified Manager 服务器访问 IdP 的 URI 。下面列出了示例 URI 。
+
++
+ADFS 示例 URI ：
+
++
+`+https://win2016-dc.ntap2016.local/federationmetadata/2007-06/federationmetadata.xml+`
+
++
+Shibboleth 示例 URI ：
+
++
+`+https://centos7.ntap2016.local/idp/shibboleth+`
+
+* * IdP 元数据 *
++
+XML 格式的 IdP 元数据。
+
++
+如果可以从 Unified Manager 服务器访问 IdP URL ，则可以单击 * 提取 IdP 元数据 * 按钮以填充此字段。
+
+* * 主机系统（ FQDN ） *
++
+安装期间定义的 Unified Manager 主机系统的 FQDN 。如有必要，您可以更改此值。
+
+* * 主机 URI*
++
+用于从 IdP 访问 Unified Manager 主机系统的 URI 。
+
+* * 主机元数据 *
++
+XML 格式的主机系统元数据。
+
+

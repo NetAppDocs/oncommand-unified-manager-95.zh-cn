@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以从管理/标注页面查看和管理所有标注。您还可以从"标注规则"选项卡为存储对象配置标注规则。' 
+---
+= 标注窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从管理/标注页面查看和管理所有标注。您还可以从"标注规则"选项卡为存储对象配置标注规则。

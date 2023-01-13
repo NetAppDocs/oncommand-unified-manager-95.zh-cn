@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: 在帮助收藏夹选项卡中，您可以将经常使用的帮助主题添加到书签中。通过帮助书签可以快速访问您最喜欢的主题。 
+---
+= 为您喜爱的帮助主题添加书签
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在帮助收藏夹选项卡中，您可以将经常使用的帮助主题添加到书签中。通过帮助书签可以快速访问您最喜欢的主题。
+
+
+
+== 步骤
+
+. 导航到要添加为收藏夹的帮助主题。
+. 单击 * 收藏夹 * ，然后单击 * 添加 * 。
+

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-node-root-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Unified Manager 监控节点根卷。最佳实践是，节点根卷应具有足够的容量，以防止节点关闭。 
+---
+= 了解节点根卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager 监控节点根卷。最佳实践是，节点根卷应具有足够的容量，以防止节点关闭。
+
+如果节点根卷的已用容量超过节点根卷总容量的 80% ，则会生成节点根卷空间接近全满事件。您可以为事件配置警报以获取通知。您可以使用OnCommand 系统管理器或ONTAP 命令行界面采取适当的操作以防止节点关闭。

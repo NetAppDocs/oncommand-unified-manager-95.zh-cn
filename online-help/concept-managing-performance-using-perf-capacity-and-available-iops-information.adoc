@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-performance-using-perf-capacity-and-available-iops-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 性能容量表示在不超过资源的有用性能的情况下，您可以从该资源中获得多少吞吐量。使用现有性能计数器查看时，性能容量是指在延迟变为问题描述之前从节点或聚合获得最大利用率的时间点。 
+---
+= 使用性能容量和可用 IOPS 信息管理性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_Performance Capacity_ 表示在不超过某个资源的有用性能的情况下，您可以从该资源中获得多少吞吐量。使用现有性能计数器查看时，性能容量是指在延迟变为问题描述之前从节点或聚合获得最大利用率的时间点。
+
+Unified Manager 从每个集群中的节点和聚合收集性能容量统计信息。_Performance Capacity Used__ 是当前正在使用的性能容量百分比， _performance capacity available_ 是仍可用性能容量的百分比。
+
+虽然可用性能容量提供了仍可用资源的百分比，但 _available IOPS_ 会告诉您在达到最大性能容量之前可以添加到资源中的 IOPS 数量。通过使用此指标，您可以确保向资源添加具有预定 IOPS 数量的工作负载。
+
+监控性能容量信息具有以下优势：
+
+* 协助配置和平衡工作流。
+* 有助于防止节点过载或将其资源推送到最佳点以上，从而减少故障排除的需要。
+* 帮助您更精确地确定可能需要在何处使用其他存储设备。
+

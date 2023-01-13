@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-viewing-details-about-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用运行状况/Storage Virtual Machine详细信息页面查看有关选定Storage Virtual Machine \(SVM\)托管的CIFS共享的详细信息。您可以查看共享名称、接合路径、包含对象、安全设置以及为共享定义的导出策略等详细信息。' 
+---
+= 查看CIFS共享
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用运行状况/Storage Virtual Machine详细信息页面查看有关选定Storage Virtual Machine (SVM)托管的CIFS共享的详细信息。您可以查看共享名称、接合路径、包含对象、安全设置以及为共享定义的导出策略等详细信息。
+
+
+
+== 开始之前
+
+* 必须在集群上启用 CIFS 许可证。
+* 必须配置为CIFS共享提供服务的LIF。
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+
+== 关于此任务
+
+[NOTE]
+====
+文件夹中的共享不会显示在CIFS共享选项卡中。
+
+====
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 选择要查看其CIFS共享详细信息的SVM。
+. 在*运行状况/Storage Virtual Machine*详细信息页面中、单击* CIFS共享*选项卡。
+

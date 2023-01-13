@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 使用定期 API 查询和数据收集引擎从集群收集数据。通过将集群添加到 Unified Manager 数据库，您可以监控和管理这些集群以确定是否存在任何可用性和容量风险。 
+---
+= 管理和监控集群和集群对象运行状况
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 使用定期 API 查询和数据收集引擎从集群收集数据。通过将集群添加到 Unified Manager 数据库，您可以监控和管理这些集群以确定是否存在任何可用性和容量风险。

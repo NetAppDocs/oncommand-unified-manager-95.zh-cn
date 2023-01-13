@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用性能清单页面查看有关每个可用存储对象(例如集群、聚合、卷等)的性能信息摘要。您可以链接到性能对象详细信息页面以查看特定对象的详细信息。' 
+---
+= 性能清单页面的说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用性能清单页面查看有关每个可用存储对象(例如集群、聚合、卷等)的性能信息摘要。您可以链接到性能对象详细信息页面以查看特定对象的详细信息。

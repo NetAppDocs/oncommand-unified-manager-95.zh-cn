@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-health-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以为所有聚合，卷和 qtree 配置全局运行状况阈值，以跟踪任何违反运行状况阈值的情况。 
+---
+= 管理运行状况阈值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为所有聚合，卷和 qtree 配置全局运行状况阈值，以跟踪任何违反运行状况阈值的情况。

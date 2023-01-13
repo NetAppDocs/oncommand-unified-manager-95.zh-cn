@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-report-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用选项计划、共享、管理、保存和导入报告。 
+---
+= 报告窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用选项计划、共享、管理、保存和导入报告。

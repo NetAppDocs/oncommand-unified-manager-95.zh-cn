@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-viewing-the-constituents-of-an-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用"运行状况/卷"清单页面查看无限卷中的成分卷列表。您可以查看成分卷状态、包含成分卷的无限卷SVM、成分卷的接合路径、成分卷的聚合以及成分卷的可用、已用和总数据容量等详细信息。' 
+---
+= 查看无限卷的成分卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用"运行状况/卷"清单页面查看无限卷中的成分卷列表。您可以查看成分卷状态、包含成分卷的无限卷SVM、成分卷的接合路径、成分卷的聚合以及成分卷的可用、已用和总数据容量等详细信息。
+
+
+
+== 开始之前
+
+必须满足以下要求：
+
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+* 必须将包含带有无限卷的SVM的集群添加到Unified Manager数据库中。
+
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 单击带有无限卷的SVM的名称。
+. 在*运行状况/Storage Virtual Machine*详细信息页面中、单击右侧*相关设备*窗格中的*卷*。
++
+成分卷列表将显示在"运行状况/卷"清单页面中。
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义卷关系清单报告以查看根据故障源筛选的卷详细信息。您可以使用筛选器根据计划显示卷关系清单详细信息、并根据问题对卷清单详细信息进行分组。 
+---
+= 卷关系清单报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷关系清单报告以查看根据故障源筛选的卷详细信息。您可以使用筛选器根据计划显示卷关系清单详细信息、并根据问题对卷清单详细信息进行分组。

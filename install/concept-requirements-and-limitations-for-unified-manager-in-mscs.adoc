@@ -1,0 +1,38 @@
+---
+permalink: install/concept-requirements-and-limitations-for-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 在故障转移集群环境中安装Unified Manager之前、您必须确保已正确配置集群节点以支持Unified Manager。 
+---
+= Unified Manager在故障转移集群环境中的要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在故障转移集群环境中安装Unified Manager之前、您必须确保已正确配置集群节点以支持Unified Manager。
+
+您必须确保故障转移集群配置满足以下要求：
+
+* 两个集群节点必须运行相同版本的Microsoft Windows Server。
+* 必须在两个集群节点上使用相同的路径安装相同版本的Unified Manager。
+* 必须在两个节点上安装并启用故障转移集群。
++
+有关说明、请参见Microsoft文档。
+
+* 您必须已使用光纤通道交换网络结构或基于iSCSI的存储创建共享数据磁盘作为存储后端
+* 可选：使用SnapDrive for Windows、必须创建一个共享位置、以便在高可用性设置中的两个节点均可访问。
++
+有关安装和创建共享位置的信息、请参见_Windows SnapDrive 安装指南_。
+
++
+您还可以使用存储系统命令行界面管理LUN。有关详细信息、请参见SnapDrive for Windows兼容性列表。
+
+* 您必须安装Perl `XML::LibXML` 和 `File::chdir` 用于脚本的模块。
+* 集群设置中必须只有两个节点。
+* 故障转移集群必须使用"`node and disk Major多数`"仲裁类型。
+* 您必须已为共享IP地址配置相应的FQDN、以便用作集群全局IP地址来访问Unified Manager。
+* Unified Manager维护用户在两个节点上的密码必须相同。
+* 您必须仅使用IPv4 IP地址。
+

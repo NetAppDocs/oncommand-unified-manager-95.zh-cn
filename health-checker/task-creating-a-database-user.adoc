@@ -1,0 +1,56 @@
+---
+permalink: health-checker/task-creating-a-database-user.html 
+sidebar: sidebar 
+keywords:  
+summary: 要支持在 Workflow Automation 和 Unified Manager 之间建立连接或访问数据库视图，您必须先在 Unified Manager Web UI 中创建一个具有集成架构或报告架构角色的数据库用户。 
+---
+= 创建数据库用户
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要支持在 Workflow Automation 和 Unified Manager 之间建立连接或访问数据库视图，您必须先在 Unified Manager Web UI 中创建一个具有集成架构或报告架构角色的数据库用户。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 关于此任务
+
+数据库用户可与 Workflow Automation 集成并访问特定于报告的数据库视图。数据库用户无权访问 Unified Manager Web UI 或维护控制台，无法执行 API 调用。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*用户*。
+. 在*管理/Users*页面中、单击*添加*。
+. 在*添加用户*对话框的*类型*下拉列表中选择*数据库用户*。
+. 键入数据库用户的名称和密码。
+. 在 * 角色 * 下拉列表中，选择相应的角色。
++
+|===
+| 如果您 ... | 选择此角色 
+
+
+ a| 
+将 Unified Manager 与 Workflow Automation 连接起来
+ a| 
+集成架构
+
+
+
+ a| 
+访问报告和其他数据库视图
+ a| 
+报告架构
+
+|===
+. 单击 * 添加 * 。
+

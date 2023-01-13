@@ -1,0 +1,85 @@
+---
+permalink: config/task-enabling-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以启用远程身份验证，以便 Unified Manager 服务器可以与身份验证服务器进行通信。身份验证服务器的用户可以访问 Unified Manager 图形界面来管理存储对象和数据。 
+---
+= 启用远程身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以启用远程身份验证，以便 Unified Manager 服务器可以与身份验证服务器进行通信。身份验证服务器的用户可以访问 Unified Manager 图形界面来管理存储对象和数据。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+[NOTE]
+====
+Unified Manager 服务器必须直接与身份验证服务器连接。您必须禁用任何本地 LDAP 客户端，例如 SSSD （系统安全服务守护进程）或 NSLCD （名称服务 LDAP 缓存守护进程）。
+
+====
+
+
+== 关于此任务
+
+您可以使用 Open LDAP 或 Active Directory 启用远程身份验证。如果禁用了远程身份验证，则远程用户无法访问 Unified Manager 。
+
+支持通过 LDAP 和 LDAPS （安全 LDAP ）进行远程身份验证。Unified Manager 使用 389 作为非安全通信的默认端口，使用 636 作为安全通信的默认端口。
+
+[NOTE]
+====
+用于对用户进行身份验证的证书必须符合 X.509 格式。
+
+====
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选择*启用远程身份验证*。
+. 在*身份验证服务*字段中、选择服务类型并配置身份验证服务。
++
+|===
+| 身份验证类型 ... | 输入以下信息 ... 
+
+
+ a| 
+Active Directory
+ a| 
+** 身份验证服务器管理员名称采用以下格式之一：
++
+*** `domainname`**`username`
+*** `username`@`domainname`
+*** `Bind Distinguished Name` (使用适当的LDAP表示法)
+
+
+** 管理员密码
+** 基本可分辨名称（使用适当的 LDAP 表示法）
+
+
+
+
+ a| 
+打开 LDAP
+ a| 
+** 绑定可分辨名称（采用适当的 LDAP 表示法）
+** 绑定密码
+** 基本可分辨名称
+
+
+|===
++
+如果 Active Directory 用户的身份验证需要很长时间或超时，则身份验证服务器可能需要很长时间才能响应。在 Unified Manager 中禁用对嵌套组的支持可能会缩短身份验证时间。
+
++
+如果为身份验证服务器选择使用安全连接选项，则 Unified Manager 将使用安全套接字层（ SSL ）协议与身份验证服务器进行通信。
+
+. 添加身份验证服务器并测试身份验证。
+. 单击 * 保存并关闭 * 。
+

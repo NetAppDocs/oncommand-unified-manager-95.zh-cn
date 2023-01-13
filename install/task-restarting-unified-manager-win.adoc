@@ -1,0 +1,79 @@
+---
+permalink: install/task-restarting-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 更改配置后，您可能需要重新启动 Unified Manager 。 
+---
+= 在Windows上重新启动Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更改配置后，您可能需要重新启动 Unified Manager 。
+
+
+
+== 开始之前
+
+您必须具有 Windows 管理员权限。
+
+
+
+== 步骤
+
+. 使用默认本地管理员帐户登录到 Windows 。
+. 停止 Unified Manager 服务：
++
+|===
+| 从 ... | 按以下顺序停止服务 ... 
+
+
+ a| 
+命令行
+ a| 
+.. `sc stop ocie-au`
+.. `sc stop Oncommandsvc`
+
+
+
+
+ a| 
+Microsoft Service Manager
+ a| 
+.. NetApp OCIE采集单元(Ocie-au)
+.. NetApp OnCommand 应用程序服务器(Oncommandsvc)
+
+
+|===
++
+如果安装在高可用性设置中、请使用Microsoft Service Manager或命令行停止Unified Manager服务。
+
+. 启动 Unified Manager 服务：
++
+|===
+| 从 ... | 按以下顺序启动服务 ... 
+
+
+ a| 
+命令行
+ a| 
+.. `sc start Oncommandsvc`
+.. `sc start ocie-au`
+
+
+
+
+ a| 
+Microsoft Service Manager
+ a| 
+.. NetApp OnCommand 应用程序服务器(Oncommandsvc)
+.. NetApp OCIE采集单元(Ocie-au)
+
+
+|===
++
+如果安装在高可用性设置中、请使用Microsoft Service Manager或命令行启动Unified Manager服务。
+
+

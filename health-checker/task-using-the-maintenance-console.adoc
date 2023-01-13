@@ -1,0 +1,14 @@
+---
+permalink: health-checker/task-using-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用维护控制台配置网络设置，配置和管理安装了 Unified Manager 的系统，以及执行其他维护任务来帮助您防止可能出现的问题并对其进行故障排除。 
+---
+= 使用维护控制台
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用维护控制台配置网络设置，配置和管理安装了 Unified Manager 的系统，以及执行其他维护任务来帮助您防止可能出现的问题并对其进行故障排除。

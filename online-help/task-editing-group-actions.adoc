@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-editing-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑在 Unified Manager 中配置的组操作参数，例如组操作名称，问题描述，关联的组名称以及操作类型的参数。 
+---
+= 编辑组操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑在 Unified Manager 中配置的组操作参数，例如组操作名称，问题描述，关联的组名称以及操作类型的参数。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组操作 * 选项卡中，选择要编辑的组操作，然后单击 * 编辑 * 。
+. 在 * 编辑组操作 * 对话框中，根据需要更改组操作名称，问题描述，关联的组名称以及操作类型的参数。
+. 单击 * 保存 * 。
+

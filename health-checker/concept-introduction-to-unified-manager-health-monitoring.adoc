@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-introduction-to-unified-manager-health-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可帮助您通过集中式用户界面监控大量运行ONTAP 软件的系统。Unified Manager 服务器基础架构可提供可扩展性，可支持性以及增强的监控和通知功能。 
+---
+= OnCommand Unified Manager运行状况监控简介
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可帮助您通过集中式用户界面监控大量运行ONTAP 软件的系统。Unified Manager 服务器基础架构可提供可扩展性，可支持性以及增强的监控和通知功能。
+
+Unified Manager的主要功能包括监控、警报、管理集群的可用性和容量、管理保护功能、监控性能、配置和管理无限卷、为存储对象添加标注、将诊断数据捆绑在一起并发送给技术支持。
+
+您可以使用 Unified Manager 监控集群。当集群出现问题时， Unified Manager 会通过事件通知您有关此类问题的详细信息。某些事件还会为您提供补救措施，您可以采取这些措施来更正这些问题。您可以为事件配置警报，以便在发生问题时通过电子邮件和 SNMP 陷阱通知您。
+
+您可以使用 Unified Manager 通过将环境中的存储对象与标注关联来管理这些存储对象。您可以创建自定义标注，并通过规则将集群， Storage Virtual Machine （ SVM ）和卷与标注动态关联起来。
+
+您还可以使用容量和运行状况图表中提供的信息为相应的集群对象规划集群对象的存储要求。

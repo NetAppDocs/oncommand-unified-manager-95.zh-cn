@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-https-dialog-box-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以通过 "HTTPS 证书 " 页面查看当前安全证书，下载证书签名请求，生成新的 HTTPS 证书或安装新的 HTTPS 证书。' 
+---
+= HTTPS 证书页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过 "HTTPS 证书 " 页面查看当前安全证书，下载证书签名请求，生成新的 HTTPS 证书或安装新的 HTTPS 证书。
+
+如果您尚未生成新的 HTTPS 证书，则此页面上显示的证书是在安装期间生成的证书。
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下操作：
+
+* * 下载 HTTPS 证书签名请求 *
++
+下载当前安装的 HTTPS 证书的认证请求。您的浏览器将提示您保存 `<hostname>.csr` 文件、以便将文件提供给证书颁发机构进行签名。
+
+* * 安装 HTTPS 证书 *
++
+用于在证书颁发机构签名并返回安全证书后上传并安装该证书。新证书将在您重新启动管理服务器后生效。
+
+* * 重新生成 HTTPS 证书 *
++
+用于生成 HTTPS 证书，此证书将替换当前安全证书。新证书将在重新启动 Unified Manager 后生效。
+
+

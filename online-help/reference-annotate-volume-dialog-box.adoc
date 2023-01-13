@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过标注卷对话框、您可以手动为存储对象添加标注。您可以选择一个卷或多个卷、并使用现有标注列表中的特定值对进行标注。 
+---
+= 标注卷对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过标注卷对话框、您可以手动为存储对象添加标注。您可以选择一个卷或多个卷、并使用现有标注列表中的特定值对进行标注。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* *标注=值对*
++
+用于为选定卷选择所需的标注。
+
+* * 应用 *
++
+将选定标注应用于卷。
+
+* * 取消 *
++
+关闭标注卷对话框、而不保存所做的更改。
+
+

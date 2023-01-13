@@ -1,0 +1,54 @@
+---
+permalink: health-checker/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 基于服务器基础架构构建，可提供可扩展性，可支持性以及增强的监控和通知功能。Unified Manager 支持监控运行 ONTAP 软件的系统。 
+---
+= Unified Manager 运行状况监控功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 基于服务器基础架构构建，可提供可扩展性，可支持性以及增强的监控和通知功能。Unified Manager 支持监控运行 ONTAP 软件的系统。
+
+Unified Manager 包括以下功能：
+
+* 发现，监控和通知安装了 ONTAP 软件的系统：
++
+** 物理对象：节点，磁盘，磁盘架， SFO 对，端口， 和 Flash Cache
+** 逻辑对象：集群、Storage Virtual Machine (SVM)、聚合、卷、LUN、命名空间qtree、LIF、Snapshot副本、接合路径、NFS导出、CIFS共享、用户和组配额以及启动程序组
+** 协议： CIFS ， NFS ， FC ， iSCSI ， NVMe ， 和 FCoE
+** 存储效率： SSD 聚合， Flash Pool 聚合， FabricPool 聚合，重复数据删除和数据压缩
+** 保护： SnapMirror 关系（同步和异步）和 SnapVault 关系
+
+
+* 查看集群发现和监控状态
+* MetroCluster 配置：查看和监控集群组件的配置， MetroCluster 交换机和网桥，问题和连接状态
+* 增强的警报，事件和阈值基础架构
+* LDAP ， LDAPS ， SAML 身份验证和本地用户支持
+* RBAC （用于一组预定义角色）
+* AutoSupport 和支持包
+* 增强的信息板可显示环境的容量，可用性，保护和性能运行状况
+* 卷移动互操作性，卷移动历史记录和接合路径更改历史记录
+* " 影响范围 " 区域，该区域以图形方式显示受事件影响的资源，例如 " 某些故障磁盘 " ， " MetroCluster 聚合镜像已降级 " 和 " MetroCluster 遗留备用磁盘 " 事件
+* 显示 MetroCluster 事件影响的可能影响区域
+* 建议的更正操作区域，其中显示了可执行的操作，以解决某些故障磁盘， MetroCluster 聚合镜像已降级和 MetroCluster 遗留备用磁盘等事件
+* "Resources that might be Impacted " 区域，其中显示了可能因卷脱机事件，卷受限事件和精简配置卷空间存在风险事件等事件而受影响的资源
+* 支持具有以下功能的SVM：
++
+** FlexVol volumes
+** FlexGroup 卷
+** 无限卷
+
+
+* 支持监控节点根卷
+* 增强了 Snapshot 副本监控功能，包括计算可回收空间和删除 Snapshot 副本
+* 存储对象的标注
+* 报告存储对象信息的创建和管理、例如物理和逻辑容量、利用率、空间节省和相关事件
+* 与 OnCommand Workflow Automation 集成以执行工作流
++
+存储自动化商店包含 NetApp 认证的自动化存储工作流软件包，这些软件包专为与 OnCommand Workflow Automation （ WFA ）结合使用而开发。您可以下载这些软件包，然后将其导入到 WFA 中以执行这些软件包。以下位置提供了自动化工作流 link:https://automationstore.netapp.com["存储自动化存储"]
+
+

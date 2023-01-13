@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-events-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建报告来监控集群上的未处理事件。 
+---
+= 事件报告自定义设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建报告来监控集群上的未处理事件。

@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-svm-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过标注SVM对话框、您可以手动标注存储对象。您可以选择一个SVM或多个SVM、并使用现有标注列表中的特定值对进行标注。 
+---
+= 标注SVM对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过标注SVM对话框、您可以手动标注存储对象。您可以选择一个SVM或多个SVM、并使用现有标注列表中的特定值对进行标注。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* *标注=值对*
++
+用于为选定SVM选择所需的标注。
+
+* * 应用 *
++
+将选定标注应用于SVM。
+
+* * 取消 *
++
+关闭标注SVM对话框、而不保存所做的更改。
+
+

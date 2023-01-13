@@ -1,0 +1,54 @@
+---
+permalink: online-help/reference-add-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过添加标注对话框、您可以创建自定义标注、以便通过标注规则与集群、卷和Storage Virtual Machine \(SVM\)关联。' 
+---
+= 添加标注对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过添加标注对话框、您可以创建自定义标注、以便通过标注规则与集群、卷和Storage Virtual Machine (SVM)关联。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* * 标注名称 *
++
+指定标注的名称。您必须为标注输入一个唯一名称。
+
+* * 问题描述 *
++
+指定有意义的标注问题描述。
+
+
+
+
+
+== 标注值
+
+* * 添加 * 。
++
+向选定标注添加新值。
+
+* * 删除 *
++
+删除标注的选定值。
+
+
+
+
+
+== 命令按钮
+
+* *保存并关闭*
++
+保存新标注并关闭添加标注对话框。
+
+* * 取消 *
++
+关闭添加标注对话框、而不保存所做的更改。
+
+

@@ -1,0 +1,60 @@
+---
+permalink: qsg-linux.html 
+sidebar: sidebar 
+keywords: quick start guide, getting started, QSG, Linux QSG, RHEL QSG, quick installation 
+summary: 基于 Linux 平台的 Unified Manager 快速入门指南。 
+---
+= Linux 安装快速入门说明
+:allow-uri-read: 
+
+
+
+
+== 系统要求
+
+* 操作系统：Red Hat Enterprise Linux或CentOS 64位7.x版架构、使用操作系统安装程序的软件选择选项中的"带GUI的服务器"基础环境安装
+* RAM ： 12 GB
+* CPU ：总计 9572 MHz
+* 可用磁盘空间：/opt为100 GB磁盘空间、根分区为50 GB
+
+
+有关详细的系统要求、请参见 link:install/reference-red-hat-and-centos-software-and-installation-requirements.html["Red Hat Enterprise Linux和CentOS软件和安装要求"] 和 link:http://mysupport.netapp.com/matrix["互操作性表"]。
+
+
+
+== 安装OnCommand Unified Manager
+
+
+
+=== 下载安装程序：
+
+. 下载 `OnCommandUnifiedManager-rhel7-9.5RC1.zip` 安装包。
+. 在下载安装文件的目录中，运行：
++
+`# unzip OnCommandUnifiedManager-rhel7-9.5RC1.zip`
+
+
+
+
+
+=== 验证存储库配置
+
+配置 Red Hat Enterprise Linux 或 CentOS 存储库的过程因站点而异。您可以选择使用安装包中包含的pre_install_check.sh脚本来验证您的操作系统是否配置正确。如果您的系统已连接到Internet、则会自动收到有关设置Red Hat Enterprise Linux和MySQL存储库的说明。有关如何在没有Internet连接的系统上安装的信息、请参见 link:install/concept-install-upgrade-and-remove-unified-manager-software.html["在Red Hat或CentOS上安装、升级和删除Unified Manager软件"]。
+
+`# ./pre_install_check.sh`
+
+
+
+=== 安装 Unified Manager
+
+Unified Manager使用 `yum` 用于安装软件和任何相关软件的实用程序。由于不同组织中存在不同的Red Hat Enterprise Linux或CentOS映像、因此安装的软件包取决于映像中的软件。。 `yum` 实用程序将确定要安装的相关软件包。如果您需要有关相关软件包的详细信息、请参见 link:install/concept-install-upgrade-and-remove-unified-manager-software.html["在Red Hat或CentOS上安装、升级和删除Unified Manager软件"]。
+
+以root用户身份或使用sudo从解压缩安装文件的目录运行以下命令：
+
+`# yum install *.rpm`
+
+或
+
+`% sudo yum install *.rpms`
+
+安装结束时，将显示连接到 Unified Manager Web UI 的信息。如果无法连接到Web UI、则可能需要将端口443列入白名单。有关详细信息、请联系您的技术支持团队。

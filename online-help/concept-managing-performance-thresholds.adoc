@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过性能阈值策略，您可以确定 Unified Manager 生成事件的时间点，以便向系统管理员告知可能影响工作负载性能的问题。这些阈值策略称为用户定义的性能阈值。 
+---
+= 管理用户定义的性能阈值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过性能阈值策略，您可以确定 Unified Manager 生成事件的时间点，以便向系统管理员告知可能影响工作负载性能的问题。这些阈值策略称为 _user-defined_performance 阈值。
+
+此版本支持用户定义的，系统定义的和动态的性能阈值。对于动态和系统定义的性能阈值， Unified Manager 将分析工作负载活动以确定适当的阈值。使用用户定义的阈值，您可以为多个性能计数器和多个存储对象定义性能上限。
+
+[NOTE]
+====
+系统定义的性能阈值和动态性能阈值由 Unified Manager 设置，不可配置。如果您从任何系统定义的性能阈值策略收到不必要的事件、则可以从配置/管理事件页面禁用各个策略。
+
+====

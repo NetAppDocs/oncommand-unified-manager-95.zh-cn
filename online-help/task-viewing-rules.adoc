@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: '在修改带有无限卷的SVM的数据策略之前、您可以从"数据策略"选项卡查看已创建的规则列表。' 
+---
+= 查看规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在修改带有无限卷的SVM的数据策略之前、您可以从"数据策略"选项卡查看已创建的规则列表。
+
+
+
+== 开始之前
+
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+* 必须将包含带有无限卷的SVM以及存储类的集群添加到Unified Manager数据库中。
+
+
+
+
+== 关于此任务
+
+只有带有无限卷的SVM才会显示数据策略选项卡。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/Storage Virtual Machine*清单页面中、选择相应的SVM。
+. 单击*数据策略*。
+
+
+
+
+== 结果
+
+此时将显示选定SVM的数据策略中的规则列表。您可以使用按存储类筛选来查看有关特定存储类的规则。

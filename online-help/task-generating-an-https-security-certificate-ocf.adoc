@@ -1,0 +1,70 @@
+---
+permalink: online-help/task-generating-an-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可能会出于多种原因生成新的HTTPS安全证书、包括您希望使用其他证书颁发机构进行签名还是当前安全证书已过期。新证书将替换现有证书。 
+---
+= 生成 HTTPS 安全证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能会出于多种原因生成新的HTTPS安全证书、包括您希望使用其他证书颁发机构进行签名还是当前安全证书已过期。新证书将替换现有证书。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 关于此任务
+
+如果您无法访问 Unified Manager Web UI ，则可以使用维护控制台使用相同的值重新生成 HTTPS 证书。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
+. 单击 * 重新生成 HTTPS 证书 * 。
++
+此时将显示重新生成 HTTPS 证书对话框。
+
+. 根据要生成证书的方式，选择以下选项之一：
++
+|===
+| 如果您要 ... | 执行此操作 ... 
+
+
+ a| 
+使用当前值重新生成证书
+ a| 
+单击 * 使用当前证书属性重新生成 * 选项。
+
+
+
+ a| 
+使用不同的值生成证书
+ a| 
+ Click the *Update the Current Certificate Attributes* option.
+如果不输入新值， " 公用名 " 和 " 备用名称 " 字段将使用现有证书中的值。其他字段不需要值、但您可以为"城市"、"省/自治区/直辖市"和"国家/地区"输入值、以便在证书中填充这些值。
+
+[NOTE]
+====
+如果要从证书的"备用名称"字段中删除本地标识信息、可以选中"`exclude local Identifying information (e.g.localhost)`"复选框。如果选中此复选框，则 " 备用名称 " 字段仅会使用您在字段中输入的内容。如果留空，则生成的证书将根本没有备用名称字段。
+
+====
+|===
+. 单击 * 是 * 重新生成证书。
+. 重新启动 Unified Manager 服务器，以使新证书生效。
+
+
+
+
+== 完成后
+
+通过查看 HTTPS 证书来验证新证书信息。

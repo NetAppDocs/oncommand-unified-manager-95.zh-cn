@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以重新同步已断开的 SnapMirror 或 SnapVault 关系上的数据，然后将目标设置为读 / 写，以便源上的数据与目标上的数据匹配。如果删除了源卷上所需的通用 Snapshot 副本，从而导致 SnapMirror 或 SnapVault 更新失败，您也可以重新同步。 
+---
+= 通过运行状况/卷详细信息页面重新同步保护关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以重新同步已断开的 SnapMirror 或 SnapVault 关系上的数据，然后将目标设置为读 / 写，以便源上的数据与目标上的数据匹配。如果删除了源卷上所需的通用 Snapshot 副本，从而导致 SnapMirror 或 SnapVault 更新失败，您也可以重新同步。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已设置 OnCommand Workflow Automation 。
+
+
+
+
+== 步骤
+
+. 从*运行状况/卷*详细信息页面的*保护*选项卡中、在拓扑中找到要重新同步的保护关系并右键单击它。
+. 从菜单中选择 * 重新同步 * 。
++
+或者，从 * 操作 * 菜单中，选择 * 关系 * > * 重新同步 * 以重新同步当前正在查看其详细信息的关系。
+
++
+此时将显示重新同步对话框。
+
+. 在 * 重新同步选项 * 选项卡中，选择传输优先级和最大传输速率。
+. 单击 * 源 Snapshot 副本 * ；然后在 * Snapshot 副本 * 列中，单击 * 默认 * 。
++
+此时将显示选择源 Snapshot 副本对话框。
+
+. 如果要指定现有 Snapshot 副本而不是传输默认 Snapshot 副本，请单击 * 现有 Snapshot 副本 * 并从列表中选择一个 Snapshot 副本。
+. 单击 * 提交 * 。
++
+此时将返回到重新同步对话框。
+
+. 如果选择了多个要重新同步的源，请单击要为其指定现有 Snapshot 副本的下一个源的 * 默认 * 。
+. 单击 * 提交 * 以开始重新同步作业。
++
+重新同步作业将启动、您将返回到运行状况/卷详细信息页面、页面顶部将显示一个作业链接。
+
+. 单击*运行状况/卷*详细信息页面上的*查看作业*、跟踪每个重新同步作业的状态。
++
+此时将显示经过筛选的作业列表。
+
+. 单击浏览器上的后退箭头返回到*运行状况/卷*详细信息页面。
++
+当所有作业任务成功完成后，重新同步作业完成。
+
+

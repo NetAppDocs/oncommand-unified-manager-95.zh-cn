@@ -1,0 +1,37 @@
+---
+permalink: online-help/concept-understanding-the-cluster-view-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager集群视图概述信息板提供了有关所管理集群运行状况的详细信息。集群视图信息板包含两个主要部分：受管集群\(左侧\)和集群详细信息\(右侧\)。' 
+---
+= 了解集群视图信息板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager集群视图概述信息板提供了有关所管理集群运行状况的详细信息。集群视图信息板包含两个主要部分：受管集群(左侧)和集群详细信息(右侧)。
+
+下图显示了一个Unified Manager集群视图信息板示例、该信息板正在监控八个集群：
+
+image::../media/dashboard-clusterview-um.gif[信息板clusterview um]
+
+每个集群名称旁边的状态图标可以处于以下状态：
+
+* 严重(image:../media/sev-critical-um60.png["事件严重性图标—严重"])：已为集群报告一个或多个活动严重事件。
+* 错误(image:../media/sev-error-um60.png["事件严重性图标—错误"])：已为集群报告一个或多个活动错误事件。
+* 警告(image:../media/sev-warning-um60.png["事件严重性图标—警告"])：已为集群报告一个或多个活动警告事件。
+* 正常(image:../media/sev-normal-um60.png["事件严重性图标—正常"])：尚未报告集群的活动事件。
+
+
+[NOTE]
+====
+颜色表示对象是否存在活动(新事件或已确认事件)事件。不再处于活动状态的事件(称为已废弃事件)不会影响图标的颜色。
+
+====
+要显示有关集群的追加信息 、您可以执行以下操作之一：
+
+* 您可以单击集群名称以显示有关集群监控状态、容量状态和性能状态的概述信息。
+* 您可以单击*管理集群*以显示配置/集群数据源页面、在此页面中、您可以查看由此Unified Manager实例管理的所有集群的详细状态信息。
+

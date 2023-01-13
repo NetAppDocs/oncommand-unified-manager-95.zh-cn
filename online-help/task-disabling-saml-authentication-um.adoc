@@ -1,0 +1,53 @@
+---
+permalink: online-help/task-disabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: '如果要在远程用户登录到Unified Manager Web UI之前停止通过安全身份提供程序(IdP)对其进行身份验证、则可以禁用SAML身份验证。禁用 SAML 身份验证后，配置的目录服务提供程序（例如 Active Directory 或 LDAP ）将执行登录身份验证。' 
+---
+= 禁用 SAML 身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要在远程用户登录到 Unified Manager Web UI 之前停止通过安全身份提供程序（ IdP ）进行身份验证，则可以禁用 SAML 身份验证。禁用 SAML 身份验证后，配置的目录服务提供程序（例如 Active Directory 或 LDAP ）将执行登录身份验证。
+
+
+
+== 关于此任务
+
+禁用 SAML 身份验证后，除了配置的远程用户之外，本地用户和维护用户还可以访问图形用户界面。
+
+如果您无法访问图形用户界面，也可以使用 Unified Manager 维护控制台禁用 SAML 身份验证。
+
+[NOTE]
+====
+禁用 SAML 身份验证后， Unified Manager 将自动重新启动。
+
+====
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选择* SAML身份验证*选项卡。
+. 取消选中 * 启用 SAML 身份验证 * 复选框。
+. 单击 * 保存 * 。
++
+此时将显示一个消息框，确认您要完成配置并重新启动 Unified Manager 。
+
+. 单击 * 确认并注销 * ， Unified Manager 将重新启动。
+
+
+
+
+== 结果
+
+下次远程用户尝试访问 Unified Manager 图形界面时，他们将在 Unified Manager 登录页面而不是 IdP 登录页面中输入凭据。
+
+
+
+== 完成后
+
+访问 IdP 并删除 Unified Manager 服务器 URI 和元数据。

@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-viewing-the-annotation-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以查看与集群、卷和Storage Virtual Machine \(SVM\)动态关联的标注列表。您还可以查看详细信息，例如问题描述，创建者，创建日期，值，规则， 以及与标注关联的对象。' 
+---
+= 查看标注列表和详细信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看与集群，卷和 Storage Virtual Machine （ SVM ）动态关联的标注列表。您还可以查看详细信息，例如问题描述，创建者，创建日期，值，规则， 以及与标注关联的对象。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*标注*。
+. 在 * 标注 * 选项卡中，单击标注名称以查看关联的详细信息。
+

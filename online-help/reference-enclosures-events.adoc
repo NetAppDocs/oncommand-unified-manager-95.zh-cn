@@ -1,0 +1,101 @@
+---
+permalink: online-help/reference-enclosures-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 机箱事件可为您提供有关数据中心中磁盘架机箱状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 机箱事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+机箱事件可为您提供有关数据中心中磁盘架机箱状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+磁盘架风扇出现故障（ ocumEvtShelfFanFailed ）
+ a| 
+意外事件
+ a| 
+存储架
+ a| 
+严重
+
+
+
+ a| 
+磁盘架电源出现故障（ ocumEvtShelfPowerSupplyFailed ）
+ a| 
+意外事件
+ a| 
+存储架
+ a| 
+严重
+
+
+
+ a| 
+未配置磁盘架多路径（ ocumDiskShelfConnectivityNotInMultiPath ）
+
+此事件不适用于：
+
+* MetroCluster 配置中的集群
+* 以下平台： FAS2554 ， FAS2552 ， FAS2520 和 FAS2240
+
+ a| 
+风险
+ a| 
+Node
+ a| 
+警告
+
+
+
+ a| 
+磁盘架路径故障（ ocumDiskShelfConnectivityPathFailure ）
+ a| 
+风险
+ a| 
+存储架
+ a| 
+警告
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已发现磁盘架（不适用）
+ a| 
+事件
+ a| 
+Node
+ a| 
+信息
+
+
+
+ a| 
+已删除磁盘架（不适用）
+ a| 
+事件
+ a| 
+Node
+ a| 
+信息
+
+|===

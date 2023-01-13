@@ -1,0 +1,22 @@
+---
+permalink: install/task-upgrading-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 您只能从Unified Manager 7.3或9.4实例升级到Unified Manager 9.5版。 
+---
+= 在VMware上升级Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您只能从Unified Manager 7.3或9.4实例升级到Unified Manager 9.5版。
+
+
+
+== 关于此任务
+
+在升级过程中， Unified Manager 不可用。在升级 Unified Manager 之前，您应完成所有正在运行的操作。
+
+如果 Unified Manager 与 OnCommand Workflow Automation 实例配对，并且这两种产品都有新版本的软件，则必须断开这两种产品的连接，然后在执行升级后设置新的 Workflow Automation 连接。如果您仅对其中一个产品执行升级，则应在升级后登录到 Workflow Automation ，并验证它是否仍在从 Unified Manager 获取数据。

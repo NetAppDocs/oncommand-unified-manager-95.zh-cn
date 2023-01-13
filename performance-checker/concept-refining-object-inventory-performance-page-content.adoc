@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-refining-object-inventory-performance-page-content.html 
+sidebar: sidebar 
+keywords:  
+summary: 性能对象的清单页面包含一些工具，可帮助您细化对象清单数据内容，从而快速轻松地找到特定数据。 
+---
+= 细化性能清单页面内容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+性能对象的清单页面包含一些工具，可帮助您细化对象清单数据内容，从而快速轻松地找到特定数据。
+
+性能对象清单页面中包含的信息可能非常广泛，通常跨越多个页面。这种全面的数据非常适合监控，跟踪和提高性能；但是，查找特定数据需要使用工具来快速找到您要查找的数据。因此，性能对象清单页面包含用于搜索，排序和筛选的功能。此外，搜索和筛选功能可以结合使用，进一步缩小结果范围。

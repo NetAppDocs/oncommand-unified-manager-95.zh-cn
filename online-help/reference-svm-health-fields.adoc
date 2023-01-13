@@ -1,0 +1,64 @@
+---
+permalink: online-help/reference-svm-health-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过SVM清单报告、您可以分析SVM卷配置限制和整体运行状况、以了解未来存储可用性面临的风险。 
+---
+= SVM清单报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过SVM清单报告、您可以分析SVM卷配置限制和整体运行状况、以了解未来存储可用性面临的风险。
+
+
+
+== SVM清单报告表格视图
+
+* *集群*
++
+显示包含SVM的集群的名称。
+
+* * Storage Virtual Machine*
++
+显示 SVM 的名称。
+
+* * 状态 *
++
+显示SVM的当前管理状态。状态可以是"正在运行"、"已停止"、"正在启动"、"正在停止"、"未映射"、正在初始化或删除。
+
+* *卷计数*
++
+显示SVM所含卷的数量。
+
+* *允许的最大卷数*
++
+显示可在SVM上配置的最大允许卷数。
+
+* *根卷*
++
+显示SVM根卷的名称。
+
+* *允许的协议*
++
+显示可在SVM上配置的协议类型。
+
+* * DNS域*
++
+显示DNS域名。
+
+* * NIS域*
++
+显示网络信息服务(Network Information Service、NIS)域名。如果网络信息服务(NIS)服务器已禁用或未配置、则此列为空。
+
+* 已启用* LDAP *
++
+显示LDAP协议是否已启用。
+
+* *名称服务交换机*
++
+显示从主机收集的信息类型。可能的值包括file、ldap或NIS。
+
+

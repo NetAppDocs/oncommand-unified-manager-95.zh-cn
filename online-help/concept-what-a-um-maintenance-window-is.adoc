@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-um-maintenance-window-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以定义 Unified Manager 维护窗口，以便在已计划集群维护且您不希望收到大量不需要的通知时禁止特定时间范围内的事件和警报。 
+---
+= 什么是 Unified Manager 维护窗口
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以定义 Unified Manager 维护窗口，以便在已计划集群维护且您不希望收到大量不需要的通知时禁止特定时间范围内的事件和警报。
+
+维护窗口启动后、"`Object Maintenance window started`"事件将发布到事件清单页面。维护窗口结束时，此事件将自动废弃。
+
+在维护窗口期间，仍会生成与该集群上的所有对象相关的事件，但这些事件不会显示在任何用户界面页面中，并且不会针对这些事件发送任何警报或其他类型的通知。但是、您可以通过在事件清单页面上选择一个视图选项来查看维护窗口期间为所有存储对象生成的事件。
+
+您可以计划将来启动维护窗口，更改计划维护窗口的开始和结束时间以及取消计划维护窗口。

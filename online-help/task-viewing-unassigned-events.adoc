@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-unassigned-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以查看未分配的事件，然后将每个事件分配给可以解决这些事件的用户。 
+---
+= 查看未分配的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看未分配的事件，然后将每个事件分配给可以解决这些事件的用户。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中，单击 * 事件 * 。
++
+默认情况下、新事件和已确认事件会显示在事件清单页面上。
+
+. 从 * 筛选器 * 窗格的 * 已分配给 * 区域中选择 * 未分配 * 筛选器选项。
+

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-based-on-transfer-size.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以自定义卷传输速率\(历史\)报告、以根据卷的总传输大小查看卷传输详细信息。' 
+---
+= 自定义卷传输速率(历史)报告以根据传输大小查看卷传输
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷传输速率(历史)报告、以根据卷的总传输大小查看卷传输详细信息。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 按集群删除分组：
++
+.. 选择要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要根据卷传输大小对卷传输进行排序、请单击*总传输大小(GB)*列。
+

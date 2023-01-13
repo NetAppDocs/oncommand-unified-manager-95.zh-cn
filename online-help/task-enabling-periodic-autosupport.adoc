@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以选择自动向技术支持发送特定的预定义消息、以确保环境正常运行、并帮助您保持环境的完整性。 
+---
+= 启用定期 AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以选择自动向技术支持发送特定的预定义消息、以确保环境正常运行、并帮助您保持环境的完整性。
+
+
+
+== 开始之前
+
+您必须以维护用户身份登录。
+
+
+
+== 关于此任务
+
+要获得NetApp Active IQ 的优势、您必须激活AutoSupport。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* AutoSupport *。
+. 选中*启用定期AutoSupport *复选框。
+. 如果需要、请定义HTTP代理服务器的名称、端口和身份验证信息。
+. 单击 * 保存 * 。
+

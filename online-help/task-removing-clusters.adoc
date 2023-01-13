@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-removing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用配置/集群数据源页面从Unified Manager中删除集群。例如，如果集群发现失败或您要停用存储系统，则可以删除集群。 
+---
+= 删除集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用配置/集群数据源页面从Unified Manager中删除集群。例如，如果集群发现失败或您要停用存储系统，则可以删除集群。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色或存储管理员角色。
+
+
+
+== 关于此任务
+
+此任务将从 Unified Manager 中删除选定集群。删除集群后，它将不再受监控。在已删除集群中注册的 Unified Manager 实例也会从集群中注销。
+
+删除集群还会从 Unified Manager 中删除其所有存储对象，历史数据，存储服务以及所有关联事件。这些更改将在下一个数据收集周期之后反映在清单页面和详细信息页面上。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*集群数据源*。
+. 在*配置/集群数据源*页面上、选择要删除的集群、然后单击*删除*。
+. 在 * 删除数据源 * 消息对话框中，单击 * 删除 * 以确认删除请求。
+

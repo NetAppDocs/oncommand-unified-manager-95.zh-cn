@@ -1,0 +1,68 @@
+---
+permalink: health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以通过以下方式有效管理无限卷：创建具有所需数量存储类的无限卷、为每个存储类配置阈值、创建规则和数据策略以确定写入无限卷的数据的放置、配置数据保护以及配置通知警报(可选)。' 
+---
+= 使用存储类和数据策略管理无限卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过以下方式有效管理无限卷：创建具有所需数量存储类的无限卷、为每个存储类配置阈值、创建规则和数据策略以确定写入无限卷的数据的放置、配置数据保护以及配置通知警报(可选)。
+
+
+
+== 开始之前
+
+* 必须安装OnCommand Workflow Automation (WFA)。
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已通过在WFA中自定义适当的预定义工作流来创建所需数量的聚合。
+* 您必须已通过在WFA中自定义适当的预定义工作流创建了所需数量的存储类。
+* 您必须已在WFA中将Unified Manager服务器配置为数据源、然后验证数据是否已成功缓存。
+
+
+
+
+== 关于此任务
+
+执行此任务时、您需要在两个应用程序之间切换：OnCommand Workflow Automation (WFA)和OnCommand Unified Manager。
+
+此任务提供了高级步骤。有关执行WFA任务的详细信息、请参见_WFA OnCommand Workflow Automation 文档。
+
+image::../media/cr-workflow-oc-6-0.gif[用于管理具有存储类的无限卷的SVM的工作流]
+
+
+
+== 步骤
+
+. image:../media/wfa-icon.gif["WFA操作步骤 图标"] 自定义预定义的工作流以定义所需的存储类。
+. image:../media/wfa-icon.gif["WFA操作步骤 图标"] 使用相应的工作流创建具有无限卷的SVM、并具有所需数量的存储类。
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] 将包含带有无限卷的SVM的集群添加到Unified Manager数据库中。
++
+您可以通过提供集群的IP地址或FQDN来添加集群。
+
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] xref:task-editing-storage-class-threshold-settings.adoc[根据组织的要求、修改每个存储类的阈值]。
++
+您应使用默认存储类阈值设置来有效监控存储类空间。
+
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] xref:task-adding-alerts.adoc[配置通知警报和陷阱以解决与无限卷相关的任何可用性和容量问题]。
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] xref:task-creating-rules.adoc[在数据策略中设置规则、然后激活对数据策略所做的所有更改]
++
+数据策略中的规则用于确定写入无限卷的内容的放置位置。
+
++
+[NOTE]
+====
+数据策略中的规则仅会影响写入无限卷的新数据、而不会影响无限卷中的现有数据。
+
+====
+. image:../media/wfa-icon.gif["WFA操作步骤 图标"] 创建具有无限卷的灾难恢复(DR) SVM、然后执行以下步骤配置数据保护(DP)：
++
+.. 使用适当的工作流创建数据保护(DP)无限卷。
+.. 使用适当的工作流在源和目标之间设置DP镜像关系。
+
+
+

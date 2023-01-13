@@ -1,0 +1,59 @@
+---
+section: config
+title: 执行配置和管理任务
+entries:
+- title: 正在配置Unified Manager
+  url: "/config/concept-configuring-unified-manager.html"
+  entries:
+  - title: 配置顺序概述
+    url: "/config/concept-overview-of-the-configuration-sequence.html"
+  - title: 访问 Unified Manager Web UI
+    url: "/config/task-accessing-oncommand-unified-manager-web-ui.html"
+  - title: 执行 Unified Manager Web UI 的初始设置
+    url: "/config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html"
+  - title: 添加集群
+    url: "/config/task-adding-clusters.html"
+  - title: 配置 Unified Manager 以发送警报通知
+    url: "/config/task-configuring-unified-manager-to-send-alert-notifications.html"
+    entries:
+    - title: 配置事件通知设置
+      url: "/config/task-configuring-event-notification-settings.html"
+    - title: 启用远程身份验证
+      url: "/config/task-enabling-remote-authentication.html"
+    - title: 禁用远程身份验证中的嵌套组
+      url: "/config/task-disabling-nested-groups-from-remote-authentication.html"
+    - title: 正在添加身份验证服务器
+      url: "/config/task-adding-authentication-servers.html"
+    - title: 测试身份验证服务器的配置
+      url: "/config/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+    - title: 添加用户
+      url: "/config/task-adding-users.html"
+    - title: 正在添加警报
+      url: "/config/task-adding-alerts.html"
+  - title: 自动添加到 Unified Manager 的 EMS 事件
+    url: "/config/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: 订阅 ONTAP EMS 事件
+    url: "/config/task-subscribing-to-ontap-ems-events.html"
+  - title: 管理 SAML 身份验证设置
+    url: "/config/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: 身份提供程序要求
+      url: "/config/reference-identity-provider-requirements-um.html"
+    - title: 启用 SAML 身份验证
+      url: "/config/task-enabling-saml-authentication-um.html"
+  - title: 配置数据库备份设置
+    url: "/config/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+  - title: 更改本地用户密码
+    url: "/config/task-changing-the-local-user-password.html"
+  - title: 更改 Unified Manager 主机名
+    url: "/config/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: 更改 Unified Manager 虚拟设备主机名
+      url: "/config/task-changing-the-unified-manager-host-name-on-vmware.html"
+      entries:
+      - title: 生成 HTTPS 安全证书
+        url: "/config/task-generating-an-https-security-certificate-ocf.html"
+      - title: 重新启动 Unified Manager 虚拟机
+        url: "/config/task-restarting-the-unified-manager-virtual-machine.html"
+    - title: 在 Linux 系统上更改 Unified Manager 主机名
+      url: "/config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"

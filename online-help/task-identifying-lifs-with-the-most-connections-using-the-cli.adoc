@@ -1,0 +1,99 @@
+---
+permalink: online-help/task-identifying-lifs-with-the-most-connections-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果数据LIF的负载或吞吐量较重、您可能需要迁移该LIF。要确定是否迁移LIF、您可以显示LIF上的负载、端口上的连接数、吞吐量以及节点上的CPU周期。 
+---
+= 使用命令行界面确定连接数最多的LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果数据LIF的负载或吞吐量较重、您可能需要迁移该LIF。要确定是否迁移LIF、您可以显示LIF上的负载、端口上的连接数、吞吐量以及节点上的CPU周期。
+
+
+
+== 步骤
+
+. 以集群管理员身份访问CLI。
+. 输入以下命令、将权限级别设置为高级： `set -privilege advanced`
++
+有关在高级模式下使用CLI的详细信息、请参见_System Administration Referse_。
+
+. 要查找每个LIF的权重、请输入以下命令： `network interface lif-weights show`
++
+繁忙LIF的权重最低。
+
+. 要查找节点上的活动连接、请输入以下命令： `network connections active show-clients`
++
+按节点记下最高客户端数。
+
++
+[listing]
+----
+cluster1::> network connections active show-clients
+Node    Client IP Address     Count
+------  -----------------     ------
+node1   192.0.2.253               12
+        192.0.2.252                9
+        192.0.2.251               12
+
+node2   192.0.2.250               12
+        192.0.2.252                9
+        192.0.2.253                9
+
+node3   customer.example.com       2
+        customer.example.net       2
+        customer.example.org       2
+----
+. 要通过LIF查找节点和SVM上的活动连接、请输入以下命令： `network connections active show-lifs`
++
+记下每个LIF的最高客户端数。
+
++
+[listing]
+----
+cluster1::> network connections active show-lifs
+Node      Vserver Name  Interface Name  Count
+--------  ------------  --------------- ------
+node1
+          vs1           clus1              30
+
+node2
+          vs2           clus1              30
+
+node3
+          vs3           lif1                2
+          vs4           clus1              30
+----
+. 检查共享同一主端口和主节点的LIF、以确定连接数最多的LIF。
+. 要选择最佳数据端口、请输入以下内容： `statistics show -object port`
++
+statistics命令可提供以太网端口的吞吐量和带宽信息。每行都提供一个单独的唯一信息计数器。value是自上次清除计数器以来(自上次启动ONTAP 以来)对象类型的值。
+
++
+[listing]
+----
+cluster1::> statistics show -object port
+Object: port
+Instance: e0a
+Start-time: 10/11/2013 13:51:41
+End-time: 10/11/2013 13:51:41
+Node: node1
+
+    Counter                                           Value
+    -------------------------------------------------------
+    recv-data                                            0B
+    recv-packets                                         0
+    recv-mcasts                                          0
+    recv-errors                                          0
+    recv-dropped                                         0
+    sent-data                                            0B
+    sent-packets                                         0
+    sent-mcasts                                          0
+    sent-errors                                          0
+    collisions                                           0
+----
+

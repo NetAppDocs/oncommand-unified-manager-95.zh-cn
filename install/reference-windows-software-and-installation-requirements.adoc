@@ -1,0 +1,91 @@
+---
+permalink: install/reference-windows-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 要在Windows上成功安装Unified Manager、您必须确保安装Unified Manager的系统满足软件要求。 
+---
+= Windows 软件和安装要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+要在Windows上成功安装Unified Manager、您必须确保安装Unified Manager的系统满足软件要求。
+
+
+
+== 操作系统软件
+
+Unified Manager仅在64位英语Windows操作系统上运行。您可以在以下Windows平台上安装Unified Manager：
+
+* Microsoft Windows Server 2012标准版和数据中心版
+* Microsoft Windows Server 2012 R2标准版和数据中心版
+* Microsoft Windows Server 2016标准版和数据中心版
+
+
+[NOTE]
+====
+在Windows Server 2012 R2上、必须在目标系统上安装Windows更新KB2919355、否则安装将失败。
+
+====
+请注意、Windows Server 2008不受早期版本的支持。有关受支持的 Windows 版本的最新完整列表，请参见互操作性表。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+此服务器应专用于运行Unified Manager；此服务器上不应安装任何其他应用程序。
+
+需要以下第三方软件包：
+
+* Microsoft Visual C&#43；&#43；2015可重新分发软件包14.0.24212版
+* Microsoft Visual C&#43；&#43；适用于Visual Studio 2013的可重新分发软件包12.0.40660版
+* MySQL Community Edition版本5.7.23或5.7系列中的更高版本
+* OpenJDK版本11
+* p7zip 18.01或更高版本
+
+
+如果未安装这些第三方软件包、则Unified Manager会在安装过程中安装这些软件包。
+
+[NOTE]
+====
+从 Unified Manager 9.5 开始， Unified Manager 安装包中提供了 OpenJDK ，并会自动安装该软件包。从 Unified Manager 9.5 开始，不支持 Oracle Java 。
+
+====
+如果已预安装MySQL、则必须确保：
+
+* 它正在使用默认端口。
+* 未安装示例数据库。
+* 服务名称为`Mysql`。
+
+
+[NOTE]
+====
+如果您计划在Unified Manager运行之后升级任何第三方软件、则必须先关闭Unified Manager。第三方软件安装完成后、您可以重新启动Unified Manager。
+
+====
+
+
+== 安装要求
+
+* 必须安装Microsoft .NET 4.5.2或更高版本。
+* 您必须为预留2 GB磁盘空间 `temp` 用于提取安装文件的目录。
+* 您必须在Windows驱动器中预留2 GB磁盘空间以缓存Unified Manager MSI文件。
+* 要安装Unified Manager的Microsoft Windows Server必须配置一个完全限定域名(FQDN)、如下所示 `ping` 已成功响应主机名和FQDN。
+* 您必须禁用Microsoft IIS全球Web发布服务并确保端口80和443可用。
+* 您必须确保在安装期间已禁用"`Windows Installer RDS兼容性`"的远程桌面会话主机设置。
+* UDP端口514必须可用、不得被任何其他服务使用。
+
+
+[NOTE]
+====
+Unified Manager 安装程序会在 Windows Defender 中配置以下排除项：
+
+* Unified Manager数据目录(仅限Windows Server 2016)
+* Unified Manager 安装目录
+* MySQL 数据目录
+
+
+如果您的服务器安装了其他防病毒扫描程序、则必须手动配置这些排除项。
+
+====

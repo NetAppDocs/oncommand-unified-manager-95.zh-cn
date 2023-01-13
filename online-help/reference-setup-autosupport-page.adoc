@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-setup-autosupport-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过设置/AutoSupport页面、您可以查看AutoSupport 问题描述 、启用定期AutoSupport 或发送按需AutoSupport 消息。 
+---
+= 设置/AutoSupport页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过设置/AutoSupport页面、您可以查看AutoSupport 问题描述 、启用定期AutoSupport 或发送按需AutoSupport 消息。
+
+
+
+== 信息区域
+
+* * 系统 ID*
++
+显示此Unified Manager服务器的系统ID。
+
+
+
+
+
+== 定期AutoSupport 区域
+
+用于定期向技术支持发送特定的预定义消息、以便进行问题描述 诊断和解决。
+
+* *启用定期AutoSupport *
++
+指示您要启用定期AutoSupport 功能。
+
+
+
+
+
+== 按需AutoSupport 区域
+
+您可以生成按需消息并将其发送给技术支持、指定的电子邮件收件人或这两者：
+
+* *发送给技术支持*
++
+表示您希望针对发生的任何问题向技术支持发送按需消息。
+
+* *发送到电子邮件收件人*
++
+表示您希望针对发生的任何问题向指定的收件人发送按需消息。
+
+* *生成并发送AutoSupport *
++
+针对发生的任何问题生成按需消息并发送给技术支持、指定的电子邮件收件人或这两者。
+
+
+
+
+
+== HTTP代理区域
+
+如果您的环境不提供从 Unified Manager 服务器直接访问的权限，您可以指定一个代理来提供 Internet 访问，以便向支持部门发送 AutoSupport 内容。
+
+* * 使用 HTTP 代理 *
++
+选中此框可标识用作 HTTP 代理的服务器。
+
++
+输入代理服务器的主机名或 IP 地址，以及用于连接到该服务器的端口号。
+
+* * 使用身份验证 *
++
+如果需要提供身份验证信息来访问用作 HTTP 代理的服务器，请选中此框。
+
++
+输入向 HTTP 代理进行身份验证所需的用户名和密码。
+
+
+
+[NOTE]
+====
+不支持仅提供基本身份验证的 HTTP 代理。
+
+====

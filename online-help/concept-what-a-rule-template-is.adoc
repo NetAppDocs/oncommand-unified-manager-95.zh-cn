@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-what-a-rule-template-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 规则模板是一个预定义模板、可用于在数据策略中创建规则。通过规则模板、您可以根据以下三个类别创建规则：所有者、文件类型和目录路径。 
+---
+= 什么是规则模板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+规则模板是一个预定义模板、可用于在数据策略中创建规则。通过规则模板、您可以根据以下三个类别创建规则：所有者、文件类型和目录路径。
+
+
+
+== 文件类型的规则模板示例
+
+规则模板"`Place all files with the specified extensions in a suitable storage class`"将写入无限卷的所有.mp3文件置于您指定的存储类中。

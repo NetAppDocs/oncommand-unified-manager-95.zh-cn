@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果需要增加Unified Manager数据库的数据磁盘空间量、则可以在安装后通过增加磁盘3上的磁盘空间来添加容量。 
+---
+= 向 VMware 虚拟机的数据磁盘添加空间
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要增加Unified Manager数据库的数据磁盘空间量、则可以在安装后通过增加上的磁盘空间来添加容量 `disk 3`。
+
+
+
+== 开始之前
+
+* 您必须有权访问 vSphere Client 。
+* 虚拟机不能在本地存储任何快照。
+* 您必须具有维护用户凭据。
+
+
+
+
+== 关于此任务
+
+建议您在增加虚拟磁盘大小之前备份虚拟机。
+
+
+
+== 步骤
+
+. 在vSphere客户端中、选择Unified Manager虚拟机、然后向数据添加更多磁盘容量 `disk 3`。有关详细信息，请参见 VMware 文档。
+. 在 vSphere 客户端中，选择 Unified Manager 虚拟机，然后选择 * 控制台 * 选项卡。
+. 单击控制台窗口中的，然后使用您的用户名和密码登录到维护控制台。
+. 在 * 主菜单 * 中，为 * 系统配置 * 选项输入数字。
+. 在 * 系统配置菜单 * 中，为 * 增加数据磁盘大小 * 选项输入数字。
+

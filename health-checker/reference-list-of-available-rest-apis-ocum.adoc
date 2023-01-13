@@ -1,0 +1,38 @@
+---
+permalink: health-checker/reference-list-of-available-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 您应了解Unified Manager中的可用REST API、以便规划如何使用这些API。API调用按各种资源类型或类别进行组织。 
+---
+= 可用的REST API列表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应了解Unified Manager中的可用REST API、以便规划如何使用这些API。API调用按各种资源类型或类别进行组织。
+
+您必须参阅Swagger网页、以获取可用API调用的完整列表以及每个调用的详细信息。
+
+管理API调用按以下类别进行组织：
+
+* 聚合
+* 集群
+* 事件
+* LIF
+* LUN
+* 命名空间
+* 节点
+* 端口
+* svms
+* Volumes
+
+
+选择其中一个类别时、将显示一个列表、其中显示API子类别以及受版本控制的子类别、例如：
+
+* /aggregates
+* /v1/aggregates
+
+
+列出的是最新版本的REST API、URL中没有版本号。您应始终使用最新版本的API与Unified Manager集成。

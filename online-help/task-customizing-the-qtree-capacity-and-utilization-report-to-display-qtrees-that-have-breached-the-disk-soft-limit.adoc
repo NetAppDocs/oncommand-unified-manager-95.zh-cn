@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义qtree容量和利用率报告以显示已违反磁盘软限制的qtree。您可以按已用磁盘、磁盘硬限制和磁盘软限制进行筛选和排序。 
+---
+= 自定义qtree容量和利用率报告以显示已违反磁盘软限制的qtree
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义qtree容量和利用率报告以显示已违反磁盘软限制的qtree。您可以按已用磁盘、磁盘硬限制和磁盘软限制进行筛选和排序。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要取消按SVM、集群或卷分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要筛选磁盘硬限制不是无限的qtree、请单击*磁盘硬限制*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
++
+.. 从*条件*下拉列表中、选择*不等于*。
+.. 单击*选择值*并选择*无限制*。
+.. 单击*确定*。
+
+
+. 要筛选磁盘软限制不是无限的qtree、请单击*磁盘软限制*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
++
+.. 从*条件*下拉列表中、选择*不等于*。
+.. 单击*选择值*并选择*无限制*。
+.. 单击*确定*。
+
+
+. 要为已违反磁盘软限制的qtree添加一列、请执行以下步骤：
++
+.. 单击*磁盘软限制*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标、然后选择*列*>*新计算列*
+.. 在*新建计算列*对话框中、键入 `Breached Disk Soft Limit Capacity` 在*列标签*字段中。
+.. 从选择类别列表中、选择*文本*。
+.. 从*选择功能*下拉列表中、选择*高级*。
+.. 在*输入表达式*字段中、键入 `IF(([qtreeDiskUsedPercent] *[diskLimit]/100 > [softDiskLimit]), "Yes", "No")`。
+.. 单击 * 确定 * 。
+
+
+. 要筛选已违反磁盘软限制的qtree、请单击*已违反磁盘软限制容量*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
++
+.. 从*条件*下拉列表中、选择*等于*。
+.. 单击*选择值*并选择*是*。
+.. 单击*确定*。
+
+
+

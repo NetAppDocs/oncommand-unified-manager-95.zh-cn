@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-network-interface-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用性能/LIF信息页面可查看LIF的已配置属性列表。此信息可能有助于回答与性能相关的问题。 
+---
+= 性能/LIF信息页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用性能/LIF信息页面可查看LIF的已配置属性列表。此信息可能有助于回答与性能相关的问题。
+
+
+
+== LIF属性
+
+* * IP 地址 *
++
+分配给LIF的IPv4或IPv6地址。可以为一个LIF分配多个IP地址。
+
+* * 角色 *
++
+此角色可确定LIF支持的流量类型。
+
++
+LIF可以具有以下角色之一：
+
++
+** 数据
+** 集群
+** 节点管理
+** 集群间
+
+
+* * 故障转移组 *
++
+分配给LIF的故障转移组的名称。
+
++
+此字段仅适用于网络LIF、而不适用于SAN (FC/iSCSI)和NVMe LIF。
+
+* * 故障转移策略 *
++
+分配给LIF的故障转移策略的名称。
+
++
+此字段仅适用于网络LIF、而不适用于SAN (FC/iSCSI)和NVMe LIF。
+
+* * 主端口 *
++
+已定义为此接口的主端口的节点和端口的名称。您可以单击此名称以在"性能/端口资源管理器"页面中显示端口详细信息。
+
+* * 当前端口 *
++
+当前托管接口的节点和端口的名称。您可以单击此名称以在"性能/端口资源管理器"页面中显示端口详细信息。
+
+

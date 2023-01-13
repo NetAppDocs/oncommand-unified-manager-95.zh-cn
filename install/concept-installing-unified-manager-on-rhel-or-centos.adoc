@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 请务必了解，下载和安装 Unified Manager 的步骤顺序因安装场景而异。在Red Hat Enterprise Linux或CentOS上安装Unified Manager之前、您可以确定是否要为Unified Manager配置高可用性。 
+---
+= 在Red Hat Enterprise Linux或CentOS上安装Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+请务必了解，下载和安装 Unified Manager 的步骤顺序因安装场景而异。在Red Hat Enterprise Linux或CentOS上安装Unified Manager之前、您可以确定是否要为Unified Manager配置高可用性。

@@ -1,0 +1,72 @@
+---
+permalink: online-help/reference-setup-workflow-automation-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过"设置/工作流自动化"页面、您可以配置设置以将OnCommand Workflow Automation 与Unified Manager集成。您还可以添加、修改或删除这些设置。' 
+---
+= 设置/工作流自动化页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过"设置/工作流自动化"页面、您可以配置设置以将OnCommand Workflow Automation 与Unified Manager集成。您还可以添加、修改或删除这些设置。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== Unified Manager数据库用户
+
+通过此区域、您可以输入将Unified Manager与Workflow Automation配对所需的数据库用户凭据：
+
+* * 名称 *
++
+用于指定可用于访问Unified Manager数据库中数据的数据库用户的用户名。默认情况下、不会选择任何数据库用户。您可以从下拉列表中选择数据库用户。
+
+* * 密码 *
++
+用于为指定用户名指定密码。
+
+
+
+
+
+== OnCommand Workflow Automation 凭据
+
+通过此区域、您可以输入与Unified Manager配对所需的Workflow Automation帐户凭据：
+
+* *主机名或IP地址*
++
+指定用于与Unified Manager配对的Workflow Automation主机服务器的名称或IP地址。
+
+* * 端口 *
++
+显示所需的Workflow Automation主机服务器端口号、即443。
+
+* * 用户名 *
++
+用于指定可用于登录到Workflow Automation的用户名。
+
+* * 密码 *
++
+用于为指定用户名指定密码。
+
+
+
+
+
+== 命令按钮
+
+命令按钮可用于删除、保存或取消设置选项：
+
+* *删除设置*
++
+从Unified Manager中删除Workflow Automation设置。
+
+* * 保存 *
++
+保存选定选项的配置设置。
+
+

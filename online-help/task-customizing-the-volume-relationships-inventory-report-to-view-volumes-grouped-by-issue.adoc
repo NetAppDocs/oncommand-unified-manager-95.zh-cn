@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-grouped-by-issue.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义卷关系清单报告以查看根据卷关系运行状况分组的卷。 
+---
+= 自定义卷关系清单报告以查看按问题描述 分组的卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷关系清单报告以查看根据卷关系运行状况分组的卷。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要根据卷关系运行状况筛选卷、请选择*关系运行状况*列、然后单击 image:../media/click-to-filter.gif[""] 图标。
+. 在*筛选器*对话框中、单击*选择值*、然后从下拉列表中选择所需值。
++
+此时将显示选定值的卷详细信息。
+
+

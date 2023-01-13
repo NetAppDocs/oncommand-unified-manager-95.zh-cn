@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-setting-up-a-connection-between-unified-manager-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager 服务器与外部数据提供程序之间的连接，您可以将集群性能数据发送到外部服务器，以便存储管理器可以使用第三方软件绘制性能指标图表。 
+---
+= 在 Unified Manager 服务器和外部数据提供程序之间设置连接
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager 服务器与外部数据提供程序之间的连接，您可以将集群性能数据发送到外部服务器，以便存储管理器可以使用第三方软件绘制性能指标图表。
+
+Unified Manager 服务器与外部数据提供程序之间的连接可通过维护控制台中标记为 "`外部数据提供程序` " 的菜单选项建立。

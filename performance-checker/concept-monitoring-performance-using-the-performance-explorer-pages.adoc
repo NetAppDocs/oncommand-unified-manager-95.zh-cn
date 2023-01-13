@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-monitoring-performance-using-the-performance-explorer-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: '" 性能资源管理器 " 页面显示有关集群中每个对象的性能的详细信息。此页面提供了所有集群对象性能的详细视图，可用于选择和比较不同时间段内特定对象的性能数据。' 
+---
+= 使用性能资源管理器页面监控性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 性能资源管理器 " 页面显示有关集群中每个对象的性能的详细信息。此页面提供了所有集群对象性能的详细视图，可用于选择和比较不同时间段内特定对象的性能数据。
+
+您还可以评估所有对象的整体性能，并排比较对象性能数据。
+
+如果某个对象不再由Unified Manager管理、则性能资源管理器页面顶部的对象名称右侧将显示状态*已删除*。

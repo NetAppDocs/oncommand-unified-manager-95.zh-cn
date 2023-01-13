@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义清单报告以监控集群组件上的资源不足。例如、您可以自定义报告以监控信息、例如接近SVM计数限制的集群、运行旧版ONTAP 的节点以及达到最大磁盘限制的节点。 
+---
+= 集群清单报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义清单报告以监控集群组件上的资源不足。例如、您可以自定义报告以监控信息、例如接近SVM计数限制的集群、运行旧版ONTAP 的节点以及达到最大磁盘限制的节点。

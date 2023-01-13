@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 使用 MySQL 数据库存储其监控的集群中的数据。数据会保留在 MySQL 数据库的各种架构中。 
+---
+= Unified Manager 数据库可供自定义报告访问
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 使用 MySQL 数据库存储其监控的集群中的数据。数据会保留在 MySQL 数据库的各种架构中。
+
+从Unified Manager 7.3开始、会显示其他模式、以便访问其他表数据。
+
+以下数据库中的所有表数据均可用：
+
+|===
+| 数据库 | Description 
+
+
+ a| 
+netapp_model_view
+ a| 
+有关 ONTAP 控制器上对象的数据。
+
+
+
+ a| 
+netapp_performance
+ a| 
+集群特定的性能计数器。
+
+
+
+ a| 
+ocum
+ a| 
+Unified Manager 应用程序数据和信息，支持 UI 筛选，排序和计算某些派生字段。
+
+
+
+ a| 
+ocum_report
+ a| 
+用于清单配置和容量相关信息的数据。
+
+
+
+ a| 
+ocum_report_BIRT
+ a| 
+与上述相同、但此数据库由内置BIRT报告占用。
+
+
+
+ a| 
+OPM
+ a| 
+性能配置设置和阈值信息。
+
+
+
+ a| 
+scalemonitor
+ a| 
+有关 Unified Manager 应用程序运行状况和性能问题的数据。
+
+|===
+报告用户（具有报告架构角色的数据库用户）能够访问这些表中的数据。此用户可以直接从 Unified Manager 数据库对报告和其他数据库视图进行只读访问。请注意，此用户无权访问包含用户数据或集群凭据信息的任何表。
+
+请参见 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager报告技术报告"] (TR-4565)了解更多详细信息。

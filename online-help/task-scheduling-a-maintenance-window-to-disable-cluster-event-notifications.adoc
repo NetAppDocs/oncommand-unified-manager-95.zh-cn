@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您为集群计划了停机时间，例如，要升级集群或移动其中一个节点，则可以通过计划 Unified Manager 维护窗口来禁止在该时间段内通常生成的事件和警报。 
+---
+= 计划维护窗口以禁用集群事件通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您为集群计划了停机时间，例如，要升级集群或移动其中一个节点，则可以通过计划 Unified Manager 维护窗口来禁止在该时间段内通常生成的事件和警报。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+在维护窗口期间，仍会生成与该集群上的所有对象相关的事件，但这些事件不会显示在事件页面中，并且不会针对这些事件发送任何警报或其他类型的通知。
+
+为维护窗口输入的时间取决于 Unified Manager 服务器上的时间。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*集群数据源*。
+. 在集群的 * 维护模式 * 列中，选择滑块按钮并将其移至右侧。
++
+此时将显示日历窗口。
+
+. 选择维护窗口的开始和结束日期和时间，然后单击 * 应用 * 。
++
+滑块按钮旁边会显示消息`Scheduled`。
+
+
+
+
+
+== 结果
+
+达到开始时间后、集群将进入维护模式、并生成"`Object Maintenance window started`"事件。

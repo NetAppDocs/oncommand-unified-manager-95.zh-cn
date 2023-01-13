@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-volume-move-status-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 卷移动状态事件会告诉您卷移动的状态，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 卷移动状态事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卷移动状态事件会告诉您卷移动的状态，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+卷移动状态：正在进行（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷移动状态 - 失败（ ocumEvtVolumeMoveFailed ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷移动状态：已完成（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷移动 - 转换延迟（ ocumEvtVolumeMoveCutoverDeferred ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+|===

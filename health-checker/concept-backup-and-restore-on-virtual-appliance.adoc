@@ -1,0 +1,29 @@
+---
+permalink: health-checker/concept-backup-and-restore-on-virtual-appliance.html 
+sidebar: sidebar 
+keywords:  
+summary: 安装在虚拟设备上的 Unified Manager 的备份和还原模式是捕获和还原完整虚拟应用程序的映像。 
+---
+= 虚拟设备备份和还原过程概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装在虚拟设备上的 Unified Manager 的备份和还原模式是捕获和还原完整虚拟应用程序的映像。
+
+由于虚拟设备上的Unified Manager备份操作无法将备份文件从vApp移出、因此、您可以通过以下任务完成虚拟设备的备份：
+
+. 关闭虚拟机并为 Unified Manager 虚拟设备创建 VMware 快照。
+. 在数据存储库上创建 NetApp Snapshot 副本以捕获 VMware 快照。
++
+如果数据存储库未托管在运行 ONTAP 软件的系统上，请按照存储供应商准则为 VMware 快照创建备份。
+
+. 将 NetApp Snapshot 副本或等效快照复制到备用存储。
+. 删除 VMware 快照。
+
+
+您应使用这些任务实施备份计划，以确保 Unified Manager 虚拟设备在出现问题时受到保护。
+
+要还原虚拟机，您可以使用创建的 VMware 快照将虚拟机还原到备份时间点状态。

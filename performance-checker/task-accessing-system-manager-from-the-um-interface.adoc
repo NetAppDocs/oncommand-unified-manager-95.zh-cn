@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/task-accessing-system-manager-from-the-um-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果故障排除要求您对集群进行配置更改、则可以使用System Manager图形界面、而不是ONTAP 命令行界面。System Manager作为Web服务随ONTAP 提供、默认情况下处于启用状态、可使用浏览器进行访问。 
+---
+= 从Unified Manager界面访问OnCommand 系统管理器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果故障排除要求您对集群进行配置更改、则可以使用System Manager图形界面、而不是ONTAP 命令行界面。System Manager作为Web服务随ONTAP 提供、默认情况下处于启用状态、可使用浏览器进行访问。
+
+
+
+== 开始之前
+
+您必须已为集群用户帐户配置了 `admin` 角色和 `http`， `ontapi`，和 `console` 应用程序类型。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*信息板*>*集群视图*。
+. 在*信息板/集群视图*页面中、选择要管理的集群。
++
+此时将显示该集群的监控状态、容量和性能概述。
+
+. 单击*系统管理器*图标。
++
+如果集群使用自签名数字证书，浏览器可能会显示一条警告，指示此证书不可信。您可以确认继续访问的风险，也可以在集群上安装证书颁发机构（ CA ）签名的数字证书以进行服务器身份验证。
+
+. 使用集群管理员凭据登录到 System Manager 。
++
+如果登录到System Manager用户界面受到SAML身份验证的保护、您将在身份提供程序(IdP)登录页面(而不是System Manager登录页面)中输入凭据。
+
+

@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-unified-manager-administration-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过Unified Manager管理功能、您可以管理用户和数据源。您还可以完成设置任务、例如身份验证、AutoSupport 、电子邮件、HTTPS证书、网络、和NTP服务器。 
+---
+= Unified Manager管理导航
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过Unified Manager管理功能、您可以管理用户和数据源。您还可以完成设置任务、例如身份验证、AutoSupport 、电子邮件、HTTPS证书、网络、和NTP服务器。
+
+这是许多可能的管理导航路径的一个示例。要添加或删除与Workflow Automation服务器的连接、请按照以下导航示例进行操作：
+
+image::../media/admin-navigation.gif[管理员导航]
+
+[NOTE]
+====
+单击*主页*图标可返回Unified Manager主导航页面。
+
+====

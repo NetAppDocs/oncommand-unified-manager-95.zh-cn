@@ -1,0 +1,52 @@
+---
+permalink: online-help/task-quiescing-a-protection-relationship-from-the-volume-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 在保护/卷关系页面中、您可以暂停保护关系以临时防止发生数据传输。如果您要为包含数据库的 SnapMirror 目标卷创建 Snapshot 副本，并且希望在 Snapshot 副本操作期间确保其内容稳定，则可以暂停关系。 
+---
+= 从保护/卷关系页面暂停保护关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在保护/卷关系页面中、您可以暂停保护关系以临时防止发生数据传输。如果您要为包含数据库的 SnapMirror 目标卷创建 Snapshot 副本，并且希望在 Snapshot 副本操作期间确保其内容稳定，则可以暂停关系。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已设置 Workflow Automation 。
+
+
+
+
+== 关于此任务
+
+暂停操作不会显示在以下实例中：
+
+* RBAC 设置不允许执行此操作；例如，您只有操作员权限
+* 卷ID未知时；例如、您具有集群间关系且尚未发现目标集群时
+* 未将 Workflow Automation 和 Unified Manager 配对
+
+
+
+
+== 步骤
+
+. 要暂停一个或多个保护关系的传输、请从*保护/卷关系*页面中选择一个或多个卷、然后在工具栏上单击*暂停*。
++
+此时将显示暂停对话框。
+
+. 单击 * 继续 * 。
++
+暂停作业的状态显示在"运行状况/卷"详细信息页面的顶部、并提供指向作业详细信息的链接。
+
+. 单击*查看详细信息*链接可转到*保护/作业*详细信息页面、了解更多详细信息和作业进度。
+. 单击浏览器上的*后退*箭头返回到*保护/卷关系*页面。
++
+当所有作业任务成功完成后，暂停作业完成。
+
+

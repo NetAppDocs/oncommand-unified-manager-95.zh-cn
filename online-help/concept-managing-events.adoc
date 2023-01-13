@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件可帮助您确定受监控集群中的问题。 
+---
+= 管理事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件可帮助您确定受监控集群中的问题。

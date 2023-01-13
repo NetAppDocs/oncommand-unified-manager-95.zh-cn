@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-cluster-object-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从相应的存储对象页面查看所有集群和集群对象。您还可以从相应的存储对象详细信息页面查看详细信息。 
+---
+= 集群对象窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从相应的存储对象页面查看所有集群和集群对象。您还可以从相应的存储对象详细信息页面查看详细信息。

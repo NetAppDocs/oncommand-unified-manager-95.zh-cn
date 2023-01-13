@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-understanding-more-about-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用选项运行、删除、导出和导入报告。您还可以创建自定义报告并保存自定义报告。您可以执行其他操作、例如筛选、排序、分组和格式设置。 
+---
+= 了解有关报告的更多信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用选项运行、删除、导出和导入报告。您还可以创建自定义报告并保存自定义报告。您可以执行其他操作、例如筛选、排序、分组和格式设置。

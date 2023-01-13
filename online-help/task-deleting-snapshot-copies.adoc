@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-deleting-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以删除 Snapshot 副本以节省空间或释放磁盘空间，也可以删除不再需要的 Snapshot 副本。 
+---
+= 正在删除 Snapshot 副本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除 Snapshot 副本以节省空间或释放磁盘空间，也可以删除不再需要的 Snapshot 副本。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+卷必须处于联机状态。
+
+要删除处于繁忙或锁定状态的 Snapshot 副本，必须已从使用该副本的应用程序释放该 Snapshot 副本。
+
+
+
+== 关于此任务
+
+* 如果 FlexClone 卷正在使用父卷中的基本 Snapshot 副本，则不能删除该 Snapshot 副本。
++
+基本Snapshot副本是用于创建FlexClone卷并显示状态的Snapshot副本 `Busy` 和应用程序依赖关系作为 `Busy,Vclone` 在父卷中。
+
+* 您不能删除 SnapMirror 关系中使用的已锁定 Snapshot 副本。
++
+Snapshot 副本已锁定，下次更新时需要使用此副本。
+
+
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>*卷*。
+. 在*运行状况/Volumes*清单页面中、选择包含要查看的Snapshot副本的卷。
++
+此时将显示 Snapshot 副本列表。
+
+. 在*运行状况/卷*详细信息页面中、单击*容量*选项卡。
+. 在 * 容量 * 选项卡的 * 详细信息 * 窗格的其他详细信息部分中，单击 * Snapshot 副本 * 旁边的链接。
++
+Snapshot 副本数量是一个显示 Snapshot 副本列表的链接。
+
+. 在 * Snapshot 副本 * 视图中，选择要删除的 Snapshot 副本，然后单击 * 删除选定项 * 。
+

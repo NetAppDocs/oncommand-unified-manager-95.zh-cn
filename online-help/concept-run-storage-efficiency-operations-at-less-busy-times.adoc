@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-run-storage-efficiency-operations-at-less-busy-times.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将处理存储效率操作的策略或计划修改为在受影响的卷工作负载不太繁忙时运行。 
+---
+= 在不太繁忙的时间运行存储效率操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将处理存储效率操作的策略或计划修改为在受影响的卷工作负载不太繁忙时运行。
+
+存储效率操作可以使用大量集群 CPU 资源，并成为运行这些操作的卷的抢占资源的对象。如果在运行存储效率操作的同时，受影响的卷的活动较多，则其延迟可能会增加并触发事件。
+
+在事件详细信息页面上，系统诊断部分按活动峰值偏差显示 QoS 策略组中的工作负载，以确定抢占资源的工作负载。如果 `s您在表顶部附近看到 " 存储效率` " 显示，则这些操作将抢占受影响的工作负载。通过将效率策略或计划修改为在这些工作负载不太繁忙时运行，您可以防止存储效率操作在集群上引发资源争用。
+
+您可以使用OnCommand System Manager管理效率策略。您可以使用 ONTAP 命令管理效率策略和计划。

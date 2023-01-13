@@ -1,0 +1,34 @@
+---
+permalink: health-checker/concept-what-a-database-restore-is.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 数据库还原是指将现有Unified Manager备份文件还原到相同或不同Unified Manager服务器的过程。您可以从Unified Manager控制台执行还原操作。 
+---
+= 什么是数据库还原
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+数据库还原是指将现有Unified Manager备份文件还原到相同或不同Unified Manager服务器的过程。您可以从Unified Manager控制台执行还原操作。
+
+如果要在同一(本地)系统上执行还原操作、并且备份文件全部存储在本地、则可以使用默认位置运行还原命令。如果要在其他Unified Manager系统(远程系统)上执行还原操作、则必须先将备份文件从二级存储复制到本地磁盘、然后再运行还原命令。
+
+在还原过程中，您将从 Unified Manager 中注销。还原过程完成后，您可以登录到系统。
+
+还原功能与版本和平台相关。您只能在同一版本的 Unified Manager 上还原 Unified Manager 备份。Unified Manager支持在以下平台情形下进行备份和还原：
+
+* 虚拟设备到虚拟设备
+* 虚拟设备到Red Hat Enterprise Linux或CentOS
+* Red Hat Enterprise Linux到Red Hat Enterprise Linux或CentOS
+* Windows到Windows
+
+
+如果要将备份映像还原到新服务器，则在还原操作完成后，您需要生成新的 HTTPS 安全证书并重新启动 Unified Manager 服务器。在将备份映像还原到新服务器时，如果需要，您还需要重新配置 SAML 身份验证设置。
+
+[NOTE]
+====
+在 Unified Manager 升级到较新版本的软件后，不能使用旧的备份文件来还原映像。为了节省空间，升级 Unified Manager 时会自动删除除最新文件之外的所有旧备份文件。
+
+====

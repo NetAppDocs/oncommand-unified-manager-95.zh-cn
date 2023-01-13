@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用"性能资源管理器"页面查看有关每个可用存储对象的详细性能信息、例如集群、聚合、卷等。通过这些页面、您可以评估所有对象的整体性能、并排比较对象性能数据。' 
+---
+= 性能资源管理器页面的说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用"性能资源管理器"页面查看有关每个可用存储对象的详细性能信息、例如集群、聚合、卷等。通过这些页面、您可以评估所有对象的整体性能、并排比较对象性能数据。

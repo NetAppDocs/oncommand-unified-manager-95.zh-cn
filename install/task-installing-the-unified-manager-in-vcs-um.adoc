@@ -1,0 +1,44 @@
+---
+permalink: install/task-installing-the-unified-manager-in-vcs-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 要配置高可用性、必须在VCS的两个集群节点上安装Unified Manager。 
+---
+= 在VCS上安装Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要配置高可用性、必须在VCS的两个集群节点上安装Unified Manager。
+
+
+
+== 开始之前
+
+* 必须在集群的两个节点上安装和配置VCS。
++
+有关安装VCS的详细信息、请参见_Veritas Cluster Server 6.2.1安装指南_中提供的说明。
+
+* 要登录到Unified Manager服务器控制台、您必须具有清晰的root权限。
+
+
+
+
+== 关于此任务
+
+您必须将这两个Unified Manager实例配置为使用同一数据库并监控同一组节点。
+
+
+
+== 步骤
+
+. 登录到集群的第一个节点。
+. 在第一个节点上安装Unified Manager。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[在Red Hat Enterprise Linux或CentOS上安装Unified Manager]
+
+. 在集群的第二个节点上重复步骤1和2。
+. 在Unified Manager的第二个实例上、以root用户身份登录到Red Hat Enterprise Linux或CentOS服务器、并输入与在第一个Unified Manager实例上定义的相同umadmin密码.`passwd umadmin`
+

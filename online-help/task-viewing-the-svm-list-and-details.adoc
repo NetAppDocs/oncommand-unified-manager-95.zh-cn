@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-viewing-the-svm-list-and-details.html 
+sidebar: sidebar 
+keywords:  
+summary: '在运行状况/Storage Virtual Machine清单页面中、您可以监控Storage Virtual Machine \(SVM\)的清单。您可以使用运行状况/Storage Virtual Machine详细信息页面查看有关受监控SVM的详细信息。' 
+---
+= 查看SVM列表和详细信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在运行状况/Storage Virtual Machine清单页面中、您可以监控Storage Virtual Machine (SVM)的清单。您可以使用运行状况/Storage Virtual Machine详细信息页面查看有关受监控SVM的详细信息。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+您可以查看 SVM 详细信息，例如 SVM 的容量，效率和配置。您还可以查看有关此 SVM 的相关设备和相关警报的信息。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 选择以下方法之一以查看 SVM 详细信息：
++
+** 要查看最基本的详细信息、请将光标置于SVM名称上方。
+** 要查看完整的详细信息、请单击SVM名称。
++
+您也可以单击最小详细信息对话框中的 * 查看详细信息 * 来查看完整的详细信息。
+
+
+
+. 单击最小详细信息对话框中的 * 查看相关 * ，查看与 SVM 相关的对象。
+

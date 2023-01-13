@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义NFS导出报告以分析有关存储系统上卷的NFS导出策略和规则的信息。例如、您可以自定义报告以显示接合路径不可访问的卷和具有默认导出策略的卷。 
+---
+= NFS导出报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义NFS导出报告以分析有关存储系统上卷的NFS导出策略和规则的信息。例如、您可以自定义报告以显示接合路径不可访问的卷和具有默认导出策略的卷。

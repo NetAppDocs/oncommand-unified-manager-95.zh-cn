@@ -1,0 +1,44 @@
+---
+permalink: install/task-configuring-existing-unified-manager-setup-to-high-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以更新现有Unified Manager安装并配置设置环境以实现高可用性。 
+---
+= 更新现有Unified Manager设置以实现高可用性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更新现有Unified Manager安装并配置设置环境以实现高可用性。
+
+
+
+== 开始之前
+
+* 您必须已为现有数据创建备份和支持包。
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已向集群添加第二个节点、并在第二个节点上安装Veritas Cluster Server (VCS)。
++
+请参见_Veritas Cluster Server 6.2.1安装指南_。
+
+* 必须将新添加的节点配置为访问与高可用性设置中现有节点相同的共享位置。
+
+
+
+
+== 步骤
+
+. 登录到集群的新节点。
+. 在节点上安装Unified Manager。
++
+xref:concept-installing-unified-manager-on-rhel-or-centos.adoc[在Red Hat Enterprise Linux或CentOS上安装Unified Manager]
+
+. 在现有节点上使用配置脚本使用数据配置Unified Manager服务器。
+. 启动手动故障转移到第二个节点。
+. 运行 `perl ha_setup.pl --join -t vcs -f``mount_path` 命令以使Unified Manager服务器数据指向共享LUN。
+. 如果为Unified Manager配置了OnCommand Workflow Automation (WFA)、请禁用WFA连接、然后重新配置该连接。
+. 如果SnapProtect 配置了Unified Manager、请使用新的集群IP地址和现有存储策略重新配置SnapProtect。
+. 重新生成自定义报告、并使用新的集群IP地址将这些报告添加到Unified Manager中。
+

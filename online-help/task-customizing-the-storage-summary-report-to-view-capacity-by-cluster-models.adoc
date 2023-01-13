@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-view-capacity-by-cluster-models.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义存储摘要报告以分析集群的存储容量和利用率、并查看总原始容量中包含的聚合。 
+---
+= 自定义存储摘要报告以按集群型号查看容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义存储摘要报告以分析集群的存储容量和利用率、并查看总原始容量中包含的聚合。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要删除按集群分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要按型号名称对报告进行分组、请执行以下步骤：
++
+.. 单击*型号*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*添加组*。
+
+
+. 要将聚合添加到总原始容量中、请执行以下步骤：
++
+.. 单击*总原始容量*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*聚合*。
+.. 在*聚合*对话框中、清除*表级别*复选框、然后选中*组级别*复选框。
+.. 如果需要、在*输入标签*字段中输入标签名称。
+
+
+. 单击 * 确定 * 。
+. 要向报告中的其他列添加聚合、请重复步骤3和4。
+

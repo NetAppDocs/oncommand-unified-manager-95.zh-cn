@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-annotations-for-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在Unified Manager中创建标注以标注存储对象。通过标注、您可以轻松地识别关键资源并采取适当的操作；例如、向组添加关键资源并分配组操作、或者创建标注资源的报告。 
+---
+= 管理存储对象的标注
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在Unified Manager中创建标注以标注存储对象。通过标注、您可以轻松地识别关键资源并采取适当的操作；例如、向组添加关键资源并分配组操作、或者创建标注资源的报告。

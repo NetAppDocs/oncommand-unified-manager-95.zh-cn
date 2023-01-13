@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 Unified Manager 中创建组来管理存储对象。 
+---
+= 管理和监控组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 中创建组来管理存储对象。

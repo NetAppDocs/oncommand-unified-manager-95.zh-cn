@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-editing-individual-qtree-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑一个或多个 qtree 的 qtree 容量的运行状况阈值设置。超过阈值时，系统会生成警报并向您发送通知。这些通知可帮助您根据生成的事件采取预防措施。 
+---
+= 编辑单个 qtree 运行状况阈值设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑一个或多个 qtree 的 qtree 容量的运行状况阈值设置。超过阈值时，系统会生成警报并向您发送通知。这些通知可帮助您根据生成的事件采取预防措施。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+根据对阈值的更改，将在下一个监控周期生成或废弃事件。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/Storage Virtual Machine*清单页面中、选择qtree所在的SVM。
+. 在*运行状况/Storage Virtual Machine*详细信息页面中、单击qtree选项卡。
+. 选择一个或多个qtree、然后单击*编辑阈值*。
+. 在 * 编辑 qtree 阈值 * 对话框中，更改选定 qtree 或 qtree 的容量阈值，然后单击 * 保存 * 。
+

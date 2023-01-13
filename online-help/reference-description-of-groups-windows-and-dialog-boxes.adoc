@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-groups-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用管理/组页面查看和管理所有组。您还可以从组规则选项卡和组操作选项卡为存储对象配置组规则和操作。 
+---
+= 组的问题描述 窗口和对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用管理/组页面查看和管理所有组。您还可以从组规则选项卡和组操作选项卡为存储对象配置组规则和操作。

@@ -1,0 +1,28 @@
+---
+permalink: health-checker/task-creating-and-importing-reports-into-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: '虽然Unified Manager提供报告功能、但您可能需要创建特定于您的环境的新报告。您可以使用Eclipse业务智能和报告工具(BIRT\)创建新报告、然后将其导入到Unified Manager中以进行查看和管理。' 
+---
+= 创建报告并将其导入到Unified Manager中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+虽然Unified Manager提供报告功能、但您可能需要创建特定于您的环境的新报告。您可以使用Eclipse Business Intelligence and Reporting Tools (BIRT)创建新报告、然后将其导入到Unified Manager中以进行查看和管理。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+您必须已下载并安装MySQL Connector/J要创建JBDC数据源、您必须具有mysql-connector-java-5.1.32-bin.jar文件的位置、此数据源会将报告连接到Unified Manager。
+
+
+
+== 关于此任务
+
+有关创建报告的详细信息、请参见Eclipse BIRT网站。

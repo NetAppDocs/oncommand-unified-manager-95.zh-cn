@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-report-scheduling-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用计划选项计划在特定日期和时间生成报告。此报告将按计划通过电子邮件自动发送给一个或多个收件人。 
+---
+= 什么是报告计划
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用*计划*选项计划在特定日期和时间生成报告。此报告将按计划通过电子邮件自动发送给一个或多个收件人。
+
+通过计划报告、您可以最大限度地减少手动生成和发送报告的工作量。您可以确保Unified Manager未以其他方式通知的管理员按指定间隔监控存储的当前状态。

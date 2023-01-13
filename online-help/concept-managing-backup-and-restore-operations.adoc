@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以创建Unified Manager的备份、并使用还原功能在系统发生故障或数据丢失时将备份还原到同一个\(本地\)系统或新的\(远程\)系统。' 
+---
+= 配置备份和还原操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建Unified Manager的备份、并使用还原功能在系统发生故障或数据丢失时将备份还原到同一(本地)系统或新(远程)系统。

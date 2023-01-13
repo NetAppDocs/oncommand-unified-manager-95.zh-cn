@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-creating-cascade-or-fanout-relationships-to-extend-protection-from-an-existing-destination-or-secondary-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过从源卷创建扇出或从现有关系的目标卷创建级联来扩展对现有关系的保护。如果您需要将数据从一个站点复制到多个站点或通过创建更多备份来提供额外保护，则可以执行此操作。 
+---
+= 创建级联或扇出关系以从现有保护关系扩展保护
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过从源卷创建扇出或从现有关系的目标卷创建级联来扩展对现有关系的保护。如果您需要将数据从一个站点复制到多个站点或通过创建更多备份来提供额外保护，则可以执行此操作。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 单击 * 保护 * > * 卷关系 * 。
+. 从*保护/卷关系*页面中、选择要从中扩展保护的SnapMirror关系。
+. 在操作栏上，单击 * 扩展保护 * 。
+. 在菜单中，选择 * 从源 * 或 * 从目标 * ，具体取决于您是从源创建扇出关系还是从目标创建级联关系。
+. 根据SnapVault 要创建的保护关系类型、选择*使用SnapMirror*或*使用SnapMirror*。
++
+此时将显示配置保护对话框。
+
+. 按照 * 配置保护 * 对话框中的指示填写相关信息。
+

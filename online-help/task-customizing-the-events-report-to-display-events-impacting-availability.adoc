@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-events-impacting-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义事件报告以显示按大多数意外事件分类并分配给管理员的事件。您可以按影响级别和管理员名称筛选报告。 
+---
+= 自定义事件报告以显示影响可用性的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义事件报告以显示按大多数意外事件分类并分配给管理员的事件。您可以按影响级别和管理员名称筛选报告。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要筛选可用性事件、请单击*影响区域*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
+. 从*条件*下拉列表中、选择*等于*。
+. 单击*选择值*并选择*意外事件*。
+. 单击 * 确定 * 。
+

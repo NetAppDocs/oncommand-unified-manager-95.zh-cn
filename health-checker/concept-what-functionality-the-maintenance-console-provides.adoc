@@ -1,0 +1,26 @@
+---
+permalink: health-checker/concept-what-functionality-the-maintenance-console-provides.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager 维护控制台，您可以维护 Unified Manager 系统上的设置，并进行任何必要的更改以防止出现问题。 
+---
+= 维护控制台提供的功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager 维护控制台，您可以维护 Unified Manager 系统上的设置，并进行任何必要的更改以防止出现问题。
+
+根据安装 Unified Manager 的操作系统，维护控制台可提供以下功能：
+
+* 对虚拟设备的任何问题进行故障排除，尤其是在 Unified Manager Web 界面不可用时
+* 升级到较新版本的 Unified Manager
+* 生成要发送给技术支持的支持包
+* 配置网络设置
+* 更改维护用户密码
+* 连接到外部数据提供程序以发送性能统计信息
+* 在内部更改性能数据收集
+* 从先前备份的版本还原 Unified Manager 数据库和配置设置。
+

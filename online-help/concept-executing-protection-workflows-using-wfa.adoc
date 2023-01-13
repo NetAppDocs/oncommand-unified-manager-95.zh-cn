@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-executing-protection-workflows-using-wfa.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将OnCommand Workflow Automation 与Unified Manager集成、以便为存储类执行工作流、并监控带有无存储类的无限卷的SVM。 
+---
+= 使用OnCommand Workflow Automation 执行保护工作流
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将OnCommand Workflow Automation 与Unified Manager集成、以便为存储类执行工作流、并监控带有无存储类的无限卷的SVM。

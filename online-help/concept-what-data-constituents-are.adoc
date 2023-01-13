@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-data-constituents-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 在无限卷中、数据存储在多个单独的数据成分卷中。数据成分卷仅存储文件中的数据、而不存储文件的名称。 
+---
+= 什么是数据成分卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在无限卷中、数据存储在多个单独的数据成分卷中。数据成分卷仅存储文件中的数据、而不存储文件的名称。
+
+客户端无法识别数据成分卷。当客户端从无限卷请求文件时、节点会从数据成分卷检索文件的数据并将文件返回给客户端。
+
+每个无限卷通常包含几十个数据成分卷。例如、包含10亿个文件的6 PB无限卷可能有60个数据成分卷位于6个节点的聚合上。

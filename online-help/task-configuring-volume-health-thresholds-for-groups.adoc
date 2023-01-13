@@ -1,0 +1,40 @@
+---
+permalink: online-help/task-configuring-volume-health-thresholds-for-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以为容量， Snapshot 副本， qtree 配额，增长和索引节点配置组级卷运行状况阈值。 
+---
+= 为组配置卷运行状况阈值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为容量， Snapshot 副本， qtree 配额，增长和索引节点配置组级卷运行状况阈值。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+组操作的卷运行状况阈值类型仅适用于组中的卷。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组操作 * 选项卡中，单击 * 添加 * 。
+. 输入组操作的名称和问题描述。
+. 从 * 组 * 下拉框中，选择要为其配置组操作的组。
+. 选择 * 操作类型 * 作为卷运行状况阈值。
+. 选择要为其设置阈值的类别。
+. 为运行状况阈值输入所需的值。
+. 单击 * 添加 * 。
+

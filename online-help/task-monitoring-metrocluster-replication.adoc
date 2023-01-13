@@ -1,0 +1,50 @@
+---
+permalink: online-help/task-monitoring-metrocluster-replication.html 
+sidebar: sidebar 
+keywords: MetroCluster Replication,Mirroring 
+summary: 您可以在镜像数据的同时监控和诊断逻辑连接的整体运行状况。您可以确定中断聚合，节点和 Storage Virtual Machine 等集群组件镜像的问题或任何风险。 
+---
+= 监控 MetroCluster 复制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在镜像数据的同时监控和诊断逻辑连接的整体运行状况。您可以确定中断聚合，节点和 Storage Virtual Machine 等集群组件镜像的问题或任何风险。
+
+
+
+== 开始之前
+
+必须将 MetroCluster 配置中的本地和远程集群添加到 Unified Manager 中
+
+
+
+== 关于此任务
+
+您可以使用运行状况/集群详细信息页面中显示的信息来更正任何复制问题。
+
+如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。
+
+Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的组件和连接状态。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>*集群*。
++
+此时将显示受监控集群的列表。
+
+. 在*运行状况/集群*清单页面中、单击要查看其MetroCluster 复制详细信息的集群的名称、然后单击* MetroCluster 复制*选项卡。
++
+要复制的 MetroCluster 配置的拓扑会显示在本地站点的相应集群对象区域中，其中包含有关要镜像数据的远程站点的信息。
+
+
+
+
+
+== 完成后
+
+如果您在 MetroCluster 配置中发现镜像问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。

@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-definitions-of-user-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 用户类型指定用户持有的帐户类型，其中包括远程用户，远程组，本地用户，数据库用户和维护用户。其中每种类型都有自己的角色、该角色由具有OnCommand 管理员角色的用户分配。 
+---
+= 用户类型的定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+用户类型指定用户持有的帐户类型，其中包括远程用户，远程组，本地用户，数据库用户和维护用户。其中每种类型都有自己的角色、该角色由具有OnCommand 管理员角色的用户分配。
+
+Unified Manager 用户类型如下：
+
+* * 维护用户 *
++
+在 Unified Manager 的初始配置期间创建。然后，维护用户创建其他用户并分配角色。维护用户也是唯一有权访问维护控制台的用户。如果 Unified Manager 安装在 Red Hat Enterprise Linux 或 CentOS 系统上，维护用户将获得用户名 "`umadmin.` "
+
+* * 本地用户 *
++
+访问Unified Manager用户界面并根据维护用户或具有OnCommand 管理员角色的用户提供的角色执行功能。
+
+* * 远程组 *
++
+使用身份验证服务器上存储的凭据访问 Unified Manager UI 的一组用户。此帐户的名称应与身份验证服务器上存储的组的名称匹配。远程组中的所有用户均可使用其个人用户凭据访问 Unified Manager UI 。远程组可以根据其分配的角色执行功能。
+
+* * 远程用户 *
++
+使用身份验证服务器上存储的凭据访问 Unified Manager UI 。远程用户根据维护用户或具有OnCommand 管理员角色的用户提供的角色执行功能。
+
+* * 数据库用户 *
++
+对 Unified Manager 数据库中的数据具有只读访问权限，无法访问 Unified Manager Web 界面或维护控制台，并且无法执行 API 调用。
+
+

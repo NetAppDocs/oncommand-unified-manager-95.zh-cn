@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用Unified Manager监控和分析集群上卷工作负载的I/O性能。您可以确定集群上是否存在性能问题描述 、以及存储是否为问题描述。 
+---
+= 分析工作负载性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager监控和分析集群上卷工作负载的I/O性能。您可以确定集群上是否存在性能问题描述 、以及存储是否为问题描述。
+
+[NOTE]
+====
+本章介绍如何使用"性能/卷详细信息"页面和"事件详细信息"页面分析工作负载性能。
+
+====

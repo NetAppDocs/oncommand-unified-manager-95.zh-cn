@@ -1,0 +1,134 @@
+---
+permalink: online-help/reference-health-all-svms-view.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过运行状况/Storage Virtual Machine清单页面、您可以查看有关正在监控的Storage Virtual Machine \(SVM\)的详细信息。' 
+---
+= 运行状况/Storage Virtual Machine清单页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过运行状况/Storage Virtual Machine清单页面、您可以查看有关正在监控的Storage Virtual Machine (SVM)的详细信息。
+
+
+
+== 命令按钮
+
+* *导出*
++
+用于将所有受监控SVM的详细信息导出为逗号分隔值 (`.csv`)文件。
+
+* *注释*
++
+用于为选定Storage Virtual Machine (SVM)添加标注。
+
+
+
+
+
+== SVM列表
+
+SVM列表以表格形式显示所有已发现SVM的属性。您可以使用列筛选器自定义显示的数据：
+
+* * 状态 *
++
+SVM的当前状态。此状态可以为严重（image:../media/sev-critical-um60.png["事件严重性图标—严重"]），错误（image:../media/sev-error-um60.png["事件严重性图标—错误"]），警告（image:../media/sev-warning-um60.png["事件严重性图标—警告"]）或正常（image:../media/sev-normal-um60.png["事件严重性图标—正常"]）。
+
++
+您可以将指针移动到状态上方、以查看有关为SVM生成的事件的详细信息。
+
++
+如果SVM的状态是由单个事件确定的、则可以查看事件名称、事件触发时间和日期、事件分配到的管理员姓名以及事件的发生原因 等信息。您可以单击查看详细信息按钮以查看有关事件的详细信息。
+
++
+如果SVM的状态是由严重性相同的多个事件确定的、则会显示前三个事件、其中包含事件名称、事件触发时间和日期以及将事件分配到的管理员的名称等信息。您可以通过单击事件名称来查看有关每个事件的更多详细信息。您也可以单击查看所有事件链接以查看生成的事件列表。
+
+* * Storage Virtual Machine*
++
+SVM 的名称。
+
++
+您可以将指针移动到每个SVM上方以查看上次生成的事件、SVM所属的集群、SVM的卷类型、允许的协议以及SVM中分配的空间等信息。您还可以查看相关对象的详细信息、例如SVM所属的集群、属于该集群的所有SVM以及属于该SVM的卷。
+
+* * 状态 *
++
+SVM的当前管理状态。此状态可以是"正在运行"、"已停止"、"正在启动"或"正在停止"。
+
+* *集群*
++
+SVM所属集群的名称。
+
+* *允许的卷类型*
++
+可在SVM中创建的卷类型。类型可以是无限卷、FlexVol 或FlexVol/FlexGroup。
+
++
+[NOTE]
+====
+使用ONTAP 9.1或更高版本时、允许使用FlexGroup 类型。
+
+====
+* *可用数据容量*
++
+SVM中所有卷的可用数据容量。
+
+* *总数据容量*
++
+SVM中所有卷的总数据容量。
+
+* *根卷*
++
+SVM根卷的名称。
+
+* * NIS状态*
++
+网络信息服务(NIS)的状态。此状态可以是"已启用"、"已禁用"或"未配置"。
+
+* * NIS域*
++
+NIS域名。如果NIS服务器已禁用或未配置、则此列为空。
+
+* * DNS状态*
++
+域名系统(DNS)的状态。此状态可以是"已启用"、"已禁用"或"未配置"。
+
+* * DNS域*
++
+DNS域名。
+
+* *名称服务交换机*
++
+从主机收集的信息类型。可能的值包括file、ldap或NIS。
+
+* 已启用* LDAP *
++
+LDAP协议是否已启用。
+
+* * 允许的协议 *
++
+可在SVM上配置的协议类型。可用协议包括FC/FCoE、iSCSI、HTTP、NDMP、NVMe、NFS和CIFS。
+
+* *允许的最大卷数*
++
+可在SVM上配置的最大允许卷数。
+
+* * 卷计数 *
++
+SVM包含的卷数。
+
+
+
+
+
+== 筛选器窗格
+
+"筛选器"窗格可用于设置筛选器、以自定义SVM列表中信息的显示方式。您可以选择与"状态"、"状态"和"标注"列相关的筛选器。
+
+[NOTE]
+====
+在"筛选器"窗格中指定的筛选器将覆盖为SVM列表中的列指定的筛选器。
+
+====

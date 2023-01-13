@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 Unified Manager 中创建组来管理存储对象。了解有关组的概念以及如何通过组规则向组添加存储对象，将有助于您管理环境中的存储对象。 
+---
+= 了解组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 中创建组来管理存储对象。了解有关组的概念以及如何通过组规则向组添加存储对象，将有助于您管理环境中的存储对象。

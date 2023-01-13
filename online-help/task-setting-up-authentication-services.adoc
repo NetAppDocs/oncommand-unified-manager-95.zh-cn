@@ -1,0 +1,80 @@
+---
+permalink: online-help/task-setting-up-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过身份验证服务，可以先对身份验证服务器中的远程用户或远程组进行身份验证，然后再为其提供对 Unified Manager 的访问权限。您可以使用预定义的身份验证服务(例如Active Directory或OpenLDAP\)或配置您自己的身份验证机制来对用户进行身份验证。' 
+---
+= 设置身份验证服务
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过身份验证服务，可以先对身份验证服务器中的远程用户或远程组进行身份验证，然后再为其提供对 Unified Manager 的访问权限。您可以使用预定义的身份验证服务（例如 Active Directory 或 OpenLDAP ）或配置自己的身份验证机制来对用户进行身份验证。
+
+
+
+== 开始之前
+
+* 您必须已启用远程身份验证。
+* 您必须具有OnCommand 管理员角色。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置*选项页面中、单击*管理服务器*>*身份验证*。
+. 选择以下身份验证服务之一：
++
+|===
+| 如果选择 | 然后执行此操作 ... 
+
+
+ a| 
+Active Directory
+ a| 
+.. 输入管理员名称和密码。
+.. 指定身份验证服务器的基本可分辨名称。
++
+例如、如果身份验证服务器的域名为ou@domain.com、则基本可分辨名称为 `cn=ou,dc=domain,dc=com`。
+
+
+
+
+
+ a| 
+OpenLDAP
+ a| 
+.. 输入绑定可分辨名称和绑定密码。
+.. 指定身份验证服务器的基本可分辨名称。
++
+例如、如果身份验证服务器的域名为ou@domain.com、则基本可分辨名称为 `cn=ou,dc=domain,dc=com`。
+
+
+
+
+
+ a| 
+其他
+ a| 
+.. 输入绑定可分辨名称和绑定密码。
+.. 指定身份验证服务器的基本可分辨名称。
++
+例如、如果身份验证服务器的域名为ou@domain.com、则基本可分辨名称为 `cn=ou,dc=domain,dc=com`。
+
+.. 指定身份验证服务器支持的 LDAP 协议版本。
+.. 输入用户名，组成员资格，用户组和成员属性。
+
+
+|===
++
+[NOTE]
+====
+如果要修改身份验证服务，必须删除任何现有的身份验证服务器，然后添加新的身份验证服务器。
+
+====
+. 单击 * 保存并关闭 * 。
+

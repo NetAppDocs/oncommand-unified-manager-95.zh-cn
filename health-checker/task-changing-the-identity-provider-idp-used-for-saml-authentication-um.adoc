@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以更改Unified Manager用于对远程用户进行身份验证的身份提供程序(IdP)。' 
+---
+= 更改用于 SAML 身份验证的身份提供程序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改 Unified Manager 用于对远程用户进行身份验证的身份提供程序（ IdP ）。
+
+
+
+== 开始之前
+
+* 您必须具有 IdP URL 和元数据。
+* 您必须有权访问 IdP 。
+
+
+
+
+== 关于此任务
+
+可以在配置 Unified Manager 之前或之后配置新的 IdP 。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选择* SAML身份验证*选项卡。
+. 输入将 Unified Manager 服务器连接到 IdP 所需的新 IdP URI 和 IdP 元数据。
++
+如果 IdP 可直接从 Unified Manager 服务器访问，则在输入 IdP URL 后，您可以单击 * 提取 IdP 元数据 * 按钮以自动填充 IdP 元数据字段。
+
+. 复制 Unified Manager 元数据 URI ，或将元数据保存到 XML 文本文件。
+. 单击 * 保存配置 * 。
++
+此时将显示一个消息框，确认您要更改配置。
+
+. 单击 * 确定 * 。
+
+
+
+
+== 完成后
+
+访问新 IdP 并输入 Unified Manager 服务器 URI 和元数据以完成配置。
+
+授权远程用户下次尝试访问 Unified Manager 图形界面时，他们将在新的 IdP 登录页面中输入凭据，而不是在旧的 IdP 登录页面中输入凭据。

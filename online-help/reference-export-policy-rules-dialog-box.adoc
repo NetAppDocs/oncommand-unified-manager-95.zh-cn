@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-export-policy-rules-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: '导出策略规则对话框显示有关在Storage Virtual Machine \(SVM\)中的卷上启用的导出策略、身份验证协议和访问的详细信息。您可以使用筛选器自定义在导出策略规则列表中显示的信息。默认情况下、信息会根据索引列进行排序。' 
+---
+= 导出策略规则对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+导出策略规则对话框显示有关在属于Storage Virtual Machine (SVM)的卷上启用的导出策略、身份验证协议和访问的详细信息。您可以使用筛选器自定义在导出策略规则列表中显示的信息。默认情况下、信息会根据索引列进行排序。
+
+* *索引*
++
+显示分配给导出策略规则的索引。它是一个唯一编号。
+
+* *访问协议*
++
+显示为导出策略规则启用的协议。
+
+* *客户端匹配*
++
+显示有权访问属于SVM的卷上的数据的客户端。
+
+* *只读访问*
++
+显示用于读取属于SVM的卷上的数据的身份验证协议。
+
+* *读取写入访问*
++
+显示用于读取或写入属于SVM的卷上的数据的身份验证协议。
+
+

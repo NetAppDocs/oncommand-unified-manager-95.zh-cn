@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-resolving-volume-offline-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: '此工作流举例说明了如何评估和解决Unified Manager可能在"信息板/概述"页面的"可用性"区域中显示的卷脱机事件。在这种情况下、您是使用Unified Manager对"信息板/概述"页面上显示的一个或多个卷脱机事件进行故障排除的管理员。' 
+---
+= 解决卷脱机问题
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流举例说明了如何评估和解决Unified Manager可能在"信息板/概述"页面的"可用性"区域中显示的卷脱机事件。在这种情况下、您是使用Unified Manager对"信息板/概述"页面上显示的一个或多个卷脱机事件进行故障排除的管理员。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+报告卷脱机的原因可能有多种：
+
+* SVM 管理员故意使卷脱机。
+* 卷的托管集群节点已关闭，存储故障转移到其 HA 对配对节点也失败。
+* 卷的托管 Storage Virtual Machine （ SVM ）已停止，因为托管该 SVM 根卷的节点已关闭。
+* 由于两个 RAID 磁盘同时发生故障，卷的托管聚合已关闭。
+
+
+您可以使用"信息板/概述"页面以及"运行状况/集群"、"运行状况/SVM"和"运行状况/卷"详细信息页面来确认或消除其中一种或多种可能性。
+
+
+
+== 步骤
+
+. 在*未解决的意外事件和风险*部分的*可用性*面板中、单击为卷脱机事件显示的超文本链接。
++
+此时将显示可用性意外事件的事件详细信息页面。
+
+. 在该页面上，查看注释以了解是否有迹象表明 SVM 管理员已使相关卷脱机。
+. 在 * 事件 * 详细信息页面上，您可以查看以下一项或多项任务的信息：
++
+** 查看发生原因字段中显示的信息，以获取可能的诊断指导。
++
+在此示例中，发生原因字段中的信息仅通知您卷已脱机。
+
+** 检查 "Notes and Updates" 区域，查看是否有迹象表明 SVM 管理员故意使相关卷脱机。
+** 单击事件源（此处为报告脱机的卷）以获取有关该卷的详细信息。 xref:task-performing-diagnotstic-actions-for-volume-offline-conditions.adoc[针对卷脱机情况执行更正操作]
+** 将事件分配给管理员。 xref:task-assigning-events-to-specific-users.adoc[分配事件]
+** 确认此事件，或者在适当情况下将其标记为已解决。 xref:task-acknowledging-and-resolving-events.adoc[确认并解决事件]
+
+
+

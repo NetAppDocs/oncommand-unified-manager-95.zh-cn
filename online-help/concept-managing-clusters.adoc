@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Unified Manager 监控，添加，编辑和删除集群来管理 ONTAP 集群。 
+---
+= 管理集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager 监控，添加，编辑和删除集群来管理 ONTAP 集群。

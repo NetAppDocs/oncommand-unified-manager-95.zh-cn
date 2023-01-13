@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用用户和组配额来限制用户或用户组可以使用的磁盘空间量或文件数。您可以查看用户和用户组配额信息，例如磁盘和文件使用情况以及在磁盘上设置的各种限制。 
+---
+= 管理配额
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用用户和组配额来限制用户或用户组可以使用的磁盘空间量或文件数。您可以查看用户和用户组配额信息，例如磁盘和文件使用情况以及在磁盘上设置的各种限制。

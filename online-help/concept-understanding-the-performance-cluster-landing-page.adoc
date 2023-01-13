@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-understanding-the-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '性能集群登录页面简要概述了选定集群的性能，并重点介绍了集群中排名前 10 位的对象的性能状态。性能问题显示在页面顶部的 " 此集群上的所有事件 " 面板中。' 
+---
+= 了解性能集群登录页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+性能集群登录页面简要概述了选定集群的性能，并重点介绍了集群中排名前 10 位的对象的性能状态。性能问题显示在页面顶部的 " 此集群上的所有事件 " 面板中。
+
+性能集群登录页面简要概述了 Unified Manager 实例管理的每个集群。此页面为您提供有关事件和性能的信息，并可用于监控集群并对其进行故障排除。下图显示了名为 OPM-mobility 的集群的性能集群登录页面示例：
+
+image::../media/opm-cluster-landing-page-draft.gif[OPM 集群登录页面草稿]
+
+"Cluster Summary" 页面上的事件计数可能与 "Performance Event Inventory" 页面上的事件计数不匹配。这是因为，违反组合阈值策略时， "Cluster Summary" 页面可以在 "Latency" 和 "Utilizance" 栏中分别显示一个事件，而违反组合策略时， "Performance Event Inventory" 页面仅显示一个事件。
+
+[NOTE]
+====
+如果集群已从 Unified Manager 管理中删除，则状态 * 已删除 * 将显示在页面顶部集群名称的右侧。
+
+====

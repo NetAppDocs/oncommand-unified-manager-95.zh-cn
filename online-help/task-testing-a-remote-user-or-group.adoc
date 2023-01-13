@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-testing-a-remote-user-or-group.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用为身份验证服务器指定的身份验证设置来验证远程用户或远程组是否可以访问Unified Manager服务器。 
+---
+= 测试远程用户或远程组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用为身份验证服务器指定的身份验证设置来验证远程用户或远程组是否可以访问Unified Manager服务器。
+
+
+
+== 开始之前
+
+* 您必须已启用远程身份验证并配置身份验证设置、以便Unified Manager服务器可以验证远程用户或远程组。
+* 您必须具有OnCommand 管理员角色。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*用户*。
+. 在*管理/用户*页面中、选择要验证的远程用户或远程组、然后单击*测试*。
+

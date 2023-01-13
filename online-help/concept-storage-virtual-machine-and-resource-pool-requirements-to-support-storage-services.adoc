@@ -1,0 +1,33 @@
+---
+permalink: online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您遵循特定于存储服务的一些 SVM 关联和资源池要求，则可以更好地确保合作伙伴应用程序的合规性： 例如，当您在 Unified Manager 中关联 SVM 并创建资源池以支持合作伙伴应用程序提供的存储服务中的保护拓扑时。 
+---
+= 支持存储服务的 SVM 和资源池要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您遵循特定于存储服务的一些 SVM 关联和资源池要求，则可以更好地确保合作伙伴应用程序的合规性： 例如，当您在 Unified Manager 中关联 SVM 并创建资源池以支持合作伙伴应用程序提供的存储服务中的保护拓扑时。
+
+某些应用程序与 Unified Manager 服务器合作，提供的服务可在二级或三级位置的源卷和保护卷之间自动配置和执行 SnapMirror 或 SnapVault 备份保护。要支持这些保护存储服务，您必须使用 Unified Manager 配置必要的 SVM 关联和资源池。
+
+要支持存储服务单跳或级联保护，包括从 SnapMirror 源或 SnapVault 主卷复制到目标 SnapMirror 或位于二级或三级位置的 SnapVault 备份卷，请遵循以下要求：
+
+* 必须在包含 SnapMirror 源卷或 SnapVault 主卷的 SVM 与二级卷或三级卷所在的任何 SVM 之间配置 SVM 关联。
++
+** 例如，要支持一种保护拓扑，其中源卷 vol_A 位于 SVM_1 上， SnapMirror 二级目标卷 vol_B 位于 SVM_2 上， 第三级 SnapVault 备份卷 Vol_ C 位于 SVM_3 上，您必须使用 Unified Manager Web UI 在 SVM_1 和 SVM_2 之间配置 SnapMirror 关联，并在 SVM_1 和 SVM_3 之间配置 SnapVault 备份关联。
++
+在此示例中， SVM_2 和 SVM_3 之间不需要任何 SnapMirror 关联或 SnapVault 备份关联，也不会使用此关联。
+
+** 要支持源卷 vol_A 和 SnapMirror 目标卷 vol_B 都位于 SVM_1 上的保护拓扑，必须在 SVM_1 和 SVM_1 之间配置 SnapMirror 关联。
+
+
+* 资源池必须包含可供关联 SVM 使用的集群聚合资源。
++
+您可以通过 Unified Manager Web UI 配置资源池，然后通过配对应用程序分配存储服务二级目标节点和三级目标节点。
+
+

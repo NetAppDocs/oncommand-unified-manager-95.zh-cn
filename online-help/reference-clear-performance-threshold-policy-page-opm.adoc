@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用清除阈值策略页面从一个或多个存储对象中删除或清除性能阈值策略。 
+---
+= 清除性能阈值策略页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用清除阈值策略页面从一个或多个存储对象中删除或_clear_性能阈值策略。
+
+策略列表仅包含选定对象中正在使用的策略。
+
+选择要从存储对象中删除的策略、然后单击*清除策略*。

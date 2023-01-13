@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 配额可用于限制或跟踪用户，组或 qtree 使用的磁盘空间和文件数。您可以使用 /etc/quotas 文件指定配额。配额将应用于特定卷或 qtree 。 
+---
+= 关于配额
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配额可用于限制或跟踪用户，组或 qtree 使用的磁盘空间和文件数。您可以使用指定配额 `/etc/quotas` 文件配额将应用于特定卷或 qtree 。

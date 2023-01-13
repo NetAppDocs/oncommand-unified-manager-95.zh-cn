@@ -1,0 +1,20 @@
+---
+permalink: install/concept-setting-up-unified-manager-for-high-availability-rhel.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用Veritas Cluster Server \(VCS\)创建高可用性设置。高可用性设置可提供故障转移功能并有助于灾难恢复。' 
+---
+= 设置Unified Manager以实现高可用性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Veritas Cluster Server (VCS)创建高可用性设置。高可用性设置可提供故障转移功能并有助于灾难恢复。
+
+在高可用性设置中、一次只能有一个节点保持活动状态。当一个节点发生故障时、VCS服务会识别此事件并立即将控制权移交给另一个节点。设置中的第二个节点将变为活动状态并开始提供服务。故障转移过程是自动进行的。
+
+配置了Unified Manager服务器的VCS集群由两个节点组成、每个节点运行相同版本的Unified Manager。必须配置所有Unified Manager服务器数据、以便从共享数据磁盘进行访问。
+
+在VCS中安装Unified Manager后、必须将Unified Manager配置为在VCS环境中运行。您可以使用配置脚本将Unified Manager设置为在VCS环境中工作。

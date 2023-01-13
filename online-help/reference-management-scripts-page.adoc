@@ -1,0 +1,46 @@
+---
+permalink: online-help/reference-management-scripts-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过管理/脚本页面、您可以将自定义脚本添加到Unified Manager中。您可以将这些脚本与警报关联，以便自动重新配置存储对象。 
+---
+= 管理/脚本页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过管理/脚本页面、您可以将自定义脚本添加到Unified Manager中。您可以将这些脚本与警报关联，以便自动重新配置存储对象。
+
+通过管理/脚本页面、您可以在Unified Manager中添加或删除脚本。
+
+
+
+== 命令按钮
+
+* * 添加 * 。
++
+显示添加脚本对话框，在此可以添加脚本。
+
+* * 删除 *
++
+删除选定脚本。
+
+
+
+
+
+== 列表视图
+
+列表视图以表格形式显示您添加到 Unified Manager 的脚本。
+
+* * 名称 *
++
+显示脚本的名称。
+
+* * 问题描述 *
++
+显示脚本的问题描述。
+
+

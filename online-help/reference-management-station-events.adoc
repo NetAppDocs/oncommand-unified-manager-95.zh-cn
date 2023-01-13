@@ -1,0 +1,100 @@
+---
+permalink: online-help/reference-management-station-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 管理工作站事件为您提供安装 Unified Manager 的服务器的状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 管理工作站事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理工作站事件为您提供安装 Unified Manager 的服务器的状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+Unified Manager服务器磁盘空间接近全满(ocumEvtUnifiedManagerDiskSpaceNearlyFull)
+ a| 
+风险
+ a| 
+管理工作站
+ a| 
+警告
+
+
+
+ a| 
+Unified Manager服务器磁盘空间已满(ocumEvtUnifiedManagerDiskSpaceFull)
+ a| 
+意外事件
+ a| 
+管理工作站
+ a| 
+严重
+
+
+
+ a| 
+Unified Manager服务器内存不足(ocumEvtUnifiedManagerMemoryLow)
+ a| 
+风险
+ a| 
+管理工作站
+ a| 
+警告
+
+
+
+ a| 
+Unified Manager服务器内存几乎用尽(ocumEvtUnifiedManagerMemoryAlmostOut)
+ a| 
+意外事件
+ a| 
+管理工作站
+ a| 
+严重
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+性能数据分析受影响（ ocumEvtUnifiedManagerDataMissingAnalyze ）
+ a| 
+风险
+ a| 
+管理工作站
+ a| 
+警告
+
+
+
+ a| 
+性能数据收集受影响（ ocumEvtUnifiedManagerDataMisingCollection ）
+ a| 
+意外事件
+ a| 
+管理工作站
+ a| 
+严重
+
+|===
+[NOTE]
+====
+最后两个性能事件仅适用于 Unified Manager 7.2 。如果其中任一事件处于 " 新建 " 状态，然后升级到较新版本的 Unified Manager 软件，则这些事件不会自动清除。您需要手动将事件移至已解决状态。
+
+====

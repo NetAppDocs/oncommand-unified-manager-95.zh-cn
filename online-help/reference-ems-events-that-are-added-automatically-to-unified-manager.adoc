@@ -1,0 +1,548 @@
+---
+permalink: online-help/reference-ems-events-that-are-added-automatically-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用Unified Manager 9.4或更高版本的软件时、以下ONTAP EMS事件会自动添加到Unified Manager中。如果在 Unified Manager 监控的任何集群上触发这些事件，则会生成这些事件。 
+---
+= 自动添加到 Unified Manager 的 EMS 事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用Unified Manager 9.4或更高版本的软件时、以下ONTAP EMS事件会自动添加到Unified Manager中。如果在 Unified Manager 监控的任何集群上触发这些事件，则会生成这些事件。
+
+在监控运行 ONTAP 9.5 或更高版本软件的集群时，可以使用以下 EMS 事件：
+
+|===
+| Unified Manager 事件名称 | EMS 事件名称 | 受影响的资源 | ONTAP 严重性 
+
+
+ a| 
+用于聚合重新定位的对象存储访问被拒绝
+ a| 
+arl.netra.ca.check.failed
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+在存储故障转移期间、用于聚合重新定位的对象存储访问被拒绝
+ a| 
+gb.netra.ca.check.failed
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+FabricPool 空间接近全满
+ a| 
+fabricpool.nNearly.full
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+NVMe-oF 宽限期已开始
+ a| 
+nvmf.graceperiod.start
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+NVMe-oF 宽限期处于活动状态
+ a| 
+nvmf.graceperiod.active
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+NVMe-oF 宽限期已过期
+ a| 
+nvmf.graceperiod.expired
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+LUN 已销毁
+ a| 
+lun.destroy
+ a| 
+LUN
+ a| 
+信息
+
+
+
+ a| 
+Cloud AWS MetaDataConnFail
+ a| 
+cloud 。 aws.metadataConnFail
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Cloud AWS IAMCredsExpired
+ a| 
+cloud 。 aws.iamCredsExpire
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Cloud AWS IAMCredsInvalid
+ a| 
+cloud 。 aws.iamCredsInvalid
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Cloud AWS IAMCredsNotFound
+ a| 
+cloud 。 aws.iamCredsNotFound
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Cloud AWS IAMCredsNotInitialized
+ a| 
+cloud 。 aws.iamNotInitialized
+ a| 
+Node
+ a| 
+信息
+
+
+
+ a| 
+Cloud AWS IAMRoleInvalid
+ a| 
+cloud 。 aws.iamRoleInvalid
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Cloud AWS IAMRoleNotFound
+ a| 
+cloud 。 aws.iamRoleNotFound
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+Objstore主机无法解析
+ a| 
+objstore.host.unresolvable
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+对象存储集群间生命周期
+ a| 
+objstore.interclusterlifDown
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+请求与对象存储签名不匹配
+ a| 
+OSC.signatureMismatch
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+其中一个 NFSv4 池已用尽
+ a| 
+nblade.nfsV4PoolExhaust
+ a| 
+Node
+ a| 
+严重
+
+
+
+ a| 
+QoS 监控内存已达到上限
+ a| 
+qos.monitor.memory.maxed
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+QoS 监控器内存已减少
+ a| 
+qos.monitor.memory.abated
+ a| 
+Node
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS 销毁
+ a| 
+NVMeNS.destroy
+ a| 
+命名空间
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS Online
+ a| 
+NVmeNS.offline
+ a| 
+命名空间
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS 脱机
+ a| 
+NVmeNS.online
+ a| 
+命名空间
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS 空间不足
+ a| 
+nvmens.out 。 space
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+同步复制不同步
+ a| 
+sms.status.out
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+同步复制已还原
+ a| 
+sms.status.in.sync
+ a| 
+SnapMirror 关系
+ a| 
+信息
+
+
+
+ a| 
+同步复制自动重新同步失败
+ a| 
+sms.resync.Attempt.failed
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+多个 CIFS 连接
+ a| 
+nblade.cifsManyAss
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+已超过最大 CIFS 连接数
+ a| 
+nblade.cifsMaxOpenSameFile
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+已超过每个用户的最大 CIFS 连接数
+ a| 
+nblade.cifsMaxSessPerUsrConn
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+CIFS NetBIOS 名称冲突
+ a| 
+nblade.cifsNbNameConflict
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+尝试连接不存在的 CIFS 共享
+ a| 
+nblade.cifsNoPrivShare
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+CIFS 卷影复制操作失败
+ a| 
+CIFS.ShadowCopy.Failure
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+AV 服务器发现病毒
+ a| 
+已检测 Nblade.vscanVirusDetened.
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+没有用于病毒扫描的 AV 服务器连接
+ a| 
+nblade.vscanNoScannerConn
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+未注册 AV 服务器
+ a| 
+nblade.vscanNoRegd扫描 程序
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+AV 服务器连接无响应
+ a| 
+nblade.vscanConnInactive.
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+AV 服务器太忙，无法接受新扫描请求
+ a| 
+nblade.vscanConnBackPressure
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+未经授权的用户尝试访问 AV 服务器
+ a| 
+nblade.vscanBadUserPrivAccess
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷存在空间问题
+ a| 
+flexgroup.constitutions.have .space.issues
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷空间状态一切正常
+ a| 
+flexgroup.constitutions.space.status.all.ok
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+FlexGroup 成分卷存在索引节点问题
+ a| 
+flexgroup.constituents.have.inodes.issues
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷索引节点状态一切正常
+ a| 
+flexgroup.constituents.inodes.status.all.ok
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷逻辑空间接近全满
+ a| 
+monitor.Vol.近 全
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷逻辑空间已满
+ a| 
+monitor.vol.full
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷逻辑空间正常
+ a| 
+monitor.vol.one.ok
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+WAFL 卷自动调整大小失败
+ a| 
+wafl.vol.autoSize.fail
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+WAFL 卷自动调整大小已完成
+ a| 
+wafl.vol.autoSize.done
+ a| 
+Volume
+ a| 
+信息
+
+|===

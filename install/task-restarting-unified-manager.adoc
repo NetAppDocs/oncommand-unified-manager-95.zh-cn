@@ -1,0 +1,35 @@
+---
+permalink: install/task-restarting-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 更改配置后，您可能需要重新启动 Unified Manager 。 
+---
+= 在Red Hat Enterprise Linux或CentOS中重新启动Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更改配置后，您可能需要重新启动 Unified Manager 。
+
+
+
+== 开始之前
+
+您必须对安装了 Unified Manager 的 Red Hat Enterprise Linux 或 CentOS 服务器具有 root 用户访问权限。
+
+
+
+== 步骤
+
+. 以 root 用户身份登录到要重新启动 Unified Manager 服务的服务器。
+. 按所示顺序停止 Unified Manager 服务和关联的 MySQL 软件：
++
+如果安装在高可用性设置中、请使用VCS Operations Manager或VCS命令停止Unified Manager服务。
+
+. 按所示顺序启动 Unified Manager ：
++
+如果安装在高可用性设置中、请使用VCS Operations Manager或VCS命令启动Unified Manager服务。
+
+

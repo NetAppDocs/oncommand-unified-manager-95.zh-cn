@@ -1,0 +1,16 @@
+---
+permalink: release-notes.html 
+sidebar: sidebar 
+keywords: release notes, oncommand unified manager 
+summary: 概括介绍OnCommand Unified Manager 9.5的新增功能、限制和已知问题。 
+---
+= 发行说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+概括介绍OnCommand Unified Manager 9.5的新增功能、限制和已知问题。
+
+有关详细信息，请参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2847421["《OnCommand Unified Manager发行说明》"^]。

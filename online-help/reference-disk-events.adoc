@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-disk-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 磁盘事件可为您提供有关磁盘状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 磁盘事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+磁盘事件可为您提供有关磁盘状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+闪存磁盘 - 备用块几乎已使用（ ocumEvtClusterFlashDiskFewerSpareBlockError ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+闪存磁盘 - 无备用块（ ocumEvtClusterFlashDiskNoSpareBlockCritical ）
+ a| 
+意外事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+某些未分配磁盘（ ocumEvtClusterUnasigedDisksome ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+某些故障磁盘（ ocumEvtDisksScomeFailed ）
+ a| 
+意外事件
+ a| 
+集群
+ a| 
+严重
+
+|===

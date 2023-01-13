@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager Web UI 中对 MetroCluster 配置的监控支持，您可以检查 MetroCluster 配置中是否存在任何连接问题。尽早发现连接问题描述可帮助您有效地管理 MetroCluster 配置。 
+---
+= 管理和监控 MetroCluster 配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager Web UI 中对 MetroCluster 配置的监控支持，您可以检查 MetroCluster 配置中是否存在任何连接问题。尽早发现连接问题描述可帮助您有效地管理 MetroCluster 配置。

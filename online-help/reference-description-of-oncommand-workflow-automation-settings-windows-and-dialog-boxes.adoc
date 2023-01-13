@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-oncommand-workflow-automation-settings-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用设置/工作流自动化页面在Unified Manager中设置OnCommand Workflow Automation。 
+---
+= OnCommand Workflow Automation 设置窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用设置/工作流自动化页面在Unified Manager中设置OnCommand Workflow Automation。

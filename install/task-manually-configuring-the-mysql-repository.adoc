@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果要安装 Unified Manager 的系统无法访问 MySQL Community Edition 存储库，则必须手动下载并配置该存储库才能成功安装。 
+---
+= 手动配置 MySQL 存储库
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要安装 Unified Manager 的系统无法访问 MySQL Community Edition 存储库，则必须手动下载并配置该存储库才能成功安装。
+
+
+
+== 关于此任务
+
+通过 MySQL 存储库，您可以访问系统上必须安装的所需 MySQL 软件。
+
+[NOTE]
+====
+如果系统没有Internet连接、则此任务将失败。如果要安装 Unified Manager 的系统无法访问 Internet ，请参见 MySQL 文档。
+
+====
+
+
+== 步骤
+
+. 下载适用于您的安装的MySQL存储库： `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. 配置 MySQL 存储库： `yum install mysql57-community-release-el7-7.noarch.rpm`
+

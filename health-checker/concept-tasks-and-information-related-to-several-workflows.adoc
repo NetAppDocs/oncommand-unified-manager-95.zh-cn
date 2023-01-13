@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-tasks-and-information-related-to-several-workflows.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager中的许多工作流都使用一些可帮助您了解和完成工作流的任务和参考文本、其中包括添加和查看有关事件的注释、分配事件、确认和解决事件以及有关卷、Storage Virtual Machine \(SVM\)、聚合的详细信息、等等。' 
+---
+= 与多个工作流相关的任务和信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 中的许多工作流都使用一些可帮助您了解和完成工作流的任务和参考文本，其中包括添加和查看有关事件的注释，分配事件，确认和解决事件以及有关卷， Storage Virtual Machine （ SVM ），聚合的详细信息， 等等。

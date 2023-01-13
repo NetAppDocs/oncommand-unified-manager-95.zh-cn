@@ -1,0 +1,29 @@
+---
+permalink: install/task-removing-custom-umadmin-user-and-maintenance-group.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您在安装 Unified Manager 之前创建了自定义主目录来定义自己的 umadmin 用户和维护帐户，则应在卸载 Unified Manager 后删除这些项。 
+---
+= 删除自定义 umadmin 用户和维护组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在安装 Unified Manager 之前创建了自定义主目录来定义自己的 umadmin 用户和维护帐户，则应在卸载 Unified Manager 后删除这些项。
+
+
+
+== 关于此任务
+
+标准 Unified Manager 卸载不会删除自定义的 umadmin 用户和维护帐户。您必须手动删除这些项。
+
+
+
+== 步骤
+
+. 以 root 用户身份登录到 Red Hat Enterprise Linux 服务器。
+. 删除 umadmin 用户：``userdel umadmin``
+. 删除维护组：``groupdel maintenance``
+

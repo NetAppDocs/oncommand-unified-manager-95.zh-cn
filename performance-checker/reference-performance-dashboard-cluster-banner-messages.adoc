@@ -1,0 +1,38 @@
+---
+permalink: performance-checker/reference-performance-dashboard-cluster-banner-messages.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager可能会在性能信息板上显示集群横幅消息、以提醒您特定集群的状态问题。 
+---
+= 性能信息板集群横幅消息和说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager可能会在性能信息板上显示集群横幅消息、以提醒您特定集群的状态问题。
+
+|===
+| 横幅消息 | Description | 解决方法： 
+
+
+ a| 
+`No performance data is being collected from cluster cluster_name. Restart Unified Manager to correct this issue.`
+ a| 
+Unified Manager 收集服务已停止，并且未从任何集群收集任何性能数据。
+ a| 
+重新启动 Unified Manager 以更正此问题描述。如果此操作无法更正问题描述，请联系技术支持。
+
+
+
+ a| 
+`More than x hour(s) of historical data is being collected from cluster cluster_name. Current data collections will start after all historical data is collected.`
+ a| 
+当前正在运行数据连续性收集周期，以便在实时集群性能收集周期之外检索性能数据。
+ a| 
+无需执行任何操作。数据连续性收集周期完成后，将收集当前性能数据。
+
+添加新集群或 Unified Manager 由于某种原因无法收集当前性能数据时，将运行数据连续性收集周期。
+
+|===

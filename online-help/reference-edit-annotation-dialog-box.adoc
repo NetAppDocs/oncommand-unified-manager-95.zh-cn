@@ -1,0 +1,40 @@
+---
+permalink: online-help/reference-edit-annotation-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过编辑标注对话框、您可以更改现有标注的问题描述。 
+---
+= 编辑标注对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过编辑标注对话框、您可以更改现有标注的问题描述。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* * 标注名称 *
++
+显示标注的名称。无法编辑此字段。
+
+* * 问题描述 *
++
+提供有意义的标注问题描述。如果要更改标注的当前问题描述 、可以编辑此字段。
+
+
+
+
+
+== 命令按钮
+
+* *保存并关闭*
++
+保存标注问题描述 更改并关闭对话框。
+
+* * 取消 *
++
+关闭编辑标注对话框、而不保存所做的更改。
+
+

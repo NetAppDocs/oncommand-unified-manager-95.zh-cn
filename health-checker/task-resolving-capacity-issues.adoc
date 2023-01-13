@@ -1,0 +1,47 @@
+---
+permalink: health-checker/task-resolving-capacity-issues.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流举例说明了如何解决容量问题描述。在这种情况下、您是管理员或操作员、并可访问Unified Manager信息板/概述页面以查看任何受监控存储对象是否存在容量问题。您发现某个卷存在容量风险、您希望确定可能的发生原因 并解决此问题。 
+---
+= 解决容量问题
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流举例说明了如何解决容量问题描述。在这种情况下、您是管理员或操作员、并可访问Unified Manager Dashboards/Overview页面来查看受监控的任何存储对象是否存在容量问题。您发现某个卷存在容量风险、您希望确定可能的发生原因 并解决此问题。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+在Dashboards/Overview页面上、您可以查看未解决的意外事件和风险区域、并在容量窗格中的SVM卷容量存在风险下看到"`卷空间已满`"错误事件。
+
+
+
+== 步骤
+
+. 在*信息板/概述*页面的*未解决的意外事件和风险*区域中、单击*容量*窗格中的卷空间已满错误事件的名称。
++
+此时将显示此错误的事件详细信息页面。
+
+. 在 * 事件 * 详细信息页面中，您可以执行以下一项或多项任务：
++
+** 查看发生原因字段中的错误消息，然后单击建议的补救措施下的建议以查看可能的补救措施的说明。 xref:task-performing-suggested-remedial-actions-for-a-full-volume.adoc[对已满的卷执行建议的补救措施]
+** 在源字段中单击对象名称（此处为卷）以获取有关此对象的详细信息。 xref:reference-health-volume-details-page.adoc[卷详细信息页面]
+** 查找可能已添加的有关此事件的注释。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[添加和查看与事件关联的注释]
+** 向事件添加注释。 xref:task-adding-and-reviewing-notes-about-an-event.adoc[添加和查看与事件关联的注释]
+** 将事件分配给其他用户。 xref:task-assigning-events-to-specific-users.adoc[分配事件]
+** 确认事件。 xref:task-acknowledging-and-resolving-events.adoc[确认并解决事件]
+** 将事件标记为已解决。 xref:task-acknowledging-and-resolving-events.adoc[确认并解决事件]
+
+
+

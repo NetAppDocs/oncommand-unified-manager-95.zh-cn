@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
+---
+= VMware上的部署过程概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署工作流介绍了在使用 Unified Manager 之前必须执行的任务。
+
+image::../media/deployment-sequence-oc-6-0.gif[部署顺序 oc 6 0]

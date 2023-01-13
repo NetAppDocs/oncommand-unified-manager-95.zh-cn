@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-configuring-global-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以为容量，增长， Snapshot 预留，配额和索引节点配置全局运行状况阈值条件，以有效监控聚合，卷和 qtree 大小。您还可以编辑用于生成超过滞后阈值的事件的设置。 
+---
+= 配置全局运行状况阈值设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以为容量，增长， Snapshot 预留，配额和索引节点配置全局运行状况阈值条件，以有效监控聚合，卷和 qtree 大小。您还可以编辑用于生成超过滞后阈值的事件的设置。
+
+
+
+== 关于此任务
+
+全局运行状况阈值设置适用于与其关联的所有对象，例如聚合，卷等。超过阈值后，系统将生成事件，如果配置了警报，则会发送警报通知。阈值默认值设置为建议值，但您可以对其进行修改，以便按一定间隔生成事件，以满足您的特定需求。更改阈值后，将在下一个监控周期生成或废弃事件。
+
+全局运行状况阈值设置可从"配置/运行状况阈值"页面访问。您还可以从各个对象的清单页面或详细信息页面修改这些对象的阈值设置。
+
+
+
+== 选项
+
+* xref:task-configuring-global-aggregate-health-threshold-values.adoc[配置全局聚合运行状况阈值]
++
+您可以为所有聚合的容量，增长和 Snapshot 副本配置运行状况阈值设置，以跟踪任何违反阈值的情况。
+
+* xref:task-configuring-global-volume-health-threshold-values.adoc[配置全局卷运行状况阈值]
++
+您可以编辑容量， Snapshot 副本， qtree 配额，卷增长，覆盖预留空间的运行状况阈值设置。 和索引节点以跟踪任何违反阈值的情况。
+
+* xref:task-configuring-global-qtree-health-threshold-values.adoc[配置全局 qtree 运行状况阈值]
++
+您可以编辑所有 qtree 的容量的运行状况阈值设置，以跟踪任何违反阈值的情况。
+
+* xref:task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.adoc[编辑非受管保护关系的滞后运行状况阈值设置]
++
+您可以增加或减少警告或错误滞后时间百分比，以便按更适合您需求的间隔生成事件。
+
+

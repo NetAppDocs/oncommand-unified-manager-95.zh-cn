@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 某些特殊字符不适用于报告搜索
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 问题描述 *
++
+在报告中搜索时使用特殊字符%和_会导致操作失败。
+
+* * 更正操作 *
++
+如果搜索包含%或_的字符串、则应在指定字符之前使用双反斜杠。
+
++
+例如、要查找包含S_10的字符串、应输入S\\_10。
+
+

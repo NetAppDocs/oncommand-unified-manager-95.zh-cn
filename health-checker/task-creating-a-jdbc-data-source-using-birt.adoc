@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 使用BIRT创建新报告后、必须创建一个数据源以将报告连接到Unified Manager。 
+---
+= 使用BIRT创建JDBC数据源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用BIRT创建新报告后、必须创建一个数据源以将报告连接到Unified Manager。
+
+
+
+== 开始之前
+
+您必须已使用BIRT创建报告。
+
+您必须已下载并安装MySQL Connector/J
+
+您必须已创建具有报告架构角色的数据库用户。
+
+
+
+== 步骤
+
+. 在Eclipse中、选择*数据资源管理器*>*数据源*>*新数据源*。
+. 选择*从以下列表中的数据源类型创建*。
+. 选择* JDBC数据源*、然后单击*下一步*。
+. 在*新建JDBC数据源配置文件*对话框中、选择*。mysql.jdbc.Driver (v5.1)*。
++
+.. 如果未显示MySQL驱动程序、请单击*管理驱动程序*。
+.. 在*管理JDBC驱动程序*对话框中、单击*添加*。
+.. 浏览到MySQL Connector/J所在的位置 `.jar` 文件已安装、然后选择此文件。
+.. 单击 * 确定 * 。
++
+您应该能够查看并选择MySQL驱动程序。
+
+
+
+. 使用适当格式输入Unified Manager实例的完全限定主机名或IP地址：
++
+|===
+| 地址类型 | 格式。 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. 输入数据库用户的用户名、输入密码、然后单击*完成*。
+

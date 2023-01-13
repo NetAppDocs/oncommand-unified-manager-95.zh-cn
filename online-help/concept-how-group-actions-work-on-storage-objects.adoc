@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-how-group-actions-work-on-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 组操作是对组中的所有存储对象执行的操作。例如，您可以将卷阈值组操作配置为同时更改组中所有卷的卷阈值。 
+---
+= 组操作如何对存储对象执行
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+组操作是对组中的所有存储对象执行的操作。例如，您可以将卷阈值组操作配置为同时更改组中所有卷的卷阈值。
+
+组支持唯一的组操作类型。您的组只能包含一个卷运行状况阈值组操作类型。但是，您可以为同一组配置不同类型的组操作（如果可用）。组操作的排名决定了将该操作应用于存储对象的顺序。存储对象的详细信息页面提供了有关对存储对象应用哪些组操作的信息。
+
+
+
+== 唯一组操作示例
+
+假设卷 A 属于组 G1 和 G2 ，并且已为这些组配置以下卷运行状况阈值组操作：
+
+* `Change_capacity_threshold` 排名为1的组操作、用于配置卷的容量
+* `Change_snapshot_copies` 排名为2的组操作、用于配置卷的Snapshot副本
+
+
+。 `Change_capacity_threshold` 组操作始终优先于 `Change_snapshot_copies` 组操作、并应用于卷A当Unified Manager完成一个监控周期后、将根据重新评估卷A的运行状况阈值相关事件 `Change_capacity_threshold` 组操作。您不能为 G1 或 G2 组配置其他卷阈值类型的组操作。

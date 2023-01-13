@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将警报配置为在发生特定事件或特定严重性类型的事件时自动发送通知。您还可以将警报与触发警报时执行的脚本相关联。 
+---
+= 管理警报
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将警报配置为在发生特定事件或特定严重性类型的事件时自动发送通知。您还可以将警报与触发警报时执行的脚本相关联。

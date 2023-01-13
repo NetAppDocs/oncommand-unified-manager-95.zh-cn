@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以显示有关集群中所有端口的信息。如果适用、您可以查看网络端口角色(集群、数据或节点管理)、链路状态、最大传输单元(MTU)、速度设置和运行状态以及端口的接口组等信息。' 
+---
+= 使用命令行界面确定繁忙LIF的最佳节点
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以显示有关集群中所有端口的信息。如果适用、您可以查看网络端口角色(集群、数据或节点管理)、链路状态、最大传输单元(Maximum Transmission Unit、MTU)、速度设置和运行状态以及端口的接口组等信息。
+
+
+
+== 步骤
+
+. 要显示端口信息、请输入以下命令： `network port show`
++
+以下示例显示了有关集群中具有数据角色且已启动的网络端口的信息：
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. 检查目标端口是否与源主端口和主节点位于同一网络中。
++
+例如、如果适用、目标主端口和主节点应位于同一个VLAN上。
+
+. 要确定最不繁忙的端口、请选择连接数最少的数据端口。
+

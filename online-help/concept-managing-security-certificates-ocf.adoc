@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-security-certificates-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 Unified Manager 服务器中配置 HTTPS ，以便通过安全连接监控和管理集群。 
+---
+= 管理安全证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 服务器中配置 HTTPS ，以便通过安全连接监控和管理集群。

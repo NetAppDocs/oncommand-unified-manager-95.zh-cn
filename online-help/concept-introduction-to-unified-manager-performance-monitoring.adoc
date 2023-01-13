@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager可为运行NetApp ONTAP 软件的系统提供性能监控功能和事件根源分析。 
+---
+= OnCommand Unified Manager性能监控简介
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager可为运行NetApp ONTAP 软件的系统提供性能监控功能和事件根源分析。
+
+Unified Manager 可帮助您确定过度使用集群组件并降低集群上其他工作负载性能的工作负载。通过定义性能阈值策略，您还可以为某些性能计数器指定最大值，以便在违反阈值时生成事件。Unified Manager 会就这些性能事件向您发出警报，以便您可以采取更正操作，并将性能恢复到正常运行级别。您可以在 Unified Manager UI 中查看和分析事件。
+
+Unified Manager 可监控两种工作负载的性能：
+
+* 用户定义的工作负载
++
+这些工作负载由您在集群中创建的 FlexVol 卷和 FlexGroup 卷组成。
+
+* 系统定义的工作负载
++
+这些工作负载由内部系统活动组成。
+
+

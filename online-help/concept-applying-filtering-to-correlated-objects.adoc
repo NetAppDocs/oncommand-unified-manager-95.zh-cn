@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-applying-filtering-to-correlated-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过筛选，您可以在网格中显示定义更明确的较小对象子集。例如，如果网格中有 25 个卷，则通过筛选，您可以仅查看吞吐量小于 90 Mbps 或延迟大于 1 毫秒 / 操作的卷 
+---
+= 应用筛选以减少网格中相关对象的列表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过筛选，您可以在网格中显示定义更明确的较小对象子集。例如，如果网格中有 25 个卷，则通过筛选，您可以仅查看吞吐量小于 90 Mbps 或延迟大于 1 毫秒 / 操作的卷

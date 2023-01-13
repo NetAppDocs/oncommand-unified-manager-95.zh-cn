@@ -1,0 +1,16 @@
+---
+permalink: config/concept-changing-the-unified-manager-host-name.html 
+sidebar: sidebar 
+keywords:  
+summary: 有时，您可能需要更改已安装 Unified Manager 的系统的主机名。例如，您可能希望重命名主机，以便按类型，工作组或受监控集群组更轻松地识别 Unified Manager 服务器。 
+---
+= 更改 Unified Manager 主机名
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有时，您可能需要更改已安装 Unified Manager 的系统的主机名。例如，您可能希望重命名主机，以便按类型，工作组或受监控集群组更轻松地识别 Unified Manager 服务器。
+
+根据 Unified Manager 是在 VMware ESXi 服务器， Red Hat 或 CentOS Linux 服务器上还是在 Microsoft Windows 服务器上运行，更改主机名所需的步骤会有所不同。

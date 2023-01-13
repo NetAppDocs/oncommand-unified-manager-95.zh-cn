@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。 
+---
+= 使用Swagger API网页访问REST API
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API 通过 Swagger 网页公开。您可以访问 Swagger 网页以显示 Unified Manager REST API 文档，并手动对 API 调用执行问题描述。
+
+
+
+== 开始之前
+
+* 您必须具有以下角色之一：操作员、存储管理员或OnCommand 管理员。
+* 您必须知道要在其中执行 REST API 的 Unified Manager 服务器的 IP 地址或完全限定域名。
+
+
+
+
+== 关于此任务
+
+我们为Swagger网页中的每个REST API提供了一个示例、用于说明可用于返回您要查看的信息的对象和属性。
+
+
+
+== 步骤
+
+. 访问Unified Manager REST API。
++
+|===
+| 选项 | Description 
+
+
+ a| 
+在Unified Manager Web UI中：
+ a| 
+在菜单栏中、单击*帮助*按钮、然后选择* API文档*。
+
+
+
+ a| 
+在浏览器窗口中：
+ a| 
+使用Unified Manager服务器IP地址或FQDN、以格式输入用于访问REST API页面的URL `https://<Unified_Manager_IP_address_or_name>/apidocs/`。例如： `+https://10.10.10.10/apidocs/+`
+
+|===
++
+此时将显示API资源类型或类别的列表。
+
+. 单击 API 资源类型可显示该资源类型的 API 。
+

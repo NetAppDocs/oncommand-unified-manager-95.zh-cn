@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-mbps-performance-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能资源管理器MBps计数器"图表显示每秒与选定对象之间传输的数据MB数。' 
+---
+= MBps性能计数器图表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"性能资源管理器MBps计数器"图表显示每秒与选定对象之间传输的数据MB数。
+
+光标位于图表区域中时显示的弹出窗口会显示特定时间的特定计数器值。
+
+在缩放视图中显示时、卷和LUN图表还会显示服务质量(QoS)最大MBps吞吐量阈值设置(如果已在ONTAP 中配置)。
+
+查看共享共享共享QoS策略的MBps的卷或LUN时、将显示"`Total Workload MBps`"一行、以显示共享此策略的所有其他工作负载正在使用的MBps。
+
+图表页面底部显示选定时间范围内最小、最大、平均和第95百分位MBps的信息。
+
+可以使用两种类型的MBps图表：
+
+
+
+== MBps—总计计数器图表
+
+显示与选定对象之间每秒传输的数据MB数。
+
+
+
+== MBps—细分计数器图表
+
+显示按磁盘读取、Flash Cache读取、写入和其他操作分隔的相同MBps数据。
+
+如果选定对象是SVM、节点、聚合、卷或LUN、则此图表选项适用。
+
+[NOTE]
+====
+只有在节点中安装了 Flash Cache 模块时，才会显示节点的 Flash Cache 数据。
+
+====
+
+
+== *缩放视图*按钮
+
+显示计数器图表数据的放大视图。
+
+* 事件
++
+严重、错误、警告和信息性事件的发生情况会显示在图表上方的时间线上。
+
+* 阈值
++
+虚线水平线表示在Unified Manager中设置的利用率警告阈值。
+
++
+红色实线表示Unified Manager中设置的利用率严重阈值。
+
+* 计数器
++
+左窗格中的计数器显示正在显示的计数器值。取消选择或选择 image:../media/eye-icon.gif[""] 与计数器关联的会在图表中隐藏和显示该计数器信息、并有助于比较对象MBps。
+
+

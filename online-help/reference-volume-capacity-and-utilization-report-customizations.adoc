@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建报告来监控有关卷的各种容量和利用率信息。例如、您可以创建报告来显示已用卷、总容量、每日增长率和Snapshot副本容量、这有助于您确定卷是否空间不足或是否过度利用或未充分利用。 
+---
+= 卷容量和利用率报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建报告来监控有关卷的各种容量和利用率信息。例如、您可以创建报告来显示已用卷、总容量、每日增长率和Snapshot副本容量、这有助于您确定卷是否空间不足或是否过度利用或未充分利用。

@@ -1,0 +1,129 @@
+---
+permalink: install/task-deploying-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: '从NetApp 支持站点 下载.ova文件后、您可以部署Unified Manager虚拟设备。您必须使用vSphere Web Client \(适用于vSphere 6.5)或vSphere Client \(适用于vSphere 5.5或6.0\)在ESXi服务器上部署虚拟设备。部署虚拟设备时，系统会创建一个虚拟机。' 
+---
+= 部署 Unified Manager 虚拟设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在下载后部署Unified Manager虚拟设备 `.ova` 文件NetApp 支持站点。您必须使用vSphere Web Client (适用于vSphere 6.5)或vSphere Client (适用于vSphere 5.5或6.0)在ESXi服务器上部署虚拟设备。部署虚拟设备时，系统会创建一个虚拟机。
+
+
+
+== 开始之前
+
+您必须已查看系统要求。如果需要进行更改以满足系统要求、则必须在部署Unified Manager虚拟设备之前实施这些更改。
+
+xref:concept-requirements-for-installing-unified-manager.adoc[虚拟基础架构要求]
+
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware 软件和安装要求]
+
+如果使用DHCP、则必须确保DHCP服务器可用、并且DHCP和虚拟机(VM)网络适配器配置正确。默认情况下， DHCP 已配置。
+
+如果使用静态网络配置、则必须确保IP地址不会在同一子网中重复、并且已配置相应的DNS服务器条目。
+
+在部署虚拟设备之前、您必须具有以下信息：
+
+* 用于访问VMware vCenter Server和vSphere Web Client (适用于vSphere 6.5)或vSphere Client (适用于vSphere 5.5或6.0)的凭据
+* 要部署 Unified Manager 虚拟设备的 ESXi 服务器的 IP 地址
+* 有关数据中心的详细信息，例如存储空间的可用性
+* 如果不使用DHCP、则必须为要连接到的网络设备提供IPv4或IPv6地址：
++
+** 主机的完全限定域名（ FQDN ）
+** 主机的 IP 地址
+** 网络掩码
+** 默认网关的 IP 地址
+** 主 DNS 地址和二级 DNS 地址
+** 搜索域
+
+
+* VMware Tools的CD-ROM或ISO映像
+
+
+
+
+== 关于此任务
+
+VMware Tools不包括在中 `.ova` 文件您必须单独安装VMware Tools。
+
+部署虚拟设备后，将生成用于 HTTPS 访问的唯一自签名证书。访问 Unified Manager Web UI 时，您可能会看到有关不可信证书的浏览器警告。
+
+支持 Unified Manager 虚拟设备的 VMware 高可用性。
+
+
+
+== 步骤
+
+. 在 vSphere Client 中，单击 * 文件 * > * 部署 OVF 模板 * 。
+. 完成*部署OVF模板*向导以部署Unified Manager虚拟设备。
++
+在 Networking Configuration 页面上：
+
++
+** 使用 DHCP 和 IPv4 寻址时，请将所有字段留空。
+** 选中 "`启用自动 IPv6 寻址` " 框，并在使用 DHCP 和 IPv6 寻址时将所有其他字段留空。
+** 如果要使用静态网络配置，您可以填写此页面上的字段，这些设置将在部署期间应用。您必须确保此IP地址对于部署它的主机是唯一的、并且尚未使用、并且具有有效的DNS条目。
+
+
+. 将 Unified Manager 虚拟设备部署到 ESXi 服务器后，右键单击虚拟机，然后选择 * 启动 * 来启动虚拟机。
++
+如果启动操作因资源不足而失败、则必须添加资源、然后重试安装。
+
+. 单击 * 控制台 * 选项卡。
++
+完成初始启动过程需要几分钟时间。
+
+. 按照提示在虚拟机上安装VMware Tools。
++
+将vSphere Web Client与vSphere 6.5结合使用时、您需要手动挂载VMware Tools ISO映像。在虚拟机中、您需要选择*编辑设置*>*虚拟硬件*>* CD/DVD驱动器x*>*数据存储库ISO文件*、然后单击*浏览*以选择此文件 `linux.iso` 作为挂载映像。
+
+. 要配置时区、请按照VM *控制台*窗口中的提示输入您的地理区域和城市或区域。
++
+无论受管设备上的时区设置如何，显示的所有日期信息都将使用为 Unified Manager 配置的时区。比较时间戳时、应注意此问题。如果您的存储系统和管理服务器配置了相同的 NTP 服务器，则表示相同的即时时间，即使显示方式不同也是如此。例如、如果您使用的设备配置的时区与管理服务器的时区不同、则创建Snapshot副本时、时间戳中反映的时间为管理服务器时间。
+
+. 如果没有可用的 DHCP 服务，或者静态网络配置的详细信息存在错误，请选择以下选项之一：
++
+|===
+| 如果您使用 | 然后执行此操作 ... 
+
+
+ a| 
+DHCP
+ a| 
+选择 * 重试 DHCP* 。如果您计划使用 DHCP ，则应确保已正确配置 DHCP 。
+
+如果使用启用了 DHCP 的网络，则会自动为虚拟设备提供 FQDN 和 DNS 服务器条目。如果未使用DNS正确配置DHCP、则会自动分配主机名"`OnCommand`"并将其与安全证书关联。如果尚未设置启用了DHCP的网络、则必须手动输入网络配置信息。
+
+
+
+ a| 
+静态网络配置
+ a| 
+.. 选择 * 输入静态网络配置的详细信息 * 。
++
+完成配置过程需要几分钟时间。
+
+.. 确认输入的值，然后选择 * 。
+
+
+|===
+. 在提示符处、输入维护用户名、然后单击*输入*。
++
+维护用户名必须以a-z中的字母开头、后跟-、a-z或0-9的任意组合。
+
+. 在提示符处输入密码、然后单击*输入*。
++
+VM 控制台将显示 Unified Manager Web UI 的 URL 。
+
+
+
+
+
+== 完成后
+
+您可以访问Web UI以执行Unified Manager的初始设置、如_Unified OnCommand Manager系统配置指南中所述。

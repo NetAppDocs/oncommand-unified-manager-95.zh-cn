@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-metrocluster-configuration-health-check.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Unified Manager 查看 MetroCluster 配置中集群的运行状况。运行状况和事件可帮助您确定是否存在可能影响工作负载性能的硬件或软件问题。 
+---
+= MetroCluster 配置运行状况检查
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager 查看 MetroCluster 配置中集群的运行状况。运行状况和事件可帮助您确定是否存在可能影响工作负载性能的硬件或软件问题。
+
+如果您将 Unified Manager 配置为发送电子邮件警报，则可以检查电子邮件中是否存在可能导致性能事件的本地或远程集群上的任何运行状况问题。在Unified Manager图形用户界面中、您可以选择*事件*以查看当前事件列表、然后使用筛选器仅显示MetroCluster 配置事件。

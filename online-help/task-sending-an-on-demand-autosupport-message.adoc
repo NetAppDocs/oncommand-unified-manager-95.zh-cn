@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-sending-an-on-demand-autosupport-message.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将Unified Manager系统信息发送给技术支持、以协助解决问题。AutoSupport 消息包含有关Unified Manager服务器的诊断系统信息和详细数据。 
+---
+= 发送按需 AutoSupport 消息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将Unified Manager系统信息发送给技术支持、以协助解决问题。AutoSupport 消息包含有关Unified Manager服务器的诊断系统信息和详细数据。
+
+
+
+== 开始之前
+
+您必须以维护用户身份登录。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* AutoSupport *。
+. 执行以下一项或两项操作：
++
+|===
+| 如果要将AutoSupport 消息发送到... | 执行此操作 ... 
+
+
+ a| 
+技术支持
+ a| 
+选中*发送到技术支持*复选框。
+
+
+
+ a| 
+特定电子邮件收件人
+ a| 
+选中*发送到电子邮件收件人*复选框、然后输入收件人的电子邮件地址。
+
+|===
+. 如果需要、请定义HTTP代理服务器的名称、端口和身份验证信息、然后单击*保存*。
+. 单击*生成并发送AutoSupport *。
+

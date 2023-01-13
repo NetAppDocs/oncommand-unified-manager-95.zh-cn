@@ -1,0 +1,137 @@
+---
+permalink: health-checker/task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在事件详细信息页面的发生原因字段中查看作业失败错误消息，并确定作业因 Snapshot 副本错误而失败。然后、您将转到运行状况/卷详细信息页面以收集更多信息。 
+---
+= 确定问题并对失败的保护作业执行更正操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在事件详细信息页面的发生原因字段中查看作业失败错误消息，并确定作业因 Snapshot 副本错误而失败。然后、您将转到运行状况/卷详细信息页面以收集更多信息。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 关于此任务
+
+事件详细信息页面上的发生原因字段中提供的错误消息包含有关失败作业的以下文本：
+
+[listing]
+----
+Protection Job Failed. Reason: (Transfer operation for
+relationship 'cluster2_src_svm:cluster2_src_vol2->cluster3_dst_svm:
+managed_svc2_vol3' ended unsuccessfully. Last error reported by
+Data ONTAP: Failed to create Snapshot copy 0426cluster2_src_vol2snap
+on volume cluster2_src_svm:cluster2_src_vol2. (CSM: An operation
+failed due to an ONC RPC failure.).)
+*Job Details*
+----
+此消息提供以下信息：
+
+* 备份或镜像作业未成功完成。
++
+作业涉及源卷之间的保护关系 `cluster2_src_vol2` 在虚拟服务器上 `cluster2_src_svm` 和目标卷 `managed_svc2_vol3` 位于名为的虚拟服务器上 `cluster3_dst_svm`。
+
+* 的Snapshot副本作业失败 `0426cluster2_src_vol2snap` 在源卷上 `cluster2_src_svm:/cluster2_src_vol2`。
+
+
+在这种情况下，您可以确定作业失败的发生原因以及可能的更正操作。但是，要解决此故障，您需要访问 System Manager Web UI 或 ONTAP 命令行界面命令。
+
+
+
+== 步骤
+
+. 您查看此错误消息并确定源卷上的 Snapshot 副本作业失败，表示源卷可能存在问题。
++
+或者，您也可以单击错误消息末尾的 * 作业详细信息 * 链接，但在这种情况下，您选择不执行此操作。
+
+. 您确定要尝试解决此事件，请执行以下操作：
++
+.. 单击 * 分配给 * 按钮，然后从菜单中选择 * 我 * 。
+.. 单击 * 确认 * 按钮，以便在为事件设置了警报时不会继续收到重复的警报通知。
+.. 您也可以选择添加有关事件的注释。
+
+
+. 单击 * 摘要 * 窗格中的 * 源 * 字段可查看有关源卷的详细信息。
++
+"* 源 * " 字段包含源对象的名称：在这种情况下，是指计划 Snapshot 副本作业的卷。
+
++
+此时将显示的"运行状况/卷"详细信息页面 `cluster2_src_vol2`、显示保护选项卡的内容。
+
+. 查看保护拓扑图，您会看到一个与拓扑中的第一个卷关联的错误图标，该卷是 SnapMirror 关系的源卷。
++
+您还会在源卷图标中看到水平条，指示为该卷设置的警告和错误阈值。
+
++
+image::../media/um-topology-cascade-job-failure.gif[作业失败级联拓扑]
+
+. 将光标置于错误图标上方可看到弹出对话框，其中显示阈值设置，并显示卷已超过错误阈值，指示容量问题描述。
+. 单击 * 容量 * 选项卡。
++
+有关卷的容量信息 `cluster2_src_vol2` 显示。
+
+. 在*容量*窗格中、您会看到条形图中有一个错误图标、再次表示卷容量已超过为卷设置的阈值级别。
+. 在容量图下方，您会看到卷自动增长已禁用，并且已设置卷空间保证。
++
+您可以决定启用自动增长，但在此情形下，您决定在决定如何解决容量问题之前进行进一步调查。
+
+. 向下滚动到 * 事件 * 列表，可以看到保护作业失败，卷达到全满前的天数以及卷空间已满事件已生成。
+. 在 * 事件 * 列表中，单击 * 卷空间已满 * 事件以获取更多信息，并确定此事件似乎与您的容量问题描述最相关。
++
+" 事件 " 详细信息页面显示源卷的 " 卷空间已满 " 事件。
+
+. 在*摘要*区域中、您将阅读事件的发生原因 字段： `The full threshold set at 90% is breached. 45.38 MB (95.54%) of 47.50 MB is used.`
+. 在*摘要*区域下方、您可以看到建议的更正操作。
++
+[TIP]
+====
+建议的更正操作仅针对某些事件显示，因此对于所有类型的事件，您不会看到此区域。
+
+====
++
+单击可执行的建议操作列表以解决 "Volume Space Full " 事件：
+
++
+** 在此卷上启用自动增长。
+** 调整卷大小。
+** 在此卷上启用并运行重复数据删除。
+** 在此卷上启用并运行数据压缩。
+
+
+. 您决定在卷上启用自动增长，但要启用自动增长，必须确定父聚合上的可用空间以及当前卷增长率：
++
+.. 查看父聚合、 `cluster2_src_aggr1`、在*相关设备*窗格中。
++
+[TIP]
+====
+您可以单击聚合的名称以获取有关该聚合的更多详细信息。
+
+====
++
+您确定聚合具有足够的空间来启用卷自动增长。
+
+.. 在页面顶部，查看指示严重意外事件的图标，并查看图标下方的文本。
++
+您确定 " 达到全满的天数：不到一天的时间；每日增长率： 5.4%" 。
+
+
+
+. 转至System Manager或访问ONTAP 命令行界面以启用 `volume autogrow` 选项
++
+[TIP]
+====
+记下卷和聚合的名称，以便在启用自动增长时可以使用它们。
+
+====
+. 解决容量问题描述 后、返回到Unified Manager*事件*详细信息页面、并将事件标记为已解决。
+

@@ -1,0 +1,34 @@
+---
+permalink: config/task-accessing-oncommand-unified-manager-web-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: 安装 Unified Manager 后，您可以访问 Web UI 来设置 Unified Manager ，以便开始监控 ONTAP 系统。 
+---
+= 访问 Unified Manager Web UI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 Unified Manager 后，您可以访问 Web UI 来设置 Unified Manager ，以便开始监控 ONTAP 系统。
+
+
+
+== 开始之前
+
+* 如果这是首次访问 Web UI ，则必须以维护用户（或 Linux 安装的 umadmin 用户）身份登录。
+* 如果您计划允许用户使用短名称而不是完全限定域名（ FQDN ）或 IP 地址访问 Unified Manager ，则网络配置必须将此短名称解析为有效的 FQDN 。
+* 如果服务器使用自签名数字证书，则浏览器可能会显示一条警告，指示此证书不可信。您可以确认继续访问的风险，也可以安装证书颁发机构（ CA ）签名的数字证书以进行服务器身份验证。
+
+
+
+
+== 步骤
+
+. 使用安装结束时显示的 URL 从浏览器启动 Unified Manager Web UI 。此 URL 是 Unified Manager 服务器的 IP 地址或完全限定域名（ FQDN ）。
++
+此链接的格式如下：https：//`URL`。
+
+. 使用维护用户凭据登录到 Unified Manager Web UI 。
+

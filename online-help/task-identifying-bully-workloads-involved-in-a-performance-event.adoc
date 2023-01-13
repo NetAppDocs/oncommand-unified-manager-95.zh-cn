@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-identifying-bully-workloads-involved-in-a-performance-event.html 
+sidebar: sidebar 
+keywords:  
+summary: '在 Unified Manager 中，您可以确定哪些工作负载在争用集群组件的使用情况上偏差最高。确定这些工作负载有助于您了解集群上某些卷响应时间较慢的原因(延迟)。' 
+---
+= 确定动态性能事件中涉及的抢占资源的工作负载
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 Unified Manager 中，您可以确定哪些工作负载在争用集群组件的使用情况上偏差最高。确定这些工作负载有助于您了解集群上某些卷的响应时间（延迟）为何较慢。
+
+
+
+== 开始之前
+
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+* 必须存在新的，已确认的或已废弃的动态性能事件。
+
+
+
+
+== 关于此任务
+
+" 事件 " 详细信息页面显示按组件使用率最高或受事件影响最大排名的用户定义和系统定义工作负载列表。这些值基于 Unified Manager 检测到并上次分析事件时确定的峰值。
+
+
+
+== 步骤
+
+. 显示 * 事件详细信息 * 页面以查看有关事件的信息。
+. 在工作负载延迟和工作负载活动图表中、选择*大量工作负载*。
+. 将光标悬停在图表上方可查看影响组件的前几个用户定义的抢占资源的工作负载。
+

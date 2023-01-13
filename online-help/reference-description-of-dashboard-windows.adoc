@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用信息板页面快速查看正在监控的对象。 
+---
+= 信息板窗口的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用信息板页面快速查看正在监控的对象。

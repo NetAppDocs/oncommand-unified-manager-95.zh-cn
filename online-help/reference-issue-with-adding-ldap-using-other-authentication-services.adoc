@@ -1,0 +1,37 @@
+---
+permalink: online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 问题描述与使用其他身份验证服务添加 LDAP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 问题描述 *
++
+如果选择其他作为身份验证服务、则用户和groupObjectClass将保留先前选定模板中的值。如果 LDAP 服务器不使用相同的值，则操作可能会失败。
+
+* * 发生原因 *
++
+未在 OpenLDAP 中正确配置用户。
+
+* * 更正操作 *
++
+您可以使用以下解决方法之一手动修复此问题描述。
+
++
+如果 LDAP 用户对象类和组对象类分别为用户和组，请执行以下步骤：
+
++
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*>*身份验证*。
+.. 在 * 身份验证服务 * 下拉菜单中，选择 * Active Directory* ，然后选择 * 其他 * 。
+.. 填写文本字段。如果 LDAP 用户对象类和组对象类分别为 posixAccount 和 posixGroup ，请执行以下步骤：
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*>*身份验证*。
+.. 在 * 身份验证服务 * 下拉菜单中，选择 * OpenLDAP* ，然后选择 * 其他 * 。
+.. 填写文本字段。如果前两个解决方法不适用、请致电 `option-set` API、然后设置 `auth.ldap.userObjectClass` 和 `auth.ldap.groupObjectClass` 选项设置为正确的值。
+
+
+

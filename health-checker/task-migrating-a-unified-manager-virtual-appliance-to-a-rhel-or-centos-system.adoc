@@ -1,0 +1,81 @@
+---
+permalink: health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果要更改运行Unified Manager的主机操作系统、可以将Unified Manager数据库备份从虚拟设备还原到Red Hat Enterprise Linux或CentOS Linux系统。 
+---
+= 将 Unified Manager 虚拟设备迁移到 Linux 系统
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要更改运行Unified Manager的主机操作系统、可以将Unified Manager数据库备份从虚拟设备还原到Red Hat Enterprise Linux或CentOS Linux系统。
+
+
+
+== 开始之前
+
+* 在虚拟设备上：
++
+** 要创建备份、您必须具有操作员、OnCommand 管理员或存储管理员角色。
+** 您必须知道要执行还原操作的 Unified Manager 维护用户的名称。
+
+
+* 在 Linux 系统上：
++
+** 您必须已按照安装指南中的说明在 RHEL 或 CentOS 服务器上安装 Unified Manager 。
+** 此服务器上的 Unified Manager 版本必须与使用备份文件的虚拟设备上的版本相同。
+** 安装后，请勿启动 UI 或在 Linux 系统上配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
+** 您必须具有 Linux 主机的 root 用户凭据。
+
+
+
+
+
+
+== 关于此任务
+
+以下步骤介绍如何在虚拟设备上创建备份文件，将备份文件复制到 Red Hat Enterprise Linux 或 CentOS 系统，然后将数据库备份还原到新系统。
+
+
+
+== 步骤
+
+. 在虚拟设备的工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*数据库备份*。
+. 在*管理/数据库备份*页面中、单击*操作*>*数据库备份设置*。
+. 将备份路径更改为 `/jail/support`。
+. 在*计划频率*部分中、选中*启用*复选框、选择*每日*、然后输入当前时间过几分钟的时间、以便很快创建备份。
+. 单击 * 保存并关闭 * 。
+. 等待几小时，以便生成备份。
++
+完整备份可能超过 1 GB ，并且可能需要三到四个小时才能完成。
+
+. 以root用户身份登录到安装了Unified Manager的Linux主机、然后从复制备份文件 `/support` 在虚拟设备上使用SCP.`root@<rhel_server>:/# scp -r admin@<vapp_server_ip_address>:/support/* .`
++
+`root@ocum_rhel-21:/# scp -r admin@10.10.10.10:/support/* .`
+
++
+确保已复制 `.7z` 备份文件和所有 `.7z` 中的存储库文件 `/database-dumps-repo` 子目录。
+
+. 在命令提示符处、还原备份： `um backup restore -f /<backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /UM_9.4.N151113.1348_backup_unix_02-12-2018-04-16.7z`
+
+. 还原操作完成后，登录到 Unified Manager Web UI 。
+
+
+
+
+== 完成后
+
+您应执行以下任务：
+
+* 生成新的 HTTPS 安全证书并重新启动 Unified Manager 服务器。
+* 将备份路径更改为Linux系统的默认设置 (`/data/ocum-backup`)、或者您选择的新路径、因为没有 `/jail/support` Linux系统上的路径。
+* 如果正在使用 WFA ，请重新配置 Workflow Automation 连接的两端。
+* 如果使用的是 SAML ，请重新配置 SAML 身份验证设置。
+
+
+确认 Linux 系统上的所有内容均按预期运行后，您可以关闭并删除 Unified Manager 虚拟设备。

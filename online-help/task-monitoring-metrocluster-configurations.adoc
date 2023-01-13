@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。 
+---
+= 监控 MetroCluster 配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以监控 MetroCluster 配置中的连接问题。详细信息包括集群中组件和连接的状态以及 MetroCluster 配置中集群之间的连接状态。
+
+
+
+== 开始之前
+
+* 必须将MetroCluster 配置中的本地和远程集群添加到OnCommand Unified Manager中。
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+
+== 关于此任务
+
+您可以使用运行状况/集群详细信息页面中显示的信息来更正任何连接问题。例如，如果集群中节点和交换机之间的连接已关闭，则会显示以下图标：
+
+image::../media/node-switch-connectivity.gif[节点交换机连接]
+
+如果将指针移动到图标上方，则可以查看有关生成的事件的详细信息。
+
+Unified Manager 使用系统运行状况警报监控 MetroCluster 配置中的组件和连接状态。
+
+只有 MetroCluster 配置中的集群才会显示 MetroCluster 连接选项卡。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>*集群*。
++
+此时将显示所有受监控集群的列表。
+
+. 在*运行状况/集群*清单页面中、单击要查看其MetroCluster 配置详细信息的集群的名称。
+. 在*运行状况/集群*详细信息页面中、单击* MetroCluster 连接*选项卡。
++
+MetroCluster 配置的拓扑将显示在相应的集群对象区域中。
+
+
+
+
+
+== 完成后
+
+如果您在 MetroCluster 配置中发现连接问题，则必须登录到 System Manager 或访问 ONTAP 命令行界面以解决这些问题。

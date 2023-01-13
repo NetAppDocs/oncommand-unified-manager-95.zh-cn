@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-information-is-contained-in-an-alert-email.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager警报电子邮件提供事件类型、事件严重性、为发生原因 事件而违反的策略名称以及事件的问题描述。此电子邮件还为每个事件提供了一个超链接，可用于在用户界面中查看此事件的详细信息页面。 
+---
+= 警报电子邮件中包含哪些信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager警报电子邮件提供事件类型、事件严重性、为发生原因 事件而违反的策略名称以及事件的问题描述。此电子邮件还为每个事件提供了一个超链接，可用于在用户界面中查看此事件的详细信息页面。
+
+警报电子邮件会发送给订阅接收警报的所有用户。
+
+如果性能计数发生原因器或容量值在收集期间发生较大变化，则对于同一阈值策略，可能会同时触发严重事件和警告事件。在这种情况下，您可能会收到一封有关警告事件的电子邮件和一封有关严重事件的电子邮件。这是因为您可以通过 Unified Manager 单独订阅来接收警告和严重阈值违规的警报。
+
+[NOTE]
+====
+升级到Unified Manager 7.2或更高版本后、由于事件和警报URL发生更改、从旧版本Unified Manager发送的电子邮件中指向事件和警报的链接将不再起作用。
+
+====
+下面显示了一个警报电子邮件示例：
+
+image::../media/um-email-alert.gif[UM 电子邮件警报]

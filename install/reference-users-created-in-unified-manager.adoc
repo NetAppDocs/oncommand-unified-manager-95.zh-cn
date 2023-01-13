@@ -1,0 +1,36 @@
+---
+permalink: install/reference-users-created-in-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时， Unified Manager 和第三方实用程序会创建以下用户： umadmin ， jboss 和 mysql 。 
+---
+= 在 Unified Manager 安装期间创建的用户
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时， Unified Manager 和第三方实用程序会创建以下用户： umadmin ， jboss 和 mysql 。
+
+* * umadmin*
++
+用于首次登录到 Unified Manager 。此用户将被分配"`OnCommand 管理员`"用户角色、并配置为"维护用户`M`"类型。此用户由 Unified Manager 创建。
+
+* * jboss*
++
+用于运行与 JBoss 实用程序相关的 Unified Manager 服务。此用户由 Unified Manager 创建。
+
+* * mysql*
++
+用于运行 Unified Manager 的 MySQL 数据库查询。此用户由 MySQL 第三方实用程序创建。
+
+
+
+除了这些用户之外， Unified Manager 还会创建相应的组：维护， jboss 和 mysql 。维护组和 JBoss 组由 Unified Manager 创建，而 mysql 组由第三方实用程序创建。
+
+[NOTE]
+====
+如果您在安装 Unified Manager 之前创建了自定义主目录并定义了自己的 umadmin 用户密码，则安装程序不会重新创建维护组或 umadmin 用户。
+
+====

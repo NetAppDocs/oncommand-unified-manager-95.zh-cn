@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-accessing-the-maintenance-console-using-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果 Unified Manager 用户界面未运行，或者您需要执行用户界面中不可用的功能，则可以访问维护控制台以重新配置虚拟设备。 
+---
+= 使用 vSphere VM 控制台访问维护控制台
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 Unified Manager 用户界面未运行，或者您需要执行用户界面中不可用的功能，则可以访问维护控制台以重新配置虚拟设备。
+
+
+
+== 开始之前
+
+您必须是维护用户。要访问维护控制台，必须打开虚拟设备的电源。
+
+
+
+== 关于此任务
+
+
+
+== 步骤
+
+. 在 vSphere Client 中，找到 Unified Manager 虚拟设备。
+. 单击 * 控制台 * 选项卡。
+. 单击控制台窗口内部以登录。
+. 使用您的用户名和密码登录到维护控制台。
++
+处于非活动状态 15 分钟后，维护控制台会将您注销。
+
+

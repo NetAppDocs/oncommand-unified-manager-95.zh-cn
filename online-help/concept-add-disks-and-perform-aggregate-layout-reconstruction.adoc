@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-add-disks-and-perform-aggregate-layout-reconstruction.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以向聚合添加磁盘以提高该聚合的存储容量和性能。添加磁盘后，只有在重建聚合之后，性能才会有所提高。 
+---
+= 添加磁盘并执行聚合布局重建
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以向聚合添加磁盘以提高该聚合的存储容量和性能。添加磁盘后，只有在重建聚合之后，性能才会有所提高。
+
+当您在事件详细信息页面上收到系统定义的阈值事件时， event 问题描述文本将列出存在问题的聚合的名称。您可以添加磁盘并在此聚合上重建数据。
+
+您添加到聚合的磁盘必须已存在于集群中。如果集群没有额外的可用磁盘，您可能需要联系管理员或购买更多磁盘。您可以使用OnCommand System Manager或ONTAP 命令向聚合添加磁盘。
+
+http://www.netapp.com/us/media/tr-3838.pdf["技术报告 3838 ：《存储子系统配置指南》"]

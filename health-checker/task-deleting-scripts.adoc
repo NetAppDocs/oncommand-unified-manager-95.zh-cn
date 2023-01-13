@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-deleting-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 当不再需要脚本或脚本无效时，您可以从 Unified Manager 中删除该脚本。 
+---
+= 正在删除脚本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要脚本或脚本无效时，您可以从 Unified Manager 中删除该脚本。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 脚本不得与警报关联。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*脚本*。
+. 在*管理/脚本*页面中、选择要删除的脚本、然后单击*删除*。
+. 在 * 警告 * 对话框中，单击 * 是 * 确认删除。
+

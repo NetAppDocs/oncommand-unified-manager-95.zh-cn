@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用导入报告对话框从.rptdesign文件导入报告。 
+---
+= 导入报告对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用导入报告对话框从导入报告 `.rptdesign` 文件。
+
+
+
+== 属性
+
+您可以通过指定报告文件名、报告名称和报告问题描述 来导入报告。
+
+* *选择报告文件*
++
+用于选择 `.rptdesign` 要导入的文件。
+
++
+[NOTE]
+====
+在Google Chrome中、将显示 `fakepath` 的 `.rptdesign` 此时将显示文件。在Mozilla Firefox中、只能使用 `.rptdesign` 此时将显示文件名。在Internet Explorer中、的完整路径 `.rptdesign` 此时将显示文件。
+
+====
+* * 名称 *
++
+显示报告的名称。默认情况下、此字段为空。您可以为导入的报告输入一个名称。
+
+* * 问题描述 *
++
+指定已导入报告的问题描述。问题描述 不能超过150个字符。
+
+* *选择具有报告架构角色的数据库用户*
++
+如果要从Storage Automation Store导入报告、请选择或创建数据库用户。
+
+
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* * 导入 *
++
+验证选定 `.rptdesign` 并导入报告。
+
+* * 取消 *
++
+取消导入操作、然后关闭导入报告对话框。
+
+

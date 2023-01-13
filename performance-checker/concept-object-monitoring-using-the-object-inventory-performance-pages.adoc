@@ -1,0 +1,18 @@
+---
+permalink: performance-checker/concept-object-monitoring-using-the-object-inventory-performance-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过性能对象清单页面，您可以根据特定性能计数器的值或性能事件监控对象性能。这很有用，因为通过确定具有性能事件的对象，您可以调查集群性能问题的发生原因。 
+---
+= 使用性能对象清单页面监控对象
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过性能对象清单页面，您可以根据特定性能计数器的值或性能事件监控对象性能。这很有用，因为通过确定具有性能事件的对象，您可以调查集群性能问题的发生原因。
+
+性能对象清单页面显示所有集群中所有对象的关联计数器，关联对象和性能阈值策略。您还可以通过这些页面将性能阈值策略应用于对象。您可以根据任何列对页面进行排序、并可以搜索所有对象名称或数据。
+
+您可以将这些页面中的数据导出为逗号分隔值 (`.csv`)文件、然后使用导出的数据构建报告。

@@ -1,0 +1,45 @@
+---
+permalink: install/task-upgrading-openjdk-on-windows-ocum.html 
+sidebar: sidebar 
+keywords: OnCommand Unified Manager 
+summary: '您可以在安装了Unified Manager的Windows服务器上升级到更高版本的Java Runtime Environment \(JRE)、以获取安全漏洞修复。' 
+---
+= 在Windows上升级JRE
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在安装了Unified Manager的Windows服务器上升级到更高版本的Java Runtime Environment (JRE)、以获取安全漏洞修复。
+
+
+
+== 开始之前
+
+对于安装了 Unified Manager 的系统，您必须具有 Windows 管理员权限。
+
+
+
+== 步骤
+
+. 以管理员用户身份登录到 Unified Manager 主机。
+. 将适当版本的Java (64位)从JDK站点下载到目标系统。
++
+例如、下载 `openjdk-11_windows-x64_bin.zip` from `+http://jdk.java.net/11/+`。
+
+. 使用 Windows 服务控制台停止以下 Unified Manager 服务：
++
+** NetApp OCIE采集单元(Ocie-au)
+** NetApp OnCommand 应用程序服务器(Oncommandsvc)
+
+
+. 展开 `zip` 文件
+. 从生成的复制目录和文件 `jdk` 目录(例如、 `jdk-11.0.1` 到Java的安装位置。示例 `C:\Program Files\NetApp\JDK\`
+. 使用 Windows 服务控制台启动 Unified Manager 服务：
++
+** NetApp OnCommand 应用程序服务器(Oncommandsvc)
+** NetApp OCIE采集单元(Ocie-au)
+
+
+

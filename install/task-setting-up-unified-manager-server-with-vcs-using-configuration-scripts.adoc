@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用配置脚本为Unified Manager配置Veritas Cluster Server \(VCS\)。' 
+---
+= 使用配置脚本使用VCS配置Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用配置脚本为Unified Manager配置Veritas Cluster Server (VCS)。
+
+
+
+== 开始之前
+
+* 必须在VCS设置中的两个节点上都安装Unified Manager。
+* XML：：libxml模块必须与Perl捆绑在一起、才能使VCS脚本正常运行。
+* 您必须已创建具有足够大小的共享LUN、以容纳源Unified Manager数据。
+* 您必须已指定绝对挂载路径、脚本才能正常运行。
++
+如果在挂载路径中创建文件夹、则此脚本将不起作用。
+
+* 您必须已下载 `ha_setup.pl` 脚本位于 `/opt/netapp/ocum/scripts`。
+
+
+
+
+== 关于此任务
+
+在VCS设置中、虚拟IP接口和挂载点处于活动状态的节点是第一个节点。另一个节点是第二个节点。
+
+
+
+== 步骤
+
+. 登录到集群的第一个节点。
++
+您必须已停止高可用性设置中第二个节点上的所有Unified Manager服务。
+
+. 添加VCS安装目录 `/opt/VRTSvcs/bin` 路径环境变量。
+. 如果要配置现有Unified Manager设置、请创建Unified Manager备份并生成支持包。
+. 运行 `ha_setup.pl` 脚本： `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. 使用Veritas Operation Manager Web控制台或VCS Cluster Manager验证是否已创建故障转移组、以及Unified Manager服务器服务、挂载点、虚拟IP、网络接口卡(Network Interface Card、NIC)和卷组是否已添加到集群组。
+. 手动将Unified Manager服务组移动到二级节点并验证集群故障转移是否正常工作。
+. 验证VCS是否已切换到集群的第二个节点。
++
+您必须验证集群的第二个节点上的数据挂载、虚拟IP、卷组和NIC是否联机。
+
+. 使用Veritas Operation Manager停止Unified Manager。
+. 运行 `perl ha_setup.pl --join -t vcs -f``mount_path` 命令以使Unified Manager服务器数据指向LUN。
+. 验证Unified Manager服务器服务是否在集群的第二个节点上正确启动。
+. 运行配置脚本以获取全局IP地址后重新生成Unified Manager证书。
++
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
+.. 单击 * 重新生成 HTTPS 证书 * 。
+
+
++
+重新生成的证书仅提供集群IP地址、而不提供完全限定域名(FQDN)。您必须使用全局IP地址设置Unified Manager以实现高可用性。
+
+. 使用以下命令访问Unified Manager UI： `\https://<FQDN of Global IP>`
+
+
+
+
+== 完成后
+
+配置高可用性后、您必须创建共享备份位置。要包含故障转移前后创建的备份、需要使用共享位置。高可用性设置中的两个节点都必须能够访问共享位置。

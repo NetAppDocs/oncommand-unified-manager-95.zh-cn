@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-svm-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建SVM清单报告来分析卷信息并查看整体运行状况和存储可用性。例如，您可以创建报告来显示达到最大卷数的 SVM 并分析已停止的 SVM 。 
+---
+= SVM清单报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建SVM清单报告来分析卷信息并查看整体运行状况和存储可用性。例如，您可以创建报告来显示达到最大卷数的 SVM 并分析已停止的 SVM 。

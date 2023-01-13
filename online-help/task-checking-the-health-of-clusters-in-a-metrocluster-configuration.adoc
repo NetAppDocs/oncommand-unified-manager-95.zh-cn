@@ -1,0 +1,58 @@
+---
+permalink: online-help/task-checking-the-health-of-clusters-in-a-metrocluster-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用 Unified Manager 检查 MetroCluster 配置中集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。 
+---
+= 检查 MetroCluster 配置中集群的运行状况
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager 检查 MetroCluster 配置中集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。
+
+
+
+== 开始之前
+
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+* 您必须已分析 MetroCluster 配置的性能事件并获取相关集群的名称。
+* MetroCluster 配置中的两个集群必须由同一个 Unified Manager 实例监控。
+
+
+
+
+== 步骤
+
+. 在左侧导航窗格中，单击 * 事件 * 以显示事件列表。
+. 在筛选器面板中，选择 * 源类型 * 类别下的所有 MetroCluster 筛选器。
+. 在 MetroCluster 事件旁边，单击集群的名称。
++
+此时将显示运行状况/集群清单页面、其中包含有关事件的详细信息。
+
++
+[NOTE]
+====
+如果未显示任何 MetroCluster 事件，您可以使用搜索栏搜索性能事件中涉及的集群的名称。
+
+====
+. 选择 * MetroCluster 连接 * 选项卡可显示选定集群与其配对集群之间连接的运行状况。
++
+image::../media/opm-um-mcc-connectivity-tab-png.gif[Unified Manager MetroCluster 连接选项卡]
+
++
+在此示例中，将显示本地集群及其配对集群的名称和组件。黄色或红色图标表示突出显示的组件的运行状况事件。连接图标表示集群之间的链接。您可以将鼠标光标指向一个图标以显示事件信息，也可以单击该图标以显示事件。任一集群上的运行状况问题描述可能已导致性能事件。
+
++
+Unified Manager 可监控集群之间链路的 NVRAM 组件。如果本地或配对集群上的 FC 交换机图标或连接图标为红色，则链路运行状况问题描述可能已导致性能事件。
+
+. 选择 * MetroCluster Replication" 选项卡。
++
+image::../media/opm-um-mcc-replication-tab-png.gif[Unified Manager MetroCluster 复制选项卡]
+
++
+在此示例中，如果本地或配对集群上的 NVRAM 图标为黄色或红色，则带有 NVRAM 的运行状况问题描述可能已导致出现性能事件。如果页面上没有红色或黄色图标，则配对集群上的性能问题描述可能已导致此性能事件。
+
+

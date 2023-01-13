@@ -1,0 +1,39 @@
+---
+permalink: health-checker/task-editing-annotation-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑标注规则来修改条件组中的条件组和条件，以便在存储对象中添加标注或删除标注。 
+---
+= 编辑标注规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑标注规则来修改条件组中的条件组和条件，以便在存储对象中添加标注或删除标注。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+编辑关联的标注规则时，标注将与存储对象解除关联。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*标注*。
+. 在 * 标注规则 * 选项卡中，选择要编辑的标注规则，然后单击 * 操作 * > * 编辑 * 。
+. 在 * 编辑标注规则 * 对话框中，根据需要更改规则名称，标注名称和值，条件组和条件。
++
+您不能更改标注规则的目标对象类型。
+
+. 单击 * 保存 * 。
+

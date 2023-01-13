@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-lun-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能/LUN资源管理器"页面详细概述了集群中所有LUN的性能。' 
+---
+= 性能/LUN资源管理器页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"性能/LUN资源管理器"页面详细概述了集群中所有LUN的性能。
+
+通过"性能/LUN资源管理器"页面、您可以跟踪和比较特定时间段内的LUN性能、这有助于您对LUN性能进行故障排除和微调。
+
+使用"查看并比较"功能、您可以将此LUN的性能与以下各项进行比较：
+
+* 同一卷上的其他LUN
+* LUN所在的卷
+
+
+图表中的统计信息会在每个收集周期之后更新；默认情况下、此收集周期为每5分钟更新一次。"查看统计信息"选择器提供了一个选项、用于显示前一小时的平均统计信息。通过此功能、您可以查看延迟图表以支持NetApp "`Performance guarantee`"计划。
+
+通过"性能/LUN资源管理器"页面、您可以：
+
+* 查看与阈值相关的问题及其详细信息
+* 跟踪和比较LUN性能数据
+* 调查与阈值相关的问题并进行故障排除
+* 调查性能问题并进行故障排除
+

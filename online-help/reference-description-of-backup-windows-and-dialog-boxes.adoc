@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-backup-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从Unified Manager的备份页面查看备份列表。您可以查看此页面中列出的备份的备份名称、大小和创建时间。您可以从数据库备份设置页面修改数据库备份设置。 
+---
+= 备份窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从Unified Manager的备份页面查看备份列表。您可以查看此页面中列出的备份的备份名称、大小和创建时间。您可以从数据库备份设置页面修改数据库备份设置。

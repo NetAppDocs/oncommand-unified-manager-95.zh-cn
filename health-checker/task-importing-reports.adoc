@@ -1,0 +1,34 @@
+---
+permalink: health-checker/task-importing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果已在Unified Manager外部创建报告、则可以导入并保存报告文件以用于Unified Manager。 
+---
+= 导入报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果已在Unified Manager外部创建报告、则可以导入并保存报告文件以用于Unified Manager。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+您必须确保Unified Manager支持您计划导入的报告。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*报告*、然后单击*导入报告*。
+. 在*导入报告*对话框中、单击*浏览*并选择要导入的文件、然后输入报告的名称和简短问题描述。
+. 单击 * 导入 * 。
++
+如果无法导入报告、则可以检查日志文件以查找导致问题描述 的错误。
+
+

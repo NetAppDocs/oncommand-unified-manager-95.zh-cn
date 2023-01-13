@@ -1,0 +1,38 @@
+---
+permalink: install/task-downloading-the-unified-manager-ova-file.html 
+sidebar: sidebar 
+keywords:  
+summary: 要将Unified Manager部署为虚拟设备、您必须从NetApp 支持站点 下载Unified Manager.ova文件。 
+---
+= 下载Unified Manager OVA文件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须下载Unified Manager``.ova`` 将NetApp 支持站点 Unified Manager部署为虚拟设备。
+
+
+
+== 开始之前
+
+您必须具有 NetApp 支持站点的登录凭据。
+
+
+
+== 关于此任务
+
+。 `.ova` 文件包含在虚拟设备中配置的Unified Manager软件。
+
+
+
+== 步骤
+
+. 登录到NetApp 支持站点 、然后导航到下载页面以在VMware vSphere上安装Unified Manager。
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp 下载：软件"]
+
+. 下载并保存 `.ova` 文件到vSphere Client可访问的本地目录或网络目录。
+. 验证校验和以确保软件下载正确。
+

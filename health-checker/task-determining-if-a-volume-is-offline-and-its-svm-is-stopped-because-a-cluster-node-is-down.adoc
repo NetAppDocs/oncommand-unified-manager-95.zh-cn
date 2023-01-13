@@ -1,0 +1,61 @@
+---
+permalink: health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用Unified Manager Web UI确认或消除卷脱机的可能性、因为托管该SVM根卷的节点已关闭、导致其主机Storage Virtual Machine \(SVM\)停止。' 
+---
+= 确定卷是否因节点关闭而脱机及其 SVM 是否已停止
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 Unified Manager Web UI 确认或消除卷脱机的可能性，因为托管该 SVM 根卷的节点已关闭，导致其主机 Storage Virtual Machine （ SVM ）停止。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+要确定卷脱机情况是否是由于托管此 SVM 根卷的节点已关闭而导致其主机 SVM 停止的，请执行以下操作：
+
+
+
+== 步骤
+
+. 在脱机卷的*运行状况/卷*详细信息页面的*相关设备*窗格中、找到并单击SVM下显示的超文本链接。
+. 在脱机卷的*运行状况/卷*详细信息页面的*相关设备*窗格中、找到并单击SVM下显示的超文本链接。
++
+运行状况/Storage Virtual Machine详细信息页面会显示托管SVM的"`Running`"或"`s顶部`"状态。如果 SVM 状态为 running ，则卷脱机情况不是由托管此 SVM 根卷的节点关闭所致。
+
+. 如果 SVM 状态为 stopped ，则单击 * 查看 SVM* 以进一步确定要停止的托管 SVM 的发生原因。
+. 在*运行状况/Storage Virtual Machine*清单页面SVM列标题上、单击筛选器符号 image:../media/filtericon-um60.png["列筛选器图标"] 然后键入已停止的 SVM 的名称。
++
+该 SVM 的信息显示在一个表中。
+
+. 在"*运行状况/Storage Virtual Machine"*清单页面上、单击 image:../media/gridviewicon.gif["网格视图图标"] 然后选择 * 根卷 * 选项。
++
+根卷列将添加到 SVM 清单中，并显示已停止 SVM 的根卷的名称。
+
+. 在根卷列中、单击根卷的名称以显示该卷的*运行状况/Storage Virtual Machine*详细信息页面。
++
+如果 SVM 根卷的状态为（联机），则不会因为托管该 SVM 根卷的节点已关闭而导致原始卷脱机。
+
+. 如果SVM根卷的状态为(脱机)、则在SVM根卷的*运行状况/卷*详细信息页面的*相关设备*窗格中、找到并单击聚合下显示的超文本链接。
+. 在聚合的*运行状况/聚合*详细信息页面的*相关设备*窗格中、找到并单击节点下显示的超文本链接。
++
+运行状况/集群详细信息页面上的节点选项卡显示SVM根卷的托管节点所属的HA节点对的状态。节点的状态将显示在屏幕中。
+
+
+
+
+
+== 完成后
+
+确认卷脱机情况是由该卷的主机 SVM 脱机状况引起的，而该状况本身是由托管该 SVM 根卷的节点关闭引起的，然后，请与相应的管理员或操作员联系以手动重新启动已关闭的节点。

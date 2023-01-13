@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-infinite-volume-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从相应的运行状况/Storage Virtual Machine详细信息页面监控带有无限卷的SVM。您可以从创建规则对话框管理规则和数据策略。您也可以从编辑存储类阈值对话框修改存储类阈值。 
+---
+= 无限卷的问题描述 窗口和对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从相应的运行状况/Storage Virtual Machine详细信息页面监控带有无限卷的SVM。您可以从创建规则对话框管理规则和数据策略。您也可以从编辑存储类阈值对话框修改存储类阈值。

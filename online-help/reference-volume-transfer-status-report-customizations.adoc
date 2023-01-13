@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以自定义卷传输状态\(历史\)报告、以按特定时间间隔查看和分析有关卷传输的信息。您可以使用筛选器查看两个日期之间的卷传输详细信息。' 
+---
+= 卷传输状态(历史)报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷传输状态(历史)报告、以按特定时间间隔查看和分析有关卷传输的信息。您可以使用筛选器查看两个日期之间的卷传输详细信息。

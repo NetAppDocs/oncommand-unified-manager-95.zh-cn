@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以根据存储和利用率容量、事件、集群清单、NFS导出或SVM清单自定义各种Unified Manager报告。。 
+---
+= 报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根据存储和利用率容量、事件、集群清单、NFS导出或SVM清单自定义各种Unified Manager报告。。

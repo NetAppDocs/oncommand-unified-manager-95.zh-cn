@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 用户和组配额事件可为您提供有关用户和用户组配额容量以及文件和磁盘限制的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 用户和组配额事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+用户和组配额事件可为您提供有关用户和用户组配额容量以及文件和磁盘限制的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反用户或组配额磁盘空间软限制（已达到 ocumEvtUserOrGroupQuotaDiskSpaceSoftLimit ）
+ a| 
+风险
+ a| 
+用户或组配额
+ a| 
+警告
+
+
+
+ a| 
+已达到用户或组配额磁盘空间硬限制（ ocumEvtUserOrGroupQuotaDiskSpaceHardLimitReached ）
+ a| 
+意外事件
+ a| 
+用户或组配额
+ a| 
+严重
+
+
+
+ a| 
+已违反用户或组配额文件数软限制（已达到 ocumEvtUserOrGroupQuotaFileCountSoftLimitBreached. ）
+ a| 
+风险
+ a| 
+用户或组配额
+ a| 
+警告
+
+
+
+ a| 
+已达到用户或组配额文件计数硬限制（ ocumEvtUserOrGroupQuotaFileCountHardLimit 已缓存）
+ a| 
+意外事件
+ a| 
+用户或组配额
+ a| 
+严重
+
+|===

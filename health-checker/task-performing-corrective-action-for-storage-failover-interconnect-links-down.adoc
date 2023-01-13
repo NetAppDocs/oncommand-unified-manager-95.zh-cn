@@ -1,0 +1,69 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html 
+sidebar: sidebar 
+keywords:  
+summary: 显示存储故障转移相关事件的事件详细信息页面时，您可以查看页面的摘要信息，以确定事件的紧急性，问题描述的可能发生原因以及问题描述的可能解决方案。 
+---
+= 对存储故障转移互连链路断开执行更正操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+显示存储故障转移相关事件的事件详细信息页面时，您可以查看页面的摘要信息，以确定事件的紧急性，问题描述的可能发生原因以及问题描述的可能解决方案。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+在此示例场景中， " 事件 " 详细信息页面上提供的事件摘要包含有关存储故障转移互连链路断开情况的以下信息：
+
+[listing]
+----
+Event: Storage Failover Interconnect One or More Links Down
+
+Summary
+
+Severity: Warning
+State: New
+Impact Level: Risk
+Impact Area: Availability
+Source: aardvark
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: At least one storage failover interconnected link
+       between the nodes aardvark and bonobo is down.
+       RDMA interconnect is up (Link0 up, Link1 down)
+----
+示例事件信息表示 HA 对节点 aardvark 和 bonobo 之间的存储故障转移互连链路 Link1 已关闭，但 Apple 和 Boy 之间的 Link0 处于活动状态。由于一个链路处于活动状态，因此远程动态内存访问（ RDMA ）仍在运行，存储故障转移作业仍可成功完成。
+
+但是，为了确保两个链路均发生故障且存储故障转移保护完全禁用，您决定进一步诊断 Link1 发生故障的原因。
+
+
+
+== 步骤
+
+. 在 * 事件 * 详细信息页面中，您可以单击源字段中指定的事件的链接，以获取可能与存储故障转移互连链路断开情况相关的其他事件的详细信息。
++
+在此示例中，事件源是名为 aardvark 的节点。单击该节点名称将在运行状况/集群详细信息页面的节点选项卡上显示受影响HA对aardvark和bonobo的HA详细信息、并显示最近在受影响HA对上发生的其他事件。
+
+. 有关此事件的详细信息，请查看 * HA 详细信息 * 。
++
+在此示例中，相关信息位于 Events 表中。该表显示了 " `S存储故障转移连接一个或多个链路断开` " 事件，事件的生成时间，以及此事件的源节点。
+
+
+
+
+
+== 完成后
+
+使用 HA 详细信息中的节点位置信息，请求或亲自完成受影响 HA 对节点上的存储故障转移问题描述的物理检查和修复。

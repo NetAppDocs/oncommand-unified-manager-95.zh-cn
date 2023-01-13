@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-edit-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过编辑集群对话框、您可以修改现有集群的连接设置、包括IP地址、端口和协议。 
+---
+= 编辑集群对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过编辑集群对话框、您可以修改现有集群的连接设置、包括IP地址、端口和协议。
+
+您可以编辑以下字段：
+
+* * 主机名或 IP 地址 *
++
+用于指定用于连接到集群的集群管理LIF的FQDN、简称或IP地址(IPv4或IPv6)。
+
+* * 用户名 *
++
+用于指定可用于登录到集群的用户名。
+
+* * 密码 *
++
+用于为指定用户名指定密码。
+
+* *协议*
++
+用于指定可在集群上配置的协议类型。您可以启用HTTP或HTTPS (用于安全连接)。可使用两种协议与集群建立连接、并通过HTTP选择HTTPS。默认情况下、HTTPS使用默认端口443启用。
+
+* * 端口 *
++
+用于指定用于连接到集群的端口号。如果未指定端口、则会使用选定协议的默认端口(对于HTTP为80、对于HTTPS为443)。
+
+

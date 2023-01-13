@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用性能/聚合信息页面可查看聚合的物理和逻辑属性列表。此信息可能有助于回答与性能相关的问题。 
+---
+= 性能/聚合信息页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用性能/聚合信息页面可查看聚合的物理和逻辑属性列表。此信息可能有助于回答与性能相关的问题。
+
+
+
+== 聚合属性
+
+* *聚合类型*
++
+聚合的类型：
+
++
+** HDD
+** 混合
++
+将HDD和SSD结合使用、但尚未启用Flash Pool。
+
+** 混合(Flash Pool)
++
+将HDD和SSD结合使用、并且已启用Flash Pool。
+
+** SSD
+** SSD （ FabricPool ）
++
+将SSD和云层结合使用
+
+** VMDisk (SDS)
++
+虚拟机中的虚拟磁盘
+
+** VMDisk (FabricPool)
++
+将虚拟磁盘和云层结合在一起
+
+** LUN (FlexArray)
+
+
+* *集群*
++
+聚合所属集群的名称。您可以单击此名称以在"性能/集群资源管理器"页面中显示集群详细信息。
+
+* *节点*
++
+聚合中的磁盘所属节点的名称。您可以单击此名称以在"性能/节点资源管理器"页面中显示节点详细信息。
+
+* * 闪存池 *
++
+这是Flash Pool聚合：是还是否
+
++
+Flash Pool聚合是由SSD和HDD组成的混合聚合。
+
+* * FabricPool *
++
+这是FabricPool 聚合：是还是否
+
++
+FabricPool 聚合是一个由SSD和云层组成的聚合。
+
+* *非活动数据报告*
++
+在此聚合上启用还是禁用非活动数据报告功能。启用后、此聚合上的卷将在"性能/卷"清单页面中显示冷数据量。
+
++
+如果ONTAP 版本不支持非活动数据报告、则此字段中的值为"`N/A`"。
+
+

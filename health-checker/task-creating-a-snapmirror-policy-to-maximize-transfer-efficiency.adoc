@@ -1,0 +1,40 @@
+---
+permalink: health-checker/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建 SnapMirror 策略来指定保护关系的 SnapMirror 传输优先级。通过 SnapMirror 策略，您可以通过分配优先级来最大程度地提高从源到目标的传输效率，从而计划在正常优先级传输之后运行低优先级传输。 
+---
+= 创建 SnapMirror 策略以最大程度地提高传输效率
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建 SnapMirror 策略来指定保护关系的 SnapMirror 传输优先级。通过 SnapMirror 策略，您可以通过分配优先级来最大程度地提高从源到目标的传输效率，从而计划在正常优先级传输之后运行低优先级传输。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已设置 Workflow Automation 。
+* 此任务假定您已完成配置保护对话框中的目标信息区域。
+
+
+
+
+== 步骤
+
+. 在 * 配置保护 * 对话框的 * SnapMirror * 选项卡中，单击 * 关系设置 * 区域中的 * 创建策略 * 链接。
++
+此时将显示创建 SnapMirror 策略对话框。
+
+. 在 * 策略名称 * 字段中，键入要为策略指定的名称。
+. 在 * 传输优先级 * 字段中，选择要分配给策略的传输优先级。
+. 在 * 注释 * 字段中，输入策略的可选注释。
+. 单击 * 创建 * 。
++
+新策略将显示在 SnapMirror 策略下拉列表中。
+
+

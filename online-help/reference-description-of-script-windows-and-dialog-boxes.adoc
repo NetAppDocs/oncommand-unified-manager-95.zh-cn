@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-script-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过管理/脚本页面、您可以向Unified Manager添加脚本。 
+---
+= 脚本窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过管理/脚本页面、您可以向Unified Manager添加脚本。

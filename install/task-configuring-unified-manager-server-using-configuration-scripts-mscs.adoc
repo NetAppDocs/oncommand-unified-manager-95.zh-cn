@@ -1,0 +1,79 @@
+---
+permalink: install/task-configuring-unified-manager-server-using-configuration-scripts-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: 在两个集群节点上安装Unified Manager后、您可以使用配置脚本为Unified Manager配置故障转移集群管理器。 
+---
+= 使用配置脚本使用MSCS配置Unified Manager服务器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在两个集群节点上安装Unified Manager后、您可以使用配置脚本为Unified Manager配置故障转移集群管理器。
+
+
+
+== 开始之前
+
+您必须已创建一个大小足以容纳源Unified Manager数据的共享LUN。
+
+
+
+== 步骤
+
+. 登录到集群的第一个节点。
+. 使用故障转移集群管理器在Windows 2012或Windows 2016中创建角色：
++
+.. 启动故障转移集群管理器。
+.. 单击*角色*>*创建空角色*来创建空角色。
+.. 右键单击*角色*>*添加资源*>*更多资源*>* IP地址*、将全局IP地址添加到角色。
++
+[NOTE]
+====
+这两个节点都必须能够对此IP地址执行ping操作、因为Unified Manager是在配置高可用性后使用此IP地址启动的。
+
+====
+.. 右键单击*角色*>*添加存储*、将数据磁盘添加到角色。
+
+
+. 运行 `ha_setup.pl` 第一个节点上的脚本： `perl ha_setup.pl --first -t mscs -g group_name -i ip address -n fully_qualified_domain_cluster_name -f shared_location_path -k data_disk -u user_name -p password`
++
+`C:\Program Files\NetApp\ocum\bin>perl .\ha_setup.pl --first -t mscs -g umgroup -i "IP Address" -n spr38457002.eng.company.com -k "Cluster Disk 2" -f E:\ -u admin -p wx17yz`
+
++
+该脚本可从获取 `Install_Dir\NetApp\ocum\bin`。
+
++
+** 您可以获取的值 `-g`， `-k`，和 `-i` 选项 `cluster res` 命令：
+** 。 `-n` 选项必须是可从两个节点执行Ping操作的全局IP地址的FQDN。
+
+
+. 使用故障转移集群管理器Web控制台验证Unified Manager服务器服务、数据磁盘和集群IP地址是否已添加到集群组。
+. 使用停止所有Unified Manager服务器服务(MySQL、ocie和ocieau) `services.msc` 命令：
+. 在故障转移集群管理器中将服务组切换到第二个节点。
+. 运行命令 `perl ha_setup.pl --join -t mscs -f``shared_location_path` 在集群的第二个节点上、将Unified Manager服务器数据指向LUN。
++
+`perl ha_setup.pl --join -t mscs -f E:\`
+
+. 使用故障转移集群管理器使所有Unified Manager服务联机。
+. 手动切换到Microsoft集群服务器的另一个节点。
+. 验证Unified Manager服务器服务是否在集群的另一个节点上正确启动。
+. 运行配置脚本以获取全局IP地址后重新生成Unified Manager证书。
++
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
+.. 单击 * 重新生成 HTTPS 证书 * 。
+
+
++
+重新生成的证书提供集群IP地址、而不是完全限定域名(FQDN)。您必须使用全局IP地址设置Unified Manager以实现高可用性。
+
+. 使用以下命令访问Unified Manager UI： `https://<FQDN of Global IP>`
+
+
+
+
+== 完成后
+
+配置高可用性后、您必须创建共享备份位置。要在故障转移前后包含备份、需要使用共享位置。高可用性设置中的两个节点都必须能够访问共享位置。

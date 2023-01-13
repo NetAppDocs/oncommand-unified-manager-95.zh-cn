@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-storage-vm-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用性能/SVM信息页面可查看SVM的已配置属性列表。此信息可能有助于回答与性能相关的问题。 
+---
+= 性能/SVM信息页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用性能/SVM信息页面可查看SVM的已配置属性列表。此信息可能有助于回答与性能相关的问题。
+
+
+
+== SVM属性
+
+* * IP 地址 *
++
+如果已定义、则此地址为SVM管理LIF的IPv4或IPv6地址。
+
+* * IP 空间 *
++
+此SVM所在的IP空间。
+
+* *域名*
++
+SVM管理LIF的完全限定域名(FQDN)。
+
+* *服务类型*
++
+SVM的类型。
+
++
+可能的值包括："`Admin`"表示集群范围的管理SVM、"System `S"表示IP空间中的集群级别通信、"Data `D`"表示为SVM提供服务的数据、"`Node``"表示节点管理SVM。
+
+* *容量(可用/总计)*
++
+SVM可用的总存储容量(以GB为单位)以及当前可用的存储容量。
+
+* *集群*
++
+SVM所属集群的名称。您可以单击此名称以在"性能/集群资源管理器"页面中显示集群详细信息。
+
+* * 卷 *
++
+SVM中的卷数。您可以单击该数字以在"性能/卷清单"页面中显示卷。
+
+* * LIF*
++
+SVM可用的LIF数。您可以单击该数字以在"性能/LIF清单"页面中显示LIF。
+
+* *数据LIF*
++
+SVM可用的数据LIF的数量和类型。
+
+* *允许的卷类型*
++
+可在SVM上创建的卷类型。
+
++
+SVM可以包含一个或多个FlexVol 卷或FlexGroup 卷。使用ONTAP 9.1或更高版本时、允许使用FlexGroup 类型。
+
++
+[NOTE]
+====
+Unified Manager的性能页面不支持无限卷。
+
+====
+* * 允许的协议 *
++
+此SVM可处理的所有协议的列表。可用协议包括FC/FCoE、iSCSI、HTTP、NDMP、NVMe、NFS和CIFS。
+
+* * 端口集 *
++
+如果为FCP或iSCSI协议定义、则为分配给此SVM的端口集。
+
+

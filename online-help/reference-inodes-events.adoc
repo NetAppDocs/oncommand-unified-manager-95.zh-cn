@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-inodes-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 索引节点事件在索引节点已满或接近已满时提供信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 索引节点事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+索引节点事件在索引节点已满或接近已满时提供信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+索引节点接近全满（ ocumEvtIdnodesAlmostFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+索引节点已满（ ocumEvtIdnodesFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+|===

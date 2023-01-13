@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用OnCommand 统一管理器创建保护关系、监控受管集群上的SnapMirror和SnapVault 关系并对其进行故障排除、以及在数据被覆盖或丢失时还原数据。 
+---
+= 管理和监控保护关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用OnCommand 统一管理器创建保护关系、监控受管集群上的SnapMirror和SnapVault 关系并对其进行故障排除、以及在数据被覆盖或丢失时还原数据。
+
+对于 SnapMirror 操作，复制类型有两种：
+
+* 异步
++
+从主卷到二级卷的复制取决于计划。
+
+* 同步
++
+在主卷和二级卷上同时执行复制。
+
+
+
+您最多可以同时执行 10 个保护作业，而不会影响性能。如果同时运行 11 到 30 个作业，则可能会对性能产生一定影响。建议不要同时运行 30 个以上的作业。

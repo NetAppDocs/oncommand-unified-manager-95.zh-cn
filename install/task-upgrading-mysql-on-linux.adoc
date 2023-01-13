@@ -1,0 +1,50 @@
+---
+permalink: install/task-upgrading-mysql-on-linux.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。 
+---
+= 在 Linux 上升级 MySQL
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在安装了 Unified Manager 的 Linux 服务器上升级到较新版本的 MySQL ，以获取安全漏洞修复。
+
+
+
+== 开始之前
+
+对于安装了 Unified Manager 的 Linux 系统，您必须具有 root 权限。
+
+
+
+== 关于此任务
+
+您只能升级到 MySQL 5.7 的次要更新，例如 5.7.1 到 5.7.2 。您不能升级到 MySQL 的主要版本，例如 5.8 版。
+
+
+
+== 步骤
+
+. 以 root 用户身份登录到 Unified Manager 主机。
+. 下载最新的MySQL社区服务器 `.rpm` 捆绑包。
+. 将捆绑包解压缩到目标系统上的目录。
+. 您将获得多个 `.rpm` 在取消绑定此软件包后、此目录中的软件包将被取消、但Unified Manager仅需要以下rpm软件包：
++
+** mysql-commune-client-5.7.x
+** mysql-commune-libs-5.7.x
+** mysql-commune-server-5.7.x
+** mysql-commune-common-5.7.x
+** mysql-community-libs-compat-5.7.x删除所有其他 `.rpm` 软件包。将所有软件包安装在 rpm 软件包中不会出现发生原因 任何问题。
+
+
+. 按所示顺序停止 Unified Manager 服务和关联的 MySQL 软件：
+. 使用以下命令调用 MySQL 升级： `yum install *.rpm`
++
+`*.rpm` 指 `.rpm` 下载较新版本MySQL的目录中的软件包。
+
+. 按所示顺序启动 Unified Manager ：
+

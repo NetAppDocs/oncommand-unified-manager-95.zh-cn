@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义存储摘要报告以查看和分析有关HA对中存储容量的信息。您可以使用筛选器按集群型号显示存储利用率、未分配LUN数量最多的LUN的容量以及用于配置新卷和LUN的可用HA对容量。 
+---
+= 存储摘要报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义存储摘要报告以查看和分析有关HA对中存储容量的信息。您可以使用筛选器按集群型号显示存储利用率、未分配LUN数量最多的LUN的容量以及用于配置新卷和LUN的可用HA对容量。

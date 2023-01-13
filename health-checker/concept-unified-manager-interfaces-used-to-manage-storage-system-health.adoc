@@ -1,0 +1,32 @@
+---
+permalink: health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html 
+sidebar: sidebar 
+keywords:  
+summary: 本节介绍了OnCommand Unified Manager为解决数据存储容量、可用性和保护问题而提供的两个用户界面的相关信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。 
+---
+= 用于管理存储系统运行状况的 Unified Manager 接口
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本节介绍了OnCommand Unified Manager为解决数据存储容量、可用性和保护问题而提供的两个用户界面的相关信息。这两个 UI 是 Unified Manager Web UI 和维护控制台。
+
+如果要使用 Unified Manager 中的保护功能，还必须安装和配置 OnCommand Workflow Automation （ WFA ）。
+
+
+
+== Unified Manager Web UI
+
+通过 Unified Manager Web UI ，管理员可以监控与数据存储容量，可用性和保护相关的集群问题并对其进行故障排除。
+
+本节介绍了管理员在对Unified Manager Web UI中显示的存储容量、数据可用性或保护问题进行故障排除时可以遵循的一些常见工作流。
+
+
+
+== 维护控制台
+
+通过维护控制台，管理员可以监控，诊断和解决操作系统问题，版本升级问题，用户访问问题以及与 Unified Manager 服务器本身相关的网络问题。如果 Unified Manager Web UI 不可用，则只能通过维护控制台访问 Unified Manager 。
+
+本节提供了有关访问维护控制台并使用此控制台解决与Unified Manager服务器运行相关的问题的说明。

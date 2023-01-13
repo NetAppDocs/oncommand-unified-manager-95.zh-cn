@@ -1,0 +1,204 @@
+---
+permalink: install/reference-protocol-and-port-requirements.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 使用浏览器、API客户端或SSH、Unified Manager UI和API必须能够访问所需的端口。通过所需的端口和协议，可以在 Unified Manager 服务器与受管存储系统，服务器和其他组件之间进行通信。 
+---
+= 协议和端口要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用浏览器、API客户端或SSH、Unified Manager UI和API必须能够访问所需的端口。通过所需的端口和协议，可以在 Unified Manager 服务器与受管存储系统，服务器和其他组件之间进行通信。
+
+
+
+== 与 Unified Manager 服务器的连接
+
+连接到Unified Manager Web UI时、不必指定端口号、因为始终使用默认端口。例如、由于Unified Manager始终在其默认端口上运行、因此您可以输入 `\https://<host>` 而不是 `\https://<host>:443`。无法更改默认端口号。
+
+Unified Manager 服务器使用特定协议访问以下接口：
+
+|===
+| 接口 | 协议 | Port | Description 
+
+
+ a| 
+Unified Manager Web UI
+ a| 
+HTTP
+ a| 
+80
+ a| 
+用于访问 Unified Manager Web UI ；自动重定向到安全端口 443 。
+
+
+
+ a| 
+使用 API 的 Unified Manager Web UI 和程序
+ a| 
+HTTPS
+ a| 
+443.
+ a| 
+用于安全访问 Unified Manager Web UI 或进行 API 调用； API 调用只能使用 HTTPS 进行。
+
+
+
+ a| 
+维护控制台
+ a| 
+SSH/SFTP
+ a| 
+22.
+ a| 
+用于访问维护控制台和检索支持包。
+
+
+
+ a| 
+Linux 命令行
+ a| 
+SSH/SFTP
+ a| 
+22.
+ a| 
+用于访问 Red Hat Enterprise Linux 或 CentOS 命令行并检索支持包。
+
+
+
+ a| 
+MySQL 数据库
+ a| 
+MySQL
+ a| 
+3306
+ a| 
+用于启用对 Unified Manager 的 OnCommand Workflow Automation 和 OnCommand API 服务访问。
+
+
+
+ a| 
+系统日志
+ a| 
+UDP
+ a| 
+514.
+ a| 
+用于从 ONTAP 系统访问基于订阅的 EMS 消息以及根据这些消息创建事件。
+
+
+
+ a| 
+REST
+ a| 
+HTTPS
+ a| 
+9443
+ a| 
+用于从经过身份验证的 ONTAP 系统访问基于 API 的实时 REST EMS 事件。
+
+|===
+
+
+== 与 Unified Manager 服务器的连接
+
+您必须将防火墙配置为打开端口、以便在Unified Manager服务器与受管存储系统、服务器和其他组件之间进行通信。如果端口未打开，则通信将失败。
+
+根据您的环境，您可以选择修改 Unified Manager 服务器用来连接到特定目标的端口和协议。
+
+Unified Manager 服务器使用以下协议和端口连接到受管存储系统，服务器和其他组件：
+
+|===
+| 目标 | 协议 | Port | Description 
+
+
+ a| 
+存储系统
+ a| 
+HTTPS
+ a| 
+443/TCP
+ a| 
+用于监控和管理存储系统。
+
+
+
+ a| 
+存储系统
+ a| 
+NDMP
+ a| 
+10000 TCP
+ a| 
+用于某些 Snapshot 还原操作。
+
+
+
+ a| 
+AutoSupport 服务器
+ a| 
+HTTPS
+ a| 
+443.
+ a| 
+用于发送 AutoSupport 信息。需要访问 Internet 才能执行此功能。
+
+
+
+ a| 
+身份验证服务器
+ a| 
+LDAP
+ a| 
+389.
+ a| 
+用于发出身份验证请求以及用户和组查找请求。
+
+
+
+ a| 
+LDAPS
+ a| 
+636
+ a| 
+用于安全 LDAP 通信。
+ a| 
+邮件服务器
+
+
+
+ a| 
+SMTP
+ a| 
+25.
+ a| 
+用于发送警报通知电子邮件。
+ a| 
+SNMP 陷阱发送器
+
+
+
+ a| 
+SNMPv1 或 SNMPv3
+ a| 
+162 UDP
+ a| 
+用于发送警报通知 SNMP 陷阱
+ a| 
+外部数据提供程序服务器
+
+
+
+ a| 
+TCP
+ a| 
+2003 年
+ a| 
+用于将性能数据发送到外部数据提供程序，例如 Graphite 。
+ a| 
+NTP 服务器
+
+|===

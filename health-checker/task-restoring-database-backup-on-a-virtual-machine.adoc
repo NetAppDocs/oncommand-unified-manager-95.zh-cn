@@ -1,0 +1,63 @@
+---
+permalink: health-checker/task-restoring-database-backup-on-a-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用Unified Manager维护控制台在虚拟机上还原Unified Manager数据库。 
+---
+= 在虚拟机上还原数据库备份
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用Unified Manager维护控制台在虚拟机上还原Unified Manager数据库。
+
+
+
+== 开始之前
+
+* 您必须具有维护用户凭据。
+* Unified Manager备份文件必须位于本地系统上。
+* 备份文件必须为 `.7z` 类型。
+
+
+
+
+== 关于此任务
+
+备份兼容性取决于平台和版本。您可以将备份从虚拟设备还原到另一个虚拟设备、或者从虚拟设备还原到Red Hat Enterprise Linux或CentOS系统。
+
+[NOTE]
+====
+在与创建原始备份文件的系统不同的虚拟设备上执行还原操作时、新vApp上的维护用户名和密码必须与原始vApp中的凭据相同。
+
+====
+
+
+== 步骤
+
+. 在vSphere客户端中、找到Unified Manager虚拟机、然后选择*控制台*选项卡。
+. 单击控制台窗口中的，然后使用您的用户名和密码登录到维护控制台。
+. 在 * 主菜单 * 中，为 * 系统配置 * 选项输入数字。
+. 在*系统配置菜单*中、输入*从OCUM备份还原*选项的编号。
+. 出现提示时，输入备份文件的绝对路径。
++
+[listing]
+----
+Bundle to restore from: opt/netapp/data/ocum-backup/UM_9.4.N151112.0947_backup_unix_02-25-2018-11-41.7z
+----
++
+还原操作完成后，您可以登录到 Unified Manager 。
+
+
+
+
+
+== 完成后
+
+还原备份后，如果 OnCommand Workflow Automation 服务器不起作用，请执行以下步骤：
+
+. 在 Workflow Automation 服务器上，更改 Unified Manager 服务器的 IP 地址以指向最新的计算机。
+. 在 Unified Manager 服务器上，如果在步骤 1 中采集失败，请重置数据库密码。
+

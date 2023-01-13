@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-sending-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流介绍如何使用Unified Manager维护控制台生成、检索支持包并将其发送给技术支持。如果您所拥有的问题描述需要比 AutoSupport 消息提供的诊断和故障排除更详细的信息，则应发送支持包。 
+---
+= 将Unified Manager支持包发送给技术支持
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流介绍如何使用Unified Manager维护控制台生成、检索支持包并将其发送给技术支持。如果您所拥有的问题描述需要比 AutoSupport 消息提供的诊断和故障排除更详细的信息，则应发送支持包。
+
+
+
+== 关于此任务
+
+有关维护控制台和支持包的详细信息、请参见 xref:task-using-the-maintenance-console.adoc[使用维护控制台]。
+
+Unified Manager一次存储两个生成的支持包。

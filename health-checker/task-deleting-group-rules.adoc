@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 当不再需要组规则时、您可以从OnCommand 统一管理器中删除组规则。 
+---
+= 正在删除组规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要组规则时、您可以从OnCommand 统一管理器中删除组规则。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+删除组规则后，关联的存储对象将从组中删除。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组规则 * 选项卡中，选择要删除的组规则，然后单击 * 删除 * 。
+. 在 * 警告 * 对话框中，单击 * 是 * 确认删除。
+

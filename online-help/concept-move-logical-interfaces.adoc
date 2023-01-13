@@ -1,0 +1,43 @@
+---
+permalink: online-help/concept-move-logical-interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: '将逻辑接口\(LIF\)移动到不太繁忙的端口有助于改善负载平衡、帮助进行维护操作和性能调整、并减少间接访问。' 
+---
+= 移动逻辑接口（ LIF ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+将逻辑接口（ Logical Interface ， LIF ）移动到不太繁忙的端口有助于改善负载平衡，帮助进行维护操作和性能调整，并减少间接访问。
+
+间接访问会降低系统效率。当卷工作负载使用不同节点进行网络处理和数据处理时，会发生这种情况。为了减少间接访问，您可以重新排列 LIF ，这包括移动 LIF 以使用同一节点进行网络处理和数据处理。您可以配置负载平衡，使 ONTAP 自动将繁忙的 LIF 移动到其他端口，也可以手动移动 LIF 。
+
+|===
+| * 优势 * 
+
+
+ a| 
+* 改善负载平衡。
+* 减少间接访问。
+
+
+
+
+ a| 
+* 注意事项 *
+
+
+
+ a| 
+[NOTE]
+====
+移动连接到 CIFS 共享的 LIF 时，访问 CIFS 共享的客户端将断开连接。对 CIFS 共享的任何读取或写入请求都会中断。
+
+====
+|===
+您可以使用 ONTAP 命令配置负载平衡。有关详细信息，请参见 ONTAP 网络文档。
+
+您可以使用OnCommand System Manager和ONTAP 命令行界面命令手动移动LIF。

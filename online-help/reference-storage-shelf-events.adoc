@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-storage-shelf-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 存储架事件会告诉您存储架是否异常，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 存储架事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储架事件会告诉您存储架是否异常，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+电压范围异常（ ocumEvtShelfVolumeAbnormal ）
+ a| 
+风险
+ a| 
+存储架
+ a| 
+警告
+
+
+
+ a| 
+异常电流范围（ ocumEvtShellfCurrentAbnormal ）
+ a| 
+风险
+ a| 
+存储架
+ a| 
+警告
+
+
+
+ a| 
+温度异常（ ocumEvtShellfTemperatureAbnormal ）
+ a| 
+风险
+ a| 
+存储架
+ a| 
+警告
+
+|===

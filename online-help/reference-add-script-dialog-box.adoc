@@ -1,0 +1,26 @@
+---
+permalink: online-help/reference-add-script-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过添加脚本对话框，您可以向 Unified Manager 添加脚本。您可以使用脚本配置警报，以自动解决为存储对象生成的事件。 
+---
+= 添加脚本对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过添加脚本对话框，您可以向 Unified Manager 添加脚本。您可以使用脚本配置警报，以自动解决为存储对象生成的事件。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* * 选择脚本文件 *
++
+用于为警报选择脚本。
+
+* * 问题描述 *
++
+用于为脚本指定问题描述。
+
+

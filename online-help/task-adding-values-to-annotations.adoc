@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-adding-values-to-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以向标注添加值，然后将存储对象与特定标注名称 - 值对关联起来。将值添加到标注有助于更有效地管理存储对象。 
+---
+= 将值添加到标注
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以向标注添加值，然后将存储对象与特定标注名称 - 值对关联起来。将值添加到标注有助于更有效地管理存储对象。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+您不能向预定义标注添加值。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*标注*。
+. 在 * 标注 * 页面中，选择要添加值的标注，然后在 * 值 * 部分中单击 * 添加 * 。
+. 在 * 添加标注值 * 对话框中，为标注指定一个值。
++
+您指定的值对于选定标注必须是唯一的。
+
+. 单击 * 添加 * 。
+

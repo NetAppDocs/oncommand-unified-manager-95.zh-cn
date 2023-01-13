@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-user-access-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: '根据RBAC设置、您可以从"管理/用户"页面添加用户、并为这些用户分配适当的角色以访问和监控集群。' 
+---
+= 用户访问窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根据RBAC设置、您可以从"管理/用户"页面添加用户、并为这些用户分配适当的角色以访问和监控集群。

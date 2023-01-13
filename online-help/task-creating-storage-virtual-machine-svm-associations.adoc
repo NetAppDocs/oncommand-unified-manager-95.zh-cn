@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-creating-storage-virtual-machine-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过创建Storage Virtual Machine关联向导、合作伙伴保护应用程序可以将源Storage Virtual Machine (SVM\)与目标SVM关联、以便用于SnapMirror和SnapVault 关系。在初始配置目标卷时，合作伙伴应用程序会使用这些关联来确定要选择的资源。' 
+---
+= 创建SVM关联
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过创建Storage Virtual Machine关联向导、合作伙伴保护应用程序可以将源Storage Virtual Machine (SVM)与目标SVM相关联、以便用于SnapMirror和SnapVault 关系。在初始配置目标卷时，合作伙伴应用程序会使用这些关联来确定要选择的资源。
+
+
+
+== 开始之前
+
+* 要关联的SVM必须已存在。
+* 您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+
+== 关于此任务
+
+对于任何源SVM和关系类型、您只能在每个目标集群上选择一个目标SVM。
+
+使用 delete 和 create 函数更改关联仅会影响未来的配置操作。它不会移动现有目标卷。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*保护*>* SVM关联*。
+. 在*保护/Storage Virtual Machine关联*页面中、单击*创建*。
++
+此时将启动创建Storage Virtual Machine关联向导。
+
+. 选择以下源之一：
++
+** * 任意 *
++
+如果要在任何主SVM源与一个或多个目标SVM之间创建关联、请选择此选项。这意味着、当前需要保护的所有现有SVM以及将来创建的任何SVM都会与指定的目标SVM相关联。例如、您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标SVM。
+
+** * 单个 *
++
+如果要选择与一个或多个目标SVM关联的特定源SVM、请选择此选项。例如、如果要为数据必须彼此分离的多个客户端提供存储服务、请选择此选项将特定SVM源与仅分配给该客户端的特定SVM目标关联起来。
+
+** * 无（外部） *
++
+如果要在源SVM和目标SVM的外部灵活卷之间创建关联、请选择此选项。
+
+
+
+. 选择要创建的一种或两种保护关系类型：
++
+** * SnapMirror *
+** * SnapVault *
+
+
+. 单击 * 下一步 * 。
+. 选择一个或多个SVM保护目标。
+. 单击 * 完成 * 。
+

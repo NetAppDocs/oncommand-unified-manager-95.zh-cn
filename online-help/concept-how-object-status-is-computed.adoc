@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: '对象状态由当前处于 " 新增 " 或 " 已确认 " 状态的最严重事件确定。例如，如果对象状态为 " 错误 " ，则对象的某个事件的严重性类型为 " 错误 " 。采取更正操作后，事件状态将变为 "Resolved" 。' 
+---
+= 如何计算对象状态
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对象状态由当前处于 " 新增 " 或 " 已确认 " 状态的最严重事件确定。例如，如果对象状态为 " 错误 " ，则该对象的一个事件的严重性类型为 " 错误 " 。采取更正操作后，事件状态将变为 "Resolved" 。

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-user-access.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建角色并分配功能，以控制用户对选定集群对象的访问。您可以确定具有访问集群中选定对象所需功能的用户。仅向这些用户提供管理集群对象的访问权限。 
+---
+= 管理用户访问
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建角色并分配功能，以控制用户对选定集群对象的访问。您可以确定具有访问集群中选定对象所需功能的用户。仅向这些用户提供管理集群对象的访问权限。

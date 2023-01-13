@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 请务必了解在 Windows 上下载和安装 Unified Manager 的步骤顺序。在Windows上安装Unified Manager之前、您可以确定是否要为Unified Manager配置高可用性。 
+---
+= 在 Windows 上安装 Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+请务必了解在 Windows 上下载和安装 Unified Manager 的步骤顺序。在Windows上安装Unified Manager之前、您可以确定是否要为Unified Manager配置高可用性。

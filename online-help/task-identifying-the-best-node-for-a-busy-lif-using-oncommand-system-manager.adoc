@@ -1,0 +1,26 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以显示有关集群中所有端口的信息。如果适用、您可以查看网络端口角色(集群、数据或节点管理)、链路状态、最大传输单元(MTU)、速度设置和运行状态以及端口的接口组等信息。' 
+---
+= 使用OnCommand 系统管理器确定繁忙LIF的最佳节点
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以显示有关集群中所有端口的信息。如果适用、您可以查看网络端口角色(集群、数据或节点管理)、链路状态、最大传输单元(Maximum Transmission Unit、MTU)、速度设置和运行状态以及端口的接口组等信息。
+
+
+
+== 步骤
+
+. 打开OnCommand 系统管理器。
+. 在*主页*选项卡中、双击存储系统。
+. 在导航窗格中、展开*节点*层次结构。
+. 要查找节点上的活动连接、请在导航窗格中选择节点的图标。
+. 单击节点的名称链接、然后单击*配置*>*端口/适配器*。
+. 按节点记下最高客户端数。
+

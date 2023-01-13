@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果无法访问 Unified Manager 图形用户界面，则可能需要从维护控制台禁用 SAML 身份验证。如果配置不当或IdP不可访问、则可能会发生这种情况。 
+---
+= 从维护控制台禁用 SAML 身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果无法访问 Unified Manager 图形用户界面，则可能需要从维护控制台禁用 SAML 身份验证。如果配置不当或IdP不可访问、则可能会发生这种情况。
+
+
+
+== 开始之前
+
+您必须以维护用户身份访问维护控制台。
+
+
+
+== 关于此任务
+
+禁用 SAML 身份验证后，配置的目录服务提供程序（例如 Active Directory 或 LDAP ）将执行登录身份验证。除了配置的远程用户之外，本地用户和维护用户还可以访问图形用户界面。
+
+您还可以从 UI 的设置 / 身份验证页面禁用 SAML 身份验证。
+
+[NOTE]
+====
+禁用 SAML 身份验证后， Unified Manager 将自动重新启动。
+
+====
+
+
+== 步骤
+
+. 登录到维护控制台。
+. 在 * 主菜单 * 中，输入 * 禁用 SAML 身份验证 * 选项的编号。
++
+此时将显示一条消息，确认您要禁用 SAML 身份验证并重新启动 Unified Manager 。
+
+. 键入 * 。 y* ，然后按 Enter 键， Unified Manager 将重新启动。
+
+
+
+
+== 结果
+
+下次远程用户尝试访问 Unified Manager 图形界面时，他们将在 Unified Manager 登录页面而不是 IdP 登录页面中输入凭据。
+
+
+
+== 完成后
+
+如果需要，请访问 IdP 并删除 Unified Manager 服务器 URL 和元数据。

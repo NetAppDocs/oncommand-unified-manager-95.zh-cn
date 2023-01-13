@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-editing-the-group-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑在 Unified Manager 中创建的组的名称和问题描述。 
+---
+= 编辑组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑在 Unified Manager 中创建的组的名称和问题描述。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+编辑组以更新名称时，必须指定唯一名称；不能使用现有组名称。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组 * 选项卡中，选择要编辑的组，然后单击 * 编辑 * 。
+. 在 * 编辑组 * 对话框中，更改组的名称，问题描述或两者。
+. 单击 * 保存 * 。
+

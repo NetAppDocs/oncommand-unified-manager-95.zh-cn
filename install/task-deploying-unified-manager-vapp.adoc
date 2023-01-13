@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 部署 Unified Manager 包括下载软件，部署虚拟设备，创建维护用户名和密码以及在 Web UI 中执行初始设置。 
+---
+= 部署 Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+部署 Unified Manager 包括下载软件，部署虚拟设备，创建维护用户名和密码以及在 Web UI 中执行初始设置。
+
+
+
+== 开始之前
+
+* 您必须已满足系统部署要求。
++
+xref:concept-requirements-for-installing-unified-manager.adoc[系统要求]
+
+* 您必须具有以下信息：
++
+** NetApp 支持站点的登录凭据
+** 用于访问VMware vCenter Server和vSphere Web Client (适用于vSphere 6.5)或vSphere Client (适用于vSphere 5.5或6.0)的凭据
+** 要部署 Unified Manager 虚拟设备的 ESXi 服务器的 IP 地址
+** 有关数据中心的详细信息，例如数据存储库中的存储空间和内存要求
+** 如果要使用IPv6寻址、则必须在主机上启用IPv6。
+** VMware Tools的CD-ROM或ISO映像
+
+
+
+
+
+
+== 关于此任务
+
+您可以将 Unified Manager 部署为 VMware ESXi 服务器上的虚拟设备。
+
+您必须使用VMware控制台访问维护控制台、而不是使用SSH。
+
+Unified Manager不包含VMware Tools``.ova`` 文件、和必须单独安装。
+
+
+
+== 完成后
+
+完成部署和初始设置后，您可以在维护控制台中添加集群或配置其他网络设置，然后访问 Web UI 。

@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-downloading-an-https-certificate-signing-request-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以下载当前HTTPS安全证书的证书请求、以便将文件提供给证书颁发机构进行签名。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。 
+---
+= 下载 HTTPS 证书签名请求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以下载当前HTTPS安全证书的证书请求、以便将文件提供给证书颁发机构进行签名。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
+. 单击 * 下载 HTTPS 证书签名请求 * 。
+. 保存 `<hostname>.csr` 文件
+
+
+
+
+== 完成后
+
+您可以将文件提供给证书颁发机构进行签名，然后安装签名证书。

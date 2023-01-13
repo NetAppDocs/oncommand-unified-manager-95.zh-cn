@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: '安装Unified Manager后、您必须完成初始设置(也称为首次体验向导)才能访问Web UI。然后，您可以执行其他配置任务，例如添加集群，配置远程身份验证，添加用户和添加警报。' 
+---
+= 正在配置Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装Unified Manager后、您必须完成初始设置(也称为首次体验向导)才能访问Web UI。然后，您可以执行其他配置任务，例如添加集群，配置远程身份验证，添加用户和添加警报。
+
+要完成 Unified Manager 实例的初始设置，需要执行本手册中所述的某些过程。其他过程包括建议的配置设置，这些设置有助于在新实例上进行设置，或者在开始定期监控 ONTAP 系统之前最好了解这些设置。

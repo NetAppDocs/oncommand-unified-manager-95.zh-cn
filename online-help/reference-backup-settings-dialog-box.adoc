@@ -1,0 +1,77 @@
+---
+permalink: online-help/reference-backup-settings-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用数据库备份设置对话框指定备份路径和保留数量、并为选定备份实例启用备份计划。 
+---
+= 数据库备份设置对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用数据库备份设置对话框指定备份路径和保留数量、并为选定备份实例启用备份计划。
+
+您可以更改以下数据库备份设置：
+
+* * 路径 *
++
+指定备份文件存储位置的路径。下表指定了不同操作系统的备份路径格式和默认位置：
+
++
+|===
+| 主机操作系统 | 备份路径格式 
+
+
+ a| 
+虚拟设备
+ a| 
+`/opt/netapp/data/ocum-backup`
+
+
+
+ a| 
+Red Hat Enterprise Linux 或 CentOS
+ a| 
+`/data/ocum-backup`
+
+
+
+ a| 
+Microsoft Windows
+ a| 
+`C:\ProgramData\NetApp\OnCommandAppData\ocum\backup\`
+
+|===
+* *保留计数*
++
+指定Unified Manager要保留的最大备份数。默认值为10。
+
+* *计划频率启用*
++
+此选项可用于指定计划备份的时间；您可以选择每日或每周。
+
+* * 每日 *
++
+指定每日备份计划和时间。
+
+* * 每周 *
++
+指定每周备份计划以及日期和时间。
+
+
+
+
+
+== 命令按钮
+
+* *保存并关闭*
++
+保存备份文件并关闭对话框。Unified Manager将备份文件保存为以下格式： `um_um_version_backup_os_timestamp.7z`。
+
+* * 取消 *
++
+关闭数据库备份设置对话框、而不保存所做的更改。
+
+

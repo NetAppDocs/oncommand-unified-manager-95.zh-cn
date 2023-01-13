@@ -1,0 +1,37 @@
+---
+permalink: config/task-disabling-nested-groups-from-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果启用了远程身份验证，则可以禁用嵌套组身份验证，以便只有单个用户（而不是组成员）可以远程向 Unified Manager 进行身份验证。如果要缩短 Active Directory 身份验证响应时间，可以禁用嵌套组。 
+---
+= 禁用远程身份验证中的嵌套组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果启用了远程身份验证，则可以禁用嵌套组身份验证，以便只有单个用户（而不是组成员）可以远程向 Unified Manager 进行身份验证。如果要缩短 Active Directory 身份验证响应时间，可以禁用嵌套组。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员角色。
+* 只有在使用 Active Directory 时，禁用嵌套组才适用。
+
+
+
+
+== 关于此任务
+
+在 Unified Manager 中禁用对嵌套组的支持可能会缩短身份验证时间。如果禁用嵌套组支持，并且将远程组添加到 Unified Manager 中，则各个用户必须是远程组的成员才能向 Unified Manager 进行身份验证。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选中*禁用嵌套组查找*框。
+. 单击 * 保存 * 。
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-report-sharing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用共享选项通过电子邮件与一个或多个用户共享报告。 
+---
+= 什么是报告共享
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用*共享*选项通过电子邮件与一个或多个用户共享报告。
+
+您必须先保存报告、然后再进行共享、以确保显示您最近对报告所做的更改。
+
+您可以使用任何所需格式共享报告。*共享*选项可帮助您通过电子邮件即时共享报告、即使与无权访问Unified Manager但拥有有效电子邮件地址的人员也是如此。

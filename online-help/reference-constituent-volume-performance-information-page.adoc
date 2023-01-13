@@ -1,0 +1,70 @@
+---
+permalink: online-help/reference-constituent-volume-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 使用性能/成分卷信息页面可查看FlexGroup 成分卷的物理和逻辑属性列表。此信息可能有助于回答与性能相关的问题。 
+---
+= 性能/成分卷信息页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用性能/成分卷信息页面可查看FlexGroup 成分卷的物理和逻辑属性列表。此信息可能有助于回答与性能相关的问题。
+
+
+
+== 成分卷属性
+
+* * 类型 *
++
+成分卷的类型：读写(rw)或数据保护(dp)。
+
+* * 模式 *
++
+卷的模式；这是FlexGroup 卷的成分卷。
+
+* *集群*
++
+此FlexGroup 成分卷所属集群的名称。您可以单击此名称以在"性能/集群资源管理器"页面中显示集群详细信息。
+
+* * 聚合 *
++
+此FlexGroup 成分卷所在聚合的名称。您可以单击此名称以在"性能/聚合资源管理器"页面中显示聚合详细信息。
+
+* * FlexGroup *
++
+此成分卷所属的FlexGroup 卷的名称。您可以单击此名称以在"性能/FlexGroup资源管理器"页面中显示FlexGroup 卷详细信息。
+
+* * Storage Virtual Machine*
++
+此FlexGroup 成分卷所属SVM的名称。您可以单击此名称以在"性能/SVM资源管理器"页面中显示SVM详细信息。
+
+* * 分层策略 *
++
+卷上设置的分层策略。只有当卷部署在FabricPool 聚合上时、此策略才会生效。可用策略包括：
+
++
+** 无此卷的数据始终保留在性能层上。
+** 仅Snapshot。只有Snapshot数据才会自动移动到云层。所有其他数据仍保留在性能层上。
+** 备份。在数据保护卷上、传输的所有用户数据都从云层开始、但后续客户端读取可以通过发生原因 热数据移动到性能层。
+** 自动。当ONTAP 确定此卷上的数据为"`Hot`"或"`Cold`"时、此数据会自动在性能层和云层之间移动。
+
+
+* * RAID 类型 *
++
+此成分卷所在聚合上使用的冗余类型。可能的类型：
+
++
+** RAID0
+** RAID4
+** RAID-DP
+** RAID-TEC
+
+
+* *容量(可用/总计)*
++
+成分卷上可用的总存储空间(以GB为单位)以及当前可用的存储容量。
+
+

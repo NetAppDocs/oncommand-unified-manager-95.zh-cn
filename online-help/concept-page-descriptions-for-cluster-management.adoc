@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以查看和管理集群、包括添加、编辑、重新发现和删除集群、从单个页面。 
+---
+= 数据源管理的页面说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看和管理集群、包括添加、编辑、重新发现和删除集群、从单个页面。

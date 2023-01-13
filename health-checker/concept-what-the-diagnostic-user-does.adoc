@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-the-diagnostic-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 诊断访问的目的是使技术支持能够帮助您进行故障排除，您只能在技术支持的指导下使用它。 
+---
+= 诊断用户功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+诊断访问的目的是使技术支持能够帮助您进行故障排除，您只能在技术支持的指导下使用它。
+
+诊断用户可以在技术支持的指导下执行操作系统级别的命令，以便进行故障排除。

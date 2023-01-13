@@ -1,0 +1,26 @@
+---
+permalink: performance-checker/concept-how-cluster-operations-can-affect-workload-latency.html 
+sidebar: sidebar 
+keywords:  
+summary: '操作\(IOPS\)表示集群上所有用户定义和系统定义的工作负载的活动。IOPS统计信息可帮助您确定集群进程(例如创建备份或运行重复数据删除)是否正在影响工作负载延迟(响应时间)、或者是否可能已导致或促成性能事件。' 
+---
+= 集群操作如何影响工作负载延迟
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+操作（ IOPS ）表示集群上所有用户定义和系统定义的工作负载的活动。IOPS 统计信息可帮助您确定集群进程（例如创建备份或运行重复数据删除）是否正在影响工作负载延迟（响应时间），或者是否可能导致或影响性能事件。
+
+在分析性能事件时，您可以使用 IOPS 统计信息来确定性能事件是否由集群上的问题描述引起。您可以确定可能是性能事件主要促成因素的特定工作负载活动。IOPS 以每秒操作数（操作数 / 秒）为单位。
+
+image::../media/opm-ops-chart-png.gif[Performance Manager操作图表]
+
+此示例显示了"性能/卷详细信息"页面上的IOPS图表。实际操作统计信息为蓝线、操作统计信息的预期范围为灰色。
+
+[NOTE]
+====
+在某些集群过载的情况下、Unified Manager可能会显示此消息 `Data collection is taking too long on Cluster cluster_name`。这意味着，没有为 Unified Manager 收集足够的统计信息进行分析。您需要减少集群使用的资源，以便收集统计信息。
+
+====

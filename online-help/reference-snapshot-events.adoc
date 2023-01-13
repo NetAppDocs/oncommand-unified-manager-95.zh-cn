@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-snapshot-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Snapshot 事件提供了有关快照状态的信息，可用于监控快照是否存在潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。 
+---
+= Snapshot 事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snapshot 事件提供了有关快照状态的信息，可用于监控快照是否存在潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已禁用 Snapshot 自动删除（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已启用 Snapshot 自动删除（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+Snapshot 自动删除配置已修改（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+|===

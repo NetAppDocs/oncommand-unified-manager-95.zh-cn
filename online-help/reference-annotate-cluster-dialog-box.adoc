@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-cluster-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过标注集群对话框、您可以手动标注存储对象。您可以选择一个集群或多个集群、并使用现有标注列表中的特定值对进行标注。 
+---
+= 标注集群对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过标注集群对话框、您可以手动标注存储对象。您可以选择一个集群或多个集群、并使用现有标注列表中的特定值对进行标注。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* *标注=值对*
++
+用于为选定集群选择所需的标注。
+
+* * 应用 *
++
+将选定标注应用于集群。
+
+* * 取消 *
++
+关闭标注集群对话框、而不保存所做的更改。
+
+

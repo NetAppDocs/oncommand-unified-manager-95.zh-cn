@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用保护/Storage Virtual Machine关联页面查看现有SVM关联及其属性、并确定是否需要其他SVM关联。 
+---
+= 查看SVM关联
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用保护/Storage Virtual Machine关联页面查看现有SVM关联及其属性、并确定是否需要其他SVM关联。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*保护*>* SVM关联*。
++
+此时将显示SVM关联及其属性的列表。
+
+

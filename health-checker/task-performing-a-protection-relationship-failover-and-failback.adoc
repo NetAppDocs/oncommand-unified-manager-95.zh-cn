@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果保护关系中的源卷因硬件故障或灾难而被禁用，则可以使用 Unified Manager 中的保护关系功能使保护目标可读 / 写访问并故障转移到该卷，直到源重新联机为止； 然后，您可以在原始源可提供数据时故障恢复到原始源。 
+---
+= 执行保护关系故障转移和故障恢复
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果保护关系中的源卷因硬件故障或灾难而被禁用，则可以使用 Unified Manager 中的保护关系功能使保护目标可读 / 写访问并故障转移到该卷，直到源重新联机为止； 然后，您可以在原始源可提供数据时故障恢复到原始源。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 要执行此操作，您必须已设置 OnCommand Workflow Automation 。
+
+
+
+
+== 步骤
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[断开 SnapMirror 关系]。
++
+在将目标从数据保护卷转换为读 / 写卷之前，以及在反转此关系之前，必须断开此关系。
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[反转保护关系]。
++
+当初始源卷重新可用时，您可以决定通过还原源卷来重新建立初始保护关系。在还原源之前，您必须将其与写入前一个目标的数据同步。您可以使用反向重新同步操作来创建新的保护关系，方法是反转原始关系的角色并将源卷与前一个目标同步。此时将为此新关系创建一个新的基线 Snapshot 副本。
+
++
+反转关系类似于级联关系：
+
++
+image::../media/um-toplogy-reverse-resync.gif[um toplogy 反向重新同步]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[中断已反转的 SnapMirror 关系]。
++
+当初始源卷重新同步并可以再次提供数据时，请使用中断操作中断已反转的关系。
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[删除此关系]。
++
+如果不再需要反转关系，则应先删除该关系，然后再重新建立原始关系。
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[重新同步此关系]。
++
+使用重新同步操作将数据从源同步到目标并重新建立原始关系。
+
+

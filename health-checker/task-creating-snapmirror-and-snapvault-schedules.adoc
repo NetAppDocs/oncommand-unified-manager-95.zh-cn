@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以创建基本或高级 SnapMirror 和 SnapVault 计划，以便在源卷或主卷上启用自动数据保护传输，从而根据卷上的数据更改频率提高传输频率或降低传输频率。 
+---
+= 创建 SnapMirror 和 SnapVault 计划
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以创建基本或高级 SnapMirror 和 SnapVault 计划，以便在源卷或主卷上启用自动数据保护传输，从而根据卷上的数据更改频率提高传输频率或降低传输频率。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已完成配置保护对话框中的目标信息区域。
+* 要执行此任务，您必须已设置 Workflow Automation 。
+
+
+
+
+== 步骤
+
+. 从 * 配置保护 * 对话框的 * SnapMirror * 选项卡或 * SnapVault * 选项卡中，单击 * 关系设置 * 区域中的 * 创建计划 * 链接。
++
+此时将显示创建计划对话框。
+
+. 在 * 计划名称 * 字段中，键入要为计划指定的名称。
+. 选择以下选项之一：
++
+** * 基本 *
++
+选择是否要创建基本间隔模式的计划。
+
+** * 高级 *
++
+选择是否要创建 cron 模式的计划。
+
+
+
+. 单击 * 创建 * 。
++
+新计划将显示在 "SnapMirror 计划 " 或 SnapVault "SnapMirror 计划 " 下拉列表中。
+
+

@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-what-objects-and-metrics-can-be-used-in-combination-threshold-policies.html 
+sidebar: sidebar 
+keywords:  
+summary: 在组合策略中，只能同时使用某些性能计数器。指定主性能计数器和二级性能计数器时，两个性能计数器必须超过其最大限制，然后才能生成事件。 
+---
+= 在组合阈值策略中可以使用哪些对象和计数器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在组合策略中，只能同时使用某些性能计数器。指定主性能计数器和二级性能计数器时，两个性能计数器必须超过其最大限制，然后才能生成事件。
+
+|===
+| 主存储对象和计数器 | 二级存储对象和计数器 
+
+
+ a| 
+卷延迟
+ a| 
+卷 IOPS
+
+
+
+ a| 
+卷MBps
+ a| 
+聚合利用率
+
+
+
+ a| 
+聚合已用性能容量
+ a| 
+节点利用率
+
+
+
+ a| 
+已用节点性能容量
+ a| 
+节点已用性能容量—接管
+
+
+
+ a| 
+LUN 延迟
+ a| 
+LUN IOPS
+
+
+
+ a| 
+LUN MBps
+ a| 
+聚合利用率
+
+
+
+ a| 
+聚合已用性能容量
+ a| 
+节点利用率
+
+
+
+ a| 
+已用节点性能容量
+ a| 
+节点已用性能容量—接管
+
+|===
+[NOTE]
+====
+如果将卷组合策略应用于FlexGroup 卷而不是FlexVol 卷、则只能选择"`卷IOPS`"和"`卷MBps`"属性作为二级计数器。如果阈值策略包含某个节点或聚合属性，则该策略不会应用于 FlexGroup 卷，您将收到一条描述此情况的错误消息。这是因为 FlexGroup 卷可以位于多个节点或聚合上。
+
+====

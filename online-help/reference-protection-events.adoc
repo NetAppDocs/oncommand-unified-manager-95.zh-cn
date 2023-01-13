@@ -1,0 +1,44 @@
+---
+permalink: online-help/reference-protection-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 保护事件会告诉您作业是失败还是已中止，以便您可以监控问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 保护事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+保护事件会告诉您作业是失败还是已中止，以便您可以监控问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：保护
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+保护作业失败（ ocumEvtProtectionJobTaskFailed ）
+ a| 
+意外事件
+ a| 
+卷或存储服务
+ a| 
+严重
+
+
+
+ a| 
+保护作业已中止（ ocumEvtProtectionJobAborted ）
+ a| 
+风险
+ a| 
+卷或存储服务
+ a| 
+警告
+
+|===

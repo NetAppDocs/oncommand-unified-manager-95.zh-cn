@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件详细信息页面的建议操作部分提供了事件的可能原因，并提供了一些操作建议，以便您可以尝试自行解决事件。建议的操作将根据已违反的事件类型或阈值类型进行自定义。 
+---
+= 建议的操作部分显示的内容
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件详细信息页面的建议操作部分提供了事件的可能原因，并提供了一些操作建议，以便您可以尝试自行解决事件。建议的操作将根据已违反的事件类型或阈值类型进行自定义。
+
+只有某些类型的事件才会显示此区域。
+
+在某些情况下，页面上提供了 * 帮助 * 链接，这些链接会引用追加信息来执行许多建议的操作，包括执行特定操作的说明。某些操作可能涉及使用Unified Manager、OnCommand System Manager、OnCommand Workflow Automation 、ONTAP 命令行界面命令或这些工具的组合。
+
+此帮助主题中还提供了一些链接。
+
+您应将此处建议的操作视为解决此事件的唯一指导。您为解决此事件而采取的操作应基于您的环境背景。

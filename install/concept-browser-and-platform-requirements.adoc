@@ -1,0 +1,34 @@
+---
+permalink: install/concept-browser-and-platform-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 要访问Unified Manager UI、必须使用支持的浏览器。 
+---
+= 支持的浏览器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要访问Unified Manager UI、必须使用支持的浏览器。
+
+Unified Manager已通过以下浏览器的测试；其他浏览器可能正常工作、但尚未通过认证。有关支持的浏览器版本的完整列表、请参见互操作性表。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+* Mozilla Firefox ESR 60
+* Google Chrome 68和69
+* Microsoft Internet Explorer 11
+
+
+对于所有浏览器、禁用弹出窗口阻止程序有助于确保软件功能正确显示。
+
+对于Internet Explorer、您必须确保已禁用兼容性视图、并且已将文档模式设置为默认值。有关这些设置的信息、请参见Microsoft IE文档。
+
+[NOTE]
+====
+Firefox和Chrome是首选浏览器、因为在某些情况下、使用Internet Explorer时复杂的UI页面加载速度较慢。
+
+====
+如果您计划为Unified Manager配置SAML身份验证、以便身份提供程序(IdP)对用户进行身份验证、请同时检查IdP支持的浏览器列表。

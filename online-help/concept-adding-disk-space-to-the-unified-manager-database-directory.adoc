@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 数据库目录包含从 ONTAP 系统收集的所有运行状况和性能数据。在某些情况下，可能需要增加数据库目录的大小。 
+---
+= 向 Unified Manager 数据库目录添加磁盘空间
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 数据库目录包含从 ONTAP 系统收集的所有运行状况和性能数据。在某些情况下，可能需要增加数据库目录的大小。
+
+例如，如果 Unified Manager 从每个集群都有多个节点的大量集群中收集数据，则数据库目录可能已满。当数据库目录已满 90% 时，您将收到警告事件；当目录已满 95% 时，您将收到严重事件。
+
+[NOTE]
+====
+目录已满 95% 后，不会从集群收集其他数据。
+
+====
+根据 Unified Manager 是在 VMware ESXi 服务器， Red Hat 或 CentOS Linux 服务器上还是在 Microsoft Windows 服务器上运行，向数据目录添加容量所需的步骤会有所不同。

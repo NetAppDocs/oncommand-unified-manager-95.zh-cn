@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以显示有关SVM中所有LIF的信息。在确定哪些LIF可能处于繁忙状态并应移动之前、您可能需要显示所有LIF。 
+---
+= 使用命令行界面显示SVM中的所有LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以显示有关SVM中所有LIF的信息。在确定哪些LIF可能处于繁忙状态并应移动之前、您可能需要显示所有LIF。
+
+
+
+== 关于此任务
+
+LIF的运行状态取决于它是否已在特定端口上配置并能够提供数据。停止SVM后、关联的数据LIF和SVM管理LIF将无法再提供数据。这些LIF的运行状态将更改为 `down`。
+
+
+
+== 步骤
+
+. 要显示有关SVM中所有LIF的信息、请输入以下命令： `network interface show -vserver vserver_name`
++
+命令将显示以下信息：
+
++
+** 与LIF关联的节点或SVM
+** LIF 名称
+** 管理和运行状态
+** IP 地址
+** 网络掩码
+** 配置LIF的节点和端口
+
+
++
+主服务器可以是节点或SVM。
+
++
+如果字段的数据不可用(例如、非活动端口的操作双工和速度)、则此字段将列为UNDEF。
+
++
+[NOTE]
+====
+您可以通过指定来获取所有可用信息 `-instance` 参数。
+
+====
++
+以下示例显示了有关SVM中所有LIF的常规信息：
+
++
+[listing]
+----
+vs1::> network interface show -vserver vs1
+            Logical    Status     Network            Current       Current Is
+Vserver     Interface  Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- ----
+vs1
+            lif1         up/up    192.0.2.253/24     node-01       e0b     false
+            d2           up/up    192.0.2.252/21     node-01       e0d     true
+            data3        up/up    192.0.2.251/20     node-02       e0c     true
+----
+

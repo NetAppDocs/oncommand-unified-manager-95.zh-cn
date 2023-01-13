@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-a-namespace-mirror-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 命名空间镜像成分卷是指无限卷中命名空间成分卷的集群内数据保护镜像副本。命名空间镜像成分卷执行两个角色：它为命名空间成分卷提供数据保护、并支持SnapDiff对无限卷进行增量磁带备份。 
+---
+= 什么是命名空间镜像成分卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+命名空间镜像成分卷是指无限卷中命名空间成分卷的集群内数据保护镜像副本。命名空间镜像成分卷执行两个角色：它为命名空间成分卷提供数据保护、并支持SnapDiff对无限卷进行增量磁带备份。

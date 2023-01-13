@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-metrocluster-switch-events.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster 交换机事件可为您提供有关 MetroCluster 交换机状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= MetroCluster 交换机事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 交换机事件可为您提供有关 MetroCluster 交换机状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+交换机温度异常（ ocumEvtSwitchTemperatureAbnormal ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机
+ a| 
+严重
+
+
+
+ a| 
+交换机不可访问（ ocumEvtSwitchUnreachable ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机
+ a| 
+严重
+
+
+
+ a| 
+交换机风扇出现故障（ ocumEvtSwitchFansOneOrMoreFailed ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机
+ a| 
+严重
+
+
+
+ a| 
+交换机电源出现故障（ ocumEvtSwitchPowerSuppliesOneOrMoreFailed ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机
+ a| 
+严重
+
+
+
+ a| 
+交换机温度传感器出现故障（ ocumEvtSwitchTemperatureSenorFailed ）
+
+[NOTE]
+====
+此事件仅适用于 Cisco 交换机。
+
+==== a| 
+意外事件
+ a| 
+MetroCluster 交换机
+ a| 
+严重
+
+|===

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-an-infinite-volume-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 无限卷是一个可扩展的卷、可存储多达20亿个文件和数十PB的数据。 
+---
+= 什么是无限卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+无限卷是一个可扩展的卷、可存储多达20亿个文件和数十PB的数据。
+
+借助无限卷、您可以在一个大型逻辑实体中管理多个PB的数据、客户端可以从整个卷的单个接合路径中检索多个PB的数据。
+
+无限卷使用多个节点上多个聚合的存储。您可以从小型无限卷开始、并通过向其聚合添加更多磁盘或为其提供更多要使用的聚合来无中断地对其进行扩展。

@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-deleting-users-or-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从管理服务器数据库中删除一个或多个用户，以防止特定用户访问 Unified Manager 。您还可以删除组，以便组中的所有用户都无法再访问管理服务器。 
+---
+= 删除用户或组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从管理服务器数据库中删除一个或多个用户，以防止特定用户访问 Unified Manager 。您还可以删除组，以便组中的所有用户都无法再访问管理服务器。
+
+
+
+== 开始之前
+
+* 删除远程组时，必须已重新分配分配给远程组用户的事件。
++
+如果要删除本地用户或远程用户，则分配给这些用户的事件将自动取消分配。
+
+* 您必须具有OnCommand 管理员角色。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*用户*。
+. 在*管理/用户*页面中、选择要删除的用户或组、然后单击*删除*。
+. 单击 * 是 * 确认删除。
+

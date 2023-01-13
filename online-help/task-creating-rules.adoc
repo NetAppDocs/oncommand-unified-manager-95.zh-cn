@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-creating-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以向数据策略添加新规则、以确定写入无限卷的数据的放置位置。您可以使用Unified Manager中定义的规则模板创建规则、也可以创建自定义规则。 
+---
+= 创建规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以向数据策略添加新规则、以确定写入无限卷的数据的放置位置。您可以使用Unified Manager中定义的规则模板创建规则、也可以创建自定义规则。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 必须将包含带有无限卷的SVM以及存储类的集群添加到Unified Manager数据库中。
+

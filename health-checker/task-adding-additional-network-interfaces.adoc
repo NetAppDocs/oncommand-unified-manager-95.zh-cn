@@ -1,0 +1,59 @@
+---
+permalink: health-checker/task-adding-additional-network-interfaces.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果需要分隔网络流量，可以添加新的网络接口。 
+---
+= 添加网络接口
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要分隔网络流量，可以添加新的网络接口。
+
+
+
+== 开始之前
+
+您必须已使用 vSphere 将网络接口添加到虚拟设备。
+
+必须打开虚拟设备的电源。
+
+
+
+== 关于此任务
+
+[NOTE]
+====
+如果 Unified Manager 安装在 Red Hat Enterprise Linux 或 Microsoft Windows 上，则无法执行此操作。
+
+====
+
+
+== 步骤
+
+. 在vSphere控制台*主菜单*中、选择*系统配置*>*重新启动操作系统*。
++
+重新启动后，维护控制台可以检测新添加的网络接口。
+
+. 访问维护控制台
+. 选择 * 网络配置 * > * 启用网络接口 * 。
+. 选择新的网络接口并按 * 输入 * 。
++
+选择 * eth1* 并按 * 输入 * 。
+
+. 键入 * 。 * 以启用网络接口。
+. 输入网络设置。
++
+如果使用静态接口或未检测到 DHCP ，系统会提示您输入网络设置。
+
++
+输入网络设置后，您将自动返回到 * 网络配置 * 菜单。
+
+. 选择 * 提交更改 * 。
++
+您必须提交更改才能添加网络接口。
+
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: '默认规则是带有无限卷的Storage Virtual Machine (SVM\)的数据策略中存在的规则。当现有规则中的任何条件都不与要写入的数据匹配时、可以使用它来确定写入无限卷的数据的放置位置。' 
+---
+= 什么是默认规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+默认规则是带有无限卷的Storage Virtual Machine (SVM)的数据策略中存在的规则。当现有规则中的任何条件都不与要写入的数据匹配时、可以使用它来确定写入无限卷的数据的放置位置。
+
+默认规则始终是数据策略中的最后一条规则、不能重新排序。例如、假设数据策略包含三个规则。规则1将所有.pdf文件放置在_high_performation__storage类中。规则2将管理员拥有的所有文件以及以*。xls结尾的文件名放置在_archival_constituent_存储类中。第三个规则是_low_performity_存储类的默认规则。
+
+如果将一组不属于管理员的*。jpg文件写入无限卷、则会使用默认规则将这些.jpg文件放置在_low_performage_存储类中。不使用规则1和规则2、因为写入的数据与这些规则不匹配。

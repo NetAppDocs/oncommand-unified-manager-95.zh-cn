@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用性能资源管理器计数器图表查看和比较选定存储对象的性能数据。这些图表可帮助您了解性能趋势、隔离和解决性能问题。 
+---
+= 计数器图表的说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用性能资源管理器计数器图表查看和比较选定存储对象的性能数据。这些图表可帮助您了解性能趋势、隔离和解决性能问题。

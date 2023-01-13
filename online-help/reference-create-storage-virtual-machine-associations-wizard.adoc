@@ -1,0 +1,90 @@
+---
+permalink: online-help/reference-create-storage-virtual-machine-associations-wizard.html 
+sidebar: sidebar 
+keywords:  
+summary: '通过创建Storage Virtual Machine关联向导、您可以关联要在SnapMirror和SnapVault 保护关系中使用的源和目标Storage Virtual Machine \(SVM\)。' 
+---
+= 创建Storage Virtual Machine关联向导
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过创建Storage Virtual Machine关联向导、您可以关联要在SnapMirror和SnapVault 保护关系中使用的源和目标Storage Virtual Machine (SVM)。
+
+
+
+== 选择源SVM
+
+通过选择源Storage Virtual Machine面板、您可以选择SVM关联中的源或主SVM。
+
+* * 任意 *
++
+用于在任何SVM源与一个或多个目标或二级SVM之间创建关联。这意味着、当前需要保护的所有现有SVM以及将来创建的任何SVM都会与指定的目标SVM相关联。例如、您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标SVM。
+
+* * 单个 *
++
+用于将特定源SVM与一个或多个目标SVM关联。例如、如果要为数据必须彼此分离的多个客户端提供存储服务、请选择此选项将特定SVM源与仅分配给该客户端的特定SVM目标关联起来。
+
+* * 无（外部） *
++
+用于在源SVM和目标SVM的外部灵活卷之间创建关联。
+
++
+** Storage Virtual Machine
++
+列出可用源SVM的名称
+
+** 集群
++
+列出每个SVM所在的集群
+
+
+
+* * 允许此类关系 *
++
+用于选择关联的关系类型：
+
++
+** SnapMirror
++
+指定SnapMirror关系作为关联类型。选择此选项可将数据从选定源复制到选定目标。
+
+** SnapVault
++
+指定SnapVault 关系作为关联类型。选择此选项可将选定主位置备份到选定二级位置。
+
+
+
+
+
+
+
+== 选择保护目标
+
+通过创建Storage Virtual Machine关联向导的选择保护目标面板、您可以选择复制或复制数据的位置。每个集群只能在一个目标SVM上创建关联。
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* * 下一步 *
++
+进入向导中的下一页。
+
+* * 返回 *
++
+返回到向导中的上一页。
+
+* * 完成 *
++
+应用所做的选择并创建关联。
+
+* * 取消 *
++
+丢弃所做的选择并关闭创建Storage Virtual Machine关联向导。
+
+

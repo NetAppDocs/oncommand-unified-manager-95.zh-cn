@@ -1,0 +1,70 @@
+---
+permalink: install/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用程序和功能向导从Windows卸载Unified Manager、也可以从命令行界面执行无人值守卸载。 
+---
+= 从Windows卸载Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+您可以使用程序和功能向导从Windows卸载Unified Manager、也可以从命令行界面执行无人值守卸载。
+
+
+
+== 开始之前
+
+* 您必须具有 Windows 管理员权限。
+* 卸载软件之前，必须从 Unified Manager 服务器中删除所有集群（数据源）。
+* Unified Manager服务器不得与Graphite等外部数据提供程序建立活动连接。
++
+如果确实如此、则必须使用Unified Manager维护控制台删除此连接。
+
+
+
+
+
+== 步骤
+
+. 在高可用性设置中安装时、请先删除HA服务组资源并删除HA服务组、然后再从两个节点卸载Unified Manager。
+. 通过选择以下选项之一卸载 Unified Manager ：
++
+|===
+| 要从 ... 卸载 Unified Manager ，请执行以下操作： | 那么 ... 
+
+
+ a| 
+程序和功能向导
+ a| 
+.. 导航到 * 控制面板 * > * 程序和功能 * 。
+.. 选择OnCommand 统一管理器、然后单击*卸载*。
+
+
+
+
+ a| 
+命令行
+ a| 
+.. 使用管理员权限登录到Windows命令行。
+.. 导航到OnCommand Unified Manager目录、然后运行以下命令： `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
++
+如果在服务器上启用了用户帐户控制（ UAC ），并且您以域用户身份登录，则必须使用命令行卸载方法。
+
++
+Unified Manager 已从系统中卸载。
+
+. 卸载 Unified Manager 卸载期间未删除的以下第三方软件包和数据：
++
+** 第三方软件包： JRE ， MySQL ， Microsoft Visual C&#43 ； &#43 ； 2015 可重新分发软件包和 7zip
+** Unified Manager 生成的 MySQL 应用程序数据
+** 应用程序日志和应用程序数据目录的内容
+
+
+

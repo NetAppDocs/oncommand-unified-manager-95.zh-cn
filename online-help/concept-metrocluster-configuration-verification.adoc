@@ -1,0 +1,26 @@
+---
+permalink: online-help/concept-metrocluster-configuration-verification.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过确保正确设置 MetroCluster 配置来防止 MetroCluster 配置中镜像工作负载出现性能问题。您还可以通过更改配置或升级软件或硬件组件来提高工作负载性能。 
+---
+= MetroCluster 配置验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过确保正确设置 MetroCluster 配置来防止 MetroCluster 配置中镜像工作负载出现性能问题。您还可以通过更改配置或升级软件或硬件组件来提高工作负载性能。
+
+《 _ISL MetroCluster 安装和配置指南》 _ 介绍了如何在 MetroCluster 配置中设置集群，包括光纤通道（ FC ）交换机，缆线和交换机间链路（ ISL ）。它还有助于您配置 MetroCluster 软件，以便本地和远程集群可以与镜像卷数据进行通信。
+
+您可以将 MetroCluster 配置与 _Data MetroCluster 安装和配置指南 _ 中的要求进行比较，以确定更改或升级 MetroCluster 配置中的组件是否可以提高工作负载性能。此比较可帮助问题解答您回答以下问题：
+
+* 控制器是否适合您的工作负载？
+* 您是否需要将 ISL 捆绑包升级到更大的带宽才能处理更多吞吐量？
+* 您是否可以调整交换机上的缓冲区到缓冲区信用值（ BBC ）以增加带宽？
+* 如果您的工作负载对固态驱动器（ SSD ）存储的写入吞吐量较高，是否需要升级 FC-SAS 网桥以适应此吞吐量？
+
+
+有关更换或升级 MetroCluster 组件的信息，请参见 _SAS MetroCluster 服务指南 _ 。

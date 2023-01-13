@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-nfs-exports-report-to-display-a-list-of-volumes-with-default-export-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义NFS导出报告以显示具有默认导出策略的卷列表。 
+---
+= 自定义NFS导出报告以显示具有默认导出策略的卷列表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义NFS导出报告以显示具有默认导出策略的卷列表。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要删除按集群或卷分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要筛选使用默认导出策略的卷、请单击*导出策略*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
+. 从*条件*列表中、选择*等于*。
+. 单击*选择值*并选择*默认*。
+. 单击 * 确定 * 。
+

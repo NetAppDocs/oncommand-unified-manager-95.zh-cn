@@ -1,0 +1,104 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过卷关系清单报告，您可以分析集群中的存储清单详细信息，了解卷所需的保护程度，并根据故障源，模式和计划筛选卷详细信息。 
+---
+= 卷关系清单报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过卷关系清单报告，您可以分析集群中的存储清单详细信息，了解卷所需的保护程度，并根据故障源，模式和计划筛选卷详细信息。
+
+卷关系清单报告以两种格式显示：
+
+* SnapMirror关系饼图和SnapVault 关系饼图
+* 卷关系清单报告表格视图
+
+
+
+
+== SnapMirror和SnapVault 饼图
+
+显示存储系统中存在的卷关系的配置详细信息。
+
+
+
+== 卷关系清单表格视图
+
+* * 关系运行状况 *
++
+显示集群的关系运行状况。
+
+* * 关系状态 *
++
+显示SnapMirror关系的镜像状态。
+
+* * 传输状态 *
++
+显示SnapMirror关系的状态。
+
+* * 滞后状态 *
++
+显示卷的滞后状态。
+
+* * 源集群 *
++
+显示 SnapMirror 关系的源集群的名称。
+
+* * 源 SVM*
++
+显示SnapMirror关系的源Storage Virtual Machine (SVM)的名称。
+
+* * 源卷 *
++
+显示SnapMirror关系的源卷的名称。
+
+* * 目标集群 *
++
+显示 SnapMirror 关系的目标集群的名称。
+
+* * 目标 SVM*
++
+显示SnapMirror关系的目标Storage Virtual Machine (SVM)的名称。
+
+* * 目标卷 *
++
+显示SnapMirror关系的目标卷的名称。
+
+* * 关系类型 *
++
+显示任何关系类型、包括SnapMirror或SnapVault。
+
+* *上次成功更新时间*
++
+显示上次成功执行 SnapMirror 或 SnapVault 操作的时间。
+
+* *上次传输持续时间(小时)*
++
+显示上次数据传输完成所用的时间。
+
+* *上次传输大小(MB)*
++
+显示上次数据传输的大小（以字节为单位）。
+
+* *上次传输结束时间*
++
+显示上次成功完成SnapMirror或SnapVault 操作的时间。
+
+* * 运行不正常的原因 *
++
+关系处于不正常状态的原因。
+
+* *滞后持续时间(小时)*
++
+显示镜像上的数据滞后于源的时间量。
+
+* * 版本灵活复制 *
++
+显示是，是和备份选项或无。
+
+

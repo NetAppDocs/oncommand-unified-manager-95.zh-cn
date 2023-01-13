@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用相应的配置/运行状况阈值页面为聚合和卷配置全局运行状况阈值、并为非受管保护关系配置全局滞后警告和错误阈值。 
+---
+= 运行状况阈值页面的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用相应的配置/运行状况阈值页面为聚合和卷配置全局运行状况阈值、并为非受管保护关系配置全局滞后警告和错误阈值。

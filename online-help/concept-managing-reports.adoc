@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过OnCommand Unified Manager、您可以创建和管理报告、以便查看有关存储对象的容量、利用率和性能以及与存储对象相关的事件的自定义信息。 
+---
+= 管理报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过OnCommand Unified Manager、您可以创建和管理报告、以便查看有关存储对象的容量、利用率和性能以及与存储对象相关的事件的自定义信息。
+
+[NOTE]
+====
+在未来版本中、将弃用使用左侧导航窗格中的"报告"选项来计划和生成报告。您可以使用以下其他方法从Unified Manager提取运行状况和性能数据：
+
+* 直接从图形用户界面中的网格页面提取数据
+* 使用Open Database访问所有可用对象
+* 执行 Unified Manager REST API 以返回您要查看的信息
+
+
+====

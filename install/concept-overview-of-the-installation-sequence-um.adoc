@@ -1,0 +1,18 @@
+---
+permalink: install/concept-overview-of-the-installation-sequence-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
+---
+= 安装顺序概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装工作流介绍了在使用 Unified Manager 之前必须执行的任务。
+
+本安装指南的各章介绍了以下工作流中显示的每个项目。
+
+image::../media/overall-um-install-flow.gif[总体安装流程]

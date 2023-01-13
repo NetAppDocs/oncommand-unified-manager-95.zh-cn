@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/concept-navigating-performance-workflows-in-the-unified-manager-ui.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 界面提供了许多页面，用于收集和显示性能信息。您可以使用左侧导航面板导航到图形用户界面中的页面，并使用页面上的选项卡和链接查看和配置信息。 
+---
+= 在 Unified Manager GUI 中导航性能工作流
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 界面提供了许多页面，用于收集和显示性能信息。您可以使用左侧导航面板导航到图形用户界面中的页面，并使用页面上的选项卡和链接查看和配置信息。
+
+您可以使用以下所有页面来监控集群性能信息并对其进行故障排除：
+
+* 信息板页面
+* 存储对象清单页面
+* 存储对象登录页面(包括性能资源管理器)
+* 配置和设置页面
+* 事件页面
+
+
+[NOTE]
+====
+Unified Manager中的页面可能会显示大量信息。要查看所有可用信息、请始终滚动到页面底部。
+
+====

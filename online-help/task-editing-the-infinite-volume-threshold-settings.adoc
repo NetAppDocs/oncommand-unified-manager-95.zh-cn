@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-the-infinite-volume-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果需要解决无限卷存储空间中的任何问题、您可以根据组织的要求编辑无限卷容量的阈值设置。超过阈值后、系统将生成事件、如果为此类事件配置了警报、您将收到通知。 
+---
+= 编辑无限卷阈值设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要解决无限卷存储空间中的任何问题、您可以根据组织的要求编辑无限卷容量的阈值设置。超过阈值后、系统将生成事件、如果为此类事件配置了警报、您将收到通知。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/Storage Virtual Machine*清单页面中、选择带有无限卷的SVM。
+. 在*运行状况/存储虚拟机*详细信息页面中、单击*操作*>*编辑阈值*。
+. 在*编辑带有无限卷阈值的SVM *对话框中、根据需要修改阈值。
+. 单击 * 保存并关闭 * 。
+

@@ -1,0 +1,27 @@
+---
+permalink: health-checker/task-downloading-the-eclipse-plugin-for-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: '要创建报告并将其导入到Unified Manager中、必须先下载Eclipse Business Intelligence and Reporting Tools\(BIRT\)。' 
+---
+= 下载Eclipse业务智能和报告工具(BIRT)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要创建报告并将其导入到Unified Manager中、必须先下载Eclipse Business Intelligence and Reporting Tools (BIRT)。
+
+
+
+== 步骤
+
+. 从下载BIRT软件 `+http://download.eclipse.org/birt/downloads/+`。
+
+
+
+
+== 完成后
+
+下载BIRT软件后、您必须提取生成的.zip文件。

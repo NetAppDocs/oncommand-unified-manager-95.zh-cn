@@ -1,0 +1,51 @@
+---
+permalink: online-help/reference-cluster-connectivity-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: '在 MetroCluster 配置中，集群之间的连接可以是以下状态之一： " 最佳 " ， " 受影响 " 或 " 已关闭 " 。了解连接状态可以有效地管理 MetroCluster 配置。' 
+---
+= 集群连接状态定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在 MetroCluster 配置中，集群之间的连接可以是以下状态之一： " 最佳 " ， " 受影响 " 或 " 已关闭 " 。了解连接状态可以有效地管理 MetroCluster 配置。
+
+|===
+| 连接状态 | Description | 显示图标 
+
+
+ a| 
+最佳
+ a| 
+MetroCluster 配置中的集群之间的连接正常。
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+受影响
+ a| 
+一个或多个错误会影响故障转移可用性的状态；但是， MetroCluster 配置中的两个集群仍处于运行状态。例如，当 ISL 链路关闭，集群间 IP 链路关闭或配对集群无法访问时。
+ a| 
+image:../media/metrocluster-connectivity-impacted.gif[""]
+
+
+
+ a| 
+已关闭
+ a| 
+MetroCluster 配置中的集群之间的连接已关闭，因为一个或两个集群已关闭或集群处于故障转移模式。例如，当配对集群因灾难而关闭时，或者出于测试目的而进行计划内切换时。
+ a| 
+切换出错：
+
+image::../media/metrocluster-connectivity-down.gif[MetroCluster 连接已关闭]
+
+切换成功：
+
+image::../media/metrocluster-connectivity-failover.gif[MetroCluster 连接故障转移]
+
+|===

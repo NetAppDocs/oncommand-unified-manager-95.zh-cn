@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-customizing-the-cluster-inventory-report-to-display-clusters-reaching-svm-count-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以自定义"集群清单"报告以显示按SVM计数降序排序的集群。' 
+---
+= 自定义集群清单报告以显示达到SVM计数限制的集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义"集群清单"报告以显示按SVM计数降序排序的集群。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要删除按集群或节点分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要按SVM计数对集群进行排序、请执行以下步骤：
++
+.. 单击* SVM计数*列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组选项*。
+
+
+. 选择*筛选器*>*顶部/底部N*。
+. 在*顶部/底部N*对话框中、从*筛选器*字段中选择*顶部N*、然后在文本字段中输入值。
+. 单击 * 确定 * 。
+

@@ -1,0 +1,69 @@
+---
+permalink: online-help/reference-snapshot-copies-on-a-volume-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用卷上的Snapshot副本对话框查看Snapshot副本列表。您可以删除Snapshot副本以节省或释放磁盘空间、也可以删除不再需要的副本。您还可以计算删除一个或多个Snapshot副本后可回收的磁盘空间量。 
+---
+= Snapshot Copies on a Volume对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用卷上的Snapshot副本对话框查看Snapshot副本列表。您可以删除Snapshot副本以节省或释放磁盘空间、也可以删除不再需要的副本。您还可以计算删除一个或多个Snapshot副本后可回收的磁盘空间量。
+
+
+
+== 列表视图
+
+列表视图以表格形式显示有关卷上Snapshot副本的信息。您可以使用列筛选器自定义显示的数据。
+
+* * Snapshot 副本 *
++
+显示Snapshot副本的名称。
+
+* *已用空间%*
++
+以百分比形式显示卷中Snapshot副本使用的总空间。
+
+* * 总大小 *
++
+显示Snapshot副本的总大小。
+
+* *创建时间*
++
+显示创建Snapshot副本的时间戳。
+
+* *依赖关系*
++
+显示依赖于Snapshot副本的应用程序。可能的值包括snapmirror、SnapVault 、SnapLock 、转储、lun、Vclone、且繁忙。
+
+
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* *计算*
++
+用于计算可通过删除一个或多个Snapshot副本回收的空间。
+
+* *删除选定项*
++
+删除一个或多个Snapshot副本。
+
+* * 关闭 *
++
+关闭卷上的Snapshot副本对话框。
+
+* *重新计算*
++
+用于计算可通过删除选定Snapshot副本回收的空间。
+
++
+如果对Snapshot副本的选择进行任何更改、则会启用*重新计算*按钮。
+
+

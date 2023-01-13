@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-what-performance-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 性能事件是指与集群上的工作负载性能相关的事件。它们可以帮助您确定响应时间较长的工作负载。与同时发生的运行状况事件一起，您可以确定可能导致或导致响应时间较慢的问题。 
+---
+= 什么是性能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+性能事件是指与集群上的工作负载性能相关的事件。它们可以帮助您确定响应时间较长的工作负载。与同时发生的运行状况事件一起，您可以确定可能导致或导致响应时间较慢的问题。
+
+如果 Unified Manager 检测到同一集群组件多次出现相同的事件条件，则会将所有发生的事件视为单个事件，而不是单独的事件。

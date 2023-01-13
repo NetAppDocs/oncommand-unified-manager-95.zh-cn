@@ -1,0 +1,57 @@
+---
+permalink: online-help/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 如果发生数据丢失或数据损坏，您可以将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少数据丢失。您可以将Unified Manager数据库还原到本地或远程Red Hat Enterprise Linux或CentOS系统。 
+---
+= 在Linux系统上还原数据库备份
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果发生数据丢失或数据损坏，您可以将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少数据丢失。您可以将Unified Manager数据库还原到本地或远程Red Hat Enterprise Linux或CentOS系统。
+
+
+
+== 开始之前
+
+* 您必须在服务器上安装Unified Manager。
+* 您必须具有安装 Unified Manager 的 Linux 主机的 root 用户凭据。
+* 您必须已将 Unified Manager 备份文件和数据库存储库目录的内容复制到要执行还原操作的系统。
++
+建议将备份文件复制到默认目录 `/data/ocum-backup`。必须将数据库存储库文件复制到 `/database-dumps-repo` 下的子目录 `/ocum-backup` 目录。
+
+* 备份文件必须为 `.7z` 类型。
+
+
+
+
+== 关于此任务
+
+还原功能是针对平台和版本的。您只能在同一版本的 Unified Manager 上还原 Unified Manager 备份。您可以将 Linux 备份文件或虚拟设备备份文件还原到 Red Hat Enterprise Linux 或 CentOS 系统。
+
+[TIP]
+====
+如果备份文件夹名称包含空格，则必须使用双引号将绝对路径或相对路径包括在内。
+
+====
+
+
+== 步骤
+
+. 如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
+. 以root用户身份登录到安装了Unified Manager的主机。
+. 如果Unified Manager安装在VCS设置中、则使用Veritas Operations Manager停止Unified Manager ocie和ocieau服务。
+. 在命令提示符处、还原备份： `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f /data/ocum-backup/UM_9.4.N151113.1348_backup_rhel_02-20-2018-04-45.7z`
+
+
+
+
+
+== 完成后
+
+还原操作完成后，您可以登录到 Unified Manager 。

@@ -1,0 +1,104 @@
+---
+permalink: install/task-upgrading-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从Unified Manager 7.3或9.4升级到Unified Manager 9.5。 
+---
+= 升级 Unified Manager 虚拟设备
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从Unified Manager 7.3或9.4升级到Unified Manager 9.5。
+
+
+
+== 开始之前
+
+* 您必须已下载 `.iso` 文件NetApp 支持站点。
+* 要升级 Unified Manager 的系统必须满足系统和软件要求。
++
+xref:concept-requirements-for-installing-unified-manager.adoc[虚拟基础架构要求]
+
++
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware 软件和安装要求]
+
+* 对于vSphere 6.5用户、您必须已安装VMware远程控制台(VMRC)。
+* 您必须具有以下信息：
++
+** NetApp 支持站点的登录凭据
+** 用于访问VMware vCenter Server和vSphere Web Client (适用于vSphere 6.5)或vSphere Client (适用于vSphere 5.5或6.0)的凭据
+** Unified Manager 维护用户的凭据
+
+
+
+
+
+
+== 关于此任务
+
+在升级过程中， Unified Manager 不可用。在升级 Unified Manager 之前，您应完成所有正在运行的操作。
+
+如果已将Workflow Automation和Unified Manager配对、则必须在Workflow Automation中手动更新主机名。
+
+
+
+== 步骤
+
+. 在 vSphere Client 中，单击 * 主页 * > * 清单 * > * 虚拟机和模板 * 。
+. 选择安装了 Unified Manager 虚拟设备的虚拟机（ VM ）。
+. 如果 Unified Manager 虚拟机正在运行，请导航到 * 摘要 * > * 命令 * > * 关闭来宾 * 。
+. 为Unified Manager虚拟机创建一个备份副本、例如快照或克隆、以创建应用程序一致的备份。
+. 在 vSphere Client 中，启动 Unified Manager VM 。
+. 选择Unified Manager升级映像：
++
+|===
+| 如果您使用的是 ... | 然后执行此操作 ... 
+
+
+ a| 
+vSphere 5.5或6.0
+ a| 
+.. 单击* CD/DVD驱动器*图标、然后选择*连接到本地磁盘上的ISO映像*。
+.. 选择 `OnCommandUnifiedManager-9.5-virtual-update.iso` 文件、然后单击*打开*。
+
+
+
+
+ a| 
+vSphere 6.5
+ a| 
+.. 启动 VMware 远程控制台。
+.. 单击 * CDROM/* 图标，然后选择 * 连接到磁盘映像文件（ .iso ） * 。
+.. 选择 `OnCommandUnifiedManager-9.5-virtual-update.iso` 文件、然后单击*打开*。
+
+
+|===
+. 单击 * 控制台 * 选项卡。
+. 登录到 Unified Manager 维护控制台。
+. 在*主菜单*中、选择*升级*。
++
+此时将显示一条消息、指出Unified Manager在升级过程中将不可用、并且将在完成后继续运行。
+
+. Type `y` 以继续。
++
+此时将显示一条警告，提醒您备份虚拟设备所在的虚拟机。
+
+. Type `y` 以继续。
++
+Unified Manager 服务的升级过程和重新启动可能需要几分钟才能完成。
+
+. 按任意键继续。
++
+您将自动从维护控制台注销。
+
+. 登录到维护控制台并验证Unified Manager的版本。
+
+
+
+
+== 完成后
+
+您可以登录到 Web UI 以使用升级后的 Unified Manager 版本。请注意、您必须等待发现过程完成、然后才能在UI中执行任何任务。

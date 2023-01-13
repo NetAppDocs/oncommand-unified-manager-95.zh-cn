@@ -1,0 +1,41 @@
+---
+permalink: health-checker/task-deleting-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以删除不再需要的自定义标注及其值。 
+---
+= 删除标注
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除不再需要的自定义标注及其值。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 标注值不得用于其他标注或组规则。
+
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*标注*。
+. 在 * 标注 * 选项卡中，选择要删除的标注。
++
+此时将显示选定标注的详细信息。
+
+. 单击 * 操作 * > * 删除 * 以删除选定标注及其值。
+. 在警告对话框中，单击 * 是 * 确认删除。
+
+
+
+
+== 结果
+
+选定标注及其值将被删除。

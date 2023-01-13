@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-verifying-unified-manager-data-source-caching-in-workflow-automation.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过在 Workflow Automation 中检查数据源采集是否成功来确定 Unified Manager 数据源缓存是否正常工作。如果将 Workflow Automation 与 Unified Manager 集成，则可以执行此操作，以确保集成后 Workflow Automation 功能可用。 
+---
+= 在 Workflow Automation 中验证 Unified Manager 数据源缓存
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过在 Workflow Automation 中检查数据源采集是否成功来确定 Unified Manager 数据源缓存是否正常工作。如果将 Workflow Automation 与 Unified Manager 集成，则可以执行此操作，以确保集成后 Workflow Automation 功能可用。
+
+
+
+== 开始之前
+
+要执行此任务，必须在 Workflow Automation 中为您分配管理员角色或架构师角色。
+
+
+
+== 步骤
+
+. 从 Workflow Automation UI 中，选择 * 执行 * > * 数据源 * 。
+. 右键单击 Unified Manager 数据源的名称，然后选择 * 立即获取 * 。
+. 验证采集是否成功，无错误。
++
+要使 Workflow Automation 与 Unified Manager 成功集成，必须解决采集错误。
+
+

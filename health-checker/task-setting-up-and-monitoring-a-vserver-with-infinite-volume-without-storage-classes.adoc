@@ -1,0 +1,66 @@
+---
+permalink: health-checker/task-setting-up-and-monitoring-a-vserver-with-infinite-volume-without-storage-classes.html 
+sidebar: sidebar 
+keywords:  
+summary: '您应使用OnCommand Workflow Automation \(WFA\)和Unified Manager设置和监控带有无限卷的Storage Virtual Machine \(SVM\)。您应使用WFA创建带有无限卷的SVM、然后使用Unified Manager监控无限卷。您也可以为无限卷配置数据保护。' 
+---
+= 设置和监控带有无限卷且没有存储类的SVM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应使用OnCommand Workflow Automation (WFA)和Unified Manager设置和监控带有无限卷的Storage Virtual Machine (SVM)。您应使用WFA创建带有无限卷的SVM、然后使用Unified Manager监控无限卷。您也可以为无限卷配置数据保护。
+
+
+
+== 开始之前
+
+必须满足以下要求：
+
+* 必须安装WFA、并且必须配置数据源。
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已通过在WFA中自定义适当的预定义工作流来创建所需数量的聚合。
+* 您必须已在WFA中将Unified Manager服务器配置为数据源、然后验证数据是否已成功缓存。
+
+
+
+
+== 关于此任务
+
+* 您只能使用Unified Manager监控数据SVM。
+* 执行此任务时、您需要在两个应用程序之间切换：OnCommand Workflow Automation (WFA)和OnCommand Unified Manager。
+* 此任务提供了高级步骤。
++
+有关执行WFA任务的详细信息、请参见_WFA OnCommand Workflow Automation 文档。
+
+
+
+
+
+== 步骤
+
+. image:../media/wfa-icon.gif["WFA操作步骤 图标"] 创建带有无限卷的SVM、然后使用相应的工作流创建无限卷。
++
+您可以在创建无限卷时启用重复数据删除和数据压缩等存储效率技术。
+
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] 将包含带有无限卷的SVM的集群添加到Unified Manager数据库中。
++
+您可以通过提供集群的IP地址或FQDN来添加集群。
+
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] 根据组织的要求、修改SVM上无限卷的阈值。
++
+[TIP]
+====
+您应使用默认的无限卷阈值设置。
+
+====
+. image:../media/um-icon.gif["Unified Manager操作步骤 图标"] 配置通知警报和陷阱以解决与无限卷相关的任何可用性和容量问题。
+. image:../media/wfa-icon.gif["WFA操作步骤 图标"] 创建具有无限卷的灾难恢复(DR) SVM、然后执行以下步骤配置数据保护(DP)：
++
+.. 使用适当的工作流创建数据保护(DP)无限卷。
+.. 使用适当的工作流在源和目标之间设置DP镜像关系。
+
+
+

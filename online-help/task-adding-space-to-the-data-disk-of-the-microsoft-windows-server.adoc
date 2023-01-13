@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果需要增加 Unified Manager 数据库的磁盘空间量，可以向安装 Unified Manager 的逻辑驱动器添加容量。 
+---
+= 向 Microsoft Windows 服务器的逻辑驱动器添加空间
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果需要增加 Unified Manager 数据库的磁盘空间量，可以向安装 Unified Manager 的逻辑驱动器添加容量。
+
+
+
+== 开始之前
+
+您必须具有 Windows 管理员权限。
+
+
+
+== 关于此任务
+
+建议您在添加磁盘空间之前备份 Unified Manager 数据库。
+
+
+
+== 步骤
+
+. 以管理员身份登录到要添加磁盘空间的 Windows 服务器。
+. 按照要用于添加更多空间的方法对应的步骤进行操作：
++
+|===
+| 选项 | Description 
+
+
+ a| 
+在物理服务器上，向安装 Unified Manager 服务器的逻辑驱动器添加容量。
+ a| 
+按照 Microsoft 主题中的步骤进行操作：
+
+https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["扩展基本卷"]
+
+
+
+ a| 
+在物理服务器上，添加硬盘驱动器。
+ a| 
+按照 Microsoft 主题中的步骤进行操作：
+
+https://msdn.microsoft.com/en-us/library/dd163551.aspx["添加硬盘驱动器"]
+
+
+
+ a| 
+在虚拟机上，增加磁盘分区的大小。
+ a| 
+按照 VMware 主题中的步骤进行操作：
+
+https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["增加磁盘分区的大小"]
+
+|===
+

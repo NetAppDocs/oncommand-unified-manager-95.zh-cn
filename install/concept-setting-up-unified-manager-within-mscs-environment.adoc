@@ -1,0 +1,18 @@
+---
+permalink: install/concept-setting-up-unified-manager-within-mscs-environment.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用故障转移集群为Unified Manager配置高可用性。高可用性设置可提供故障转移功能。 
+---
+= 在故障转移集群环境中设置Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用故障转移集群为Unified Manager配置高可用性。高可用性设置可提供故障转移功能。
+
+在此设置中、只有一个节点拥有所有集群资源。当一个节点发生故障或任何已配置的服务无法联机时、故障转移集群服务会识别此事件并立即将控制权移交给另一个节点。设置中的第二个节点将变为活动状态并开始提供服务。故障转移过程是自动进行的、您无需执行任何操作。
+
+配置了Unified Manager服务器的故障转移集群由两个节点组成、每个节点运行相同版本的Unified Manager服务器。必须配置所有Unified Manager服务器数据、以便从共享数据磁盘进行访问。

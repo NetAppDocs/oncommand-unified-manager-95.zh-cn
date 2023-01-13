@@ -1,0 +1,49 @@
+---
+permalink: online-help/task-managing-host-system-resource-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 包含一项服务，用于监控安装了 Unified Manager 的主机系统上的资源问题。主机系统上的可用磁盘空间不足或内存不足等问题可能会触发管理工作站事件，这些事件在用户界面顶部显示为横幅消息。 
+---
+= 管理主机系统资源事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 包含一项服务，用于监控安装了 Unified Manager 的主机系统上的资源问题。主机系统上的可用磁盘空间不足或内存不足等问题可能会触发管理工作站事件，这些事件在用户界面顶部显示为横幅消息。
+
+
+
+== 关于此任务
+
+管理工作站事件表示问题描述与安装 Unified Manager 的主机系统一起运行。管理工作站问题的示例包括：主机系统上的磁盘空间不足； Unified Manager 缺少常规数据收集周期；以及由于启动了下一次收集轮询，统计信息分析未完成或延迟完成。
+
+与所有其他 Unified Manager 事件消息不同，这些特定管理工作站警告和严重事件会显示在横幅消息中。
+
+
+
+== 步骤
+
+. 要查看管理工作站事件信息，请执行以下操作：
++
+|===
+| 如果您要 ... | 执行此操作 ... 
+
+
+ a| 
+查看事件的详细信息
+ a| 
+单击事件横幅以显示事件详细信息页面，其中包含为问题描述建议的解决方案。
+
+
+
+ a| 
+查看所有管理工作站事件
+ a| 
+.. 在左侧导航窗格中，单击 * 事件 * 。
+.. 在事件清单页面的筛选器窗格中、单击源类型列表中的Management Station对应的框。
+
+
+|===
+

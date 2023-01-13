@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-creating-an-email-notification-format-for-user-and-user-group-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以为发送给用户或用户组的电子邮件创建通知格式、以便在存在与配额相关的问题描述 \(已违反软限制或已达到硬限制\)时发送给该用户或用户组。' 
+---
+= 为用户和用户组配额创建电子邮件通知格式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果存在与配额相关的问题描述（违反软限制或达到硬限制），您可以为发送给用户或用户组的电子邮件创建通知格式。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*配额电子邮件*。
+. 在*设置*选项页面中、单击*通知格式*、然后在*发件人*、*主题*和*电子邮件详细信息*字段中输入或修改详细信息。
+. 单击 * 预览 * 以预览电子邮件通知。
+. 单击 * 关闭 * 以关闭预览窗口。
+. 根据需要修改电子邮件通知的内容。
+. 单击 * 保存并关闭 * 。
+

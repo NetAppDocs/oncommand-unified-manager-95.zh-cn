@@ -1,0 +1,398 @@
+---
+section: health-checker
+title: 监控和管理集群运行状况
+entries:
+- title: OnCommand Unified Manager运行状况监控简介
+  url: "/health-checker/concept-introduction-to-unified-manager-health-monitoring.html"
+  entries:
+  - title: Unified Manager 运行状况监控功能
+    url: "/health-checker/concept-unified-manager-health-monitoring-features.html"
+  - title: 用于管理存储系统运行状况的 Unified Manager 接口
+    url: "/health-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-health.html"
+- title: 常见 Unified Manager 运行状况工作流和任务
+  url: "/health-checker/concept-common-unified-manager-administrative-workflows-and-tasks.html"
+  entries:
+  - title: 监控数据可用性并对其进行故障排除
+    url: "/health-checker/concept-monitoring-and-troubleshooting-data-availability.html"
+    entries:
+    - title: 解决闪存卡脱机问题
+      url: "/health-checker/task-resolving-a-flashcard-offline-condition.html"
+      entries:
+      - title: 对闪存卡脱机执行更正操作
+        url: "/health-checker/task-performing-corrective-action-for-a-flashcard-offline.html"
+    - title: 扫描并解决存储故障转移互连链路断开情况
+      url: "/health-checker/task-resolving-a-storage-failover-interconnect-link-down-condition.html"
+      entries:
+      - title: 对存储故障转移互连链路断开执行更正操作
+        url: "/health-checker/task-performing-corrective-action-for-storage-failover-interconnect-links-down.html"
+    - title: 解决卷脱机问题
+      url: "/health-checker/task-resolving-volume-offline-issues.html"
+      entries:
+      - title: 针对卷脱机情况执行诊断操作
+        url: "/health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html"
+        entries:
+        - title: 确定卷是否因其主机节点已关闭而脱机
+          url: "/health-checker/task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.html"
+        - title: 确定卷是否因节点关闭而脱机及其 SVM 是否已停止
+          url: "/health-checker/task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.html"
+        - title: 确定卷是否因聚合中的磁盘损坏而脱机
+          url: "/health-checker/task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.html"
+  - title: 解决容量问题
+    url: "/health-checker/task-resolving-capacity-issues.html"
+    entries:
+    - title: 对已满的卷执行建议的补救措施
+      url: "/health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html"
+  - title: 创建，监控保护关系并对其进行故障排除
+    url: "/health-checker/concept-creating-and-monitoring-protection-relationships.html"
+    entries:
+    - title: SnapMirror 保护的类型
+      url: "/health-checker/concept-types-of-snapmirror-protection.html"
+    - title: 在 Unified Manager 中设置保护关系
+      url: "/health-checker/task-setting-up-protection-relationships-in-unified-manager.html"
+      entries:
+      - title: 在 Workflow Automation 和 Unified Manager 之间配置连接
+        url: "/health-checker/task-configuring-a-connection-between-workflow-automation-and-unified-manager.html"
+      - title: 在 Workflow Automation 中验证 Unified Manager 数据源缓存
+        url: "/health-checker/task-verifying-unified-manager-data-source-caching-in-workflow-automation.html"
+      - title: 通过运行状况/卷详细信息页面创建SnapMirror保护关系
+        url: "/health-checker/task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.html"
+      - title: 通过运行状况/卷详细信息页面创建SnapVault 保护关系
+        url: "/health-checker/task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.html"
+      - title: 创建 SnapVault 策略以最大程度地提高传输效率
+        url: "/health-checker/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html"
+      - title: 创建 SnapMirror 策略以最大程度地提高传输效率
+        url: "/health-checker/task-creating-a-snapmirror-policy-to-maximize-transfer-efficiency.html"
+      - title: 创建 SnapMirror 和 SnapVault 计划
+        url: "/health-checker/task-creating-snapmirror-and-snapvault-schedules.html"
+    - title: 执行保护关系故障转移和故障恢复
+      url: "/health-checker/task-performing-a-protection-relationship-failover-and-failback.html"
+      entries:
+      - title: 通过运行状况/卷详细信息页面中断SnapMirror关系
+        url: "/health-checker/task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.html"
+      - title: 通过运行状况/卷详细信息页面反转保护关系
+        url: "/health-checker/task-reversing-protection-relationships-from-the-health-volume-details-page.html"
+      - title: 从运行状况/卷详细信息页面删除保护关系
+        url: "/health-checker/task-removing-a-protection-relationship-from-the-health-volume-details-page.html"
+      - title: 通过运行状况/卷详细信息页面重新同步保护关系
+        url: "/health-checker/task-resynchronizing-protection-relationships-from-the-health-volume-details-page.html"
+    - title: 解决保护作业故障
+      url: "/health-checker/task-resolving-a-protection-job-failure.html"
+      entries:
+      - title: 确定问题并对失败的保护作业执行更正操作
+        url: "/health-checker/task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.html"
+    - title: 解决滞后问题
+      url: "/health-checker/task-resolving-lag-issues.html"
+  - title: 从Snapshot副本还原数据
+    url: "/health-checker/task-restoring-data-from-snapshot-copies.html"
+    entries:
+    - title: 使用运行状况/卷详细信息页面还原数据
+      url: "/health-checker/task-restoring-data-using-the-health-volume-details-page.html"
+    - title: 使用运行状况/卷清单页面还原数据
+      url: "/health-checker/task-restoring-data-using-the-health-volumes-page.html"
+  - title: 管理运行状况阈值
+    pdf-filename: 管理运行状况阈值(集群运行状况)
+    url: "/health-checker/concept-managing-health-thresholds.html"
+    entries:
+    - title: 什么是存储容量运行状况阈值
+      url: "/health-checker/concept-what-storage-capacity-health-thresholds-are.html"
+    - title: 配置全局运行状况阈值设置
+      pdf-filename: 配置全局运行状况阈值设置(集群运行状况)
+      url: "/health-checker/task-configuring-global-health-threshold-settings.html"
+      entries:
+      - title: 配置全局聚合运行状况阈值
+        url: "/health-checker/task-configuring-global-aggregate-health-threshold-values.html"
+      - title: 配置全局卷运行状况阈值
+        url: "/health-checker/task-configuring-global-volume-health-threshold-values.html"
+      - title: 配置全局 qtree 运行状况阈值
+        url: "/health-checker/task-configuring-global-qtree-health-threshold-values.html"
+      - title: 编辑非受管保护关系的滞后运行状况阈值设置
+        url: "/health-checker/task-configuring-lag-threshold-settings-for-unmanaged-protection-relationships.html"
+    - title: 编辑单个聚合运行状况阈值设置
+      url: "/health-checker/task-editing-individual-aggregate-health-threshold-settings.html"
+    - title: 编辑单个卷运行状况阈值设置
+      url: "/health-checker/task-editing-individual-volume-health-threshold-settings.html"
+    - title: 编辑单个 qtree 运行状况阈值设置
+      url: "/health-checker/task-editing-individual-qtree-health-threshold-settings.html"
+  - title: 管理脚本
+    pdf-filename: 管理脚本(集群运行状况)
+    url: "/health-checker/concept-managing-scripts.html"
+    entries:
+    - title: 脚本如何处理警报
+      url: "/health-checker/concept-how-scripts-work-with-alerts.html"
+    - title: 正在添加脚本
+      url: "/health-checker/task-adding-scripts.html"
+    - title: 正在删除脚本
+      url: "/health-checker/task-deleting-scripts.html"
+    - title: 测试脚本执行
+      url: "/health-checker/task-testing-script-execution.html"
+  - title: 管理和监控组
+    pdf-filename: 管理和监控组(集群运行状况)
+    url: "/health-checker/concept-managing-and-monitoring-groups.html"
+    entries:
+    - title: 了解组
+      pdf-filename: 了解组(集群运行状况)
+      url: "/health-checker/concept-understanding-groups.html"
+      entries:
+      - title: 什么是组
+        url: "/health-checker/concept-what-a-group-is.html"
+      - title: 组规则如何用于组
+        url: "/health-checker/concept-how-group-rules-work-for-groups.html"
+      - title: 组操作如何对存储对象执行
+        url: "/health-checker/concept-how-group-actions-work-on-storage-objects.html"
+    - title: 添加组
+      url: "/health-checker/task-adding-groups.html"
+    - title: 编辑组
+      url: "/health-checker/task-editing-the-group-settings.html"
+    - title: 删除组
+      url: "/health-checker/task-deleting-groups.html"
+    - title: 正在添加组规则
+      url: "/health-checker/task-adding-group-rules.html"
+    - title: 编辑组规则
+      url: "/health-checker/task-editing-group-rules.html"
+    - title: 正在删除组规则
+      url: "/health-checker/task-deleting-group-rules.html"
+    - title: 正在添加组操作
+      url: "/health-checker/task-adding-group-actions.html"
+    - title: 编辑组操作
+      url: "/health-checker/task-editing-group-actions.html"
+    - title: 为组配置卷运行状况阈值
+      url: "/health-checker/task-configuring-volume-health-thresholds-for-groups.html"
+    - title: 正在删除组操作
+      url: "/health-checker/task-deleting-group-actions.html"
+    - title: 重新排列组操作
+      url: "/health-checker/task-reordering-group-actions.html"
+  - title: 使用标注确定存储对象事件的优先级
+    url: "/health-checker/concept-prioritizing-storage-objects-using-annotations.html"
+    entries:
+    - title: 了解有关标注的更多信息
+      url: "/health-checker/concept-understanding-more-about-annotations.html"
+      entries:
+      - title: 什么是标注
+        url: "/health-checker/concept-what-annotations-are.html"
+      - title: 标注规则在 Unified Manager 中的工作原理
+        url: "/health-checker/concept-how-annotation-rules-work-in-unified-manager.html"
+      - title: 预定义标注值的问题描述
+        url: "/health-checker/reference-description-of-predefined-annotation-values.html"
+    - title: 动态添加标注
+      url: "/health-checker/task-adding-annotations-dynamically.html"
+    - title: 将值添加到标注
+      url: "/health-checker/task-adding-values-to-annotations.html"
+    - title: 删除标注
+      url: "/health-checker/task-deleting-annotations.html"
+    - title: 查看标注列表和详细信息
+      url: "/health-checker/task-viewing-the-annotation-list-and-details.html"
+    - title: 从标注中删除值
+      url: "/health-checker/task-deleting-values-from-annotations.html"
+    - title: 正在创建标注规则
+      url: "/health-checker/task-creating-annotation-rules.html"
+    - title: 手动向单个存储对象添加标注
+      url: "/health-checker/task-adding-annotations-manually-to-individual-storage-objects.html"
+    - title: 编辑标注规则
+      url: "/health-checker/task-editing-annotation-rules.html"
+    - title: 配置标注规则的条件
+      url: "/health-checker/task-configuring-conditions-for-annotation-rules.html"
+    - title: 正在删除标注规则
+      url: "/health-checker/task-deleting-annotation-rules.html"
+    - title: 重新排列标注规则
+      url: "/health-checker/task-reordering-annotation-rules.html"
+  - title: 配置备份和还原操作
+    pdf-filename: 配置备份和还原操作(集群运行状况)
+    url: "/health-checker/concept-managing-backup-and-restore-operations.html"
+    entries:
+    - title: 什么是数据库备份
+      url: "/health-checker/concept-backup-and-restore-using-a-mysql-database-dump.html"
+    - title: 配置数据库备份设置
+      url: "/health-checker/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+    - title: 什么是数据库还原
+      url: "/health-checker/concept-what-a-database-restore-is.html"
+    - title: 虚拟设备备份和还原过程概述
+      url: "/health-checker/concept-backup-and-restore-on-virtual-appliance.html"
+    - title: 在虚拟机上还原数据库备份
+      url: "/health-checker/task-restoring-database-backup-on-a-virtual-machine.html"
+    - title: 在Linux系统上还原数据库备份
+      url: "/health-checker/task-restoring-a-mysql-database-backup-on-red-hat-enterprise-linux-or-centos.html"
+    - title: 在Windows上还原数据库备份
+      url: "/health-checker/task-restoring-a-mysql-database-backup-on-windows.html"
+    - title: 将 Unified Manager 虚拟设备迁移到 Linux 系统
+      url: "/health-checker/task-migrating-a-unified-manager-virtual-appliance-to-a-rhel-or-centos-system.html"
+  - title: 什么是 Unified Manager 维护窗口
+    pdf-filename: 什么是Unified Manager维护窗口(集群运行状况)
+    url: "/health-checker/concept-what-a-um-maintenance-window-is.html"
+    entries:
+    - title: 计划维护窗口以禁用集群事件通知
+      url: "/health-checker/task-scheduling-a-maintenance-window-to-disable-cluster-event-notifications.html"
+    - title: 更改或取消计划的维护窗口
+      url: "/health-checker/task-changing-or-canceling-a-scheduled-maintenance-window.html"
+    - title: 查看维护窗口期间发生的事件
+      url: "/health-checker/task-viewing-events-that-occurred-during-a-maintenance-window.html"
+  - title: 管理 SAML 身份验证设置
+    pdf-filename: 管理SAML身份验证设置(集群运行状况)
+    url: "/health-checker/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: 身份提供程序要求
+      url: "/health-checker/reference-identity-provider-requirements-um.html"
+    - title: 启用 SAML 身份验证
+      url: "/health-checker/task-enabling-saml-authentication-um.html"
+    - title: 更改用于 SAML 身份验证的身份提供程序
+      url: "/health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html"
+    - title: 更改 Unified Manager 安全证书后更新 SAML 身份验证设置
+      url: "/health-checker/task-updating-saml-authentication-settings-after-unified-manager-certificate-change.html"
+    - title: 禁用 SAML 身份验证
+      url: "/health-checker/task-disabling-saml-authentication-um.html"
+    - title: 从维护控制台禁用 SAML 身份验证
+      url: "/health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html"
+  - title: 使用收藏夹选项管理存储对象
+    pdf-filename: 使用收藏夹选项管理存储对象(集群运行状况)
+    url: "/health-checker/generic-managing-storage-objects-using-the-favorite-option.html"
+    entries:
+    - title: 在收藏夹列表中添加和删除存储对象
+      url: "/health-checker/task-adding-to-and-removing-storage-objects-from-the-favorites-list.html"
+    - title: 集群收藏卡
+      url: "/health-checker/reference-cluster-favorite-card.html"
+    - title: 聚合收藏卡
+      url: "/health-checker/reference-aggregate-favorite-card.html"
+    - title: 卷收藏卡
+      url: "/health-checker/reference-volume-favorite-card.html"
+  - title: 创建报告并将其导入到Unified Manager中
+    url: "/health-checker/task-creating-and-importing-reports-into-unified-manager.html"
+    entries:
+    - title: 下载并安装MySQL Connector/J
+      url: "/health-checker/task-downloading-and-installing-mysql-connector-j.html"
+    - title: 创建数据库用户
+      url: "/health-checker/task-creating-a-database-user.html"
+    - title: 下载Eclipse业务智能和报告工具(BIRT)
+      url: "/health-checker/task-downloading-the-eclipse-plugin-for-birt.html"
+    - title: 使用BIRT创建项目
+      url: "/health-checker/task-creating-a-project-using-birt.html"
+    - title: 使用BIRT创建新报告
+      url: "/health-checker/task-creating-a-new-report-using-birt.html"
+    - title: 使用BIRT创建JDBC数据源
+      url: "/health-checker/task-creating-a-jdbc-data-source-using-birt.html"
+    - title: 使用BIRT创建新的MySQL数据集
+      url: "/health-checker/task-creating-a-new-mysql-data-set-using-birt.html"
+    - title: 导入报告
+      url: "/health-checker/task-importing-reports.html"
+  - title: 使用 Unified Manager REST API
+    pdf-filename: 使用Unified Manager REST API (集群运行状况)
+    url: "/health-checker/concept-using-unified-manager-rest-apis-ocum.html"
+    entries:
+    - title: 使用Swagger API网页访问REST API
+      url: "/health-checker/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html"
+    - title: 可用的REST API列表
+      url: "/health-checker/reference-list-of-available-rest-apis-ocum.html"
+  - title: 设置和监控带有无限卷且没有存储类的SVM
+    url: "/health-checker/task-setting-up-and-monitoring-a-vserver-with-infinite-volume-without-storage-classes.html"
+    entries:
+    - title: 编辑无限卷阈值设置
+      url: "/health-checker/task-editing-the-infinite-volume-threshold-settings.html"
+  - title: 使用存储类和数据策略管理无限卷
+    url: "/health-checker/task-managing-your-infinite-volume-with-storage-classes-and-data-policies.html"
+    entries:
+    - title: 编辑存储类的阈值设置
+      url: "/health-checker/task-editing-storage-class-threshold-settings.html"
+    - title: 正在添加警报
+      url: "/health-checker/task-adding-alerts.html"
+    - title: 创建规则
+      pdf-filename: 创建规则(集群运行状况)
+      url: "/health-checker/task-creating-rules.html"
+      entries:
+      - title: 使用模板创建规则
+        url: "/health-checker/task-creating-rules-using-templates.html"
+      - title: 创建自定义规则
+        url: "/health-checker/task-creating-custom-rules.html"
+    - title: 导出数据策略配置
+      url: "/health-checker/task-exporting-a-data-policy-configuration.html"
+  - title: 将Unified Manager支持包发送给技术支持
+    url: "/health-checker/task-sending-a-support-bundle-to-technical-support.html"
+    entries:
+    - title: 访问维护控制台
+      url: "/health-checker/task-accessing-the-maintenance-console.html"
+    - title: 生成支持包
+      url: "/health-checker/task-generating-and-uploading-a-support-bundle.html"
+    - title: 使用 Windows 客户端检索支持包
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-windows-client.html"
+    - title: 使用 UNIX 或 Linux 客户端检索支持包
+      url: "/health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html"
+    - title: 向技术支持发送支持包
+      url: "/health-checker/task-send-a-support-bundle-to-technical-support.html"
+  - title: 与多个工作流相关的任务和信息
+    url: "/health-checker/concept-tasks-and-information-related-to-several-workflows.html"
+    entries:
+    - title: 添加和查看有关事件的注释
+      url: "/health-checker/task-adding-and-reviewing-notes-about-an-event.html"
+    - title: 将事件分配给特定用户
+      url: "/health-checker/task-assigning-events-to-specific-users.html"
+    - title: 确认并解决事件
+      url: "/health-checker/task-acknowledging-and-resolving-events.html"
+    - title: 事件详细信息页面
+      pdf-filename: 事件详细信息页面(集群运行状况)
+      url: "/health-checker/reference-event-details-page.html"
+      entries:
+      - title: Event Information 部分显示的内容
+        url: "/health-checker/reference-what-the-event-information-section-displays.html"
+      - title: 系统诊断部分显示的内容
+        url: "/health-checker/reference-what-the-system-diagnosis-section-displays.html"
+      - title: 建议的操作部分显示的内容
+        url: "/health-checker/reference-what-the-suggested-actions-section-displays.html"
+    - title: 事件严重性类型的问题描述
+      url: "/health-checker/reference-description-of-event-severity-types.html"
+    - title: 事件影响级别的问题描述
+      url: "/health-checker/reference-description-of-event-impact-levels.html"
+    - title: 事件影响区域的问题描述
+      url: "/health-checker/reference-description-of-event-impact-areas.html"
+    - title: 运行状况/卷详细信息页面
+      url: "/health-checker/reference-health-volume-details-page.html"
+    - title: 运行状况/Storage Virtual Machine详细信息页面
+      url: "/health-checker/reference-health-svm-details-page.html"
+    - title: 运行状况/集群详细信息页面
+      url: "/health-checker/reference-health-cluster-details-page.html"
+    - title: 运行状况/聚合详细信息页面
+      url: "/health-checker/reference-health-aggregate-details-page.html"
+    - title: 保护/作业详细信息页面
+      url: "/health-checker/reference-job-details-page.html"
+    - title: 添加用户
+      url: "/health-checker/task-adding-users.html"
+    - title: 用户角色的定义
+      url: "/health-checker/reference-definitions-of-user-roles.html"
+    - title: 用户类型的定义
+      url: "/health-checker/reference-definitions-of-user-types.html"
+    - title: Unified Manager 用户角色和功能
+      url: "/health-checker/reference-unified-manager-roles-and-capabilities.html"
+    - title: 支持的 Unified Manager 命令行界面命令
+      url: "/health-checker/reference-supported-unified-manager-cli-commands.html"
+- title: 使用维护控制台
+  url: "/health-checker/task-using-the-maintenance-console.html"
+  entries:
+  - title: 维护控制台提供的功能
+    url: "/health-checker/concept-what-functionality-the-maintenance-console-provides.html"
+  - title: 维护用户执行的操作
+    url: "/health-checker/concept-what-the-maintenance-user-does.html"
+  - title: 诊断用户功能
+    url: "/health-checker/concept-what-the-diagnostic-user-does.html"
+  - title: 维护控制台菜单
+    url: "/health-checker/concept-maintenance-console-menu.html"
+    entries:
+    - title: 网络配置菜单
+      url: "/health-checker/reference-network-configuration-menu.html"
+    - title: System Configuration 菜单
+      url: "/health-checker/reference-system-configuration-menu.html"
+    - title: 支持和诊断菜单
+      url: "/health-checker/reference-support-and-diagnostics-menu.html"
+    - title: 其他菜单选项
+      url: "/health-checker/reference-additional-menu-options.html"
+  - title: 在 Windows 上更改维护用户密码
+    url: "/health-checker/task-changing-the-maintenance-user-password-on-windows.html"
+  - title: 在 Linux 系统上更改 umadmin 密码
+    url: "/health-checker/task-changing-the-umadmin-password-on-rhel.html"
+  - title: 添加网络接口
+    url: "/health-checker/task-adding-additional-network-interfaces.html"
+  - title: 向 Unified Manager 数据库目录添加磁盘空间
+    pdf-filename: 向Unified Manager数据库目录添加磁盘空间(集群运行状况)
+    url: "/health-checker/concept-adding-disk-space-to-the-unified-manager-database-directory.html"
+    entries:
+    - title: 向 Linux 主机的数据目录添加空间
+      url: "/health-checker/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html"
+    - title: 向 VMware 虚拟机的数据磁盘添加空间
+      url: "/health-checker/task-adding-space-to-the-data-disk-of-the-vmware-virtual-machine.html"
+    - title: 向 Microsoft Windows 服务器的逻辑驱动器添加空间
+      url: "/health-checker/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html"

@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/reference-understanding-and-using-the-node-failover-planning-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能/节点故障转移规划"页面可估算节点的高可用性\(HA\)配对节点发生故障时对节点的性能影响。Unified Manager 根据 HA 对中节点的历史性能进行估算。' 
+---
+= 了解和使用 Node Failover Planning 页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+" 性能 / 节点故障转移规划 " 页面可估算节点的高可用性（ HA ）配对节点发生故障时对节点的性能影响。Unified Manager 根据 HA 对中节点的历史性能进行估算。
+
+估算故障转移对性能的影响有助于您在以下情况下进行规划：
+
+* 如果故障转移将接管节点的估计性能持续降低到不可接受的水平，您可以考虑采取更正措施，以减少故障转移对性能的影响。
+* 在启动手动故障转移以执行硬件维护任务之前，您可以估算故障转移如何影响接管节点的性能，以确定执行任务的最佳时间。
+

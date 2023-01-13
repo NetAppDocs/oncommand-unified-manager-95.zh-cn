@@ -1,0 +1,67 @@
+---
+permalink: health-checker/task-performing-corrective-action-for-a-flashcard-offline.html 
+sidebar: sidebar 
+keywords:  
+summary: '在"Flash Card脱机事件"详细信息页面的发生原因 字段中查看问题描述 后、您可以搜索有助于解决此情况的追加信息。' 
+---
+= 对闪存卡脱机执行更正操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在"Flash Card脱机事件"详细信息页面的发生原因 字段中查看问题描述 后、您可以搜索有助于解决此情况的追加信息。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+在此示例场景中、事件详细信息页面上提供的事件摘要包含有关脱机闪存卡状况的以下信息：
+
+[listing]
+----
+Severity: Critical
+State: New
+Impact Level: Incident
+Impact Area: Availability
+Source: alpha-node
+Source Type: Node
+Acknowledged By:
+Resolved By:
+Assigned To:
+Cause: Flash cards at slot numbers 3 are offline.
+Alert Settings:
+----
+此事件信息表示集群节点中名为"`alpha-node`"的插槽3中安装的闪存卡已脱机。
+
+此信息会将闪存卡脱机情况定位到特定集群节点上的特定插槽、但并不表示闪存卡脱机的原因。
+
+
+
+== 步骤
+
+. 要获取可能有助于诊断闪存卡脱机情况的更多详细信息、您可以单击事件源的名称。
++
+在此示例中、事件源是"`alpha-node`"集群节点。单击该节点名称将在受影响集群的运行状况/集群详细信息页面的节点选项卡上显示HA详细信息。显示的HA详细信息将显示有关该节点所属HA对的信息。
+
++
+在此示例中、相关信息位于HA详细信息的事件摘要表中。此表指定了闪存卡脱机事件、事件生成时间以及此事件的源集群节点。
+
+. 使用ONTAP 命令行界面或OnCommand 系统管理器、访问受影响集群的事件管理器系统(EMS)日志。
++
+在此示例中、您可以使用事件名称、事件时间和事件源来查找有关此事件的EMS报告。事件的EMS报告包含事件的详细问题描述 、并且通常会提供一些建议来补救事件指示的状况。
+
+
+
+
+
+== 完成后
+
+诊断问题后、请联系相应的管理员或操作员、完成必要的手动步骤、使闪存卡恢复联机。

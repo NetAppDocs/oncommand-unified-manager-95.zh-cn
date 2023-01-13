@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-removing-a-protection-relationship-from-the-health-volume-details-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以删除保护关系以永久删除选定源和目标之间的现有关系：例如，当您要使用其他目标创建关系时。此操作将删除所有元数据，并且无法撤消。 
+---
+= 从运行状况/卷详细信息页面删除保护关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除保护关系以永久删除选定源和目标之间的现有关系：例如，当您要使用其他目标创建关系时。此操作将删除所有元数据，并且无法撤消。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已设置 Workflow Automation 。
+
+
+
+
+== 步骤
+
+. 在*运行状况/卷*详细信息页面的*保护*选项卡中、从拓扑中选择要删除的SnapMirror关系。
+. 右键单击目标名称，然后从菜单中选择 * 删除 * 。
++
+此时将显示删除关系对话框。
+
+. 单击 * 继续 * 以删除此关系。
++
+此关系将从"运行状况/卷"详细信息页面中删除。
+
+

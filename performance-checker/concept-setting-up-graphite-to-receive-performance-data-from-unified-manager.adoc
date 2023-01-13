@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/concept-setting-up-graphite-to-receive-performance-data-from-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Graphite 是一款开放式软件工具，用于从计算机系统收集性能数据并绘制图形。必须正确配置 Graphite 服务器和软件，才能从 Unified Manager 接收统计数据。 
+---
+= 设置 Graphite 以从 Unified Manager 接收性能数据
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Graphite 是一款开放式软件工具，用于从计算机系统收集性能数据并绘制图形。必须正确配置 Graphite 服务器和软件，才能从 Unified Manager 接收统计数据。
+
+按照安装说明安装 Graphite 后，您需要进行以下更改以支持从 Unified Manager 进行统计数据传输：
+
+* 在中 `/opt/graphite/conf/carbon.conf` file、必须将每分钟可在Graphite服务器上创建的最大文件数设置为_200_ (`MAX_CREATES_PER_MINUTE = 200`）。
++
+根据配置中的集群数量以及您选择发送的统计信息对象，最初可能需要创建数千个新文件。每分钟 200 个文件可能需要 15 分钟或更长时间才能创建所有度量文件。创建所有唯一指标文件后，此参数将不再相关。
+
+* 如果您在使用IPv6地址部署的服务器上运行Graphite、则中line_RECEIVER_interface的值 `/opt/graphite/conf/carbon.conf` 文件必须从"`0.0.0.0`"更改为"`：`" (`LINE_RECEIVER_INTERFACE = ::`）
+* 在中 `/opt/graphite/conf/storage-schemas.conf` 文件、 `retentions` 必须使用参数将频率设置为5分钟、并将保留期限设置为与您的环境相关的天数。
++
+保留期限可以与您的环境所允许的期限相同，但对于至少一个保留设置，必须将频率值设置为 5 分钟。在以下示例中、使用为Unified Manager定义了一个部分 `pattern` 参数、这些值会将初始频率设置为5分钟、保留期限设置为100天：
+
++
+[NOTE]
+====
+如果默认供应商标记从"`netapp-performance`"更改为其他名称、则必须在中反映此更改 `pattern` 参数。
+
+====
+
+
+[NOTE]
+====
+如果在 Unified Manager 服务器尝试发送性能数据时 Graphite 服务器不可用，则不会发送数据，并且收集的数据会出现空隙。
+
+====

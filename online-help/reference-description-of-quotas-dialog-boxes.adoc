@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-quotas-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用运行状况/Storage Virtual Machine清单页面的用户和组配额选项卡中的相应选项来配置发生配额相关问题描述 时发送的电子邮件通知的格式、并配置规则以根据用户配额指定电子邮件地址。 
+---
+= 配额的问题描述对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用运行状况/Storage Virtual Machine清单页面的用户和组配额选项卡中的相应选项来配置发生配额相关问题描述 时发送的电子邮件通知的格式、并配置规则以根据用户配额指定电子邮件地址。

@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-view-aggregates-reaching-full-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以自定义"聚合容量和利用率"报告以显示按聚合容量利用率的增加顺序排序的聚合。这样、您可以查看容量达到全满的聚合。' 
+---
+= 自定义聚合容量和利用率报告以查看容量达到全满的聚合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义"聚合容量和利用率"报告以显示按聚合容量利用率的增加顺序排序的聚合。这样、您可以查看容量达到全满的聚合。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要取消按集群和HA对分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组选项*。
+
+
+. 要对容量达到全满的聚合进行排序、请单击*全满天数*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+. 选择*筛选器*>*顶部/底部N*。
+. 在*顶部/底部N*对话框中、从*筛选器*字段中选择*底部N*、然后在文本字段中输入值。
+. 单击 * 确定 * 。
+

@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/reference-cluster-summary-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能集群摘要"页面提供了集群的活动事件、IOPS性能和MBps性能的摘要。此页面还包括集群中存储对象的总数。' 
+---
+= 性能集群摘要页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"性能集群摘要"页面提供了集群的活动事件、IOPS性能和MBps性能的摘要。此页面还包括集群中存储对象的总数。

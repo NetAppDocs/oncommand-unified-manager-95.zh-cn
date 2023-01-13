@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用配置/性能阈值页面创建、编辑、克隆、删除和查看性能阈值策略。 
+---
+= 性能阈值策略页面的说明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用配置/性能阈值页面创建、编辑、克隆、删除和查看性能阈值策略。
+
+单击相应页面上的*帮助*将显示以下主题。

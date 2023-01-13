@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-managing-saml-authentication-settings-um.html 
+sidebar: sidebar 
+keywords:  
+summary: '配置远程身份验证设置后、您可以启用安全断言标记语言(SAML)身份验证、以便远程用户先通过安全身份提供程序(IdP)进行身份验证、然后才能访问Unified Manager Web UI。' 
+---
+= 管理 SAML 身份验证设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配置远程身份验证设置后，您可以启用安全断言标记语言（ Security Assertion Markup Language ， SAML ）身份验证，以便远程用户先通过安全身份提供程序（ IdP ）进行身份验证，然后才能访问 Unified Manager Web UI 。
+
+请注意，启用 SAML 身份验证后，只有远程用户才能访问 Unified Manager 图形用户界面。本地用户和维护用户将无法访问此 UI 。此配置不会影响访问维护控制台的用户。

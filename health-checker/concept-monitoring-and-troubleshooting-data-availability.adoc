@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-monitoring-and-troubleshooting-data-availability.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 可监控授权用户访问存储数据的可靠性，在出现阻止或阻碍访问的情况时向您发出警报，并可用于诊断这些情况并分配和跟踪其解决方法。 
+---
+= 监控数据可用性并对其进行故障排除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 可监控授权用户访问存储数据的可靠性，在出现阻止或阻碍访问的情况时向您发出警报，并可用于诊断这些情况并分配和跟踪其解决方法。
+
+本节中的可用性工作流主题介绍了一些示例，说明存储管理员如何使用 Unified Manager Web UI 发现，诊断和分配对数据可用性产生不利影响的硬件和软件状况以解决问题。

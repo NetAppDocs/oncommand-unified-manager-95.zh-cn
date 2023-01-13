@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-editing-group-rules.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑组规则以修改条件组以及条件组中的条件，以便向特定组添加或删除存储对象。 
+---
+= 编辑组规则
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑组规则以修改条件组以及条件组中的条件，以便向特定组添加或删除存储对象。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组规则 * 选项卡中，选择要编辑的组规则，然后单击 * 编辑 * 。
+. 在 * 编辑组规则 * 对话框中，根据需要更改组规则名称，关联的组名称，条件组和条件。
++
+[NOTE]
+====
+您不能更改组规则的目标对象类型。
+
+====
+. 单击 * 保存 * 。
+

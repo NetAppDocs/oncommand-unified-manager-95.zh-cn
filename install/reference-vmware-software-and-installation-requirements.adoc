@@ -1,0 +1,44 @@
+---
+permalink: install/reference-vmware-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和支持软件。 
+---
+= VMware 软件和安装要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 Unified Manager 的 VMware vSphere 系统需要特定版本的操作系统和支持软件。
+
+
+
+== 操作系统软件
+
+支持以下版本的 VMware ESXi ：
+
+* ESXi 5.5、6.0和6.5
+
+
+支持以下版本的 vSphere ：
+
+* VMware vCenter Server 5.5、6.0和6.5
+
+
+有关受支持的 ESXi 版本的最新完整列表，请参见互操作性表。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+要使虚拟设备正常运行、VMware ESXi服务器时间必须与NTP服务器时间相同。将 VMware ESXi 服务器时间与 NTP 服务器时间同步可防止发生时间故障。
+
+
+
+== 安装要求
+
+支持 Unified Manager 虚拟设备的 VMware 高可用性。
+
+如果在运行ONTAP 软件的存储系统上部署NFS数据存储库、则必须使用适用于VMware VAAI的NetApp NFS插件来使用厚配置。
+
+如果由于资源不足而在使用已启用高可用性的环境时部署失败、您可能需要通过禁用VM重新启动优先级并保持主机隔离响应处于打开状态来修改集群功能虚拟机选项。

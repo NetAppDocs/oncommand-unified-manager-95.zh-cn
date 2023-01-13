@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-creating-a-new-report-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用适用于业务智能和报告工具的Eclipse插件\(BIRT\)创建新报告。如果Unified Manager中的现有报告不符合您环境的需求、您可能需要创建新报告。' 
+---
+= 使用BIRT创建新报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用适用于业务智能和报告工具的Eclipse插件(BIRT)创建新报告。如果Unified Manager中的现有报告不符合您环境的需求、您可能需要创建新报告。
+
+
+
+== 开始之前
+
+您必须已下载并提取BIRT。
+
+您必须已使用BIRT创建项目。
+
+
+
+== 步骤
+
+. 从BIRT界面中、选择*文件*>*新增*>*报告*。
+. 在*新建报告*对话框中、选择项目文件夹、该文件夹应与先前创建的项目文件夹相同。
++
+如果选择其他项目文件夹、则无法在Unified Manager中使用报告操作。
+
+. 键入报告文件名、然后单击*下一步*。
+. 选择报告类型并单击*完成*。
+

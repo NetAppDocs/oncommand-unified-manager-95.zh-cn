@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-how-enabling-flash-cache-on-a-node-can-improve-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过在集群中的每个节点上启用 Flash Cache ® 智能数据缓存来提高工作负载性能。 
+---
+= 在节点上启用 Flash Cache 如何提高工作负载性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过在集群中的每个节点上启用 Flash Cache ® 智能数据缓存来提高工作负载性能。
+
+Flash Cache 模块或基于 PCIe 的性能加速模块内存模块可用作智能外部读取缓存，从而优化随机读取密集型工作负载的性能。此硬件与 ONTAP 的 WAFL 外部缓存软件组件配合使用。
+
+在 Unified Manager 的事件详细信息页面上，表示争用聚合的集群组件图标以红色突出显示。图标下方的圆括号为聚合的名称，用于标识聚合。您可以在聚合所在的节点上启用 Flash Cache 。
+
+您可以使用OnCommand 系统管理器或ONTAP 命令查看是否已安装或启用Flash Cache、如果尚未启用、则可以启用它。以下命令指示是否已在特定节点上启用Flash Cache： `cluster::> run local options flexscale.enable`
+
+有关 Flash Cache 及其使用要求的详细信息，请参见以下技术报告：
+
+http://www.netapp.com/us/media/tr-3832.pdf["技术报告 3832 ：《 Flash Cache 最佳实践指南》"]

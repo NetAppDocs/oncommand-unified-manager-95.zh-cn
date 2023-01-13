@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-removing-performance-threshold-policies-from-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果您不再希望 Unified Manager 监控性能计数器的值，则可以从存储对象中删除用户定义的性能阈值策略。 
+---
+= 从存储对象中删除性能阈值策略
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您不再希望 Unified Manager 监控性能计数器的值，则可以从存储对象中删除用户定义的性能阈值策略。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 关于此任务
+
+一次只能从选定对象中删除一个策略。
+
+您可以通过在列表中选择多个对象从多个存储对象中删除阈值策略。
+
+
+
+== 步骤
+
+. 从任何存储对象的 * 清单 * 页面中，选择至少应用了一个性能阈值策略的一个或多个对象。
++
+|===
+| 清除阈值 | 执行此操作 ... 
+
+
+ a| 
+一个对象
+ a| 
+选中该对象左侧的复选框。
+
+
+
+ a| 
+多个对象
+ a| 
+选中每个对象左侧的复选框。
+
+
+
+ a| 
+页面上的所有对象
+ a| 
+单击 image:../media/select-dropdown-65-png.gif[""] 并选择*选择此页面上的所有对象*。
+
+
+
+ a| 
+相同类型的所有对象
+ a| 
+单击 image:../media/select-dropdown-65-png.gif[""] 并选择*选择所有对象*。
+
+|===
+. 单击 * 清除性能阈值策略 * 。
++
+此时将显示清除阈值策略页面，其中显示了当前分配给存储对象的阈值策略列表。
+
+. 选择要从对象中删除的阈值策略，然后单击 * 清除策略 * 。
++
+选择阈值策略时，将显示该策略的详细信息，以便您确认已选择适当的策略。
+
+

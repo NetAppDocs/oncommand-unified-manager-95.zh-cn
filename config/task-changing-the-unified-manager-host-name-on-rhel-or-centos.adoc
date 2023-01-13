@@ -1,0 +1,54 @@
+---
+permalink: config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html 
+sidebar: sidebar 
+keywords:  
+summary: 有时，您可能需要更改已安装 Unified Manager 的 Red Hat Enterprise Linux 或 CentOS 计算机的主机名。例如，您可能希望重命名主机，以便在列出 Linux 计算机时更容易按类型，工作组或受监控集群组来识别 Unified Manager 服务器。 
+---
+= 在 Linux 系统上更改 Unified Manager 主机名
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有时，您可能需要更改已安装 Unified Manager 的 Red Hat Enterprise Linux 或 CentOS 计算机的主机名。例如，您可能希望重命名主机，以便在列出 Linux 计算机时更容易按类型，工作组或受监控集群组来识别 Unified Manager 服务器。
+
+
+
+== 开始之前
+
+您必须对安装了 Unified Manager 的 Linux 系统具有 root 用户访问权限。
+
+
+
+== 关于此任务
+
+您可以使用主机名（或主机 IP 地址）访问 Unified Manager Web UI 。如果您在部署期间为网络配置了静态 IP 地址，则应指定网络主机的名称。如果使用 DHCP 配置网络，则应从 DNS 服务器获取主机名。
+
+无论主机名的分配方式如何，如果更改主机名并打算使用新主机名来访问 Unified Manager Web UI ，则必须生成新的安全证书。
+
+如果您使用服务器的 IP 地址而不是主机名访问 Web UI ，则在更改主机名后不必生成新证书。但是，最好更新证书，以便证书中的主机名与实际主机名匹配。新证书在 Linux 计算机重新启动后才会生效。
+
+如果在 Unified Manager 中更改主机名，则必须在 OnCommand Workflow Automation （ WFA ）中手动更新主机名。主机名不会在 WFA 中自动更新。
+
+
+
+== 步骤
+
+. 以 root 用户身份登录到要修改的 Unified Manager 系统。
+. 按所示顺序输入以下命令、以停止Unified Manager软件和关联的MySQL软件：
+. 使用Linux更改主机名 `hostnamectl` 命令： `hostnamectl set-hostname new_FQDN`
++
+`hostnamectl set-hostname nuhost.corp.widget.com`
+
+. 重新生成服务器的 HTTPS 证书：``/opt/netapp/essentials/bin/cert.sh create``
+. 重新启动网络服务： `service network restart`
+. 重新启动服务后，验证新主机名是否能够对自身执行 ping 操作： `ping new_hostname`
++
+`ping nuhost`
+
++
+此命令应返回先前为原始主机名设置的相同 IP 地址。
+
+. 完成并验证主机名更改后、按所示顺序输入以下命令以重新启动Unified Manager：
+

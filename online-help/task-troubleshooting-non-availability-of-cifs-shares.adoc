@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-troubleshooting-non-availability-of-cifs-shares.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果提供CIFS共享的存储对象不可用、您可能无法访问这些共享。您应查看在这些对象不可用时生成的可用性事件、例如卷脱机、接合路径脱机或SVM CIFS服务器关闭。 
+---
+= 对CIFS共享的访问进行故障排除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果提供CIFS共享的存储对象不可用、您可能无法访问这些共享。您应查看在这些对象不可用时生成的可用性事件、例如卷脱机、接合路径脱机或SVM CIFS服务器关闭。
+
+
+
+== 开始之前
+
+要执行此任务、您必须具有存储管理员角色。
+
+
+
+== 关于此任务
+
+如果您已配置相应的警报、则系统将通过警报电子邮件通知您此可用性事件。
+
+
+
+== 步骤
+
+. 在*信息板/概述*页面中、单击相应的脱机事件。
++
+例如、如果您收到"卷脱机"事件、请单击 *`Volume_name` Volume Offline *事件。
+
+. 在*事件*详细信息页面中、单击 *`Volume_name`*。
+. 在*运行状况/卷*详细信息页面中、在*相关设备*窗格中单击与CIFS共享对应的数字。
+. 在*运行状况/Storage Virtual Machine*详细信息页面中、单击* CIFS共享*选项卡。
++
+您可以查看受影响的CIFS共享数量。
+
+
+
+
+
+== 完成后
+
+您必须使用OnCommand 系统管理器或ONTAP 命令行界面解决这些故障。

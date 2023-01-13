@@ -1,0 +1,43 @@
+---
+permalink: health-checker/task-creating-a-new-mysql-data-set-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 创建数据源后、您必须创建一个MySQL数据集、以便为报告创建输出结果。您也可以在创建数据集后编辑输出类型。 
+---
+= 使用BIRT创建新的MySQL数据集
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+创建数据源后、您必须创建一个MySQL数据集、以便为报告创建输出结果。您也可以在创建数据集后编辑输出类型。
+
+
+
+== 开始之前
+
+您必须已使用BIRT创建JDBC数据源。
+
+您必须已下载并安装MySQL Connector/J
+
+您必须已在Unified Manager中创建具有报告架构角色的数据库用户。
+
+
+
+== 步骤
+
+. 从* Eclipse *中、选择一个工作空间。
+. 选择*数据资源管理器*>*数据集*>*新数据集*。
+. 在*新建数据集*对话框中、选择先前创建的数据源、数据集类型和数据集名称、然后单击*下一步*。
+. 使用可用项定义SQL查询文本、或者手动输入查询、然后单击*完成*。
+. 单击*预览结果*确认SQL查询、然后单击*确定*。
+. 在*编辑数据集*对话框中、根据需要定义输出列、然后单击*确定*。
+. 将项目拖动到新创建的报告中。
+
+
+
+
+== 完成后
+
+现在、您应将新创建的报告导入到Unified Manager中。

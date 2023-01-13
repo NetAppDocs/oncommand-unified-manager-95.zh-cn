@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以通过创建存储对象组来管理环境中的存储对象。这些存储对象必须满足与组关联的组规则。 
+---
+= 管理存储对象组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过创建存储对象组来管理环境中的存储对象。这些存储对象必须满足与组关联的组规则。

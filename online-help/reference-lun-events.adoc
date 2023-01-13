@@ -1,0 +1,357 @@
+---
+permalink: online-help/reference-lun-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LUN 事件可为您提供有关 LUN 状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= LUN 事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LUN 事件可为您提供有关 LUN 状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+LUN 脱机（ ocumEvtLunOffline ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+LUN已销毁*
+ a| 
+事件
+ a| 
+LUN
+ a| 
+信息
+
+
+
+ a| 
+访问 LUN 的单个活动路径（ ocumEvtLunSingleActivePath ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+没有用于访问 LUN 的活动路径（ ocumEvtLunNotReachable ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+没有可用于访问 LUN 的优化路径（ ocumEvtLunOptimizedPathInactive ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+没有从 HA 配对节点访问 LUN 的路径（ ocumEvtLunHAPathInactive ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+|===
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+LUN Snapshot 副本空间不足（ ocumEvtLunSnapshotNotPossible ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反 LUN IOPS 严重阈值（ ocumLunIopsIncident ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反 LUN IOPS 警告阈值（ ocumLunIopsWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反LUN MBps严重阈值(ocumLunMbpsIncident)
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反LUN MBps警告阈值(ocumLunMbpsWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反 LUN 延迟毫秒 / 操作严重阈值（ ocumLunLatencyIncident ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反 LUN 延迟毫秒 / 操作警告阈值（ ocumLunLatencyWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反 LUN 延迟和 IOPS 严重阈值（ ocumLunLatencyIopsIncident ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反 LUN 延迟和 IOPS 警告阈值（ ocumLunLatencyIopsWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反LUN延迟和MBps严重阈值(ocumLunLatencyMbpsIncident)
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反LUN延迟和MBps警告阈值(ocumLunLatencyMbpsWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延迟和聚合已执行已违反已用容量严重阈值(ocumLunLatencyAggregatePerfCapacityUsedIncident)
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+LUN延迟和聚合已执行已违反已用容量警告阈值(ocumLunLatencyAggregatePerfCapacityUsedWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反 LUN 延迟和聚合利用率严重阈值（ ocumLunLatencyAggregateUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反 LUN 延迟和聚合利用率警告阈值（ ocumLunLatencyAggregateUtilizationWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延迟和节点性能已违反已用容量严重阈值(ocumLunLatencyNodePerfCapacityUsedIncident)
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+LUN延迟和节点性能已违反已用容量警告阈值(ocumLunLatencyNodePerfCapacityUsedWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+LUN延迟和节点性能已用容量-已违反接管严重阈值(ocumLunLatencyAggregatePerfCapacityUsedTakeOverIncident)
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+LUN延迟和节点性能已用容量-已违反接管警告阈值(ocumLunLatencyAggregatePerfCapacityUsedTakeOverWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反 LUN 延迟和节点利用率严重阈值（ ocumLunLatencyNodeUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+LUN
+ a| 
+严重
+
+
+
+ a| 
+已违反 LUN 延迟和节点利用率警告阈值（ ocumLunLatencyNodeUtilizationWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反 QoS LUN 最大 IOPS 警告阈值（ ocumQosLunMaxIopsWarning ）
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+
+
+ a| 
+已违反QoS LUN最大MBps警告阈值(ocumQosLunMaxMbpsWarning)
+ a| 
+风险
+ a| 
+LUN
+ a| 
+警告
+
+|===

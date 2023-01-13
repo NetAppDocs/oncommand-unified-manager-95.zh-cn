@@ -1,0 +1,37 @@
+---
+permalink: install/concept-requirements-for-unified-manager-in-vcs.html 
+sidebar: sidebar 
+keywords:  
+summary: '在Veritas Cluster Server \(VCS\)环境中安装Unified Manager之前、必须确保已正确配置集群节点以支持Unified Manager。' 
+---
+= VCS中Unified Manager的要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在Veritas Cluster Server (VCS)环境中安装Unified Manager之前、必须确保已正确配置集群节点以支持Unified Manager。
+
+您必须确保VCS配置满足以下要求：
+
+* 两个集群节点都必须运行受支持的操作系统版本。
+* 必须在两个集群节点上使用相同的路径安装相同版本的Unified Manager。
+* 两个节点上的MySQL用户必须具有相同的用户ID和组ID。
+* 必须使用本机ext3、ext4文件系统和逻辑卷管理器(LVM)。
+* Unified Manager必须通过光纤通道(FC)或iSCSI连接到存储系统。
++
+此外、还必须确保FC链路处于活动状态、并且两个集群节点均可访问在存储系统上创建的LUN。
+
+* 共享数据磁盘必须具有足够的空间(至少80 GB)来容纳Unified Manager数据库、报告、证书和脚本插件文件夹。
+* 必须在每个系统上至少设置两个网络接口：一个用于节点到节点通信，另一个用于节点到客户端通信。
++
+用于节点到客户端通信的网络接口名称在两个系统上必须相同。
+
+* 必须在集群节点之间建立单独的检测信号链路；否则，将使用网络接口在集群节点之间进行通信。
+* 可选：应使用SnapDrive for UNIX创建一个可供高可用性设置中的两个节点访问的共享位置。
++
+有关安装和创建共享位置的信息、请参见_UNIX SnapDrive 安装和管理指南_。您还可以使用SnapDrive 或存储系统命令行界面管理LUN。有关详细信息，请参见 SnapDrive for UNIX 兼容性列表。
+
+* 必须为SnapDrive 和VCS应用程序提供额外的RAM。
+

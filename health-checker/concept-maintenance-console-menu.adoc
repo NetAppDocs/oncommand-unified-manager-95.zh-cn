@@ -1,0 +1,25 @@
+---
+permalink: health-checker/concept-maintenance-console-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 维护控制台包含多个不同的菜单，可用于维护和管理 Unified Manager 服务器的特殊功能和配置设置。 
+---
+= 维护控制台菜单
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+维护控制台包含多个不同的菜单，可用于维护和管理 Unified Manager 服务器的特殊功能和配置设置。
+
+根据安装 Unified Manager 的操作系统，维护控制台包含以下菜单：
+
+* 升级 Unified Manager （仅限 VMware ）
+* 网络配置（仅限 VMware ）
+* 系统配置（仅限 VMware ）
+* 支持 / 诊断
+* 重置服务器证书
+* 外部数据提供程序
+* 性能轮询间隔配置
+

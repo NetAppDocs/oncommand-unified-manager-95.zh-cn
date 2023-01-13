@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-data-mirroring-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: 'MetroCluster 配置可提供数据镜像，并在整个站点不可用时额外提供启动故障转移的功能。在 MetroCluster 配置中，集群之间的数据镜像状态可以是 " 正常 " 或 " 镜像不可用 " 。了解状态后，您可以有效地管理 MetroCluster 配置。' 
+---
+= 数据镜像状态定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 配置可提供数据镜像，并在整个站点不可用时额外提供启动故障转移的功能。在 MetroCluster 配置中，集群之间的数据镜像状态可以是 " 正常 " 或 " 镜像不可用 " 。了解状态后，您可以有效地管理 MetroCluster 配置。
+
+|===
+| 数据镜像状态 | Description | 显示图标 
+
+
+ a| 
+正常
+ a| 
+MetroCluster 配置中的集群之间的数据镜像正常。
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+镜像不可用
+ a| 
+由于切换， MetroCluster 配置中集群之间的数据镜像不可用。例如，当配对集群因灾难而关闭时，或者出于测试目的而进行计划内切换时。
+ a| 
+切换出错：
+
+image::../media/metrocluster-connectivity-down.gif[MetroCluster 连接已关闭]
+
+切换成功：
+
+image::../media/metrocluster-connectivity-failover.gif[MetroCluster 连接故障转移]
+
+|===

@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-editing-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以更改 Unified Manager 服务器用于与身份验证服务器通信的端口。 
+---
+= 编辑身份验证服务器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更改 Unified Manager 服务器用于与身份验证服务器通信的端口。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选中*禁用嵌套组查找*框。
+. 在 * 身份验证服务器 * 区域中，选择要编辑的身份验证服务器，然后单击 * 编辑 * 。
+. 在 * 编辑身份验证服务器 * 对话框中，编辑端口详细信息。
+. 单击 * 保存 * 。
+

@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用建议的操作尝试自行解决性能事件。前三个建议始终显示，第四个建议下的操作特定于显示的事件类型。 
+---
+= 解决性能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用建议的操作尝试自行解决性能事件。前三个建议始终显示，第四个建议下的操作特定于显示的事件类型。
+
+* 帮助我执行此操作 * 链接为每个建议的操作提供了追加信息，包括执行特定操作的说明。某些操作可能涉及使用Unified Manager、OnCommand System Manager、OnCommand Workflow Automation 、ONTAP 命令行界面命令或这些工具的组合。

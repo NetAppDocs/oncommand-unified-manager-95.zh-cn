@@ -1,0 +1,55 @@
+---
+permalink: online-help/reference-nvram-battery-events.html 
+sidebar: sidebar 
+keywords:  
+summary: NVRAM 电池事件可为您提供电池状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= NVRAM 电池事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVRAM 电池事件可为您提供电池状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+NVRAM 电池电量低（ ocumEvtNvram"BatteryLow" ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+警告
+
+
+
+ a| 
+NVRAM 电池已放电（ ocumEvtNvramBatteryDis荷 电）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+NVRAM 电池充电过度（ ocumEvtNvram"BatteryOverCharged ）
+ a| 
+意外事件
+ a| 
+Node
+ a| 
+严重
+
+|===

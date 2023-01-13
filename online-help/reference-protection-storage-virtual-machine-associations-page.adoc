@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-protection-storage-virtual-machine-associations-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过保护/Storage Virtual Machine关联页面、您可以查看源和目标SVM之间的现有SVM关联、并创建新的SVM关联、以供合作伙伴应用程序用来创建SnapMirror和SnapVault 关系。 
+---
+= 保护/Storage Virtual Machine关联页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过保护/Storage Virtual Machine关联页面、您可以查看源和目标SVM之间的现有SVM关联、并创建新的SVM关联、以供合作伙伴应用程序用来创建SnapMirror和SnapVault 关系。
+
+
+
+== 命令按钮
+
+命令按钮可用于执行以下任务：
+
+* * 创建 * 。
++
+打开创建Storage Virtual Machine关联向导。
+
+* * 删除 *
++
+用于删除选定的SVM关联。
+
+
+
+
+
+== Storage Virtual Machine (SVM)关联列表
+
+"Storage Virtual Machine关联"列表以表格形式显示已创建的源和目标SVM关联以及每个关联允许的保护关系类型。
+
+* * 源 Storage Virtual Machine*
++
+显示源 SVM 的名称。
+
+* * 源集群 *
++
+显示源集群的名称。
+
+* * 目标 Storage Virtual Machine*
++
+显示目标 SVM 的名称。
+
+* * 目标集群 *
++
+显示目标集群的名称。
+
+* * 类型 *
++
+显示保护关系的类型。关系类型为 SnapMirror 或 SnapVault 。
+
+

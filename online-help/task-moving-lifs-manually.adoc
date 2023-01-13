@@ -1,0 +1,55 @@
+---
+permalink: online-help/task-moving-lifs-manually.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Storage Virtual Machine (SVM\)包含数据卷以及一个或多个逻辑接口(LIF\)、SVM可通过这些接口向客户端提供数据。您可以将数据LIF从一个物理端口移动到同一SVM中的另一个物理端口。您可能希望执行此操作以改善负载平衡或协助进行维护操作和性能调整。' 
+---
+= 手动移动LIF
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Virtual Machine (SVM)包含数据卷以及一个或多个逻辑接口(LIF)、SVM可通过这些卷和接口为客户端提供数据。您可以将数据LIF从一个物理端口移动到同一SVM中的另一个物理端口。您可能希望执行此操作以改善负载平衡或协助进行维护操作和性能调整。
+
+
+
+== 关于此任务
+
+存在以下类型的LIF：
+
+* 数据LIF：与SVM关联、用于与客户端进行通信。
+* 集群管理LIF：用于管理节点、SVM和集群本身。
+* 集群LIF：用于集群内流量。
+* 集群间LIF：用于集群间通信。
+* 集群内LIF：用于HA对之间的通信。
+* SVM管理LIF：与SVM关联的数据LIF、用于管理该SVM。
+
+
+image::../media/cluster-network-types.gif[集群网络类型]
+
+此工作流介绍了如何移动数据LIF。此适用场景 NAS (NFS和CIFS) LIF会运行、但不会运行到SAN (FC和iSCSI) LIF。
+
+[NOTE]
+====
+移动连接到CIFS共享的LIF时、访问CIFS共享的客户端将断开连接。对CIFS共享的任何读取或写入请求都将中断。
+
+====
+[NOTE]
+====
+有关如何移动其他类型的LIF的信息、包括有关移动连接到CIFS共享的LIF的详细信息、请参见ONTAP 网络文档。
+
+====
+您可以执行以下与数据LIF相关的基本操作：
+
+* 显示所有数据LIF。
+* 确定最繁忙的LIF。
+* 确定接受繁忙LIF的最佳节点。
+* 修改LIF的主端口或节点以更改其在集群中的首选位置。
++
+要实现更持久的更改、您应移动LIF而不是迁移LIF。要返回到原始主端口、您应还原LIF。
+
+* 将数据LIF迁移到另一个端口以进行临时更改、如果主端口或节点出现问题或正在进行计划内维护、则可能会使用此更改。
+* 将数据LIF还原到其主端口。
+

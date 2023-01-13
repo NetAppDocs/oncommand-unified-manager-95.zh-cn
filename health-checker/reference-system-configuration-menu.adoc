@@ -1,0 +1,81 @@
+---
+permalink: health-checker/reference-system-configuration-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 System Configuration 菜单，您可以通过提供各种选项来管理虚拟设备，例如查看服务器状态以及重新启动和关闭虚拟机。 
+---
+= System Configuration 菜单
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 System Configuration 菜单，您可以通过提供各种选项来管理虚拟设备，例如查看服务器状态以及重新启动和关闭虚拟机。
+
+[NOTE]
+====
+如果Unified Manager安装在Red Hat Enterprise Linux、CentOS或Microsoft Windows上、则"系统配置"菜单不可用。
+
+====
+可以使用以下菜单选项：
+
+* * 显示服务器状态 *
++
+显示当前服务器状态。状态选项包括 " 正在运行 " 和 " 未运行 " 。
+
++
+如果服务器未运行，您可能需要联系技术支持。
+
+* * 重新启动虚拟机 *
++
+重新启动虚拟机，停止所有服务。重新启动后，虚拟机和服务将重新启动。
+
+* * 关闭虚拟机 *
++
+关闭虚拟机，停止所有服务。
+
++
+您只能从虚拟机控制台选择此选项。
+
+* * 更改 < 登录用户 > 用户密码 *
++
+更改当前登录的用户的密码，该用户只能是维护用户。
+
+* * 增加数据磁盘大小 *
++
+增加虚拟机中数据磁盘（磁盘 3 ）的大小。
+
+* * 增加交换磁盘大小 *
++
+增加虚拟机中交换磁盘（磁盘 2 ）的大小。
+
+* * 更改时区 *
++
+将时区更改为您所在的位置。
+
+* * 更改 NTP 服务器 *
++
+更改 NTP 服务器设置，例如 IP 地址或完全限定域名（ FQDN ）。
+
+* *从OCUM备份还原*
++
+从先前备份的版本还原 Unified Manager 数据库和配置设置。
+
+* * 重置服务器证书 *
++
+重置服务器安全证书。
+
+* * 更改主机名 *
++
+更改安装虚拟设备的主机的名称。
+
+* * 返回 *
++
+退出 System Configuration 菜单并返回 Main Menu 。
+
+* * 退出 *
++
+退出维护控制台菜单。
+
+

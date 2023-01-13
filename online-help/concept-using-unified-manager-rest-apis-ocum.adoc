@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-using-unified-manager-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用REST API通过查看Unified Manager捕获的运行状况、容量和性能信息来帮助管理集群。 
+---
+= 使用 Unified Manager REST API
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用REST API通过查看Unified Manager捕获的运行状况、容量和性能信息来帮助管理集群。

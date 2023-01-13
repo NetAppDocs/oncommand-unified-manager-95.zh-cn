@@ -1,0 +1,86 @@
+---
+permalink: online-help/reference-svm-storage-class-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM存储类事件可为您提供有关存储类状态的信息、以便您可以监控潜在问题。SVM存储类仅存在于带有无限卷的SVM中。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= SVM存储类事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM存储类事件可为您提供有关存储类状态的信息、以便您可以监控潜在问题。SVM存储类仅存在于带有无限卷的SVM中。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+以下SVM存储类事件仅适用于带有无限卷的SVM。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+SVM存储类不可用(ocumEvtVserverStorageClassNot Available)
+ a| 
+意外事件
+ a| 
+存储类
+ a| 
+严重
+
+
+
+ a| 
+SVM存储类部分可用(ocumEvtVserverStorageClassPartiallyAvailable)
+ a| 
+风险
+ a| 
+存储类
+ a| 
+error
+
+|===
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+SVM存储类空间接近全满(ocumEvtVserverStorageClassNearlyFull)
+ a| 
+风险
+ a| 
+存储类
+ a| 
+警告
+
+
+
+ a| 
+SVM存储类空间已满(ocumEvtVserverStorageClassFull)
+ a| 
+风险
+ a| 
+存储类
+ a| 
+error
+
+
+
+ a| 
+已超过SVM存储类Snapshot使用量限制(ocumEvtVserverStorageClassSnapshotUsageExceeded)
+ a| 
+风险
+ a| 
+存储类
+ a| 
+警告
+
+|===

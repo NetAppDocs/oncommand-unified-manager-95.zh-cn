@@ -1,0 +1,68 @@
+---
+permalink: online-help/task-subscribing-to-ontap-ems-events.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以订阅接收由安装了ONTAP 软件的系统生成的事件管理系统(EMS)事件。系统会自动向 Unified Manager 报告一部分 EMS 事件，但只有在订阅这些事件后，才会报告其他 EMS 事件。' 
+---
+= 订阅 ONTAP EMS 事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以订阅接收由安装了 ONTAP 软件的系统生成的事件管理系统（ EMS ）事件。系统会自动向 Unified Manager 报告一部分 EMS 事件，但只有在订阅这些事件后，才会报告其他 EMS 事件。
+
+
+
+== 开始之前
+
+请勿订阅已自动添加到 Unified Manager 的 EMS 事件，因为这可能会在收到同一问题描述的两个事件时造成发生原因混淆。
+
+
+
+== 关于此任务
+
+您可以订阅任意数量的 EMS 事件。您订阅的所有事件都会经过验证，并且只有经过验证的事件才会应用于您在 Unified Manager 中监控的集群。_EMS ONTAP 9 事件目录 _ 提供指定版本 ONTAP 9 软件的所有 EMS 消息的详细信息。有关适用事件的列表，请从 ONTAP 9 产品文档页面找到 _EMS 事件目录 _ 的相应版本。
+
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 产品库"]
+
+您可以为订阅的 ONTAP EMS 事件配置警报，也可以为这些事件创建要执行的自定义脚本。
+
+[NOTE]
+====
+如果您未收到订阅的 ONTAP EMS 事件，则可能存在具有集群 DNS 配置的问题描述，从而阻止集群访问 Unified Manager 服务器。要解决此问题描述，集群管理员必须更正集群的 DNS 配置，然后重新启动 Unified Manager 。这样做会将待定 EMS 事件刷新到 Unified Manager 服务器。
+
+====
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*管理事件*。
+. 在*配置/管理事件*页面中、单击*订阅EMS事件*按钮。
+. 在*订阅EMS事件*对话框中、输入要订阅的ONTAP EMS事件的名称。
++
+要查看可订阅的EMS事件的名称、可以从ONTAP 集群Shell使用 `event route show` 命令(ONTAP 9之前的版本)或 `event catalog show` 命令(ONTAP 9或更高版本)。有关识别各个EMS事件的详细说明、请参见知识库问题解答 1072320。
+
++
+https://kb.netapp.com/app/answers/answer_view/a_id/1072320["知识库文章1072320—如何在Unified Manager中配置ONTAP EMS事件订阅"]
+
+. 单击 * 添加 * 。
++
+EMS 事件将添加到 " 已订阅 EMS 事件 " 列表中，但 " 适用于集群 " 列会将您添加的 EMS 事件的状态显示为 "`未知` " 。
+
+. 单击 * 保存并关闭 * 向集群注册 EMS 事件订阅。
+. 再次单击 * 订阅 EMS 事件 * 。
++
+对于您添加的 EMS 事件，状态 "`是` " 将显示在 " 适用于集群 " 列中。
+
++
+如果状态不是 "`是` " ，请检查 ONTAP EMS 事件名称的拼写。如果输入的名称不正确，则必须删除不正确的事件，然后重新添加此事件。
+
+
+
+
+
+== 完成后
+
+发生 ONTAP EMS 事件时，事件将显示在事件页面上。您可以选择事件以在事件详细信息页面中查看有关 EMS 事件的详细信息。您还可以管理事件的处理方式或为事件创建警报。

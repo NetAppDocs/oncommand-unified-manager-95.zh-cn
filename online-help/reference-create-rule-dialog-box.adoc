@@ -1,0 +1,62 @@
+---
+permalink: online-help/reference-create-rule-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用创建规则对话框为数据策略创建新规则。例如、如果要指定特定文件类型的内容的放置位置、则可以使用创建规则对话框为数据策略创建规则。 
+---
+= 创建规则对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用创建规则对话框为数据策略创建新规则。例如、如果要指定特定文件类型的内容的放置位置、则可以使用创建规则对话框为数据策略创建规则。
+
+
+
+== 规则名称
+
+指定新规则的名称。
+
+
+
+== 模板区域
+
+显示规则模板的列表。您可以从列表中选择适当的规则模板、以便为数据策略创建规则。
+
+
+
+== 匹配条件
+
+显示与选定规则模板相关的条件列表。条件列表会根据选定的规则模板而发生更改。例如、如果选择"`Place all files with the specified owner names in a suitable storage class`"、则匹配条件中将显示*所有者列表...*。
+
+* * 添加 * 。
++
+用于根据选定的规则模板添加新的规则属性。例如、如果您选择了规则模板"`Place all files with the specified owner names in a suitable storage class`"、则可以使用*添加*按钮添加所有者的名称。
+
+* * 删除 *
++
+用于删除选定规则属性。
+
+
+
+
+
+== 内容放置
+
+用于从列表中为规则选择适当的存储类。
+
+
+
+== 命令按钮
+
+* * 创建 * 。
++
+为数据策略创建新规则并关闭创建规则对话框。
+
+* * 取消 *
++
+取消最近对规则所做的更改并关闭创建规则对话框。
+
+

@@ -1,0 +1,27 @@
+---
+permalink: online-help/concept-what-rules-and-data-policies-are.html 
+sidebar: sidebar 
+keywords:  
+summary: '规则用于确定文件\(数据\)在带有无限卷的Storage Virtual Machine \(SVM\)中的放置位置。此类规则的集合称为数据策略。' 
+---
+= 什么是规则和数据策略
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+_rule_用于确定文件(数据)在带有无限卷的Storage Virtual Machine (SVM)中的放置位置。此类规则的集合称为_data policy_。
+
+* *规则*
++
+规则主要由一组预定义的条件和信息组成、用于确定将文件放置在无限卷中的位置。将文件放置在无限卷中时、该文件的属性将与规则列表匹配。如果属性与规则匹配、则该规则的放置信息将确定放置文件的存储类。如果属性与规则列表中的任何规则不匹配、则数据策略中的默认规则用于确定文件的放置位置。
+
++
+例如、如果规则为"`Place all files of type .mp3 in the bronze storage class.`"、则写入无限卷的所有.mp3文件都将放置在铜牌存储类中。
+
+* *数据策略*
++
+数据策略是一组规则。每个带有无限卷的SVM都有自己的数据策略。添加到无限卷的每个文件都会与其数据策略的规则进行比较、以确定将该文件放置在何处。通过数据策略、您可以根据文件属性筛选传入文件、并将这些文件放置在相应的存储类中。
+
+

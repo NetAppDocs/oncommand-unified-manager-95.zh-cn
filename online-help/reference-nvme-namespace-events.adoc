@@ -1,0 +1,185 @@
+---
+permalink: online-help/reference-nvme-namespace-events.html 
+sidebar: sidebar 
+keywords:  
+summary: NVMe 命名空间事件可为您提供有关命名空间状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= NVMe 命名空间事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe 命名空间事件可为您提供有关命名空间状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+NVMeNS 脱机 * （ nvmeNamespaceStatusOffline ）
+ a| 
+事件
+ a| 
+命名空间
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS Online * （ nvmeNamespaceStatusOnline ）
+ a| 
+事件
+ a| 
+命名空间
+ a| 
+信息
+
+
+
+ a| 
+NVMeNS 空间不足 * （ nvmeNamespaceSpaceOutOfSpace ）
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+NVmeNS destroy * （ nvmeNamespaceDestroy ）
+ a| 
+事件
+ a| 
+命名空间
+ a| 
+信息
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反 NVMe 命名空间 IOPS 严重阈值（ ocumNvmeNamespaceIopsIncident ）
+ a| 
+意外事件
+ a| 
+命名空间
+ a| 
+严重
+
+
+
+ a| 
+已违反 NVMe 命名空间 IOPS 警告阈值（ ocumNvmeNamespaceIopsWarning ）
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+已违反NVMe命名空间MBps严重阈值(ocumNvmeNamespaceMbpsIncident)
+ a| 
+意外事件
+ a| 
+命名空间
+ a| 
+严重
+
+
+
+ a| 
+已违反NVMe命名空间MBps警告阈值(ocumNvmeNamespaceMbpsWarning)
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+已违反 NVMe 命名空间延迟毫秒 / 操作严重阈值（ ocumNvmeNamespaceLatencyIncident ）
+ a| 
+意外事件
+ a| 
+命名空间
+ a| 
+严重
+
+
+
+ a| 
+已违反 NVMe 命名空间延迟毫秒 / 操作警告阈值（ ocumNvmeNamespaceLatencyWarning ）
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+已违反 NVMe 命名空间延迟和 IOPS 严重阈值（ ocumNvmeNamespaceLatencyIopsIncident ）
+ a| 
+意外事件
+ a| 
+命名空间
+ a| 
+严重
+
+
+
+ a| 
+已违反 NVMe 命名空间延迟和 IOPS 警告阈值（ ocumNvmeNamespaceLatencyIopsWarning ）
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+
+
+ a| 
+已违反NVMe命名空间延迟和MBps严重阈值(ocumNvmeNamespaceLatencyMbpsIncident)
+ a| 
+意外事件
+ a| 
+命名空间
+ a| 
+严重
+
+
+
+ a| 
+已违反NVMe命名空间延迟和MBps警告阈值(ocumNvmeNamespaceLatencyMbpsWarning)
+ a| 
+风险
+ a| 
+命名空间
+ a| 
+警告
+
+|===

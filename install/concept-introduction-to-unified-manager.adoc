@@ -1,0 +1,20 @@
+---
+permalink: install/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。您可以将 Unified Manager 部署在 Linux 服务器， Windows 服务器或 VMware 主机上的虚拟设备上。 
+---
+= OnCommand Unified Manager简介
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。您可以将 Unified Manager 部署在 Linux 服务器， Windows 服务器或 VMware 主机上的虚拟设备上。
+
+完成安装并添加要管理的集群后， Unified Manager 将提供一个图形界面，用于显示受监控存储系统的容量，可用性，保护和性能状态。
+
+* 相关信息 *
+
+http://mysupport.netapp.com/matrix["NetApp 互操作性表工具"]

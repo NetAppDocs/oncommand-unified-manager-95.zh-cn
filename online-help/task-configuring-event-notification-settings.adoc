@@ -1,0 +1,46 @@
+---
+permalink: online-help/task-configuring-event-notification-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将 Unified Manager 配置为在生成事件或将事件分配给用户时发送警报通知。您可以配置用于发送警报的 SMTP 服务器，也可以设置各种通知机制，例如，可以通过电子邮件或 SNMP 陷阱发送警报通知。 
+---
+= 配置事件通知设置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将 Unified Manager 配置为在生成事件或将事件分配给用户时发送警报通知。您可以配置用于发送警报的 SMTP 服务器，也可以设置各种通知机制，例如，警报通知可以通过电子邮件或 SNMP 陷阱发送。
+
+
+
+== 开始之前
+
+您必须具有以下信息：
+
+* 发送警报通知的电子邮件地址
++
+电子邮件地址将显示在已发送警报通知的 "`from` " 字段中。如果由于任何原因无法传送此电子邮件，则此电子邮件地址也会用作无法传送的邮件的收件人。
+
+* 用于访问服务器的 SMTP 服务器主机名以及用户名和密码
+* SNMP版本、陷阱目标主机IP地址、出站陷阱端口以及用于配置SNMP陷阱的社区
+
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*通知*。
+. 在*设置/通知*页面中、配置相应的设置并单击*保存*。
++
+* 注： *
+
++
+** 如果"发件人地址"已预先填充地址"`OnCommand@localhost.com`"、则应将其更改为实际有效的电子邮件地址、以确保所有电子邮件通知均已成功传送。
+** 如果无法解析 SMTP 服务器的主机名，您可以指定 SMTP 服务器的 IP 地址（ IPv4 或 IPv6 ），而不是主机名。
+
+
+

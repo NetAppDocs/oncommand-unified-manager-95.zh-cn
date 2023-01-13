@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-add-group-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过添加组对话框、您可以创建组、以便根据组规则包含集群、卷和SVM。 
+---
+= 添加组对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过添加组对话框、您可以创建组、以便根据组规则包含集群、卷和SVM。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* * 名称 *
++
+指定组的名称。您必须为组输入一个唯一名称。
+
+* * 问题描述 *
++
+指定组的有意义的问题描述。
+
+
+
+
+
+== 命令按钮
+
+使用命令按钮可以添加或取消创建新组。
+
+* * 添加 * 。
++
+创建新组。
+
+* * 取消 *
++
+关闭添加组对话框、而不保存所做的更改。
+
+

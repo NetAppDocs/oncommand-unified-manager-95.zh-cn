@@ -1,0 +1,42 @@
+---
+permalink: online-help/task-viewing-svm-iops-traffic-by-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用性能 /SVM 资源管理器页面查看 SVM 的详细 IOPS 信息。"IOPS - 总计 " 计数器图表显示 SVM 上的总 IOPS 使用量， "IOPS - 细分 " 计数器图表有助于确定读取，写入和其他 IOPS 对 SVM 的影响。' 
+---
+= 按协议查看 SVM IOPS 流量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用性能 /SVM 资源管理器页面查看 SVM 的详细 IOPS 信息。"IOPS - 总计 " 计数器图表显示 SVM 上的总 IOPS 使用量， "IOPS - 细分 " 计数器图表有助于确定读取，写入和其他 IOPS 对 SVM 的影响。
+
+
+
+== 关于此任务
+
+此外， "IOPS - 协议 " 图表还会详细比较 SVM 上使用的每个协议的 IOPS 流量。可以使用以下协议：
+
+* CIFS
+* NFS
+* FCP
+* iSCSI
+* NVMe
+
+
+
+
+== 步骤
+
+. 在选定 SVM 的 * 性能 /SVM 资源管理器 * 页面中，从 IOPS 图表中，从下拉菜单中选择 * 协议 * 。
++
+此时将显示 "IOPS - 协议 " 图表。
+
+. 要查看较大版本的图表，请选择 * 缩放视图 * 。
++
+此时将显示 IOPS 高级协议比较图表。您可以通过取消选择或选择来限制比较 image:../media/eye-icon.gif[""] 与协议关联的。
+
+. 要查看特定值，请将光标移动到任一图表的图表区域中以查看弹出窗口。
+

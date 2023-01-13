@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-rate-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以自定义卷传输速率\(历史\)报告、以根据卷的总传输大小查看卷传输详细信息。您还可以查看一周中特定日期的卷传输。' 
+---
+= 卷传输速率(历史)报告自定义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷传输速率(历史)报告、以根据卷的总传输大小查看卷传输详细信息。您还可以查看一周中特定日期的卷传输。

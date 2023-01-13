@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-introduction-to-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。 
+---
+= OnCommand Unified Manager简介
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。
+
+Unified Manager 提供以下功能：
+
+* 发现，监控和通知安装了 ONTAP 软件的系统。
+* 信息板、用于显示环境的容量、可用性、保护和性能运行状况。
+* 增强的警报，事件和阈值基础架构。
+* 显示绘制一段时间内工作负载活动的详细图；包括 IOPS （操作）， MBps （吞吐量），延迟（响应时间），利用率， 性能容量和缓存比率。
+* 确定过度使用集群组件的工作负载以及性能受活动增加影响的工作负载。
+* 提供可用于解决某些意外事件和事件的建议更正操作。
+* 与OnCommand Workflow Automation 集成以执行自动化工作流。
+

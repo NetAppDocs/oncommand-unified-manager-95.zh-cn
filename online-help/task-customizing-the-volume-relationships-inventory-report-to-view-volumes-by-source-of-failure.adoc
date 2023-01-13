@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-customizing-the-volume-relationships-inventory-report-to-view-volumes-by-source-of-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义卷关系清单报告以查看按故障源分组的卷。 
+---
+= 自定义卷关系清单报告以查看按故障源分组的卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷关系清单报告以查看按故障源分组的卷。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 选择*关系运行状况*列。
+. 要查看坏卷的卷详细信息、请单击*坏*列旁边的-符号。
+. 要查看正常卷的卷详细信息、请单击*正常*列旁边的-符号。
+

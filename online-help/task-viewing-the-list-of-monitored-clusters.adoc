@@ -1,0 +1,33 @@
+---
+permalink: online-help/task-viewing-the-list-of-monitored-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用配置/集群数据源页面查看集群清单。您可以查看有关集群的详细信息，例如集群名称或 IP 地址以及通信状态。 
+---
+= 查看受监控集群的列表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用配置/集群数据源页面查看集群清单。您可以查看有关集群的详细信息，例如集群名称或 IP 地址以及通信状态。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+集群列表按收集状态严重性级别列进行排序。您可以单击列标题，按不同列对集群进行排序。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*集群数据源*。
+

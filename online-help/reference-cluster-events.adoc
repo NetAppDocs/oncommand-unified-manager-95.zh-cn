@@ -1,0 +1,422 @@
+---
+permalink: online-help/reference-cluster-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 集群事件提供了有关集群状态的信息，可用于监控集群是否存在潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。 
+---
+= 集群事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+集群事件提供了有关集群状态的信息，可用于监控集群是否存在潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+集群缺少备用磁盘（ ocumEvtDisksNoSpares ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+集群不可访问（ ocumEvtClusterUnreachable ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+集群监控失败（ ocumEvtClusterMonitoringFailed ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+已违反集群 FabricPool 许可证容量限制（ ocumEvtExternalCapacityTierSpaceFull ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+NVMe-oF 宽限期已开始 * （ nvmfGraePeriodStart ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+NVMe-oF 宽限期处于活动状态 * （ nvmfGracePeriodActive ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+NVMe-oF 宽限期已过期 * （ nvmfGracePeriodExpired ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+对象维护窗口已启动（ objectMaintenanceWindow 已启动）
+ a| 
+事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+对象维护窗口已结束（ objectMaintenanceWindow 已启用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+MetroCluster 遗留的备用磁盘（ ocumEvtSpaceDiskLeftBehind ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+已禁用 MetroCluster 自动计划外切换（ ocumEvtMccAutomaticUnplanedSwitchOverDisabled ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+|===
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+集群云层规划（ clusterCloudTierPlanningWarning ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+FabricPool 空间接近全满*
+ a| 
+风险
+ a| 
+集群
+ a| 
+error
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已添加节点（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+已删除节点（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+已删除集群（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+集群添加失败（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+集群名称已更改（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+收到紧急 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+收到严重 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+收到警报 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+error
+
+
+
+ a| 
+收到错误 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+收到警告 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+收到调试 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+收到通知 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+收到信息 EMS （不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+警告
+
+|===
+ONTAP EMS 事件分为三个 Unified Manager 事件严重性级别。
+
+|===
+| Unified Manager 事件严重性级别 | ONTAP EMS 事件严重性级别 
+
+
+ a| 
+严重
+ a| 
+紧急
+
+严重
+
+
+
+ a| 
+error
+ a| 
+警报
+
+
+
+ a| 
+警告
+ a| 
+error
+
+警告
+
+调试
+
+通知
+
+信息性
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反集群 IOPS 严重阈值（ ocumClusterIopsIncident ）
+ a| 
+意外事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+已违反集群 IOPS 警告阈值（ ocumClusterIopsWarning ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+已违反集群MBps严重阈值(ocumClusterMbpsIncident)
+ a| 
+意外事件
+ a| 
+集群
+ a| 
+严重
+
+
+
+ a| 
+已违反集群MBps警告阈值(ocumClusterMbpsWarning)
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+
+
+ a| 
+已违反集群动态阈值（ ocumClusterDynamicEventWarning ）
+ a| 
+风险
+ a| 
+集群
+ a| 
+警告
+
+|===

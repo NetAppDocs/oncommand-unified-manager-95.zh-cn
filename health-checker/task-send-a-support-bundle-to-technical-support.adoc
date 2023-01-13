@@ -1,0 +1,33 @@
+---
+permalink: health-checker/task-send-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果问题描述需要比 AutoSupport 消息提供的诊断和故障排除信息更详细，您可以向技术支持发送支持包。 
+---
+= 向技术支持发送支持包
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果问题描述需要比 AutoSupport 消息提供的诊断和故障排除信息更详细，您可以向技术支持发送支持包。
+
+
+
+== 开始之前
+
+您必须有权访问支持包，才能将其发送给技术支持。
+
+您必须已通过技术支持网站生成案例编号。
+
+
+
+== 步骤
+
+. 登录到 NetApp 支持站点。
+. 上传文件。
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/How_to_upload_a_file_to_NetApp["如何将文件上传到 NetApp"]
+
+

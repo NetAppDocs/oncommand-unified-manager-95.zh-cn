@@ -1,0 +1,716 @@
+---
+permalink: online-help/reference-volume-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 卷事件提供了有关卷状态的信息，可用于监控潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。 
+---
+= 卷事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+卷事件提供了有关卷状态的信息，可用于监控潜在问题。事件按影响区域分组，并包括事件名称，陷阱名称，影响级别，源类型和严重性。
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+卷受限（ ocumEvtVolumeRestricted ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷脱机（ ocumEvtVolumeOffline ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+卷部分可用（ ocumEvtVolumePartiallyAvailable ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+已卸载卷（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷已挂载（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷已重新挂载（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷接合路径处于非活动状态（ ocumEvtVolumeJunctionPathInactive ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已启用卷自动调整大小（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷自动调整大小 - 已禁用（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已修改卷自动调整大小最大容量（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已修改卷自动调整大小增量大小（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+|===
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+精简配置卷空间存在风险（ ocumThinProvisionVolumeSpaceAtRisk ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷空间已满（ ocumEvtVolumeFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷空间接近全满（ ocumEvtVolumeNearlyFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷逻辑空间已满 * （ volumeLogicalSpaceFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷逻辑空间接近全满 * （ volumeLogicalSpaceNearlyFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷逻辑空间正常 * （ volumeLogicalSpaceAllOK ）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷 Snapshot 预留空间已满（ ocumEvtSnapshotFull ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+Snapshot 副本太多（ ocumEvtSnapshotTooMany ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷 qtree 配额已过量提交（ ocumEvtVolumeQtreeQuotaOvercommitted ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+卷 qtree 配额接近过量提交（ ocumEvtVolumeQtreeQuotaAlmostOvercommitted ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷增长率异常（ ocumEvtVolumeGrowthRateAbnormal ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷达到全满前的天数（ ocumEvtVolumeDaysUntilFullSoon ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+已禁用卷空间保证（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已启用卷空间保证（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已修改卷空间保证（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+卷 Snapshot 预留达到全满前的天数（ ocumEvtVolumeSnapshotReserveDaysUntileFullSoon ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷存在空间问题 * （ flexGroupConconstituentsHaveSpaceIssues ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷空间状态一切正常 * （ flexGroupConconstituentsSpaceStatusAllOK ）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+FlexGroup 成分卷存在索引节点问题 * （ flexGroupConconstituentsHaveInodesIssues ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+FlexGroup 成分卷索引节点状态一切正常 * （ flexGroupConconstituentsInodesStatusAllOK ）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+WAFL 卷自动调整大小失败*
+ a| 
+风险
+ a| 
+Volume
+ a| 
+error
+
+
+
+ a| 
+WAFL 卷自动调整大小已完成*
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已重命名卷（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已发现卷（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+
+
+ a| 
+已删除卷（不适用）
+ a| 
+事件
+ a| 
+Volume
+ a| 
+信息
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反 QoS 卷最大 IOPS 警告阈值（ ocumQosVolumeMaxIopsWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反QoS卷最大MBps警告阈值(ocumQosVolumeMaxMbpsWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反 QoS 卷最大 IOPS/TB 警告阈值（ ocumQosVolumeMaxIopsPerTbWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷 IOPS 严重阈值（ ocumVolumeIopsIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷 IOPS 警告阈值（ ocumVolumeIopsWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷MBps严重阈值(ocumVolumeMbpsIncident)
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷MBps警告阈值(ocumVolumeMbpsWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷延迟毫秒 / 操作严重阈值（ ocumVolumeLatencyIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷延迟毫秒 / 操作警告阈值（ ocumVolumeLatencyWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷缓存未命中率严重阈值（ ocumVolumeCachedMisRatioIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷缓存未命中率警告阈值（ ocumVolumeCachedMisSRatioWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷延迟和 IOPS 严重阈值（ ocumVolumeLatencyIopsIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷延迟和 IOPS 警告阈值（ ocumVolumeLatencyIopsWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷延迟和MBps严重阈值(ocumVolumeLateLatencyMbpsIncident)
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷延迟和MBps警告阈值(ocumVolumeLateLatencyMbpsWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷延迟和聚合已执行已违反已用容量严重阈值(ocumVolumeLatencyAggregatePerfCapacityUsedIncident)
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+卷延迟和聚合已执行已违反已用容量警告阈值(ocumVolumeLatencyAggregatePerfCapacityUsedWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷延迟和聚合利用率严重阈值（ ocumVolumeLatencyAggregateUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷延迟和聚合利用率警告阈值（ ocumVolumeLatencyAggregateUtilizationWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷延迟和节点性能已违反已用容量严重阈值(ocumVolumeLatencyNodePerfCapacityUsedIncident)
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+卷延迟和节点性能已违反已用容量警告阈值(ocumVolumeLatencyNodePerfCapacityUsedWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+卷延迟和节点性能已用容量-已违反接管严重阈值(ocumVolumeLatencyAggregatePerfCapacityUsedTakeOverIncident)
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+卷延迟和节点性能已用容量-已违反接管警告阈值(ocumVolumeLatencyAggregatePerfCapacityUsedTakeOverWarning)
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+
+
+ a| 
+已违反卷延迟和节点利用率严重阈值（ ocumVolumeLatencyNodeUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+Volume
+ a| 
+严重
+
+
+
+ a| 
+已违反卷延迟和节点利用率警告阈值（ ocumVolumeLatencyNodeUtilizationWarning ）
+ a| 
+风险
+ a| 
+Volume
+ a| 
+警告
+
+|===

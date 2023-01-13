@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-jobs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 作业是一系列可使用 Unified Manager 监控的任务。通过查看作业及其关联任务、您可以确定它们是否已成功完成。 
+---
+= 什么是作业
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+作业是一系列可使用 Unified Manager 监控的任务。通过查看作业及其关联任务、您可以确定它们是否已成功完成。
+
+创建 SnapMirror 和 SnapVault 关系时，执行任何关系操作（中断，编辑，暂停，删除，恢复， 重新同步和反向重新同步），执行数据还原任务时，登录到集群时等。
+
+启动作业时、您可以使用保护/作业页面和保护/作业详细信息页面监控作业以及关联作业任务的进度。

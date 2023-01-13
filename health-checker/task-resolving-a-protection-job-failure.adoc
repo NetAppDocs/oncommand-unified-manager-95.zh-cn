@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-resolving-a-protection-job-failure.html 
+sidebar: sidebar 
+keywords:  
+summary: 此工作流举例说明如何通过 Unified Manager 信息板识别和解决保护作业故障。 
+---
+= 解决保护作业故障
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此工作流举例说明如何通过 Unified Manager 信息板识别和解决保护作业故障。
+
+
+
+== 开始之前
+
+由于此工作流中的某些任务要求您使用OnCommand 管理员角色登录、因此您必须熟悉使用各种功能所需的角色、如中所述 xref:reference-unified-manager-roles-and-capabilities.adoc[Unified Manager 用户角色和功能]。
+
+
+
+== 关于此任务
+
+在这种情况下、您可以访问Dashboards/Overview页面来查看保护作业是否存在任何问题。在保护意外事件区域中，您注意到发生了作业已终止意外事件，显示卷上的保护作业失败错误。您需要调查此错误，以确定可能的发生原因以及可能的解决方案。
+
+
+
+== 步骤
+
+. 在信息板*未解决的意外事件和风险*区域的*保护意外事件*面板中、单击*保护作业失败*事件。
++
+[TIP]
+====
+此事件的链接文本将以格式写入 `object_name:/object_name - Error Name`、例如 `cluster2_src_svm:/cluster2_src_vol2 - Protection Job Failed`。
+
+====
++
+此时将显示失败的保护作业的事件详细信息页面。
+
+. 查看 * 摘要 * 区域的发生原因字段中的错误消息，确定问题并评估可能的更正操作。
++
+请参见 xref:task-identifying-the-problem-and-performing-corrective-actions-for-a-failed-protection-job.adoc[确定问题并对失败的保护作业执行更正操作]。
+
+

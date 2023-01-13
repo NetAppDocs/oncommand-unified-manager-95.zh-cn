@@ -1,0 +1,68 @@
+---
+permalink: online-help/reference-qtree-capacity-fields.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过qtree容量和利用率报告、您可以分析系统qtree的容量和利用率、以了解因集群容量减少而可能发生的风险。 
+---
+= qtree容量和利用率报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过qtree容量和利用率报告、您可以分析系统qtree的容量和利用率、以了解因集群容量减少而可能发生的风险。
+
+
+
+== qtree容量和利用率报告表格视图
+
+* *集群*
++
+显示包含 qtree 的集群的名称。
+
+* * Storage Virtual Machine*
++
+显示包含 qtree 的 Storage Virtual Machine （ SVM ）名称。
+
+* * 卷 *
++
+显示包含qtree的卷的名称。
+
+* * qtree*
++
+显示 qtree 的名称。
+
+* *配额类型*
++
+指定配额是针对用户、用户组还是qtree。
+
+* * 用户或组 *
++
+显示用户或用户组的名称。每个用户和用户组将包含多行。如果配额类型为qtree、则会显示_not applicable_。如果未设置配额、则此列为空。
+
+* * 磁盘已用 %*
++
+显示已用磁盘空间的百分比。如果设置了磁盘硬限制，则此值基于磁盘硬限制。如果设置的配额没有磁盘硬限制，则该值基于卷数据空间。如果未设置配额、或者qtree所属卷上的配额已关闭、则会显示_not applicable_。
+
+* * 磁盘硬限制 *
++
+显示为qtree分配的最大磁盘空间。如果达到此限制且不允许进一步写入磁盘，则 Unified Manager 将生成严重事件。如果设置的配额没有磁盘硬限制、未设置配额或qtree所属卷上的配额未启用、则此值显示为_Unlimited_。
+
+* * 磁盘软限制 *
++
+显示在生成警告事件之前为qtree分配的磁盘空间。如果设置了配额而没有磁盘软限制、未设置配额或qtree所属卷上的配额未启用、则此值将显示为_Unlimited_。
+
+* * 已用文件 %*
++
+显示 qtree 中已用文件的百分比。如果设置了文件硬限制，则此值基于文件硬限制。如果未设置配额、设置的配额没有文件硬限制、或者qtree所属卷上的配额处于关闭状态、则此值将显示为_not applicable_。
+
+* * 文件硬限制 *
++
+显示 qtree 上允许的文件数的硬限制。如果设置的配额没有文件硬限制、未设置配额或qtree所属卷上的配额未启用、则此值显示为_Unlimited_。
+
+* * 文件软限制 *
++
+显示 qtree 上允许的文件数的软限制。如果设置的配额没有文件软限制、未设置配额或qtree所属卷上的配额未启用、则此值将显示为_Unlimited_。
+
+

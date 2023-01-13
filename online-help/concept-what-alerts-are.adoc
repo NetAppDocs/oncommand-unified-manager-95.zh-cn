@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-alerts-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件持续发生时，只有当事件满足指定的筛选条件时， Unified Manager 才会生成警报。您可以选择应生成警报的事件，例如超出空间阈值或对象脱机时。您还可以将警报与触发警报时执行的脚本相关联。 
+---
+= 什么是警报
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件持续发生时，只有当事件满足指定的筛选条件时， Unified Manager 才会生成警报。您可以选择应生成警报的事件，例如，超过空间阈值或对象脱机时。您还可以将警报与触发警报时执行的脚本相关联。
+
+筛选条件包括对象类，名称或事件严重性。

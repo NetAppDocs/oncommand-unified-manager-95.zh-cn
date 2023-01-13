@@ -1,0 +1,56 @@
+---
+permalink: health-checker/task-restoring-a-mysql-database-backup-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用restore命令将Unified Manager数据库还原到本地Windows系统或远程Windows系统。 
+---
+= 在Windows上还原数据库备份
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果发生数据丢失或数据损坏，您可以使用还原功能将 Unified Manager 还原到先前的稳定状态，同时最大程度地减少丢失。您可以使用restore命令将Unified Manager数据库还原到本地Windows系统或远程Windows系统。
+
+
+
+== 开始之前
+
+* 您必须在服务器上安装Unified Manager。
+* 您必须具有 Windows 管理员权限。
+* 您必须已将 Unified Manager 备份文件和数据库存储库目录的内容复制到要执行还原操作的系统。
++
+建议将备份文件复制到默认目录 `\ProgramData\NetApp\OnCommandAppData\ocum\backup`。必须将数据库存储库文件复制到 `\database_dumps_repo` 下的子目录 `\backup` 目录。
+
+* 备份文件必须为 `.7z` 类型。
+
+
+
+
+== 关于此任务
+
+还原功能是针对平台和版本的。您只能在同一版本的Unified Manager上还原Unified Manager备份、并且Windows备份只能在Windows平台上还原。
+
+[TIP]
+====
+如果文件夹名称包含空格，则必须使用双引号将备份文件的绝对路径或相对路径包括在内。
+
+====
+
+
+== 步骤
+
+. 如果要还原到新服务器，则在安装 Unified Manager 后，请勿启动用户界面，也不要在安装完成后配置任何集群，用户或身份验证设置。备份文件会在还原过程中填充此信息。
+. 以管理员身份登录到Unified Manager控制台： `um cli login -u maint_username`
+. 在命令提示符处、还原备份： `um backup restore -f <backup_file_path>/<backup_file_name>`
++
+`um backup restore -f \ProgramData\NetApp\OnCommandAppData\ocum\backup\UM_9.4.N151118.2300_backup_windows_02-20-2018-02-51.7z`
+
+
+
+
+
+== 完成后
+
+还原操作完成后，您可以登录到 Unified Manager 。

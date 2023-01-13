@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-confirm-that-the-response-time-is-within-the-expected-range.html 
+sidebar: sidebar 
+keywords:  
+summary: '当集群组件处于争用状态时、使用该组件的卷工作负载可能会缩短响应时间(延迟)。您可以查看争用组件上每个受影响工作负载的延迟，以确认其实际延迟在预期范围内。您也可以单击卷名称以查看卷的历史数据。' 
+---
+= 确认延迟在预期范围内
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当集群组件处于争用状态时，使用该组件的卷工作负载可能会缩短响应时间（延迟）。您可以查看争用组件上每个受影响工作负载的延迟，以确认其实际延迟在预期范围内。您也可以单击卷名称以查看卷的历史数据。
+
+如果性能事件处于已废弃状态、则事件中涉及的每个受影响的延迟可能已恢复到其预期范围内。

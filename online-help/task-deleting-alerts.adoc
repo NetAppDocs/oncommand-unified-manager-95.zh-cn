@@ -1,0 +1,29 @@
+---
+permalink: online-help/task-deleting-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以删除不再需要的警报。例如，如果 Unified Manager 不再监控某个特定资源，则可以删除为该资源创建的警报。 
+---
+= 删除警报
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除不再需要的警报。例如，如果 Unified Manager 不再监控某个特定资源，则可以删除为该资源创建的警报。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*警报*。
+. 在*配置/警报*页面上、选择要删除的警报、然后单击*删除*。
+. 单击 * 是 * 确认删除请求。
+

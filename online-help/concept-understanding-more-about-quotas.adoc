@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-more-about-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 了解有关配额的概念有助于您高效管理用户配额和用户组配额。 
+---
+= 了解有关配额的更多信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+了解有关配额的概念有助于您高效管理用户配额和用户组配额。

@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-snapvault-relationship-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapVault 关系事件可为您提供有关 SnapVault 关系状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= SnapVault 关系事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault 关系事件可为您提供有关 SnapVault 关系状态的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：保护
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+异步存储运行不正常（ ocumEvtSnapVaultRelationshipUnhealthy ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+异步存储已断开（ ocumEvtSnapVaultRelationshipStateBrokenoff ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+异步存储初始化失败（ ocumEvtSnapVaultRelationshipInitializeFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+异步存储更新失败（ ocumEvtSnapVaultRelationshipUpdateFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+异步存储滞后错误（ ocumEvtSnapVaultRelationshipLagError ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+
+
+ a| 
+异步存储滞后警告（ ocumEvtSnapVaultRelationshipLagWarning ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+警告
+
+
+
+ a| 
+异步存储重新同步失败（ ocumEvtSnapvaultRelationshipResyncFailed ）
+ a| 
+风险
+ a| 
+SnapMirror 关系
+ a| 
+error
+
+|===

@@ -1,0 +1,28 @@
+---
+permalink: online-help/reference-user-not-found.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 未找到用户
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 问题描述 *
++
+在执行与身份验证相关的操作(例如添加、编辑、删除或测试远程用户或组)时、将显示以下错误消息： `User not found`。
+
+* * 发生原因 *
++
+如果用户位于 AD 服务器或 LDAP 服务器中，并且您将基本可分辨名称设置为不正确的值，则可能会发生此问题。
+
+* * 更正操作 *
++
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*>*身份验证*。
+.. 为基本可分辨名称输入相应的信息。
+.. 单击 * 保存并关闭 * 。
+
+
+

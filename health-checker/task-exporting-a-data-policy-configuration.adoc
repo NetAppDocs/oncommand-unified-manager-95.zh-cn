@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-exporting-a-data-policy-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将数据策略配置从Unified Manager导出到文件。例如、在进行所需的备份后、如果发生灾难、您可以从主卷导出数据策略配置。 
+---
+= 导出数据策略配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将数据策略配置从Unified Manager导出到文件。例如、在进行所需的备份后、如果发生灾难、您可以从主卷导出数据策略配置。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+执行此任务时使用的"数据策略"选项卡仅对带有无限卷的SVM显示。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/Storage Virtual Machine*清单页面中、选择相应的SVM。
+. 单击*数据策略*。
++
+此时将显示带有无限卷的选定SVM的数据策略中的规则列表。
+
+. 单击*导出*。
+. 在特定于浏览器的对话框中、指定数据策略配置必须导出到的位置。
+
+
+
+
+== 结果
+
+数据策略配置将作为JSON文件导出到指定位置。

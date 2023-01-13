@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-reverting-a-lif-to-its-home-port-using-oncommand-system-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 在故障转移或手动或自动迁移到其他端口后、您可以将LIF从其当前端口还原到其主端口。您可以使用OnCommand 系统管理器执行此操作。 
+---
+= 使用OnCommand 系统管理器将LIF还原到其主端口
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在故障转移或手动或自动迁移到其他端口后、您可以将LIF从其当前端口还原到其主端口。您可以使用OnCommand 系统管理器执行此操作。
+
+
+
+== 关于此任务
+
+在创建LIF时、管理员会指定一个主端口和主节点作为LIF的首选位置。如果主节点不可用或主端口发生物理链路中断、则LIF会自动迁移到新位置。例如、在OnCommand 系统管理器中、新位置会报告为LIF的当前端口。除非启用自动还原选项、否则LIF将保留在此新位置、直到还原为止。
+
+
+
+== 步骤
+
+. 打开OnCommand 系统管理器。
+. 在*主页*选项卡中、双击存储系统。
+. 在导航窗格中、展开* Storage Virtual Machine*层次结构。
+. 在导航窗格中、选择SVM、然后单击*配置*>*网络接口*。
+. 在*当前端口*列中查找显示带有红色交叉标记的房屋图标的数据LIF、如下图所示。
++
+image::../media/systemmgr-lifs-networkinterfaces-jpg.gif[网络接口视图]
+
+. 选择LIF并单击*发送到主页*。
++
+只有在选定接口托管在非主端口上且主端口可用时、才会启用此选项。
+
+

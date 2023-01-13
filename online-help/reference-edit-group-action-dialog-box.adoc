@@ -1,0 +1,48 @@
+---
+permalink: online-help/reference-edit-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用编辑组操作对话框编辑为组创建的组操作。 
+---
+= 编辑组操作对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用编辑组操作对话框编辑为组创建的组操作。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* *操作名称*
++
+显示组操作的名称。
+
+* * 问题描述 *
++
+显示组操作的问题描述。
+
+* * 组 *
++
+显示选定组的名称。
+
+* *操作类型*
++
+显示组操作的类型。您不能更改操作类型。但是、您可以修改用于配置组操作的参数。
+
+
+
+
+
+== 命令按钮
+
+* * 保存 *
++
+保存对组操作所做的更改。
+
+* * 取消 *
++
+关闭编辑组操作对话框而不保存所做的更改。
+
+

@@ -1,0 +1,97 @@
+---
+permalink: install/reference-red-hat-and-centos-software-and-installation-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: 安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。 
+---
+= Red Hat Enterprise Linux和CentOS软件和安装要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 Unified Manager 的 Linux 系统需要特定版本的操作系统和支持软件。
+
+
+
+== 操作系统软件
+
+Linux 系统必须安装以下版本的操作系统和支持软件：
+
+* Red Hat Enterprise Linux或CentOS 64位版本7.x
++
+从Unified Manager 9.4开始、不支持Red Hat Enterprise Linux 6.x。
+
+
+
+有关受支持的 Red Hat Enterprise Linux 和 CentOS 版本的最新完整列表，请参见互操作性表。
+
+http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]
+
+需要以下第三方软件包：
+
+* 5.7系列中的MySQL Community Edition版本5.7.23或更高版本(从MySQL存储库)
+* OpenJDK 11 (从Red Hat Extra Enterprise Linux Server存储库)
++
+[NOTE]
+====
+从 Unified Manager 9.5 开始，不支持 Oracle Java 。
+
+====
+* p7zip 16.02 或更高版本（从 Red Hat Extra Packages for Enterprise Linux 存储库）
+
+
+[NOTE]
+====
+如果您计划在Unified Manager运行之后升级任何第三方软件、则必须先关闭Unified Manager。第三方软件安装完成后，您可以重新启动 Unified Manager 。
+
+====
+
+
+== 用户授权要求
+
+在Red Hat Enterprise Linux系统或CentOS系统上安装Unified Manager可由root用户或非root用户使用执行 `sudo` 命令：
+
+
+
+== 安装要求
+
+在系统上安装Red Hat Enterprise Linux或CentOS以及关联存储库的最佳实践如下：
+
+* 您必须根据Red Hat最佳实践安装Red Hat Enterprise Linux或CentOS、并应选择以下默认选项、这需要选择"使用GUI的`S服务器`"。
+* 在 Red Hat Enterprise Linux 或 CentOS 上安装 Unified Manager 时，系统必须能够访问相应的存储库，以便安装程序可以访问和安装所有必需的软件依赖项。
+* 。 `yum` 安装程序要在Red Hat Enterprise Linux存储库中查找相关软件、您必须在Red Hat Enterprise Linux安装期间或之后使用有效的Red Hat订阅注册系统。
++
+有关 Red Hat 订阅管理器的信息，请参见 Red Hat 文档。
+
+* 要在系统上成功安装所需的第三方实用程序，您必须启用适用于 Enterprise Linux 的额外软件包（ EPEL ）存储库。
++
+如果您的系统上未配置 EPEL 存储库，则必须手动下载并配置该存储库。
+
++
+xref:task-manually-configuring-the-epel-repository.adoc[手动配置 EPEL 存储库]
+
+* 如果未安装正确版本的 MySQL ，则必须启用 MySQL 存储库才能在系统上成功安装 MySQL 软件。
++
+如果系统上未配置 MySQL 存储库，则必须手动下载并配置该存储库。
+
++
+xref:task-manually-configuring-the-mysql-repository.adoc[手动配置 MySQL 存储库]
+
+
+
+如果您的系统无法访问 Internet ，并且存储库未从已连接 Internet 的系统镜像到未连接的系统，则应按照安装说明确定系统的外部软件依赖关系。然后、您可以将所需软件下载到已连接Internet的系统、并复制 `.rpm` 文件到要安装Unified Manager的系统。要下载项目和软件包、必须使用 `yum install` 命令：您必须确保这两个系统运行的操作系统版本相同，并且订阅许可证适用于相应的 Red Hat Enterprise Linux 或 CentOS 版本。
+
+[NOTE]
+====
+您不能从此处列出的存储库以外的存储库安装所需的第三方软件。从 Red Hat 存储库安装的软件专为 Red Hat Enterprise Linux 而设计，并且符合 Red Hat 最佳实践（目录布局，权限等）。来自其他位置的软件可能不遵循这些准则，这可能发生原因会导致 Unified Manager 安装失败，或者在未来升级时可能会出现发生原因问题。
+
+====
+
+
+== 端口 443 要求
+
+来自Red Hat和CentOS的通用映像会阻止对端口443的外部访问。如果您的浏览器无法连接到您的OnCommand 产品、则可能是问题描述。以下命令允许所有外部用户和应用程序访问端口443： `# firewall-cmd –zone=public –add-port=443/tcp –permanent; firewall-cmd –reload`
+
+在执行此命令之前、请咨询您的IT部门、了解您的安全策略是否需要其他操作步骤。

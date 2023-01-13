@@ -1,0 +1,21 @@
+---
+permalink: online-help/concept-monitoring-and-managing-clusters-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: 信息板可提供有关系统运行状况的累积概览信息。通过这些信息板、您可以评估受管集群的整体可用性、容量、性能和保护运行状况、并快速记下、找到、诊断或分配可能发生的任何特定问题以解决。 
+---
+= 通过信息板监控集群运行状况和性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+信息板可提供有关系统运行状况的累积概览信息。通过这些信息板、您可以评估受管集群的整体可用性、容量、性能和保护运行状况、并快速记下、找到、诊断或分配可能发生的任何特定问题以解决。
+
+三个信息板可提供集群运行状况和性能的独特视图：
+
+* "信息板/概述"页面提供了有关存储对象的运行状况和性能的信息。
+* "信息板/性能"页面提供了正在监控的所有集群的性能状态概况。
+* Dashboards/Cluster View页面提供了有关各个集群的信息。
+

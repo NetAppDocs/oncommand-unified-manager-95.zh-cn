@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-understanding-the-user-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 用户界面主要由一个信息板组成，该信息板可提供受监控对象的概览视图。此外，还可以通过用户界面查看所有集群对象。 
+---
+= 了解用户界面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 用户界面主要由一个信息板组成，该信息板可提供受监控对象的概览视图。此外，还可以通过用户界面查看所有集群对象。
+
+您可以选择首选视图，并根据需要使用操作按钮。您的屏幕配置将保存在工作空间中，以便在启动 Unified Manager 时可以使用所需的所有功能。但是，在从一个视图导航到另一个视图后再导航回时，此视图可能不相同。

@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-analyzing-events-from-system-defined-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 从系统定义的性能阈值生成的事件表示某个存储对象的性能计数器或一组性能计数器已超过系统定义的策略中的阈值。这表示存储对象（例如聚合或节点）遇到性能问题描述。 
+---
+= 根据系统定义的性能阈值分析事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从系统定义的性能阈值生成的事件表示某个存储对象的性能计数器或一组性能计数器已超过系统定义的策略中的阈值。这表示存储对象（例如聚合或节点）遇到性能问题描述。
+
+您可以使用事件详细信息页面分析性能事件，并在必要时采取更正措施，以使性能恢复正常。
+
+[NOTE]
+====
+Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用系统定义的阈值策略。
+
+====

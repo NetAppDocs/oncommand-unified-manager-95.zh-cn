@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-deleting-values-from-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果与自定义标注关联的值不再对标注进行适用场景，则可以删除该值。 
+---
+= 从标注中删除值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果与自定义标注关联的值不再对标注进行适用场景，则可以删除该值。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 标注值不得与任何标注规则或组规则关联。
+
+
+
+
+== 关于此任务
+
+您不能从预定义标注中删除值。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*标注*。
+. 在 * 标注 * 选项卡的标注列表中，选择要从中删除值的标注。
+. 在 * 标注 * 选项卡的 * 值 * 区域中，选择要删除的值，然后单击 * 删除 * 。
+. 在 * 警告 * 对话框中，单击 * 是 * 。
++
+此值将被删除，并且不再显示在选定标注的值列表中。
+
+

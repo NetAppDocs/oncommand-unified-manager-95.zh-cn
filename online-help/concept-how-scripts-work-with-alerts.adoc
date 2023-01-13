@@ -1,0 +1,47 @@
+---
+permalink: online-help/concept-how-scripts-work-with-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将警报与脚本关联，以便在 Unified Manager 中针对事件发出警报时执行脚本。您可以使用这些脚本解决存储对象的问题，或者确定正在生成事件的存储对象。 
+---
+= 脚本如何处理警报
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将警报与脚本关联，以便在 Unified Manager 中针对事件发出警报时执行脚本。您可以使用这些脚本解决存储对象的问题，或者确定正在生成事件的存储对象。
+
+在 Unified Manager 中为事件生成警报时，系统会向指定的收件人发送警报电子邮件。如果已将警报与脚本关联，则会执行此脚本。您可以从警报电子邮件获取传递给脚本的参数的详细信息。
+
+该脚本使用以下参数执行：
+
+* -`eventID`
+* -`eventName`
+* -`eventSeverity`
+* -`eventSourceID`
+* -`eventSourceName`
+* -`eventSourceType`
+* -`eventState`
+* -`eventArgs`
+
+
+您可以在脚本中使用参数，并收集相关事件信息或修改存储对象。
+
+
+
+== 从脚本获取参数的示例
+
+[listing]
+----
+print "$ARGV[0] : $ARGV[1]\n"
+print "$ARGV[7] : $ARGV[8]\n"
+----
+生成警报时，将执行此脚本并显示以下输出：
+
+[listing]
+----
+-eventID : 290
+-eventSourceID : 4138
+----

@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-unknown-authentication-error.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 未知身份验证错误
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 问题描述 *
++
+在执行与身份验证相关的操作(例如添加、编辑、删除或测试远程用户或组)时、可能会显示以下错误消息： `Unknown authentication error`。
+
+* * 发生原因 *
++
+如果为以下选项设置的值不正确，则可能会出现此问题：
+
++
+** Active Directory 身份验证服务的管理员名称
+** OpenLDAP 身份验证服务的绑定可分辨名称
+
+
+* * 更正操作 *
++
+.. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*>*身份验证*。
+.. 根据您选择的身份验证服务，为管理员名称或绑定可分辨名称输入相应的信息。
+.. 单击 * 测试身份验证 * 以使用您指定的详细信息测试身份验证。
+.. 单击 * 保存并关闭 * 。
+
+
+

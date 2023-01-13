@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'RBAC (基于角色的访问控制)可以控制谁有权访问OnCommand Unified Manager服务器中的各种功能和资源。' 
+---
+= 什么是 RBAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC (基于角色的访问控制)可以控制谁有权访问OnCommand Unified Manager服务器中的各种功能和资源。

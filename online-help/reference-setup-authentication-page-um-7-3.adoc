@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-setup-authentication-page-um-7-3.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用设置/身份验证页面配置Unified Manager、以便对尝试登录到Unified Manager Web UI的远程用户进行身份验证。 
+---
+= 设置/身份验证页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用设置/身份验证页面配置Unified Manager、以便对尝试登录到Unified Manager Web UI的远程用户进行身份验证。
+
+使用远程身份验证页面、您可以将Unified Manager配置为与身份验证服务器进行通信、以便对远程用户进行身份验证。
+
+使用SAML身份验证页面、您可以将Unified Manager配置为与安全身份提供程序(IdP)进行通信、以便对远程用户进行身份验证。

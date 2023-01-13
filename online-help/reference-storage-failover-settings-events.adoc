@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-storage-failover-settings-events.html 
+sidebar: sidebar 
+keywords:  
+summary: '存储故障转移\(SFO)设置事件为您提供有关存储故障转移是否已禁用或未配置的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。' 
+---
+= 存储故障转移设置事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储故障转移（ Storage Failover ， SFO ）设置事件为您提供有关存储故障转移是否已禁用或未配置的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+存储故障转移互连一个或多个链路已关闭（ ocumEvtSfoInterconnectOneOrMoreLinksDown ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+警告
+
+
+
+ a| 
+已禁用存储故障转移（ ocumEvtSfoSettings 已禁用）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+未配置存储故障转移（ ocumEvtSfoSettings NotConfigured ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+存储故障转移状态 - 接管（ ocumEvtSfoStateTakeover ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+警告
+
+
+
+ a| 
+存储故障转移状态 - 部分交还（ ocumEvtSfoStatePartialGiveback ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+存储故障转移节点状态为已关闭（ ocumEvtSfoNodeStatusDown ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+
+
+ a| 
+无法执行存储故障转移接管（ ocumEvtSfoTakeoverNotPossible ）
+ a| 
+风险
+ a| 
+Node
+ a| 
+error
+
+|===

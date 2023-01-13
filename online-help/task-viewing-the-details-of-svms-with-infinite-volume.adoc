@@ -1,0 +1,31 @@
+---
+permalink: online-help/task-viewing-the-details-of-svms-with-infinite-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以使用运行状况/Storage Virtual Machine清单页面查看有关Unified Manager监控的带有无限卷的Storage Virtual Machine \(SVM\)的详细信息。您可以查看与无限卷关联的容量、配置、数据策略和规则等详细信息。' 
+---
+= 查看带有无限卷的SVM的详细信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用运行状况/Storage Virtual Machine清单页面查看有关Unified Manager监控的带有无限卷的Storage Virtual Machine (SVM)的详细信息。您可以查看与无限卷关联的容量、配置、数据策略和规则等详细信息。
+
+
+
+== 开始之前
+
+* 您必须具有操作员、OnCommand 管理员或存储管理员角色。
+* 必须将包含带有无限卷的SVM的集群添加到Unified Manager数据库中。
+
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*运行状况*>* SVM*。
+. 在*运行状况/Storage Virtual Machine*清单页面中、使用*允许的卷类型*中的列筛选器列出受监控的无限卷。
+. 单击SVM名称可查看带有无限卷的SVM的完整详细信息。
+

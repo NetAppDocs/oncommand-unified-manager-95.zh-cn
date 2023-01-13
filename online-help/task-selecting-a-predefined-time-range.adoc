@@ -1,0 +1,23 @@
+---
+permalink: online-help/task-selecting-a-predefined-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 在查看集群对象性能数据时，选择预定义的时间范围可以快速，高效地自定义和聚焦数据输出。选择预定义的时间范围时，可以使用长达 13 个月的数据。 
+---
+= 选择预定义的时间范围
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在查看集群对象性能数据时，选择预定义的时间范围可以快速，高效地自定义和聚焦数据输出。选择预定义的时间范围时，可以使用长达 13 个月的数据。
+
+
+
+== 步骤
+
+. 在 * 性能资源管理器 * 页面的右上角，单击 * 时间范围 * 。
+. 从 * 时间范围选择 * 面板的右侧，选择预定义的时间范围。
+. 单击 * 应用范围 * 。
+

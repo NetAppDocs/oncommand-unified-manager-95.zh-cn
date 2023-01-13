@@ -1,0 +1,41 @@
+---
+permalink: online-help/task-editing-protection-relationships-from-the-protection-volume-relationships-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以编辑现有保护关系以更改最大传输速率，保护策略或保护计划。您可以编辑关系以减少用于传输的带宽，也可以由于数据经常更改而增加计划传输的频率。 
+---
+= 从保护/卷关系页面编辑保护关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑现有保护关系以更改最大传输速率，保护策略或保护计划。您可以编辑关系以减少用于传输的带宽，也可以由于数据经常更改而增加计划传输的频率。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+选定卷必须是保护关系目标。如果选择了源卷，负载共享卷或不是 SnapMirror 或 SnapVault 关系目标的卷，则无法编辑关系。
+
+
+
+== 步骤
+
+. 从*保护/卷关系*页面中、在卷列表中选择要编辑关系设置的同一SVM中的一个或多个卷、然后从工具栏中选择*编辑*。
++
+此时将显示编辑关系对话框。
+
+. 在 * 编辑关系 * 对话框中，根据需要编辑最大传输速率，保护策略或保护计划。
+. 单击 * 应用 * 。
++
+所做的更改将应用于选定关系。
+
+

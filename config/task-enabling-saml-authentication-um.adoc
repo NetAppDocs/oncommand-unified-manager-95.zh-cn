@@ -1,0 +1,81 @@
+---
+permalink: config/task-enabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以启用安全断言标记语言(SAML)身份验证、以便远程用户在访问Unified Manager Web UI之前先通过安全身份提供程序(IdP)进行身份验证。' 
+---
+= 启用 SAML 身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以启用安全断言标记语言（ SAML ）身份验证，以便远程用户在访问 Unified Manager Web UI 之前先通过安全身份提供程序（ IdP ）进行身份验证。
+
+
+
+== 开始之前
+
+* 您必须已配置远程身份验证并验证它是否成功。
+* 您必须已创建至少一个具有OnCommand 管理员角色的远程用户或远程组。
+* Unified Manager 必须支持身份提供程序（ IdP ），并且必须对其进行配置。
+* 您必须具有 IdP URL 和元数据。
+* 您必须有权访问 IdP 服务器。
+
+
+
+
+== 关于此任务
+
+从 Unified Manager 启用 SAML 身份验证后，只有在为 IdP 配置了 Unified Manager 服务器主机信息之后，用户才能访问图形用户界面。因此，在开始配置过程之前，您必须准备好完成连接的两个部分。可以在配置 Unified Manager 之前或之后配置 IdP 。
+
+启用 SAML 身份验证后，只有远程用户才能访问 Unified Manager 图形用户界面。本地用户和维护用户将无法访问此 UI 。此配置不会影响访问维护控制台， Unified Manager 命令或 ZAPI 的用户。
+
+[NOTE]
+====
+在此页面上完成 SAML 配置后， Unified Manager 将自动重新启动。
+
+====
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧设置菜单中的*身份验证*。
+. 在*设置/身份验证*页面中、选择* SAML身份验证*选项卡。
+. 选中 * 启用 SAML 身份验证 * 复选框。
++
+此时将显示配置 IdP 连接所需的字段。
+
+. 输入将 Unified Manager 服务器连接到 IdP 服务器所需的 IdP URI 和 IdP 元数据。
++
+如果可以直接从 Unified Manager 服务器访问 IdP 服务器，则可以在输入 IdP URI 后单击 * 提取 IdP 元数据 * 按钮以自动填充 IdP 元数据字段。
+
+. 复制 Unified Manager 主机元数据 URI ，或者将主机元数据保存到 XML 文本文件中。
++
+此时，您可以使用此信息配置 IdP 服务器。
+
+. 单击 * 保存 * 。
++
+此时将显示一个消息框，确认您要完成配置并重新启动 Unified Manager 。
+
+. 单击 * 确认并注销 * ， Unified Manager 将重新启动。
+
+
+
+
+== 结果
+
+授权远程用户下次尝试访问 Unified Manager 图形界面时，他们将在 IdP 登录页面而不是 Unified Manager 登录页面中输入凭据。
+
+
+
+== 完成后
+
+如果尚未完成，请访问 IdP 并输入 Unified Manager 服务器 URI 和元数据以完成配置。
+
+[NOTE]
+====
+使用 ADFS 作为身份提供程序时， Unified Manager 图形用户界面不会遵守 ADFS 超时要求，它将继续工作，直到达到 Unified Manager 会话超时为止。在Windows、Red Hat或CentOS上部署Unified Manager时、您可以使用以下Unified Manager命令行界面命令更改GUI会话超时： ``um option set absolute.session.timeout=00:15:00``此命令会将Unified Manager GUI会话超时设置为15分钟。
+
+====

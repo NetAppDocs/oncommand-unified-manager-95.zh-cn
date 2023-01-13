@@ -1,0 +1,80 @@
+---
+permalink: performance-checker/reference-performance-data-that-can-be-sent-to-an-external-server.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 从其监控的所有集群收集各种性能数据。您可以将特定的数据组发送到外部服务器。 
+---
+= 可发送到外部服务器的性能数据
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 从其监控的所有集群收集各种性能数据。您可以将特定的数据组发送到外部服务器。
+
+根据要绘制图表的性能数据，您可以选择发送以下一组统计信息：
+
+|===
+| 统计信息组 | 包含数据 | 详细信息 
+
+
+ a| 
+性能监控器
+ a| 
+以下对象的性能统计信息概要：
+
+* LUN
+* Volumes
+
+ a| 
+此组可为所有受监控集群中的所有 LUN 和卷提供总 IOPS 或延迟。
+
+此组提供的统计信息数量最少。
+
+
+
+ a| 
+资源利用率
+ a| 
+以下对象的资源利用率统计信息：
+
+* 节点
+* 聚合
+
+ a| 
+此组可提供所有受监控集群中节点和聚合物理资源的利用率统计信息。
+
+它还提供了在性能监控器组中收集的统计信息。
+
+
+
+ a| 
+向下钻取
+ a| 
+所有跟踪对象的低级别读 / 写和每协议统计信息：
+
+* 节点
+* 聚合
+* LUN
+* Volumes
+* Disks
+* LIF
+* 端口 /NIC
+
+ a| 
+此组可为所有受监控集群中的所有七种跟踪对象类型提供读 / 写和每协议细分。
+
+此外，它还会提供在性能监控组和资源利用率组中收集的统计信息。
+
+此组提供的统计信息数量最多。
+
+|===
+[NOTE]
+====
+如果存储系统上的集群或集群对象名称发生更改，则旧对象和新对象都将包含外部服务器上的性能数据（称为 " `m测量路径` " ）。这两个对象不会与同一个对象相关联。例如，如果将卷名称从 "`volume1_Acct` " 更改为 "`Acct_vol1` " ，则会看到旧卷的旧性能数据以及新卷的新性能数据。
+
+====
+有关可发送到外部数据提供程序的所有性能计数器的列表、请参见知识库文章。
+
+https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Infrastructure_Management%2FActive_IQ_Unified_Manager%2FWhat_are_the_ActiveIQ_Unified_Manager_performance_counters_that_can_be_exported_to_an_External_Data_Provider%253F["可导出到外部数据提供程序的 Unified Manager 性能计数器"]

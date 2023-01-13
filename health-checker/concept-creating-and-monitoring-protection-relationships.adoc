@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager ，您可以创建保护关系，对受管集群上存储的数据的镜像保护和备份存储保护进行监控和故障排除，以及在数据被覆盖或丢失时还原数据。 
+---
+= 创建，监控保护关系并对其进行故障排除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager ，您可以创建保护关系，对受管集群上存储的数据的镜像保护和备份存储保护进行监控和故障排除，以及在数据被覆盖或丢失时还原数据。

@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 聚合事件为您提供聚合状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 聚合事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+聚合事件为您提供聚合状态信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+聚合脱机（ ocumEvtAggregateStateOffline ）
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+聚合失败（ ocumEvtAggregateStateFailed ）
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+聚合受限（ ocumEvtAggregateStateRestricted ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合重建（ ocumEvtAggregateRaidStateReconstructing ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合已降级（ ocumEvtAggregateRaidStateDegraded ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+云层可部分访问（ ocumEventCloudTierPartiallyReachable ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+无法访问云层（ ocumEventCloudTierUnreachable ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+遗留的 MetroCluster 聚合（ ocumEvtMetroClusterAggregateLeftBehind ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+MetroCluster 聚合镜像已降级（ ocumEvtMetroClusterAggregateMirrorDegraded ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+聚合重新定位的对象存储访问被拒绝*
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+在存储故障转移期间、用于聚合重新定位的对象存储访问被拒绝*
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+|===
+
+
+== 影响区域：容量
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+聚合空间接近全满（ ocumEvtAggregateNearlyFull ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合空间已满（ ocumEvtAggregateFull ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+聚合达到全满前的天数（ ocumEvtAggregateDaysUntireFullSoon ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+聚合过量提交（ ocumEvtAggregateOvercommitted ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+error
+
+
+
+ a| 
+聚合接近过量提交（ ocumEvtAggregateAlmostOvercommitted ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合 Snapshot 预留已满（ ocumEvtAggregateSnapReserveFull ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合增长率异常（ ocumEvtAggregateGrowthRateAbnormal ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已发现聚合（不适用）
+ a| 
+事件
+ a| 
+聚合
+ a| 
+信息
+
+
+
+ a| 
+聚合已重命名（不适用）
+ a| 
+事件
+ a| 
+聚合
+ a| 
+信息
+
+
+
+ a| 
+已删除聚合（不适用）
+ a| 
+事件
+ a| 
+Node
+ a| 
+信息
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反聚合 IOPS 严重阈值（ ocumAggregateIopsIncident ）
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+已违反聚合 IOPS 警告阈值（ ocumAggregateIopsWarning ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+已违反聚合MBps严重阈值(ocumAggregateMbpsIncident)
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+已违反聚合MBps警告阈值(ocumAggregateMbpsWarning)
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+已违反聚合延迟严重阈值（ ocumAggregateLatencyIncident ）
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+已违反聚合延迟警告阈值（ ocumAggregateLatencyWarning ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+聚合性能已违反已用容量严重阈值(ocumAggregatePerfCapacityUsedIncident)
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+聚合性能已违反已用容量警告阈值(ocumAggregatePerfCapacityUsedWarning)
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+已违反聚合利用率严重阈值（ ocumAggregateUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+聚合
+ a| 
+严重
+
+
+
+ a| 
+已违反聚合利用率警告阈值（ ocumAggregateUtilizationWarning ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+已违反聚合磁盘过度利用阈值（ ocumAggregateDisksOverUtilizedWarning ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+
+
+ a| 
+已违反聚合动态阈值（ ocumAggregateDynamicEventWarning ）
+ a| 
+风险
+ a| 
+聚合
+ a| 
+警告
+
+|===

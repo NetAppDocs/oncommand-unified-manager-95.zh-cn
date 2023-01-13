@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在证书颁发机构签名并返回安全证书后上传并安装该证书。您上传和安装的文件必须是现有自签名证书的签名版本。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。 
+---
+= 安装HTTPS安全证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在证书颁发机构签名并返回安全证书后上传并安装该证书。您上传和安装的文件必须是现有自签名证书的签名版本。CA 签名证书有助于防止中间人攻击，并提供比自签名证书更好的安全保护。
+
+
+
+== 开始之前
+
+您必须已完成以下操作：
+
+* 已下载证书签名请求文件并由证书颁发机构签名
+* 已以 PEM 格式保存证书链
+* 包括链中的所有证书，从 Unified Manager 服务器证书到根签名证书，包括存在的任何中间证书
+
+
+您必须具有OnCommand 管理员角色。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
+. 单击 * 安装 HTTPS 证书 * 。
+. 在显示的对话框中，单击 * 选择文件 ...* 以找到要上传的文件。
+. 选择文件，然后单击 * 安装 * 以安装此文件。
+
+
+
+
+== 证书链示例
+
+以下示例显示了证书链文件的显示方式：
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

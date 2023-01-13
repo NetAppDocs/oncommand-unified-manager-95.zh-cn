@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/task-bookmarking-frequently-viewed-product-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从Unified Manager UI将经常访问的产品页面添加到书签中。这样、您可以快速返回到这些页面。稍后查看此页面时、它将显示最新数据。 
+---
+= 为经常查看的产品页面添加书签
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从Unified Manager UI将经常访问的产品页面添加到书签中。这样、您可以快速返回到这些页面。稍后查看此页面时、它将显示最新数据。
+
+
+
+== 关于此任务
+
+您还可以将此链接(URL)复制到当前产品页面、以便将其粘贴到电子邮件或其他应用程序中、以便与其他人共享。
+
+
+
+== 步骤
+
+. 使用浏览器中的书签页面所需的任何步骤创建书签。
++
+此页面的链接会随页面的详细信息一起保存、但您可能需要自定义书签文本以标识此页面：例如、"`Unified Manager` Node：node-01`"或"`Unified Manager >用户定义的阈值事件：IOPS volume1 "。
+
+

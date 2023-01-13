@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-storage-vm-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能/SVM资源管理器"页面详细概述了集群中所有Storage Virtual Machine (SVM\)的性能。' 
+---
+= 性能/SVM资源管理器页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"性能/SVM资源管理器"页面详细概述了集群中所有Storage Virtual Machine (SVM)的性能。
+
+通过"性能/SVM资源管理器"页面、您可以跟踪和比较特定时间段内的SVM性能、这有助于您对SVM性能进行故障排除和微调。
+
+使用"查看并比较"功能、您可以将此SVM的性能与以下各项进行比较：
+
+* 同一集群上的其他SVM
+* 此SVM上的卷
+* 此SVM上的LIF
+
+
+通过"性能/SVM资源管理器"页面、您可以：
+
+* 查看与阈值相关的问题及其详细信息
+* 跟踪和比较SVM性能数据
+* 调查与阈值相关的问题并进行故障排除
+* 调查性能问题并进行故障排除
+

@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: '导航到报告为脱机的卷的"运行状况/卷"详细信息页面后、您可以搜索有助于诊断卷脱机情况的追加信息。' 
+---
+= 针对卷脱机情况执行诊断操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+导航到报告为脱机的卷的"运行状况/卷"详细信息页面后、您可以搜索有助于诊断卷脱机情况的追加信息。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+如果报告脱机的卷未被有意脱机，则该卷可能会因为多种原因脱机。
+
+从脱机卷的运行状况/卷详细信息页面开始、您可以导航到其他页面和窗格以确认或消除可能的原因：
+
+
+
+== 选项
+
+* 单击*运行状况/卷*详细信息页面链接、确定卷是否因其主机节点已关闭以及存储故障转移到其HA对配对节点也失败而脱机。
++
+请参见 xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[确定卷脱机情况是否是由已关闭的节点引起的]。
+
+* 单击*运行状况/卷*详细信息页面链接、确定卷是否已脱机、其主机Storage Virtual Machine (SVM)是否因托管此SVM根卷的节点已关闭而停止。
++
+请参见 xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[确定卷是否因节点关闭而脱机以及 SVM 是否已停止]。
+
+* 单击*运行状况/卷*详细信息页面链接、确定卷是否因主机聚合中的磁盘损坏而脱机。
++
+请参见 xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[确定卷是否因聚合中的磁盘损坏而脱机]。
+
+

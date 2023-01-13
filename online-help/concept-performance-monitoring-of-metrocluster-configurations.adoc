@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-performance-monitoring-of-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。 
+---
+= 监控 MetroCluster 配置的性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager ，您可以监控 MetroCluster 配置中集群之间的写入吞吐量，以确定写入吞吐量较高的工作负载。如果这些高性能工作负载导致本地集群上的其他卷的 I/O 响应时间较长，则 Unified Manager 将触发性能事件以通知您。
+
+当 MetroCluster 配置中的本地集群将其数据镜像到其配对集群时，数据将写入 NVRAM ，然后通过交换机间链路（ ISL ）传输到远程聚合。Unified Manager 会分析 NVRAM ，以确定写入吞吐量较高而过度利用 NVRAM 的工作负载，从而使 NVRAM 处于争用状态。
+
+响应时间偏差超过性能阈值的工作负载称为 _victims_nvram ，而写入 NVRAM 的吞吐量偏差高于正常值并导致出现争用的工作负载称为 _bulbulles_ 。由于只有写入请求才会镜像到配对集群，因此 Unified Manager 不会分析读取吞吐量。
+
+Unified Manager 将 MetroCluster 配置中的集群视为单个集群。它不会区分配对集群，也不会关联每个集群的写入吞吐量。

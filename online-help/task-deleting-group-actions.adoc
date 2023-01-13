@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-deleting-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 当不再需要组操作时，您可以从 Unified Manager 中删除组操作。 
+---
+= 正在删除组操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当不再需要组操作时，您可以从 Unified Manager 中删除组操作。
+
+
+
+== 开始之前
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+删除卷运行状况阈值的组操作时，全局阈值将应用于该组中的存储对象。在存储对象上设置的任何对象级别运行状况阈值均不受影响。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*管理*>*组*。
+. 在 * 组操作 * 选项卡中，选择要删除的组操作，然后单击 * 删除 * 。
+. 在 * 警告 * 对话框中，单击 * 是 * 确认删除。
+

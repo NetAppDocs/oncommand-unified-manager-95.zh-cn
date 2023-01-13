@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-protection-relationships-window-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以查看和管理与保护相关的详细信息，例如资源池， SVM 关联和保护作业。您可以使用相应的配置/运行状况阈值页面为聚合、卷和关系配置全局运行状况阈值。 
+---
+= 保护关系的问题描述窗口和对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看和管理与保护相关的详细信息，例如资源池， SVM 关联和保护作业。您可以使用相应的配置/运行状况阈值页面为聚合、卷和关系配置全局运行状况阈值。

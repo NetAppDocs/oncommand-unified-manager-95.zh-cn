@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-the-unified-manager-server-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager 服务器基础架构由数据收集单元，数据库和应用程序服务器组成。它提供基础架构服务、例如发现、监控、基于角色的访问控制\(RBAC)、审核和日志记录。' 
+---
+= Unified Manager 服务器的功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 服务器基础架构由数据收集单元，数据库和应用程序服务器组成。它提供基础架构服务，例如发现，监控，基于角色的访问控制（ RBAC ），审核和日志记录。
+
+Unified Manager 可收集集群信息，将数据存储在数据库中，并分析数据以查看是否存在任何集群问题。

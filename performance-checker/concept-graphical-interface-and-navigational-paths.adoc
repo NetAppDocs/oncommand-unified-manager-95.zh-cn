@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-graphical-interface-and-navigational-paths.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 具有极大的灵活性，可让您以各种方式完成多项任务。在 Unified Manager 中工作时，您会发现许多导航路径。虽然并非所有可能的导航组合都可以显示，但您应熟悉一些比较常见的情形。 
+---
+= 图形界面和导航路径
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 具有极大的灵活性，可让您以各种方式完成多项任务。在 Unified Manager 中工作时，您会发现许多导航路径。虽然并非所有可能的导航组合都可以显示，但您应熟悉一些比较常见的情形。

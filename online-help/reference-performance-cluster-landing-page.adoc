@@ -1,0 +1,29 @@
+---
+permalink: online-help/reference-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 性能集群登录页面显示选定集群的性能状态概况。通过此页面，您可以访问选定集群上存储对象的每个性能计数器的完整详细信息。 
+---
+= 性能集群登录页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+性能集群登录页面显示选定集群的性能状态概况。通过此页面，您可以访问选定集群上存储对象的每个性能计数器的完整详细信息。
+
+您可以单击*收藏夹*按钮(image:../media/favorites-inactive.png[""])将此对象添加到收藏的存储对象列表中。蓝色按钮(image:../media/favorites-active.png[""])表示此对象已是收藏对象。
+
+性能集群登录页面包含四个选项卡，这些选项卡将集群详细信息分为四个信息区域：
+
+* 摘要页面
++
+** 集群事件窗格
+** 受管对象窗格
+
+
+* 性能最佳的对象页面
+* 资源管理器页面
+* 信息页面
+

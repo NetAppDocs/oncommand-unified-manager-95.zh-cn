@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 事件会就您的环境中的任何问题向您发出通知。您可以使用事件清单页面和事件详细信息页面监控所有事件。您可以使用通知设置选项对话框配置通知。您可以使用配置/管理事件页面禁用或启用事件。 
+---
+= 事件窗口和对话框的问题描述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件会就您的环境中的任何问题向您发出通知。您可以使用事件清单页面和事件详细信息页面监控所有事件。您可以使用通知设置选项对话框配置通知。您可以使用配置/管理事件页面禁用或启用事件。

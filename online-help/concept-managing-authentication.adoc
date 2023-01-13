@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-managing-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 Unified Manager 服务器上使用 LDAP 或 Active Directory 启用身份验证，并将其配置为与服务器配合使用以对远程用户进行身份验证。 
+---
+= 管理身份验证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 服务器上使用 LDAP 或 Active Directory 启用身份验证，并将其配置为与服务器配合使用以对远程用户进行身份验证。
+
+此外、您还可以启用SAML身份验证、以便远程用户在登录到Unified Manager Web UI之前通过安全身份提供程序(IdP)进行身份验证。

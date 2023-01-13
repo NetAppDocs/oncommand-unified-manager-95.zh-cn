@@ -1,0 +1,36 @@
+---
+permalink: performance-checker/concept-cluster-configuration-changes-detected-by-unified-manager.html 
+sidebar: sidebar 
+keywords: Performance Manager 
+summary: 'Unified Manager 可监控集群中的配置更改，以帮助您确定某个更改是否可能导致或影响性能事件。"性能资源管理器"页面将显示一个更改事件图标\(\)、以指示检测到更改的日期和时间。' 
+---
+= Unified Manager 检测到配置更改
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 可监控集群中的配置更改，以帮助您确定某个更改是否可能导致或影响性能事件。" 性能资源管理器 " 页面将显示一个更改事件图标（image:../media/opm-change-icon.gif["更改事件图标"]）以指示检测到更改的日期和时间。
+
+您可以在性能资源管理器页面和性能/卷详细信息页面中查看性能图表、以查看更改事件是否影响选定集群对象的性能。如果在性能事件或与性能事件大致相同的时间检测到更改，则此更改可能会影响问题描述，从而导致触发事件警报。
+
+Unified Manager 可以检测以下变更事件，这些事件归类为信息性事件：
+
+* 卷在聚合之间移动。
++
+Unified Manager 可以检测移动正在进行，已完成或失败的时间。如果 Unified Manager 在卷移动期间关闭，则在备份时会检测到卷移动并显示其更改事件。
+
+* 包含一个或多个受监控工作负载的QoS策略组的吞吐量(MBps或IOPS)限制会发生变化。
++
+更改策略组限制可能会导致延迟（响应时间）出现发生原因间歇性峰值，进而可能会触发策略组的事件。延迟逐渐恢复正常、峰值引起的任何事件都将过时。
+
+* HA 对中的节点接管或交还其配对节点的存储。
++
+Unified Manager 可以检测接管，部分接管或交还操作何时完成。如果接管是由发生崩溃的节点引起的，则 Unified Manager 不会检测到此事件。
+
+* ONTAP 升级或还原操作已成功完成。
++
+此时将显示先前版本和新版本。
+
+

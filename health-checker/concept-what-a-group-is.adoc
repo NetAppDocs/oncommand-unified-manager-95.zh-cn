@@ -1,0 +1,22 @@
+---
+permalink: health-checker/concept-what-a-group-is.html 
+sidebar: sidebar 
+keywords:  
+summary: '组是异构存储对象(集群、SVM或卷)的动态集合。您可以在 Unified Manager 中创建组，以便轻松管理一组存储对象。组中的成员可能会发生更改，具体取决于 Unified Manager 在某一时间点监控的存储对象。' 
+---
+= 什么是组
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+组是异构存储对象(集群、SVM或卷)的动态集合。您可以在 Unified Manager 中创建组，以便轻松管理一组存储对象。组中的成员可能会发生更改，具体取决于 Unified Manager 在某一时间点监控的存储对象。
+
+* 每个组都有一个唯一的名称。
+* 您必须为每个组至少配置一个组规则。
+* 您可以将一个组与多个组规则关联。
+* 每个组可以包含多种类型的存储对象，例如集群， SVM 或卷。
+* 存储对象会根据创建组规则的时间或 Unified Manager 完成监控周期而动态添加到组中。
+* 您可以同时对组中的所有存储对象应用操作，例如为卷设置阈值。
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-infinite-volumes.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以监控带有无限卷的Storage Virtual Machine \(SVM\)的容量和可用性。您可以通过创建规则和数据策略来管理带有无限卷的Storage Virtual Machine (SVM\)中的内容放置。' 
+---
+= 管理和监控无限卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以监控带有无限卷的Storage Virtual Machine (SVM)的容量和可用性。您可以通过创建规则和数据策略来管理带有无限卷的Storage Virtual Machine (SVM)中的内容放置。

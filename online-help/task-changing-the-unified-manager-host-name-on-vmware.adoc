@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-changing-the-unified-manager-host-name-on-vmware.html 
+sidebar: sidebar 
+keywords:  
+summary: 首次部署 Unified Manager 虚拟设备时，系统会为网络主机分配一个名称。您可以在部署后更改主机名。如果更改主机名，则还必须重新生成 HTTPS 证书。 
+---
+= 更改 Unified Manager 虚拟设备主机名
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+首次部署 Unified Manager 虚拟设备时，系统会为网络主机分配一个名称。您可以在部署后更改主机名。如果更改主机名，则还必须重新生成 HTTPS 证书。
+
+
+
+== 开始之前
+
+要执行这些任务、您必须以维护用户身份登录到Unified Manager或分配有OnCommand 管理员角色。
+
+
+
+== 关于此任务
+
+您可以使用主机名（或主机 IP 地址）访问 Unified Manager Web UI 。如果您在部署期间为网络配置了静态 IP 地址，则应指定网络主机的名称。如果使用 DHCP 配置网络，则应从 DNS 中获取主机名。如果未正确配置DHCP或OnCommand 、则会自动分配主机名"`DHCP`"并将其与安全证书关联。
+
+无论主机名的分配方式如何，如果更改主机名并打算使用新主机名访问 Unified Manager Web UI ，则必须生成新的安全证书。
+
+如果您使用服务器的 IP 地址而不是主机名访问 Web UI ，则在更改主机名后不必生成新证书。但是，最好更新证书，使证书中的主机名与实际主机名匹配。
+
+如果在 Unified Manager 中更改主机名，则必须在 OnCommand Workflow Automation （ WFA ）中手动更新主机名。主机名不会在 WFA 中自动更新。
+
+新证书在 Unified Manager 虚拟机重新启动后才会生效。
+
+
+
+== 步骤
+
+. xref:task-generating-an-https-security-certificate-ocf.adoc[生成 HTTPS 安全证书]
++
+如果要使用新主机名访问 Unified Manager Web UI ，则必须重新生成 HTTPS 证书才能将其与新主机名关联。
+
+. xref:task-restarting-the-unified-manager-virtual-machine.adoc[重新启动 Unified Manager 虚拟机]
++
+重新生成 HTTPS 证书后，必须重新启动 Unified Manager 虚拟机。
+
+

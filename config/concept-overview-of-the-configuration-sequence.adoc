@@ -1,0 +1,16 @@
+---
+permalink: config/concept-overview-of-the-configuration-sequence.html 
+sidebar: sidebar 
+keywords:  
+summary: 配置工作流介绍了在使用 Unified Manager 之前必须执行的任务。 
+---
+= 配置顺序概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配置工作流介绍了在使用 Unified Manager 之前必须执行的任务。
+
+image::../media/post-install-flow.gif[安装后流程]

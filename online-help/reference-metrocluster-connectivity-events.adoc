@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 连接事件可为您提供有关集群组件之间以及 MetroCluster 配置中集群之间的连接的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= MetroCluster 连接事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+连接事件可为您提供有关集群组件之间以及 MetroCluster 配置中集群之间的连接的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+所有交换机间链路已关闭（ ocumEvtMetroClusterAllISLBetweenSwitchesDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机间连接
+ a| 
+严重
+
+
+
+ a| 
+MetroCluster 配对节点之间的所有链路已关闭（ ocumEvtMetroClusterAllLinksBetweenPartnersDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+FC-SAS 网桥到存储堆栈的链路已关闭（ ocumEvtBridgeSasPortDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 网桥堆栈连接
+ a| 
+严重
+
+
+
+ a| 
+MetroCluster 配置已切换(ocumEvtMetroClusterDRStatusImpacted)
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+警告
+
+
+
+ a| 
+MetroCluster 配置已部分切换（ ocumEvtMetroClusterDRStatusPartiallyImpacted ）
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+error
+
+
+
+ a| 
+受影响的 MetroCluster 灾难恢复功能（ ocumEvtMetroClusterDRStatusImpacted ）
+ a| 
+风险
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+无法通过对等网络访问 MetroCluster 合作伙伴（ ocumEvtMetroClusterPartnersNotReachebleOverPeeringNetwork ）
+ a| 
+意外事件
+ a| 
+MetroCluster 关系
+ a| 
+严重
+
+
+
+ a| 
+节点到 FC 交换机的所有 FC-VI 互连链路已关闭（ ocumEvtMccNodeSwitchFcviLinksDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 节点交换机连接
+ a| 
+严重
+
+
+
+ a| 
+节点到 FC 交换机一个或多个 FC-Initiator 链路已关闭（ ocumEvtMccNodeSwitchFcLinksOneOrMoreDown ）
+ a| 
+风险
+ a| 
+MetroCluster 节点交换机连接
+ a| 
+警告
+
+
+
+ a| 
+节点到 FC 交换机的所有 FC-Initiator 链路已关闭（ ocumEvtMccNodeSwitchFcLinksDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 节点交换机连接
+ a| 
+严重
+
+
+
+ a| 
+切换到 FC-SAS 网桥 FC 链路关闭（ ocumEvtMccSwitchBridgeFcLinksDown ）
+ a| 
+意外事件
+ a| 
+MetroCluster 交换机网桥连接
+ a| 
+严重
+
+
+
+ a| 
+节点间所有 FC VI 互连链路已关闭（ ocumEvtMccInterNodeLinksDown ）
+ a| 
+意外事件
+ a| 
+节点间连接
+ a| 
+严重
+
+
+
+ a| 
+节点间一个或多个 FC VI 互连链路已关闭（ ocumEvtMccInterNodeLinksOneOrMoreDown ）
+ a| 
+风险
+ a| 
+节点间连接
+ a| 
+警告
+
+
+
+ a| 
+节点到网桥的链路关闭（ ocumEvtMccNodeBridgeLinksDown ）
+ a| 
+意外事件
+ a| 
+节点网桥连接
+ a| 
+严重
+
+
+
+ a| 
+节点到存储堆栈的所有 SAS 链路已关闭（ ocumEvtMccNodeStackLinksDown ）
+ a| 
+意外事件
+ a| 
+节点堆栈连接
+ a| 
+严重
+
+
+
+ a| 
+节点到存储堆栈的一个或多个 SAS 链路已关闭（ ocumEvtMccNodeStackLinksOneOrMoreDown ）
+ a| 
+风险
+ a| 
+节点堆栈连接
+ a| 
+警告
+
+|===

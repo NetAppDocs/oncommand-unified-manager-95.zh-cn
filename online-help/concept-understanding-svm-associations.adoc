@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-understanding-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Storage Virtual Machine \(SVM\)关联是指从源SVM到目标SVM的映射、供合作伙伴应用程序用于资源选择和二级卷配置。' 
+---
+= 了解SVM关联
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Storage Virtual Machine (SVM)关联是指从源SVM到目标SVM的映射、供合作伙伴应用程序用于资源选择和二级卷配置。
+
+无论目标SVM是二级目标还是三级目标、始终会在源SVM和目标SVM之间创建关联。您不能使用二级目标SVM作为源来创建与三级目标SVM的关联。
+
+可以通过以下三种方式关联SVM：
+
+* 关联任何SVM
++
+您可以在任何主源SVM与一个或多个目标SVM之间创建关联。这意味着、当前需要保护的所有现有SVM以及未来创建的任何SVM都会与指定的目标SVM相关联。例如、您可能希望将来自不同位置的多个不同源的应用程序备份到一个位置的一个或多个目标SVM。
+
+* 关联特定SVM
++
+您可以在特定源SVM与一个或多个特定目标SVM之间创建关联。例如、如果要为数据必须彼此分离的多个客户端提供存储服务、则可以选择此选项将特定源SVM与仅分配给该客户端的特定目标SVM关联起来。
+
+* 与外部SVM关联
++
+您可以在源SVM和目标SVM的外部灵活卷之间创建关联。
+
+

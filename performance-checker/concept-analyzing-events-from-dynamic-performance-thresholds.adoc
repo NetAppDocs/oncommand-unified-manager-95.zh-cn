@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-events-from-dynamic-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: '根据动态阈值生成的事件表明、与预期响应时间范围相比、工作负载的实际响应时间\(延迟\)过高或过低。您可以使用事件详细信息页面分析性能事件，并在必要时采取更正措施，以使性能恢复正常。' 
+---
+= 分析动态性能阈值中的事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根据动态阈值生成的事件表明，与预期响应时间范围相比，工作负载的实际响应时间（延迟）过高或过低。您可以使用事件详细信息页面分析性能事件，并在必要时采取更正措施，以使性能恢复正常。
+
+[NOTE]
+====
+Cloud Volumes ONTAP ， ONTAP Edge 或 ONTAP Select 系统上未启用动态性能阈值。
+
+====

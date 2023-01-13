@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-reorder-group-action-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用重新排列组操作对话框更改一个或多个组操作的排名。组操作在网格中的位置决定了组操作的排名。 
+---
+= 重新排列组操作对话框
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用重新排列组操作对话框更改一个或多个组操作的排名。组操作在网格中的位置决定了组操作的排名。
+
+您必须具有OnCommand 管理员或存储管理员角色。
+
+* *排名*
++
+指定对组中的存储对象应用组操作的顺序。
+
+* * 名称 *
++
+指定组操作的名称。
+
+* *操作类型*
++
+指定可以对组中的存储对象执行的操作类型。
+
+* *关联组*
++
+指定为其定义组操作的组的名称。
+
+

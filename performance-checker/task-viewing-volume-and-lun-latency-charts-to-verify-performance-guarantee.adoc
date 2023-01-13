@@ -1,0 +1,32 @@
+---
+permalink: performance-checker/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以查看已订阅 " 性能保证 " 计划的卷和 LUN ，以验证延迟是否未超过您所保证的水平。' 
+---
+= 查看卷和 LUN 延迟图表以验证性能保证
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看已订阅 "`性能保证` " 计划的卷和 LUN ，以验证延迟是否未超过您所保证的水平。
+
+
+
+== 关于此任务
+
+延迟性能保证为每个操作一毫秒，不应超过该值。它基于每小时平均值，而不是默认的五分钟性能收集期间。
+
+
+
+== 步骤
+
+. 在*性能卷*或*性能LUN*清单页面中、选择您感兴趣的卷或LUN。
+. 在选定卷或 LUN 的 * 性能资源管理器 * 页面中，从 * 查看统计信息输入 * 选择器中选择 * 每小时平均值 * 。
++
+延迟图表中的水平线将显示更平滑的线，因为五分钟收集将替换为每小时平均值。
+
+. 如果同一聚合上的其他卷受性能保证，则可以添加这些卷以在同一图表中查看其延迟值。
+

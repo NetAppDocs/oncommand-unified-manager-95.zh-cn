@@ -1,0 +1,39 @@
+---
+permalink: online-help/task-rediscovering-clusters.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从配置/集群数据源页面手动重新发现集群、以获取有关集群运行状况、监控状态和性能状态的最新信息。 
+---
+= 重新发现集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从配置/集群数据源页面手动重新发现集群、以获取有关集群运行状况、监控状态和性能状态的最新信息。
+
+
+
+== 关于此任务
+
+如果您要更新集群，例如在空间不足时增加聚合大小，并且希望 Unified Manager 发现所做的更改，则可以手动重新发现集群。
+
+当 Unified Manager 与 OnCommand Workflow Automation （ WFA ）配对时，配对将触发重新采集 WFA 缓存的数据。
+
+
+
+== 步骤
+
+. 在左侧导航窗格中、单击*配置*>*集群数据源*。
+. 在*配置/集群数据源*页面上、单击*重新发现*。
++
+Unified Manager 会重新发现选定集群并显示最新的运行状况和性能状态。
+
++
+[NOTE]
+====
+您可以从Dashboards/Cluster View页面的右窗格中获取集群的监控状态。
+
+====
+

@@ -1,0 +1,465 @@
+---
+permalink: online-help/reference-storage-vm-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM事件为您提供有关SVM状态的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= SVM事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM事件为您提供有关SVM状态的信息、以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：可用性
+
+星号（ * ）表示已转换为 Unified Manager 事件的 EMS 事件。
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+SVM CIFS 服务已关闭（ ocumEvtVserverCifsServiceStatusDown ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+SVM CIFS 服务未配置（不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+尝试连接不存在的CIFS共享*
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+CIFS NetBIOS名称冲突*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+CIFS卷影复制操作失败*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+多个CIFS连接*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+已超过最大CIFS连接数*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+已超过每个用户的最大CIFS连接数*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+SVM FC/FCoE 服务已关闭（ ocumEvtVserverFcServiceStatusDown ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+SVM iSCSI 服务已关闭（ ocumEvtVserverIscsiServiceStatusDown ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+SVM NFS 服务已关闭（ ocumEvtVserverNfsServiceStatusDown ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+SVM FC/FCoE 服务未配置（不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+未配置 SVM iSCSI 服务（不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+未配置 SVM NFS 服务（不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+SVM 已停止（ ocumEvtVserverDown ）
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+AV服务器太忙、无法接受新扫描请求*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+没有用于病毒扫描的AV服务器连接*
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+未注册AV服务器*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+无响应AV服务器连接*
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+未经授权的用户尝试访问AV服务器*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+AV服务器发现病毒*
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+带有无限卷的SVM存储不可用(ocumEvtVserverStorageNotAvailable)
+ a| 
+意外事件
+ a| 
+带有无限卷的SVM
+ a| 
+严重
+
+
+
+ a| 
+带有无限卷的SVM存储部分可用(ocumEvtVserverStoragePartiallyAvailable)
+ a| 
+风险
+ a| 
+带有无限卷的SVM
+ a| 
+error
+
+
+
+ a| 
+带有无限卷的SVM命名空间镜像成分卷存在可用性问题(ocumEvtVserverNsMirrorAvailabilityHavingIssues)
+ a| 
+风险
+ a| 
+带有无限卷的SVM
+ a| 
+警告
+
+|===
+
+
+== 影响区域：容量
+
+以下容量事件仅适用于带有无限卷的SVM。
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+带有无限卷的SVM空间已满(ocumEvtVserverFull)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+带有无限卷的SVM空间接近全满(ocumEvtVserverNearlyFull)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+已超过带有无限卷的SVM Snapshot使用量限制(ocumEvtVserverSnapshotUsageExceeded)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+带有无限卷的SVM命名空间空间已满(ocumEvtVserverNamespaceFull)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+error
+
+
+
+ a| 
+带有无限卷的SVM命名空间接近全满(ocumEvtVserverNamespaceNearlyFull)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+|===
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已发现 SVM （不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+
+
+ a| 
+SVM 已删除（不适用）
+ a| 
+事件
+ a| 
+集群
+ a| 
+信息
+
+
+
+ a| 
+SVM 已重命名（不适用）
+ a| 
+事件
+ a| 
+SVM
+ a| 
+信息
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反 SVM IOPS 严重阈值（ ocumSvmIopsIncident ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+已违反 SVM IOPS 警告阈值（ ocumSvmIopsWarning ）
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+已违反SVM MBps严重阈值(ocumSvmMbpsIncident)
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+已违反SVM MBps警告阈值(ocumSvmMbpsWarning)
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+
+
+ a| 
+已违反 SVM 延迟严重阈值（ ocumSvmLatencyIncident ）
+ a| 
+意外事件
+ a| 
+SVM
+ a| 
+严重
+
+
+
+ a| 
+已违反 SVM 延迟警告阈值（ ocumSvmLatencyWarning ）
+ a| 
+风险
+ a| 
+SVM
+ a| 
+警告
+
+|===

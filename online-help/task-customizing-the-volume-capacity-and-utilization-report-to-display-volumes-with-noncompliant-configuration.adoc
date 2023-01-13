@@ -1,0 +1,44 @@
+---
+permalink: online-help/task-customizing-the-volume-capacity-and-utilization-report-to-display-volumes-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义卷容量和利用率报告以显示不符合公司策略的卷。例如、如果必须在所有卷上启用重复数据删除、则可以创建一个报告、列出已禁用重复数据删除的所有卷。 
+---
+= 自定义卷容量和利用率报告以显示配置不合规的卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义卷容量和利用率报告以显示不符合公司策略的卷。例如、如果必须在所有卷上启用重复数据删除、则可以创建一个报告、列出已禁用重复数据删除的所有卷。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要取消按SVM、集群或卷分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 隐藏除集群、Storage Virtual Machine、卷、重复数据删除和重复数据删除空间节省(GB)列以外的所有列：
++
+.. 单击列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 从菜单中、选择*列*>*隐藏列*。
+
+
+. 要筛选已禁用重复数据删除的卷、请单击*重复数据删除*列、然后通过单击打开*筛选器*对话框 image:../media/click-to-filter.gif[""] 图标。
+. 从*条件*列表中、选择*等于*。
+. 单击*选择值*并选择*已禁用*。
+. 单击 * 确定 * 。
+. 要根据重复数据删除节省的空间对卷进行排序、请单击*重复数据删除节省的空间(GB)*列、然后单击 image:../media/sort-desc.gif[""] 图标。
+

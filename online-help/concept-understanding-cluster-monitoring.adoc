@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-understanding-cluster-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将集群添加到 Unified Manager 数据库中，以监控集群的可用性，容量和其他详细信息，例如 CPU 使用情况，接口统计信息，可用磁盘空间， qtree 使用情况和机箱环境。 
+---
+= 了解集群监控
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将集群添加到 Unified Manager 数据库中，以监控集群的可用性，容量和其他详细信息，例如 CPU 使用情况，接口统计信息，可用磁盘空间， qtree 使用情况和机箱环境。
+
+如果状态异常或违反预定义的阈值，则会生成事件。如果配置为执行此操作，则 Unified Manager 会在事件触发警报时向指定的收件人发送通知。
+
+以下流程图显示了Unified Manager监控过程：
+
+image::../media/cluster-monitoring2.gif[集群监视2.]

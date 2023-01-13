@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task-creating-a-project-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 在创建要导入到Unified Manager中的报告之前、必须先使用BIRT创建项目。 
+---
+= 使用BIRT创建项目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在创建要导入到Unified Manager中的报告之前、必须先使用BIRT创建项目。
+
+
+
+== 开始之前
+
+您必须已下载并提取BIRT .zip文件。
+
+
+
+== 步骤
+
+. 在Eclipse界面中、选择*文件*>*新增*>*项目*。
+. 展开*业务智能和报告工具*文件夹、选择*报告项目*、然后单击*下一步*。
+. 键入项目名称并单击*完成*。
+

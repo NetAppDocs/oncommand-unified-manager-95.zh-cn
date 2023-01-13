@@ -1,0 +1,84 @@
+---
+permalink: online-help/reference-storage-services-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 存储服务事件为您提供有关存储服务的创建和订阅的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。 
+---
+= 存储服务事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储服务事件为您提供有关存储服务的创建和订阅的信息，以便您可以监控潜在问题。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。
+
+
+
+== 影响区域：配置
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已创建存储服务（不适用）
+ a| 
+事件
+ a| 
+存储服务
+ a| 
+信息
+
+
+
+ a| 
+已订阅存储服务（不适用）
+ a| 
+事件
+ a| 
+存储服务
+ a| 
+信息
+
+
+
+ a| 
+存储服务已取消订阅（不适用）
+ a| 
+事件
+ a| 
+存储服务
+ a| 
+信息
+
+|===
+
+
+== 影响区域：保护
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+意外删除受管 SnapMirror RelationshipocumEvtStorageServiceUnsultedRelationshipDeletion
+ a| 
+风险
+ a| 
+存储服务
+ a| 
+警告
+
+
+
+ a| 
+意外删除存储服务成员卷（ ocumEvtStorageServiceUnexpectedVolumeDelay ）
+ a| 
+意外事件
+ a| 
+存储服务
+ a| 
+严重
+
+|===

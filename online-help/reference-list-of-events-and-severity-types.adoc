@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-list-of-events-and-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用事件列表更熟悉事件类别，事件名称以及在 Unified Manager 中可能看到的每个事件的严重性类型。事件按对象类别按字母顺序列出。 
+---
+= 事件和严重性类型的列表
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用事件列表更熟悉事件类别，事件名称以及在 Unified Manager 中可能看到的每个事件的严重性类型。事件按对象类别按字母顺序列出。

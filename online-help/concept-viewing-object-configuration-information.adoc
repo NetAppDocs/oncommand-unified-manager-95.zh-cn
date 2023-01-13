@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-viewing-object-configuration-information.html 
+sidebar: sidebar 
+keywords:  
+summary: 对象信息页面位于每个对象的登录页面上、用于显示每个存储对象的非性能配置属性值。某些属性为物理配置设置、而其他属性则可能会影响对象的性能。 
+---
+= 查看对象配置信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+位于每个对象登录页面上的对象信息页面显示了每个存储对象的非性能配置属性值。某些属性为物理配置设置、而其他属性则可能会影响对象的性能。
+
+例如、了解聚合或节点的可用空间量非常有用。了解特定端口的速度设置有助于诊断性能问题描述。

@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand System Manager性能信息板可显示此Unified Manager实例所监控的所有集群的性能状态概况。通过它，您可以评估受管集群的整体性能，并快速记录，查找或分配任何已确定的特定事件以解决问题。 
+---
+= 通过性能信息板监控集群性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand System Manager性能信息板可显示此Unified Manager实例所监控的所有集群的性能状态概况。通过它，您可以评估受管集群的整体性能，并快速记录，查找或分配任何已确定的特定事件以解决问题。

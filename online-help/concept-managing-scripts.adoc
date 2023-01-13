@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用脚本在 Unified Manager 中自动修改或更新多个存储对象。此脚本与警报关联。当事件触发警报时，将执行脚本。您可以上传自定义脚本，并在生成警报时测试其执行情况。 
+---
+= 管理脚本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用脚本在 Unified Manager 中自动修改或更新多个存储对象。此脚本与警报关联。当事件触发警报时，将执行脚本。您可以上传自定义脚本，并在生成警报时测试其执行情况。

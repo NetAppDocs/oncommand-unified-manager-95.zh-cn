@@ -1,0 +1,42 @@
+---
+permalink: online-help/task-viewing-the-https-security-certificate-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以将 HTTPS 证书详细信息与浏览器中检索到的证书进行比较，以确保浏览器与 Unified Manager 的加密连接不会被截获。 
+---
+= 查看 HTTPS 安全证书
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将 HTTPS 证书详细信息与浏览器中检索到的证书进行比较，以确保浏览器与 Unified Manager 的加密连接不会被截获。
+
+
+
+== 开始之前
+
+您必须具有操作员、OnCommand 管理员或存储管理员角色。
+
+
+
+== 关于此任务
+
+通过查看证书、您可以验证重新生成的证书的内容、或者查看可用于访问Unified Manager的备用URL名称。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击*设置*菜单中的* HTTPS证书*。
++
+HTTPS 证书将显示在页面顶部
+
+
+
+
+
+== 完成后
+
+如果您需要查看有关安全证书的详细信息，而不是 HTTPS 证书页面上显示的内容，则可以在浏览器中查看连接证书。

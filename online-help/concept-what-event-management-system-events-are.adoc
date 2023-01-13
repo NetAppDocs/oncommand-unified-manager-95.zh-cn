@@ -1,0 +1,87 @@
+---
+permalink: online-help/concept-what-event-management-system-events-are.html 
+sidebar: sidebar 
+keywords:  
+summary: '事件管理系统(EMS)可从ONTAP 内核的不同部分收集事件数据、并提供事件转发机制。这些 ONTAP 事件可以在 Unified Manager 中报告为 EMS 事件。集中式监控和管理可简化根据这些 EMS 事件配置关键 EMS 事件和警报通知的过程。' 
+---
+= 什么是事件管理系统事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+事件管理系统（ EMS ）从 ONTAP 内核的不同部分收集事件数据，并提供事件转发机制。这些 ONTAP 事件可以在 Unified Manager 中报告为 EMS 事件。集中式监控和管理可简化根据这些 EMS 事件配置关键 EMS 事件和警报通知的过程。
+
+将集群添加到 Unified Manager 时， Unified Manager 地址将作为通知目标添加到集群中。一旦集群中发生 EMS 事件，就会报告该事件。
+
+在 Unified Manager 中接收 EMS 事件的方法有两种：
+
+* 系统会自动报告一定数量的重要 EMS 事件。
+* 您可以订阅以接收单个 EMS 事件。
+
+
+根据 Unified Manager 生成 EMS 事件的方法，报告此事件的方式会有所不同：
+
+|===
+| 功能 | 自动 EMS 消息 | 已订阅 EMS 消息 
+
+
+ a| 
+可用 EMS 事件
+ a| 
+EMS 事件的子集
+ a| 
+所有 EMS 事件
+
+
+
+ a| 
+触发的 EMS 消息名称
+ a| 
+Unified Manager 事件名称（从 EMS 事件名称转换而来）
+ a| 
+格式为"`Error EMS received`"的非特定格式。详细消息提供了实际 EMS 事件的点表示法
+
+
+
+ a| 
+收到的消息
+ a| 
+发现集群后立即执行
+ a| 
+将每个必需的 EMS 事件添加到 Unified Manager 之后，以及下一个 15 分钟轮询周期之后
+
+
+
+ a| 
+事件生命周期
+ a| 
+与其他 Unified Manager 事件相同： " 新增 " ， " 已确认 " ， " 已解决 " 和 " 已废弃 " 状态
+ a| 
+自事件创建之日起 15 分钟后刷新集群后， EMS 事件将变为废弃
+
+
+
+ a| 
+捕获 Unified Manager 停机期间的事件
+ a| 
+可以，系统启动后，它会与每个集群通信以获取缺少的事件
+ a| 
+否
+
+
+
+ a| 
+事件详细信息
+ a| 
+建议的更正操作直接从 ONTAP 导入，以提供一致的解决方案
+ a| 
+" 事件详细信息 " 页面中未提供更正操作
+
+|===
+[NOTE]
+====
+某些新的自动 EMS 事件属于信息性事件，表示先前的事件已解决。例如、"`FlexGroup 成分卷空间状态一切正常`"信息性事件表示"`FlexGroup 成分卷存在空间问题`"错误事件已解决。无法使用与其他事件严重性类型相同的事件生命周期来管理信息性事件，但是，如果同一卷收到另一个 " `Space issues` " 错误事件，则此事件将自动废弃。
+
+====

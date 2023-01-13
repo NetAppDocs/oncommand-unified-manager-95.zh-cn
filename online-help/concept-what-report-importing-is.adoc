@@ -1,0 +1,44 @@
+---
+permalink: online-help/concept-what-report-importing-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以从Unified Manager中使用导入报告选项导入报告、并使用名称和简短的问题描述 保存导入的报告。通过导入报告、除了Unified Manager中提供的标准报告之外、您还可以向环境中添加自定义报告。 
+---
+= 什么是报告导入
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用Unified Manager中的*导入报告*选项导入报告、并使用名称和简短的问题描述 保存导入的报告。通过导入报告、除了Unified Manager中提供的标准报告之外、您还可以向环境中添加自定义报告。
+
+您可以导入 `.rptdesign` 已创建的文件。您可以运行、共享、计划和删除导入的报告。
+
+Unified Manager将导入报告日志文件存储在jboss.log、ocum-report.log和ocumserver-debug.log文件中。
+
+[NOTE]
+====
+客户支持不会协助您设计报告、但他们会为您解决报告导入操作期间遇到的问题提供支持。
+
+====
+导入报告功能包括以下支持：
+
+* 具有多个标题的报告、其中列跨度设置为1 (`colspan=1`）
+* 仅包含图表的报告
+* 仅包含列表和网格的报告
+* 报告中使用的密码必须使用"`base64`"格式进行编码。使用其他编码(例如"`JCE`"格式)的报告将在导入过程中出现发生原因 错误。
+* 包含数据聚合的报告应在报告的表数据中包含聚合列元素。
+
+
+在以下情况下、支持文本、CSV和Excel格式的报告：
+
+* 仅在中使用表元素 `.rptdesign` 文件
+* 只有一个标题行的表
+
+
+[NOTE]
+====
+您不能导入列跨度超过1的报告。如果文本、CSV或Excel格式的报告包含多个标题行、则仅会考虑第一个标题行、而忽略其余标题行。
+
+====

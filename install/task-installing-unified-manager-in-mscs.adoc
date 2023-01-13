@@ -1,0 +1,49 @@
+---
+permalink: install/task-installing-unified-manager-in-mscs.html 
+sidebar: sidebar 
+keywords:  
+summary: '要配置高可用性、必须在两个Microsoft集群服务器\(MSCS)集群节点上安装Unified Manager。' 
+---
+= 在MSCS上安装Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要配置高可用性、必须在两个Microsoft集群服务器(MSCS)集群节点上安装Unified Manager。
+
+
+
+== 步骤
+
+. 以域用户身份登录到集群的两个节点。
+. 通过选择以下选项之一设置高可用性：
++
+|===
+| 如果您要 ... | 然后执行此操作 ... 
+
+
+ a| 
+在现有Unified Manager安装上配置高可用性
+ a| 
+添加另一台要与现有服务器配对的服务器：
+
+.. 将现有Unified Manager服务器升级到最新软件版本。
+.. 为现有Unified Manager安装创建备份、并将备份存储到挂载的LUN。
+.. 在第二个节点上安装Unified Manager。
++
+xref:task-installing-unified-manager-on-windows.adoc[在Windows系统上安装Unified Manager]
+
+.. 将现有Unified Manager安装的备份还原到第二个节点。
+
+
+
+
+ a| 
+在新的Unified Manager安装上配置高可用性
+ a| 
+在两个节点上安装Unified Manager。 xref:task-installing-unified-manager-on-windows.adoc[在Windows系统上安装Unified Manager]
+
+|===
+

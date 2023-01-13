@@ -1,0 +1,60 @@
+---
+permalink: online-help/concept-volume-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 此页面提供了集群中卷的详细性能信息。此页面的标题取决于您查看的是FlexVol 卷还是FlexGroup 卷。 
+---
+= 性能/卷或性能/FlexGroup资源管理器页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此页面提供了集群中卷的详细性能信息。此页面的标题取决于您查看的是FlexVol 卷还是FlexGroup 卷。
+
+通过卷或FlexGroup 资源管理器页面、您可以跟踪和比较特定时间段内的卷性能、这有助于您对卷性能进行故障排除和微调。
+
+[NOTE]
+====
+根卷不会显示在此页面上。
+
+====
+使用查看和比较功能：
+
+* 对于FlexVol 卷、您可以将此卷的性能与以下各项进行比较：
++
+** 同一聚合上的其他卷
+** 此卷所在的聚合
+** 此卷所在的SVM
+** 此卷上的LUN
+
+
+* 对于FlexGroup 卷、您可以将此FlexGroup 的性能与以下各项进行比较：
++
+** FlexGroup 所在的聚合
+** FlexGroup 所在的SVM
+** FlexGroup 的成分卷
+
+
+
+
+图表中的统计信息会在每个收集周期之后更新；默认情况下、此收集周期为每5分钟更新一次。"查看统计信息"选择器提供了一个选项、用于显示前一小时的平均统计信息。通过此功能、您可以查看延迟图表以支持NetApp "`Performance guarantee`"计划。
+
+通过"性能/卷资源管理器"或"性能/FlexGroup资源管理器"页面、您可以：
+
+* 查看与阈值相关的问题及其详细信息
+* 跟踪和比较卷性能数据
+* 调查与阈值相关的问题并进行故障排除
+* 调查性能问题并进行故障排除
+* 启动System Manager对卷进行配置更改
++
+如果您以OnCommand 管理员或存储管理员角色登录到Unified Manager、并且使用ONTAP 9.5或更高版本、则可以使用*配置卷*按钮。
+
+
+
+[NOTE]
+====
+对于数据保护(DP)卷、仅显示用户生成的流量的计数器值。如果集群安装的是ONTAP 软件8.3之前的版本、则不会显示任何计数器值。
+
+====

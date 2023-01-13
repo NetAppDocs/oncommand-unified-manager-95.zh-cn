@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-monitoring-cluster-performance-from-the-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 性能集群登录页面显示 Unified Manager 实例正在监控的选定集群的性能状态概况。通过此页面，您可以评估特定集群的整体性能，并快速记下，查找或分配已确定的任何集群特定事件以解决此问题。 
+---
+= 从性能集群登录页面监控集群性能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+性能集群登录页面显示 Unified Manager 实例正在监控的选定集群的性能状态概况。通过此页面，您可以评估特定集群的整体性能，并快速记下，查找或分配已确定的任何集群特定事件以解决此问题。

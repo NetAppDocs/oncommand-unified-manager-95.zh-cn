@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-additional-menu-options.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以使用以下菜单选项在 Unified Manager 服务器上执行各种管理任务。 
+---
+= 其他菜单选项
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用以下菜单选项在 Unified Manager 服务器上执行各种管理任务。
+
+可以使用以下菜单选项：
+
+* * 重置服务器证书 *
++
+重新生成 HTTPS 服务器证书。
+
++
+您可以单击*在Unified Manager图形用户界面中重新生成服务器证书image:../media/clusterpage-settings-icon.gif[""]*>* HTTPS证书*>*重新生成HTTPS证书*。
+
+* * 禁用 SAML 身份验证 *
++
+禁用 SAML 身份验证，以便身份提供程序（ IdP ）不再为访问 Unified Manager 图形用户界面的用户提供登录身份验证。如果具有 IdP 服务器或 SAML 配置的问题描述阻止用户访问 Unified Manager 图形用户界面，则通常会使用此控制台选项。
+
+* * 外部数据提供程序 *
++
+提供了将 Unified Manager 连接到外部数据提供程序的选项。建立连接后，性能数据将发送到外部服务器，以便存储性能专家可以使用第三方软件绘制性能指标图表。此时将显示以下选项：
+
++
+** * 显示服务器配置 * - 显示外部数据提供程序的当前连接和配置设置。
+** * 添加 / 修改服务器连接 * —用于输入外部数据提供程序的新连接设置或更改现有设置。
+** * 修改服务器配置 * —用于输入外部数据提供程序的新配置设置或更改现有设置。
+** * 删除服务器连接 * —删除与外部数据提供程序的连接。
++
+删除此连接后， Unified Manager 将断开与外部服务器的连接。
+
+
+
+* * 性能轮询间隔配置 *
++
+提供了一个选项，用于配置 Unified Manager 从集群收集性能统计数据的频率。默认收集间隔为五分钟。
+
++
+如果您发现从大型集群收集的操作未按时完成、可以将此间隔更改为十或十五分钟。
+
+* * 退出 *
++
+退出维护控制台菜单。
+
+

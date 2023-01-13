@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 如果因灾难或目录或文件被意外删除而丢失数据、则可以使用Unified Manager从Snapshot副本查找和还原数据。 
+---
+= 从Snapshot副本还原数据
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果因灾难或目录或文件被意外删除而丢失数据、则可以使用Unified Manager从Snapshot副本查找和还原数据。
+
+
+
+== 关于此任务
+
+您可以从Unified Manager Web UI中的两个位置还原数据。
+
+
+
+== 步骤
+
+. 使用以下任务之一还原数据：
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[从运行状况/卷详细信息页面还原数据]。
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[从运行状况/卷页面还原数据]。
+
+
+

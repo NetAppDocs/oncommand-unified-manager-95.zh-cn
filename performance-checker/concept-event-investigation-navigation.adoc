@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-event-investigation-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: 通过 Unified Manager 事件详细信息页面，您可以深入了解任何性能事件。在调查性能事件，进行故障排除以及微调系统性能时，此功能非常有用。 
+---
+= 事件调查导航
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 Unified Manager 事件详细信息页面，您可以深入了解任何性能事件。在调查性能事件，进行故障排除以及微调系统性能时，此功能非常有用。
+
+根据性能事件的类型，您可能会看到以下两种类型的事件详细信息页面之一：
+
+* 用户定义和系统定义的阈值策略事件的事件详细信息页面
+* 动态阈值策略事件的事件详细信息页面
+
+
+这是事件调查导航的一个示例。
+
+. 在左侧导航窗格中，单击 * 事件 * 。
+. 在事件清单页面中、单击筛选器按钮并在影响区域中选择*性能*以筛选事件列表。
+. 单击要调查的事件的名称，此时将显示事件详细信息页面。
+. 展开任何区域、例如建议的操作、以查看有关事件的更多详细信息、这些信息可能有助于您解决问题描述。
+
+
+image::../media/event-flow.gif[事件流]

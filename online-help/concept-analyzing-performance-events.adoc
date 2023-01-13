@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-analyzing-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以分析性能事件、以确定检测到这些事件的时间、它们是处于活动状态(新事件还是已确认事件)还是已废弃事件、涉及的工作负载和集群组件以及用于自行解决这些事件的选项。' 
+---
+= 分析性能事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以分析性能事件以确定检测到这些事件的时间，它们是处于活动状态（新事件还是已确认事件）还是已废弃事件，涉及的工作负载和集群组件以及用于自行解决这些事件的选项。

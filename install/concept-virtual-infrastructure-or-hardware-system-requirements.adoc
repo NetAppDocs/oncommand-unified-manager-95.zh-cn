@@ -1,0 +1,111 @@
+---
+permalink: install/concept-virtual-infrastructure-or-hardware-system-requirements.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager必须满足内存、CPU和磁盘空间的最低要求、具体取决于您是在虚拟基础架构上还是在物理系统上安装Unified Manager。 
+---
+= 虚拟基础架构和硬件系统要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager必须满足内存、CPU和磁盘空间的最低要求、具体取决于您是在虚拟基础架构上还是在物理系统上安装Unified Manager。
+
+下表显示了为内存， CPU 和磁盘空间资源建议的值。这些值已经过限定，以便 Unified Manager 满足可接受的性能级别。
+
+|===
+| 硬件配置 | 建议设置 
+
+
+ a| 
+RAM
+ a| 
+12 GB （至少需要 8 GB ）
+
+
+
+ a| 
+处理器
+ a| 
+4 个 CPU
+
+
+
+ a| 
+CPU 周期容量
+ a| 
+总计 9572 MHz （最低要求为 9572 MHz ）
+
+
+
+ a| 
+可用磁盘空间
+ a| 
+VMware ：
+
+* 5 GB （精简配置）
+* 152 GB （厚配置）
+
+
+
+
+ a| 
+Red Hat或CentOS：150 GB、其中容量分配如下：
+
+* 分配给根分区的空间为 50 GB
+* 分配给的可用磁盘空间为100 GB `/opt/netapp/data` 目录、挂载在LVM驱动器或连接到目标系统的单独本地磁盘上
+
+
+[NOTE]
+====
+。 `/tmp` 目录应至少具有10 GB的可用空间和 `/var/log` 目录应至少具有16 GB的可用空间。
+
+==== a| 
+Windows：150 GB、其中容量分配如下：
+
+* 100 GB 磁盘空间用于安装目录
+* MySQL 数据目录 50 GB 磁盘空间
+
+
+|===
+Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不能在部署Unified Manager的虚拟机上设置任何内存限制、也不能启用任何阻碍软件利用系统上分配的内存的功能(例如、热气球)。
+
+此外、在需要安装另一个Unified Manager实例之前、一个Unified Manager实例可以监控的节点数量存在限制。有关详细信息、请参见_Best Practices Guide_。
+
+http://www.netapp.com/us/media/tr-4621.pdf["技术报告 4621 ：《 Unified Manager 最佳实践指南》"]
+
+内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。
+
+
+
+== 专用使用要求
+
+安装Unified Manager的物理或虚拟系统必须专用于Unified Manager、不得与其他应用程序共享。其他应用程序可能会占用系统资源，并会大幅降低 Unified Manager 的性能。
+
+
+
+== 备份的空间要求
+
+如果您计划使用Unified Manager备份和还原功能、则必须分配额外的容量、以便"`data`"目录或磁盘具有150 GB的空间。备份可以写入本地目标或远程目标。最佳实践是，确定 Unified Manager 主机系统外部至少具有 150 GB 空间的远程位置。
+
+
+
+== 主机连接要求
+
+安装Unified Manager的物理系统或虚拟系统必须配置为可以成功完成 `ping` 主机本身的主机名。对于IPv6配置、您应进行验证 `ping6` 主机名成功、以确保Unified Manager安装成功。
+
+您可以使用主机名（或主机 IP 地址）访问产品 Web UI 。如果您在部署期间为网络配置了静态 IP 地址，则为网络主机指定了一个名称。如果使用 DHCP 配置网络，则应从 DNS 获取主机名。
+
+如果您计划允许用户使用短名称而不是完全限定域名（ FQDN ）或 IP 地址来访问 Unified Manager ，则网络配置必须将此短名称解析为有效的 FQDN 。
+
+
+
+== 已挂载 `/opt/netapp` 或 `/opt/netapp/data` 要求
+
+您可以挂载 `/opt/netapp` 或 `/opt/netapp/data` 在NAS或SAN设备上。请注意、使用远程挂载点可能会出现发生原因 扩展问题。如果确实使用远程挂载点、请确保SAN或NAS网络具有足够的容量来满足Unified Manager的I/O需求。此容量会因所监控的集群和存储对象的数量而异、并且可能会有所增加。
+
+如果已挂载 `/opt/netapp` 或 `/opt/netapp/data` 如果您在环境中启用了SELinux、则必须从根文件系统以外的任何位置为挂载的目录设置正确的上下文。
+
+请参见主题 xref:task-selinux-requirements-for-mounting-opt-netapp-or-opt-netapp-data-on-an-nfs-or-cifs-share.adoc[在 NFS 或 CIFS 共享上挂载 /opt/netapp 或 /opt/netapp/data 的 SELinux 要求] 有关设置正确的SELinux上下文的信息。

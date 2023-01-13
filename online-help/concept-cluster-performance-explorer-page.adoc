@@ -1,0 +1,31 @@
+---
+permalink: online-help/concept-cluster-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: '"性能/集群资源管理器"页面详细概述了Unified Manager管理的所有集群的性能。' 
+---
+= 性能/集群资源管理器页面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"性能/集群资源管理器"页面详细概述了Unified Manager管理的所有集群的性能。
+
+通过"性能/集群资源管理器"页面、您可以跟踪集群性能并比较该集群在特定时间段内的对象、这有助于对集群性能进行故障排除和微调。
+
+使用"查看并比较"功能、您可以将集群的性能与以下各项进行比较：
+
+* 此集群上的节点
+* 此集群的Storage Virtual Machine (SVM)
+* 此集群上的聚合
+
+
+通过"性能/集群资源管理器"页面、您可以：
+
+* 查看与阈值相关的问题及其详细信息
+* 跟踪集群性能数据
+* 调查与阈值相关的问题并进行故障排除
+* 调查性能问题并进行故障排除
+

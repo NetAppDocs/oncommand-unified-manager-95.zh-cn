@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-analyzing-the-capacity-of-the-top-most-unassigned-luns.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义存储摘要报告以分析集群的存储利用率、从而找到未分配容量最多的LUN。 
+---
+= 自定义存储摘要报告以分析未分配LUN容量最多的集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义存储摘要报告以分析集群的存储利用率、从而找到未分配容量最多的LUN。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要删除按集群分组、请执行以下步骤：
++
+.. 单击需要取消分组的列。
+.. 单击 image:../media/click-to-see-menu.gif[""] 图标。
+.. 选择*组*>*删除内部组*。
+
+
+. 要对未分配LUN容量最多的HA对进行排序、请单击*未分配LUN容量(TB)*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+. 选择*筛选器*>*顶部/底部N*。
+. 在*顶部/底部N*对话框中、从*筛选器*字段中选择*顶部N*、然后在文本字段中输入值。
+. 单击 * 确定 * 。
+

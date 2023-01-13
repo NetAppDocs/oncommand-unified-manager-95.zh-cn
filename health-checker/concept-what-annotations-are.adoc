@@ -1,0 +1,18 @@
+---
+permalink: health-checker/concept-what-annotations-are.html 
+sidebar: sidebar 
+keywords:  
+summary: '标注是分配给另一个文本字符串\(值\)的文本字符串\(名称\)。每个标注名称 - 值对都可以使用标注规则与存储对象动态关联。将存储对象与预定义的标注关联后，您可以筛选和查看与其相关的事件。您可以将标注应用于集群、卷和Storage Virtual Machine \(SVM\)。' 
+---
+= 什么是标注
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+标注是分配给另一个文本字符串（值）的文本字符串（名称）。每个标注名称 - 值对都可以使用标注规则与存储对象动态关联。将存储对象与预定义的标注关联后，您可以筛选和查看与其相关的事件。您可以将标注应用于集群，卷和 Storage Virtual Machine （ SVM ）。
+
+每个标注名称可以有多个值；每个名称 - 值对都可以通过规则与存储对象关联。
+
+例如，您可以创建一个名为 `data-center` 的标注，其值为 "`Boston` " 和 "`Canada` " 。然后，您可以将标注 " `data-center` " 与值 "`Boston` " 应用于卷 v1 。如果为卷 v1 上标注有 `data-center` 的任何事件生成警报，则生成的电子邮件将指示卷的位置 "`Boston` " ，这样您可以确定问题描述的优先级并解决此问题。

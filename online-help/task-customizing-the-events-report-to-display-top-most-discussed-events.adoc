@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-customizing-the-events-report-to-display-top-most-discussed-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以自定义事件报告以显示讨论量最多的事件。 
+---
+= 自定义事件报告以显示讨论量最多的前几个事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自定义事件报告以显示讨论量最多的事件。
+
+
+
+== 关于此任务
+
+您也可以通过转到报告页面并单击相应报告的*运行报告*来执行此任务。
+
+
+
+== 步骤
+
+. 要对讨论最广泛的事件进行排序、请单击*注释*列、然后单击 image:../media/click-to-see-menu.gif[""] 图标。
+. 选择*筛选器*>*顶部/底部N*。
+. 在*顶部/底部N*对话框中、从*筛选器*字段中选择*顶部N*、然后在文本字段中输入值。
+. 单击 * 确定 * 。
+

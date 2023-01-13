@@ -1,0 +1,272 @@
+---
+permalink: online-help/reference-supported-unified-manager-cli-commands.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: 作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。您可以使用命令行界面命令查询 Unified Manager 内部数据库和 ONTAP 数据库。您还可以在操作开始或结束时执行或触发警报时执行的脚本中使用 CLI 命令。 
+---
+= 支持的 Unified Manager 命令行界面命令
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+作为存储管理员，您可以使用命令行界面命令对存储对象执行查询，例如，对集群，聚合，卷， qtree 和 LUN 。您可以使用命令行界面命令查询 Unified Manager 内部数据库和 ONTAP 数据库。您还可以在操作开始或结束时执行或触发警报时执行的脚本中使用 CLI 命令。
+
+所有命令都必须在前面加上命令 `um cli login` 以及用于身份验证的有效用户名和密码。
+
+|===
+| CLI 命令 | Description | 输出 
+
+
+ a| 
+`um run cmd [ -t <timeout> ] <cluster> <command>`
+ a| 
+在一个或多个主机上运行命令的最简单方法。主要用于编写警报脚本，以便在 ONTAP 上获取或执行操作。可选超时参数用于设置命令在客户端上完成的最长时间限制（以秒为单位）。默认值为 0 （永久等待）。
+ a| 
+与从 ONTAP 收到的相同。
+
+
+
+ a| 
+`um run query <sql command>`
+ a| 
+执行 SQL 查询。仅允许从数据库读取的查询。不支持任何更新，插入或删除操作。
+ a| 
+结果以表格形式显示。如果返回空集，或者存在任何语法错误或请求错误，则会显示相应的错误消息。
+
+
+
+ a| 
+`um datasource add -u <username> -P <password> [ -t <protocol> ] [ -p <port> ] <hostname-or-ip>`
+ a| 
+将数据源添加到受管存储系统列表中。数据源介绍了如何连接到存储系统。添加数据源时，必须指定选项 -u （用户名）和 -P （密码）。选项 -t （ protocol ）指定用于与集群通信的协议（ http 或 https ）。如果未指定协议，则会尝试使用这两种协议选项 -p （ port ）指定用于与集群通信的端口。如果未指定端口，则会尝试使用相应协议的默认值。此命令只能由存储管理员执行。
+ a| 
+提示用户接受证书并显示相应的消息。
+
+
+
+ a| 
+`um datasource list [ <datasource-id>]`
+ a| 
+显示受管存储系统的数据源。
+ a| 
+以表格形式显示以下值： `ID Address Port, Protocol Acquisition Status, Analysis Status, Communication status, Acquisition Message, and Analysis Message`。
+
+
+
+ a| 
+`um datasource modify [ -h <hostname-or-ip> ] [ -u <username> ] [ -P <password> ] [ -t <protocol> ] [ -p <port> ] <datasource-id>`
+ a| 
+修改一个或多个数据源选项。只能由存储管理员执行。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um datasource remove <datasource-id>`
+ a| 
+从Unified Manager中删除数据源。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um option list [ <option> .. ]`
+ a| 
+列出选项。
+ a| 
+以表格形式显示以下值： `Name, Value, Default Value, and Requires Restart.`
+
+
+
+ a| 
+`+um option set <option-name>=<option-value> [ <option-name>=<option-value> ... ]+`
+ a| 
+设置一个或多个选项。此命令只能由存储管理员执行。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um version`
+ a| 
+显示Unified Manager软件版本。
+ a| 
+`Version ("7.0")`
+
+
+
+ a| 
+`um lun list [-q] [ -ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的 LUN 。-q 适用于所有命令，用于不显示标题。ObjectType可以是lun、qtree、cluster、volume、quota、SVM。例如： `um lun list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有 LUN 。
+ a| 
+以表格形式显示以下值： `ID and LUN path`。
+
+
+
+ a| 
+`um svm list [-q] [ -ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的SVM。ObjectType可以是lun、qtree、cluster、volume、quota、SVM。例如： `um svm list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出ID为1的集群中的所有SVM。
+ a| 
+以表格形式显示以下值： `Name and Cluster ID`。
+
+
+
+ a| 
+`um qtree list [-q] [ -ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的 qtree 。-q 适用于所有命令，用于不显示标题。ObjectType可以是lun、qtree、cluster、volume、quota、SVM。例如： `um qtree list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有 qtree 。
+ a| 
+以表格形式显示以下值： `Qtree ID and Qtree Name`。
+
+
+
+ a| 
+`um disk list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的磁盘。ObjectType可以是disk、aggr、node和cluster。例如： `um disk list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有磁盘。
+ a| 
+以表格形式显示以下值 `ObjectType and object-id.`
+
+
+
+ a| 
+`um cluster list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的集群。ObjectType可以是disk、aggr、node、cluster、lun、qtree、卷、配额、SVM。例如：``um cluster list -aggr 1``
+
+在此示例中， "-aggr" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的聚合所属的集群。
+ a| 
+以表格形式显示以下值： `Name, Full Name, Serial Number, Datasource Id, Last Refresh Time, and Resource Key.`
+
+
+
+ a| 
+`um cluster node list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的集群节点。ObjectType可以是disk、aggr、node和cluster。例如： `um cluster node list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有节点。
+ a| 
+以表格形式显示以下值 `Name and Cluster ID.`
+
+
+
+ a| 
+`um volume list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的卷。ObjectType可以是lun、qtree、cluster、volume、quota、SVM、聚合。例如： `um volume list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有卷。
+ a| 
+以表格形式显示以下值 `Volume ID and Volume Name.`
+
+
+
+ a| 
+`um quota user list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的配额用户。ObjectType可以是qtree、cluster、volume、quota和SVM。例如： `um quota user list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有配额用户。
+ a| 
+以表格形式显示以下值 `ID, Name, SID and Email.`
+
+
+
+ a| 
+`um aggr list [-q] [-ObjectType <object-id>]`
+ a| 
+列出按指定对象筛选后的聚合。ObjectType可以是disk、aggr、node、cluster、volume。例如： `um aggr list -cluster 1`
+
+在此示例中， "-cluster" 是 objectType ， "1" 是 objectID 。此命令将列出 ID 为 1 的集群中的所有聚合。
+ a| 
+以表格形式显示以下值 `Aggr ID, and Aggr Name.`
+
+
+
+ a| 
+`um event ack <event-ids>`
+ a| 
+确认一个或多个事件。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um event resolve <event-ids>`
+ a| 
+解决一个或多个事件。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um event assign -u <username> <event-id>`
+ a| 
+将事件分配给用户。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um event list [ -s <source> ] [ -S <event-state-filter-list>.. ] [ <event-id> .. ]`
+ a| 
+列出系统或用户生成的事件。根据源，状态和 ID 筛选事件。
+ a| 
+以表格形式显示以下值 `Source, Source type, Name, Severity, State, User and Timestamp.`
+
+
+
+ a| 
+`um cli login -u <username> [-p <password>`
+ a| 
+登录到命令行界面。会话将在自登录后三个小时后过期，之后用户必须重新登录。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um cli logout`
+ a| 
+从命令行界面注销。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um backup restore -f <backup_file_path_and_name>`
+ a| 
+使用.7z文件还原数据库备份。
+ a| 
+显示相应的消息。
+
+
+
+ a| 
+`um help`
+ a| 
+显示所有第一级子命令。
+ a| 
+显示所有第一级子命令。
+
+|===

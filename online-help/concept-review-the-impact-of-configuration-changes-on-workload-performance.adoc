@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-review-the-impact-of-configuration-changes-on-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: 集群上的配置更改（例如故障磁盘， HA 故障转移或移动的卷）可能会对卷性能产生负面影响，并且发生原因会增加延迟。 
+---
+= 查看配置更改对工作负载性能的影响
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+集群上的配置更改（例如故障磁盘， HA 故障转移或移动的卷）可能会对卷性能产生负面影响，并且发生原因会增加延迟。
+
+在Unified Manager中、您可以查看"性能/卷详细信息"页面以查看最近发生配置更改的时间、并将其与操作和延迟(响应时间)进行比较、以查看选定卷工作负载的活动是否发生变化。
+
+Unified Manager 的性能页面只能检测有限数量的更改事件。运行状况页面会针对配置更改导致的其他事件提供警报。您可以在 Unified Manager 中搜索卷以查看事件历史记录。

@@ -1,0 +1,51 @@
+---
+permalink: health-checker/task-adding-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。 
+---
+= 正在添加脚本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 Unified Manager 中添加脚本，并将这些脚本与警报关联。生成警报时，系统会自动执行这些脚本，您可以通过这些脚本获取有关生成事件的存储对象的信息。
+
+
+
+== 开始之前
+
+* 您必须已创建并保存要添加到 Unified Manager 服务器的脚本。
+* 脚本支持的文件格式为Perl、Shell、PowerShell和 `.bat` 文件。
++
+** 对于 Perl 脚本，必须在 Unified Manager 服务器上安装 Perl 。如果 Perl 是在 Unified Manager 之后安装的，则必须重新启动 Unified Manager 服务器。
+** 对于PowerShell脚本、必须在服务器上设置相应的PowerShell执行策略、以便可以执行这些脚本。
+
+
++
+[NOTE]
+====
+如果脚本创建日志文件以跟踪警报脚本进度，则必须确保日志文件不会在 Unified Manager 安装文件夹中的任何位置创建。
+
+====
+* 您必须具有OnCommand 管理员或存储管理员角色。
+
+
+
+
+== 关于此任务
+
+您可以上传自定义脚本并收集有关警报的事件详细信息。
+
+
+
+== 步骤
+
+. 在工具栏中、单击*image:../media/clusterpage-settings-icon.gif[""]*、然后单击左侧管理菜单中的*脚本*。
+. 在*管理/脚本*页面中、单击*添加*。
+. 在 * 添加脚本 * 对话框中，单击 * 浏览 * 以选择脚本文件。
+. 输入所选脚本的问题描述。
+. 单击 * 添加 * 。
+

@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-port-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 端口事件可为您提供有关集群端口的状态，以便您可以监控端口上的更改或问题，例如端口是否已关闭。 
+---
+= 端口事件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+端口事件可为您提供有关集群端口的状态，以便您可以监控端口上的更改或问题，例如端口是否已关闭。
+
+
+
+== 影响区域：可用性
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+端口状态为已关闭（ ocumEvtPortStatusDown ）
+ a| 
+意外事件
+ a| 
+Node
+ a| 
+严重
+
+|===
+
+
+== 影响区域：性能
+
+|===
+| 事件名称（陷阱名称） | 影响级别 | 源类型 | severity 
+
+
+ a| 
+已违反网络端口MBps严重阈值(ocumNetworkPortMbpsIncident)
+ a| 
+意外事件
+ a| 
+Port
+ a| 
+严重
+
+
+
+ a| 
+已违反网络端口MBps警告阈值(ocumNetworkPortMbpsWarning)
+ a| 
+风险
+ a| 
+Port
+ a| 
+警告
+
+
+
+ a| 
+已违反FCP端口MBps严重阈值(ocumFcpPortMbpsIncident)
+ a| 
+意外事件
+ a| 
+Port
+ a| 
+严重
+
+
+
+ a| 
+已违反FCP端口MBps警告阈值(ocumFcpPortMbpsWarning)
+ a| 
+风险
+ a| 
+Port
+ a| 
+警告
+
+
+
+ a| 
+已违反网络端口利用率严重阈值（ ocumNetworkPortUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+Port
+ a| 
+严重
+
+
+
+ a| 
+已违反网络端口利用率警告阈值（ ocumNetworkPortUtilizationWarning ）
+ a| 
+风险
+ a| 
+Port
+ a| 
+警告
+
+
+
+ a| 
+已违反 FCP 端口利用率严重阈值（ ocumFcpPortUtilizationIncident ）
+ a| 
+意外事件
+ a| 
+Port
+ a| 
+严重
+
+
+
+ a| 
+已违反 FCP 端口利用率警告阈值（ ocumFcpPortUtilizationWarning ）
+ a| 
+风险
+ a| 
+Port
+ a| 
+警告
+
+|===

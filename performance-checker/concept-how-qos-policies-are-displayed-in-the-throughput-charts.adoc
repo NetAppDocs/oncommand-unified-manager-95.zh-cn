@@ -1,0 +1,64 @@
+---
+permalink: performance-checker/concept-how-qos-policies-are-displayed-in-the-throughput-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: '您可以在性能资源管理器的IOPS、IOPS/TB和MBps图表中查看已应用于卷或LUN的ONTAP定义的服务质量\(QoS\)策略设置。图表中显示的信息因应用于工作负载的 QoS 策略类型而异。' 
+---
+= 如何在Unified Manager中显示不同类型的QoS策略
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在性能资源管理器的IOPS、IOPS/TB和MBps图表中查看已应用于卷或LUN的ONTAP定义的服务质量(QoS)策略设置。图表中显示的信息因应用于工作负载的 QoS 策略类型而异。
+
+吞吐量"`上限`"设置用于定义工作负载可以使用的最大吞吐量、从而限制对系统资源争用工作负载的影响。吞吐量"`下限`"设置定义了工作负载必须使用的最小吞吐量、这样、无论竞争工作负载的需求如何、关键工作负载都能满足最小吞吐量目标。
+
+用于IOPS和MBps的共享和非共享QoS策略使用术语"`minimum`"和"`maximum`"来定义下限和上限。ONTAP 9.3 中引入的 IOPS/TB 自适应 QoS 策略使用术语 "`expected` " 和 "`peak` " 来定义下限和上限。
+
+虽然 ONTAP 允许您创建这两种类型的 QoS 策略，但根据这些策略应用于工作负载的方式， QoS 策略将通过三种方式显示在性能图表中。
+
+|===
+| 策略类型 | 功能 | Unified Manager 界面中的指示符 
+
+
+ a| 
+分配给单个工作负载的 QoS 共享策略，或分配给单个或多个工作负载的 QoS 非共享策略
+ a| 
+每个工作负载都可以使用指定的吞吐量设置
+ a| 
+显示 "` （ QoS ）` "
+
+
+
+ a| 
+分配给多个工作负载的 QoS 共享策略
+ a| 
+所有工作负载都共享指定的吞吐量设置
+ a| 
+显示 "` （ QoS 共享）` "
+
+
+
+ a| 
+分配给单个或多个工作负载的自适应 QoS 策略
+ a| 
+每个工作负载都可以使用指定的吞吐量设置
+ a| 
+显示 "` （ QoS 自适应）` "
+
+|===
+下图举例说明了这三个选项在计数器图表中的显示方式。
+
+image::../media/three-qos-policy-charts.gif[三个QoS策略图表]
+
+如果已在 IOPS 中定义的正常 QoS 策略显示在工作负载的 IOPS/TB 图表中，则 ONTAP 会将 IOPS 值转换为 IOPS/TB 值， Unified Manager 会在 IOPS/TB 图表中显示该策略以及文本 "`QoS ， defined in IOPS` " 。
+
+如果已在IOPS/TB中定义的自适应QoS策略显示在工作负载的IOPS图表中、则ONTAP 会将IOPS/TB值转换为IOPS值、Unified Manager会在IOPS图表中显示该策略以及文本"`QoS Adaptive、根据峰值IOPS分配设置的配置方式、以IOPS/已用TB`为单位定义或"`QoS自适应、以IOPS/已分配TB`为单位定义。如果分配设置设置为 "`allocated-space` " ，则会根据卷大小计算峰值 IOPS 。如果分配设置设置为 "`used-space` " ，则会根据卷中存储的数据量并考虑存储效率来计算峰值 IOPS 。
+
+[NOTE]
+====
+只有当卷使用的逻辑容量大于或等于1 TB时、IOPS/TB图表才会显示性能数据。如果已用容量在选定时间范围内降至1 TB以下、则图表中会显示空隙。
+
+====

@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: '根据 " 性能 / 节点故障转移规划 " 页面中显示的信息，您可以采取措施，确保故障转移不发生原因会使 HA 对的性能下降到可接受的水平以下。' 
+---
+= 使用 Node Failover Planning 页面确定更正操作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根据 " 性能 / 节点故障转移规划 " 页面中显示的信息，您可以采取措施，确保故障转移不发生原因会使 HA 对的性能下降到可接受的水平以下。
+
+例如，为了减少故障转移对性能的估计影响，您可以将某些卷或 LUN 从 HA 对中的某个节点移动到集群中的其他节点。这样可以确保主节点在故障转移后能够继续提供可接受的性能。

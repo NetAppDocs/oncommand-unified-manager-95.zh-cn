@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-breaking-a-snapmirror-relationship.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以中断保护关系，以停止 SnapMirror 关系中源卷与目标卷之间的数据传输。如果要迁移数据，进行灾难恢复或应用程序测试，您可能会中断关系。目标卷将更改为读 / 写卷。您不能中断 SnapVault 关系。 
+---
+= 通过保护/卷关系页面中断SnapMirror关系
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以中断保护关系，以停止 SnapMirror 关系中源卷与目标卷之间的数据传输。如果要迁移数据，进行灾难恢复或应用程序测试，您可能会中断关系。目标卷将更改为读 / 写卷。您不能中断 SnapVault 关系。
+
+
+
+== 开始之前
+
+* 您必须具有OnCommand 管理员或存储管理员角色。
+* 您必须已设置 Workflow Automation 。
+
+
+
+
+== 步骤
+
+. 从*保护/卷关系*页面中、选择一个或多个具有要停止数据传输的保护关系的卷、然后在工具栏上单击*中断*。
++
+此时将显示中断关系对话框。
+
+. 单击 * 继续 * 以中断此关系。
+. 在*保护/卷关系*页面中、在*关系状态*列中验证此关系是否已断开。
++
+默认情况下，关系状态列处于隐藏状态，因此您可能需要在显示 / 隐藏列列表中选择它 image:../media/icon-columnshowhide-sm-onc.gif[""]。
+
+

@@ -1,0 +1,22 @@
+---
+permalink: performance-checker/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 在收集的运行状况和性能数据中显示或显示为事件检测时间的时间戳基于 ONTAP 集群时间，并根据 Web 浏览器上设置的时区进行调整。 
+---
+= 时间戳在收集的数据和事件中的含义
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在收集的运行状况和性能数据中显示或显示为事件检测时间的时间戳基于 ONTAP 集群时间，并根据 Web 浏览器上设置的时区进行调整。
+
+强烈建议使用网络时间协议（ NTP ）服务器同步 Unified Manager 服务器， ONTAP 集群和 Web 浏览器上的时间。
+
+[NOTE]
+====
+如果您发现特定集群的时间戳看起来不正确，则可能需要检查集群时间是否设置正确。
+
+====

@@ -1,0 +1,35 @@
+---
+permalink: online-help/task-using-the-unified-manager-help.html 
+sidebar: sidebar 
+keywords:  
+summary: 此帮助包含有关OnCommand Unified Manager中所有功能的信息。您可以使用目录，索引或搜索工具来查找有关功能及其使用方式的信息。 
+---
+= 使用 Unified Manager 帮助
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此帮助包含有关OnCommand Unified Manager中所有功能的信息。您可以使用目录，索引或搜索工具来查找有关功能及其使用方式的信息。
+
+
+
+== 关于此任务
+
+可从每个选项卡和 Unified Manager 用户界面的菜单栏访问帮助。
+
+帮助中的搜索工具不适用于部分词。
+
+
+
+== 选项
+
+* 要了解特定字段或参数，请单击 image:../media/helpicon-um60.gif["上下文相关帮助图标"]。
+* 要查看所有帮助内容，请单击 *image:../media/helpicon-um60.gif["上下文相关帮助图标"]菜单栏中的 * > * 帮助 / 文档 * 。
++
+您可以通过展开导航窗格中的目录的任何部分来查看更多详细信息。
+
+* 要搜索帮助内容，请单击导航窗格中的 * 搜索 * 选项卡，键入要查找的字词或词系列，然后单击 * 执行！ *
+* 要打印帮助主题，请单击打印机图标。
+
