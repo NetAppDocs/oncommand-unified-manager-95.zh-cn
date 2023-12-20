@@ -6992,8 +6992,6 @@
   <block id="b05ec43ca7407c06122c42ea4b25632e" category="paragraph">从Unified Manager中删除Workflow Automation设置。</block>
   <block id="6999aa5ef7f71f7f00e64118e8275e74" category="paragraph">保存选定选项的配置设置。</block>
   <block id="93f88d6c3be8dc08239feb316ead84f9" category="paragraph">要查看可订阅的EMS事件的名称、可以从ONTAP 集群Shell使用<block ref="600519f6c6d0b7df8b905133fe79eb47" prefix=" " category="inline-code"></block> 命令(ONTAP 9之前的版本)或<block ref="83c19f62b32dae15ee31be017a321335" prefix=" " category="inline-code"></block> 命令(ONTAP 9或更高版本)。有关识别各个EMS事件的详细说明、请参见知识库问题解答 1072320。</block>
-  <block id="b7ea02fe1dbdcd1a4d97e075ed656e5d" category="inline-link">知识库文章1072320—如何在Unified Manager中配置ONTAP EMS事件订阅</block>
-  <block id="31217e322cc07a0593ddf09e0d4549b2" category="paragraph"><block ref="31217e322cc07a0593ddf09e0d4549b2" category="inline-link-rx"></block></block>
   <block id="d6b2a5eaec6d581c428382bf1fa65994" category="summary">您可以自定义"集群清单"报告以显示达到最大磁盘限制并按递增顺序排序的节点列表。</block>
   <block id="e9cf43d6c7ec24f85386c110100fce90" category="doc">自定义集群清单报告以显示达到最大磁盘限制的节点</block>
   <block id="cbed002dcbc960710aebe81be97aab0d" category="list-text">要删除按集群或节点分组、请执行以下步骤：</block>
@@ -12161,7 +12159,6 @@
   <block id="aa193eacf5a35a85044e44de3fa9c91a" category="sidebar">Unified Manager 视频</block>
   <block id="197833bfff97d501603036a0febb7a95" category="sidebar">Unified Manager 博客</block>
   <block id="7c59cc884d6b9ef97e305e34cc436310" category="sidebar">最新版本Unified Manager的文档</block>
-  <block id="85f73dd16ea214346164b0deea26773b" category="sidebar">Unified Manager</block>
   <block id="09d454f0bf432593d99fbfd84c9f9293" category="sidebar">执行配置和管理任务</block>
   <block id="280e472487f2e1876889ef516ea66c22" category="sidebar">在NFS或CIFS共享上挂载 <code>/opt/netapp</code> 或 <code>/opt/netapp/data</code> 的SELinux要求</block>
   <block id="89376735b2b1322b2aeff45eff7abf01" category="sidebar">在Windows上执行Unified Manager的无人参与安装</block>
@@ -12216,4 +12213,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报</block>
+  <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
 </blocks>

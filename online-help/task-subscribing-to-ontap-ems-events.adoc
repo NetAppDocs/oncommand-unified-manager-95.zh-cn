@@ -45,7 +45,7 @@ https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=6
 要查看可订阅的EMS事件的名称、可以从ONTAP 集群Shell使用 `event route show` 命令(ONTAP 9之前的版本)或 `event catalog show` 命令(ONTAP 9或更高版本)。有关识别各个EMS事件的详细说明、请参见知识库问题解答 1072320。
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["知识库文章1072320—如何在Unified Manager中配置ONTAP EMS事件订阅"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报"^]
 
 . 单击 * 添加 * 。
 +
