@@ -512,7 +512,6 @@
   <block id="cf84f1efc2b94e2be0cfb3168fbb6f79" category="list-text">在 Database Connection 向导中，输入 MySQL root 密码。</block>
   <block id="57e365413f6a91c23a8885041e991e3d" category="list-text">按照其余提示完成安装。</block>
   <block id="1f7fcc341d4eca6cda713029ed9f55ea" category="list-text">单击安装结束时的 * 完成 * ，此时将显示 Unified Manager Web UI 。</block>
-  <block id="b1d05b1498f934fd9fdb5242af6b4ee6" category="summary">OnCommand Unified Manager文档</block>
   <block id="a26233650deb6cb0bb9c28069615b351" category="doc">OnCommand Unified Manager文档</block>
   <block id="38e6765f489199cbac8d654040013a22" category="doc">Linux 安装快速入门说明</block>
   <block id="d6eda01f5a2148c2383c259caccbdf81" category="list-text">操作系统：Red Hat Enterprise Linux或CentOS 64位7.x版架构、使用操作系统安装程序的软件选择选项中的"带GUI的服务器"基础环境安装</block>
@@ -12215,4 +12214,5 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
+  <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。本文档库包含9.5版的信息。</block>
 </blocks>
