@@ -88,4 +88,4 @@ summary: 您可以使用高级二级设置对话框在二级卷上启用版本�
 
 * 相关信息 *
 
-http://www.netapp.com/us/media/tr-3966.pdf["NetApp技术报告3966：《NetApp数据压缩和重复数据删除部署和实施指南(集群模式Data ONTAP)》"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["NetApp技术报告3966：《NetApp数据压缩和重复数据删除部署和实施指南(集群模式Data ONTAP)》"^]

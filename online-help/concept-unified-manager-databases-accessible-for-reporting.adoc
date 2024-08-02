@@ -71,4 +71,4 @@ scalemonitor
 |===
 报告用户（具有报告架构角色的数据库用户）能够访问这些表中的数据。此用户可以直接从 Unified Manager 数据库对报告和其他数据库视图进行只读访问。请注意，此用户无权访问包含用户数据或集群凭据信息的任何表。
 
-请参见 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager报告技术报告"] (TR-4565)了解更多详细信息。
+有关详细信息、请参见 https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Unified Manager报告技术报告"^] (TR-4565)。

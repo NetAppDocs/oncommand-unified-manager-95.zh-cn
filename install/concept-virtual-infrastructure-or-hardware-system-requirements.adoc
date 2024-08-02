@@ -74,7 +74,7 @@ Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 
 
 此外、在需要安装另一个Unified Manager实例之前、一个Unified Manager实例可以监控的节点数量存在限制。有关详细信息、请参见_Best Practices Guide_。
 
-http://www.netapp.com/us/media/tr-4621.pdf["技术报告 4621 ：《 Unified Manager 最佳实践指南》"]
+https://www.netapp.com/pdf.html?item=/media/13504-tr4621pdf.pdf["技术报告 4621 ：《 Unified Manager 最佳实践指南》"^]
 
 内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。
 

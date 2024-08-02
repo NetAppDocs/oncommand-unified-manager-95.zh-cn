@@ -1030,7 +1030,6 @@
   <block id="713d9eb7bae81414a341cd2b9ad04f0e" category="paragraph">Unified Manager 可以安装在具有少量内存的系统上，但建议的 12 GB RAM 可确保有足够的可用内存来实现最佳性能，并使系统可以随着配置的增长容纳更多集群和存储对象。您不能在部署Unified Manager的虚拟机上设置任何内存限制、也不能启用任何阻碍软件利用系统上分配的内存的功能(例如、热气球)。</block>
   <block id="1ba321baad6e31e95cddb86bd159a0ab" category="paragraph">此外、在需要安装另一个Unified Manager实例之前、一个Unified Manager实例可以监控的节点数量存在限制。有关详细信息、请参见_Best Practices Guide_。</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">技术报告 4621 ：《 Unified Manager 最佳实践指南》</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">内存页面交换会对系统和管理应用程序的性能产生负面影响。争用因主机整体利用率而不可用的 CPU 资源可能会降低性能。</block>
   <block id="4019b02afc32a61e39e48a05d352cdf9" category="section-title">专用使用要求</block>
   <block id="f8a1acaf90775fd387de63d0c7d02a5a" category="paragraph">安装Unified Manager的物理或虚拟系统必须专用于Unified Manager、不得与其他应用程序共享。其他应用程序可能会占用系统资源，并会大幅降低 Unified Manager 的性能。</block>
@@ -6555,7 +6554,6 @@
   <block id="11e8e4f244f4ff642a8c627e453e7ac8" category="paragraph">您可以使用OnCommand 系统管理器或ONTAP 命令查看是否已安装或启用Flash Cache、如果尚未启用、则可以启用它。以下命令指示是否已在特定节点上启用Flash Cache：<block ref="48de88639c7fbb304293e385f1577ff8" prefix=" " category="inline-code"></block></block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">有关 Flash Cache 及其使用要求的详细信息，请参见以下技术报告：</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">技术报告 3832 ：《 Flash Cache 最佳实践指南》</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="ed46215834ece9df6f6e928ec99fb8b8" category="summary">您可以添加现有集群、以便监控集群并获取有关其运行状况、容量、配置和性能的信息。</block>
   <block id="0130853463bbe8886a65910adc3f54b2" category="doc">添加集群对话框</block>
   <block id="67417a585c57d841c0ff1ea84e382fcd" category="paragraph">您可以通过指定以下值来添加集群：</block>
@@ -7651,7 +7649,6 @@
   <block id="f804ed2945f8b8f58e9c8ebf45b6d70a" category="paragraph">有关 Unified Manager 应用程序运行状况和性能问题的数据。</block>
   <block id="030a4fbaf40ce64a3de26a58a2349f3b" category="paragraph">报告用户（具有报告架构角色的数据库用户）能够访问这些表中的数据。此用户可以直接从 Unified Manager 数据库对报告和其他数据库视图进行只读访问。请注意，此用户无权访问包含用户数据或集群凭据信息的任何表。</block>
   <block id="43c57f8ab49b52141a07a60ab8386a94" category="inline-link">Unified Manager报告技术报告</block>
-  <block id="ef284f778ff870c90bd04052fa19e3d6" category="paragraph">请参见<block ref="204d4ee1ca42e994250ea354be144e73" category="inline-link-rx"></block> (TR-4565)了解更多详细信息。</block>
   <block id="d5115a56160e45240d2698485e7e3777" category="summary">了解事件的概念有助于您高效管理集群和集群对象并正确定义警报。</block>
   <block id="71d8a1201a22de215395582e8721d30e" category="doc">了解有关事件的更多信息</block>
   <block id="65326e6b22fde34c92c7ea8237cc8412" category="summary">SVM存储类事件可为您提供有关存储类状态的信息、以便您可以监控潜在问题。SVM存储类仅存在于带有无限卷的SVM中。事件按影响区域分组，并包括事件和陷阱名称，影响级别，源类型和严重性。</block>
@@ -11885,7 +11882,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">添加磁盘并执行聚合布局重建</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">当您在事件详细信息页面上收到系统定义的阈值事件时， event 问题描述文本将列出存在问题的聚合的名称。您可以添加磁盘并在此聚合上重建数据。</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">技术报告 3838 ：《存储子系统配置指南》</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="877f5e27a442690f512bdd4fa77d8cb6" category="summary">您可以使用 Unified Manager 检查 MetroCluster 配置中集群及其组件的运行状况。如果集群涉及 Unified Manager 检测到的性能事件，则运行状况可以帮助您确定硬件或软件问题描述是否引发了该事件。</block>
   <block id="5e9e3cac8906fbac9ab062f3f912efc9" category="doc">检查 MetroCluster 配置中集群的运行状况</block>
   <block id="1e86f8bde1a87a2deac3175345884436" category="list-text">您必须已分析 MetroCluster 配置的性能事件并获取相关集群的名称。</block>
@@ -11967,7 +11963,6 @@
   <block id="4a62775f3719d6969e4b9d4bd0578ca6" category="paragraph">保存选定的效率设置，并在配置保护对话框中单击 * 应用 * 时应用这些设置。</block>
   <block id="cfc05fb84db9c30b38a419540c16db12" category="paragraph">丢弃所做的选择并关闭 " 高级目标设置 " 对话框。</block>
   <block id="ae66a56126cf2726904ab28390ff838b" category="inline-link">NetApp技术报告3966：《NetApp数据压缩和重复数据删除部署和实施指南(集群模式Data ONTAP)》</block>
-  <block id="df4f489fd8783506ee2d692048efa87d" category="paragraph"><block ref="df4f489fd8783506ee2d692048efa87d" category="inline-link-rx"></block></block>
   <block id="f3a8d1f0654a5e8b0761614bebc1ad16" category="summary">MetroCluster 配置可提供数据镜像，并在整个站点不可用时额外提供启动故障转移的功能。在 MetroCluster 配置中，集群之间的数据镜像状态可以是 " 正常 " 或 " 镜像不可用 " 。了解状态后，您可以有效地管理 MetroCluster 配置。</block>
   <block id="baf5d44e1d7facdf126425b9dacabd71" category="doc">数据镜像状态定义</block>
   <block id="f4eb4da5d6840b7010c0afd8cb3a5816" category="cell">数据镜像状态</block>
@@ -12215,4 +12210,9 @@
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">如何在 Active IQ Unified Manager 中配置和接收 ONTAP EMS 事件订阅的警报</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
   <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">通过OnCommand 统一管理器、您可以通过一个界面监控和管理ONTAP 存储系统的运行状况和性能。本文档库包含9.5版的信息。</block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="a87e9b78df20679676eb71ecb2dadaf4" category="paragraph">有关详细信息、请参见<block ref="7a573ad874e1456bf6b4f96b852006f2" category="inline-link-rx"></block> (TR-4565)。</block>
+  <block id="ec41073735b02d172b0bc1ee60ea5ec9" category="paragraph"><block ref="ec41073735b02d172b0bc1ee60ea5ec9" category="inline-link-rx"></block></block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
 </blocks>
